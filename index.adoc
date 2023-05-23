@@ -1,0 +1,19 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: These release notes describe recent enhancements to the cloud services that are part of BlueXP. Links are available to the full set of release notes for each individual service. 
+summary: Queste note di rilascio descrivono i recenti miglioramenti ai servizi cloud che fanno parte di BlueXP. Sono disponibili collegamenti alla serie completa di note di rilascio per ogni singolo servizio. 
+---
+= Note sulla versione di BlueXP
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+

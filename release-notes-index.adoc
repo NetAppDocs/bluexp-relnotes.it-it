@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: release-notes-index.html 
+---
+= Indice delle note di rilascio
+:toc: macro
+:hardbreaks:
+:allow-uri-read: 
+:toc: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Visualizza la serie completa di note di rilascio per ogni singolo servizio.
+
+
+
+== Amministrazione
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/whats-new.html["Installazione e amministrazione"^]
+
+
+
+== Storage
+
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/whats-new.html["Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/whats-new.html["Amazon FSX per ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-s3-storage/whats-new.html["Storage Amazon S3"^]
+* Cloud Volumes ONTAP
++
+** https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Note di rilascio per Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Note di rilascio per la gestione di Cloud Volumes ONTAP in BlueXP"^]
+
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/whats-new.html["Cloud Volumes Service per Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-e-series/whats-new.html["Sistemi e-Series"^]
+* https://docs.netapp.com/us-en/cloud-manager-kubernetes/whats-new.html["Cluster Kubernetes"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html["Cluster ONTAP on-premise"^]
+* https://docs.netapp.com/us-en/cloud-manager-storagegrid/whats-new.html["StorageGRID"^]
+
+
+
+
+== Servizi dati
+
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/whats-new.html["Backup e recovery"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/whats-new.html["Classificazione"^]
+* https://docs.netapp.com/us-en/cloud-manager-compute/whats-new.html["Operazioni cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-sync/whats-new.html["Copia e sincronizzazione"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Portafoglio digitale"^]
+* https://docs.netapp.com/us-en/bluexp-economic-efficiency/index.html["Efficienza economica"^]
+* https://docs.netapp.com/us-en/cloud-manager-file-cache/whats-new.html["Caching edge"^]
+* https://docs.netapp.com/us-en/bluexp-operational-resiliency/index.html["Resilienza operativa"^]
+* https://docs.netapp.com/us-en/cloud-manager-ransomware/whats-new.html["Protezione ransomware"^]
+* https://docs.netapp.com/us-en/cloud-manager-app-template/whats-new.html["Risoluzione dei problemi"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/whats-new.html["Replica"^]
+* https://docs.netapp.com/us-en/cloud-manager-tiering/whats-new.html["Tiering"^]
+
