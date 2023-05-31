@@ -2,22 +2,22 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud-manager-relnotes | NetApp Documentation</title>
-    <atom:link href="https://docs.netapp.com/it-it/cloud-manager-relnotes/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://docs.netapp.com/it-it/cloud-manager-relnotes</link>
+    <title>bluexp-relnotes | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/it-it/bluexp-relnotes/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/it-it/bluexp-relnotes</link>
     <description>The latest updates from NetApp Documentation</description>
     <language>it-it</language>
     <ttl>60</ttl>
-    <pubDate>Wed, 24 May 2023 08:19:31 +0000</pubDate>
-    <lastBuildDate>Wed, 24 May 2023 08:19:31 +0000</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 15:42:12 +0000</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 15:42:12 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>Recenti cambiamenti in BlueXP (23 May 2023)</title>
-      <pubDate>Tue, 23 May 2023 20:29:12 +0000</pubDate>
-      <link>https://docs.netapp.com/it-it/cloud-manager-relnotes/whats-new.html?time=1684873752</link>
-      <guid isPermaLink="false">Tue, 23 May 2023 20:29:12 +0000</guid>
+      <title>Recenti cambiamenti in BlueXP (31 May 2023)</title>
+      <pubDate>Wed, 31 May 2023 15:36:50 +0000</pubDate>
+      <link>https://docs.netapp.com/it-it/bluexp-relnotes/whats-new.html?time=1685547410</link>
+      <guid isPermaLink="false">Wed, 31 May 2023 15:36:50 +0000</guid>
       <description><![CDATA[ Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per ulteriori informazioni, consultare la serie completa di note di rilascio per ciascun servizio. ]]></description>
     </item>
     
