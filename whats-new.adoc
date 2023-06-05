@@ -663,6 +663,26 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 giugno 2023
+
+
+
+==== Supporta l'interruzione automatica in pochi minuti
+
+Le sincronizzazioni attive che non sono state completate possono ora essere interrotte dopo quindici minuti utilizzando la funzione *Timeout sincronizzazione*.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione del timeout di sincronizzazione"].
+
+
+
+==== Copiare i metadati del tempo di accesso
+
+Nelle relazioni, incluso un file system, la funzione *Copy for Objects* copia ora i metadati del tempo di accesso.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Copia per oggetti"].
+
+
+
 === 8 maggio 2023
 
 
@@ -722,18 +742,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships
 Oltre a filtrare le directory in base al nome, è possibile filtrare le directory in base al percorso completo.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Escludi directory"].
-
-
-
-=== 7 marzo 2023
-
-
-
-==== Crittografia EBS per broker di dati AWS
-
-Ora puoi crittografare i volumi di broker di dati AWS utilizzando una chiave KMS del tuo account.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#creating-the-data-broker["Scopri di più sulla creazione di un data broker in AWS"].
 
 
 

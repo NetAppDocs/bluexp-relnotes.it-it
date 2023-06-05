@@ -236,9 +236,6 @@
   <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">Filtra le directory in base al percorso completo</block>
   <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">Oltre a filtrare le directory in base al nome, è possibile filtrare le directory in base al percorso completo.</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 marzo 2023</block>
-  <block id="a19f14c281dd654ce355a7e0b63146b5" category="section-title">Crittografia EBS per broker di dati AWS</block>
-  <block id="8663378959352a24f27c3d250a37cf3d" category="paragraph">Ora puoi crittografare i volumi di broker di dati AWS utilizzando una chiave KMS del tuo account.</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">Scopri di più sulla creazione di un data broker in AWS</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Consulente digitale</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1° novembre 2022</block>
   <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor (in precedenza Active IQ) è ora completamente integrato con BlueXP e offre un'esperienza di accesso migliorata.</block>
@@ -435,7 +432,6 @@
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>.</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>.</block>
   <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>.</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
@@ -548,4 +544,13 @@
   <block id="8ffa5f25420a002d3aa8840ec0e7752f" category="inline-link">Scopri come aggiungere nuovi account di storage Azure negli abbonamenti Azure di BlueXP</block>
   <block id="6c6c819a667ba8ce8119b4bf796894fc" category="paragraph"><block ref="fef6d7c0add7436be78fa3e990371931" category="inline-link-rx"></block>.</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 è stato qualificato come sistema operativo supportato per la classificazione BlueXP. È possibile installare la classificazione BlueXP su un host Ubuntu Linux nella rete o su un host Linux nel cloud quando si utilizza la versione 1.23 del programma di installazione.<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>.</block>
+  <block id="9b7d935c674579c8c8e305e2dcadc1b9" category="section-title">11 giugno 2023</block>
+  <block id="b18ac5fa90a568a24f98c73b9192cb6d" category="section-title">Supporta l'interruzione automatica in pochi minuti</block>
+  <block id="33c110842a0fe3f7891980d750e48fa2" category="paragraph">Le sincronizzazioni attive che non sono state completate possono ora essere interrotte dopo quindici minuti utilizzando la funzione *Timeout sincronizzazione*.</block>
+  <block id="44856e8753e0c19c0341499a434c7c97" category="inline-link">Scopri di più sull'impostazione del timeout di sincronizzazione</block>
+  <block id="3266d16b8714caecb4f4231dca5dae65" category="paragraph"><block ref="bfd432c58dd0bb0c71b937c5a3336867" category="inline-link-rx"></block>.</block>
+  <block id="69540ae9a9da395711f1e900d88e4cc5" category="section-title">Copiare i metadati del tempo di accesso</block>
+  <block id="a706d4045e92e504f4aa9e79191d81f5" category="paragraph">Nelle relazioni, incluso un file system, la funzione *Copy for Objects* copia ora i metadati del tempo di accesso.</block>
+  <block id="bac04a3b125486e43e5adcb9275b0cb7" category="inline-link">Scopri di più sull'impostazione Copia per oggetti</block>
+  <block id="b9101f79b22863de2373d338b3f2fd49" category="paragraph"><block ref="61cd45fc857d1053eae8b58e970eda27" category="inline-link-rx"></block>.</block>
 </blocks>
