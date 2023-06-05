@@ -33,6 +33,36 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 2 luglio 2023
+
+
+
+==== Connettore 3.9.31
+
+* Ora puoi scoprire i cluster ONTAP on-premise dalla scheda *My estate* (in precedenza *My Opportunities*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Scopri come scoprire i cluster dalla pagina My estate"].
+
+* Se si utilizza il connettore in un'area governativa di Azure, assicurarsi che il connettore possa contattare il seguente endpoint:
++
+\https://occmclientinfragov.azurecr.us
+
++
+Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.
+
++
+A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.
+
+
+
+
+
 === 4 giugno 2023
 
 
@@ -116,26 +146,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco compl
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
 
 
-
-
-
-=== 4 aprile 2023
-
-
-
-==== Modalità di implementazione
-
-Le _modalità di implementazione_ di BlueXP consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. È possibile scegliere tra tre modalità:
-
-* Modalità standard
-* Modalità limitata
-* Modalità privata
-
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Scopri di più su queste modalità di implementazione"].
-
-
-NOTE: L'introduzione della modalità limitata sostituisce l'opzione di attivazione o disattivazione della piattaforma SaaS. È possibile attivare la modalità limitata al momento della creazione dell'account. Non può essere attivato o disattivato in un secondo momento.
 
 
 
