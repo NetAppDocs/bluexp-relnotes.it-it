@@ -331,18 +331,6 @@
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Prem Overview" è stata rinominata "on-premise Dashboard". In queste pagine sono state aggiunte alcune informazioni utili per valutare se è possibile ottimizzare lo spazio di storage con una configurazione di tiering aggiuntiva.</block>
   <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">Ora è possibile generare un report di tiering per i volumi</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">Scopri come scaricare il report sul tiering</block>
-  <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">6 dicembre 2022</block>
-  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Modifiche degli endpoint di accesso a Internet in uscita del connettore</block>
-  <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">A causa di una modifica nel tiering BlueXP, è necessario modificare i seguenti endpoint del connettore per eseguire correttamente il tiering BlueXP:</block>
-  <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">Vecchio endpoint</block>
-  <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">Nuovo endpoint</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">https://api.bluexp.netapp.com</block>
-  <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">https://*.cloudmanager.cloud.netapp.com</block>
-  <block id="37ba276f010f4ea07f1196b487811443" category="cell">https://*.api.bluexp.netapp.com</block>
-  <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="inline-link">AWS</block>
-  <block id="56ef2682280ac110060b881925a87b80" category="inline-link">Google Cloud</block>
-  <block id="3a580f142203677f1f0bc30898f63f53" category="inline-link">Azure</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">Modifiche recenti</block>
   <block id="ed8f5e7e321372398aae23788c3243a0" category="sidebar">Indice BlueXP</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
@@ -414,7 +402,6 @@
   <block id="c3f9f5f3154c847ae51038b02652e769" category="paragraph"><block ref="ebf81513d87da0002a3ac7ea6ee056cb" category="inline-link-rx"></block>.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
   <block id="af39bae06861b3074eed6e997f9a3ebf" category="paragraph">È possibile scaricare un report dalla pagina Tier Volumes per esaminare lo stato di tiering di tutti i volumi nei cluster che si stanno gestendo. BlueXP Tiering genera un file .CSV che è possibile rivedere e inviare ad altre persone dell'azienda in base alle necessità.<block ref="aaab920374e84f87020f8ba8578ab877" category="inline-link-rx"></block>.</block>
-  <block id="fa2934d386823619966e2cc6e222496c" category="paragraph">Consulta l'elenco completo degli endpoint per il<block ref="42eb7f749d4ba3adb326aa0a5756ba02" category="inline-link-rx"></block>,<block ref="96a9d4916fc49c8f082f1cb217b818c4" category="inline-link-rx"></block>, o.<block ref="4f16be4d60318c8ffb97ef574631956d" category="inline-link-rx"></block> ambiente cloud.</block>
   <block id="2b3e8f910d66604cd77f93b333670468" category="inline-link">Storage Azure Blob</block>
   <block id="a1182a2fefa3fdd8128a983a3d666611" category="list-text"><block ref="a1182a2fefa3fdd8128a983a3d666611" category="inline-link-rx"></block></block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="inline-link">Report sulla migrazione</block>
@@ -548,4 +535,24 @@
   <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:</block>
   <block id="9dcb0a1d3281e001a6085626a264be49" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io</block>
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.</block>
+  <block id="51276db22ab007bf8378ddc5150c089e" category="section-title">04 luglio 2023</block>
+  <block id="91abdc8faafafce1c7b76b1ecb8b37a6" category="list-text">Sistemi SAP HANA</block>
+  <block id="bd8b9d76d990f261019903335a2c9e94" category="list-text">Supporta il ripristino di connessione e copia di volumi non dati e volumi non dati globali con protezione secondaria Azure NetApp Files</block>
+  <block id="0ba30ac65d6a9a5888d4dc02307879d6" category="list-text">Supporta il ripristino dei database Oracle su Azure NetApp Files in una posizione alternativa</block>
+  <block id="699e0e6ae8fec9f5e5e383a17f5ec630" category="list-text">Supporta la catalogazione di Oracle Recovery Manager (RMAN) dei backup dei database Oracle su Azure NetApp Files</block>
+  <block id="02794f70b3a16972197aaf346fca198e" category="list-text">Consente di impostare l'host del database in modalità di manutenzione per eseguire le attività di manutenzione</block>
+  <block id="d7d2579b3be99740443be180188dedfc" category="list-text">Supporta il ripristino in una posizione alternativa</block>
+  <block id="b0e856a98075908a96697bb21ab6fe32" category="list-text">Consente di montare backup di database Oracle</block>
+  <block id="9e9fa16d2206e067234a9dad53361ff4" category="list-text">Supporta lo spostamento dei backup da GCP a Tier di archiviazione</block>
+  <block id="e0d4183564323d306658a92b138bac87" category="section-title">Miglioramenti al backup e ripristino BlueXP per macchine virtuali (ibrido)</block>
+  <block id="64870b941ab2700a64f496038bfb77a9" category="list-text">Supporta la protezione di datastore di tipo NFS e VMFS</block>
+  <block id="c54bd2b10766a492ae36855e868d61eb" category="list-text">Consente di annullare la registrazione del plug-in SnapCenter per l'host VMware vSphere</block>
+  <block id="08c34207830d8869e05cd28a4543f5dc" category="list-text">Supporta il refresh e il rilevamento di datastore e backup più recenti</block>
+  <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 luglio 2023</block>
+  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Ora è possibile regolare la larghezza di banda utilizzata per caricare i dati inattivi nello storage a oggetti</block>
+  <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Quando si attiva il tiering BlueXP, ONTAP può utilizzare una quantità illimitata di larghezza di banda di rete per trasferire i dati inattivi dai volumi nel cluster allo storage a oggetti. Se si nota che il traffico di tiering influisce sui normali carichi di lavoro degli utenti, è possibile ridurre la quantità di larghezza di banda che può essere utilizzata durante il trasferimento.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
+  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">L'evento di tiering per "tiering basso" viene visualizzato nel Centro notifiche</block>
+  <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">L'evento di tiering "Tiering additional data from cluster &lt;name&gt; to object storage to aumento your storage efficiency" viene ora visualizzato come notifica quando un cluster tiering meno del 20% dei suoi dati cold - compresi i cluster che non tierano dati.</block>
+  <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calcolo del costo totale di proprietà e del risparmio di BlueXP Tiering</block>
+  <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Questa notifica è un "consiglio" per rendere i sistemi più efficienti e risparmiare sui costi di storage. Fornisce un collegamento a<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> per aiutarti a calcolare i risparmi sui costi.</block>
 </blocks>

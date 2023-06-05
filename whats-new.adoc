@@ -259,6 +259,46 @@ Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas pe
 
 
 
+=== 04 luglio 2023
+
+
+
+==== Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)
+
+* Sistemi SAP HANA
++
+** Supporta il ripristino di connessione e copia di volumi non dati e volumi non dati globali con protezione secondaria Azure NetApp Files
+
+
+* Database Oracle
++
+** Supporta il ripristino dei database Oracle su Azure NetApp Files in una posizione alternativa
+** Supporta la catalogazione di Oracle Recovery Manager (RMAN) dei backup dei database Oracle su Azure NetApp Files
+** Consente di impostare l'host del database in modalità di manutenzione per eseguire le attività di manutenzione
+
+
+
+
+
+
+==== Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)
+
+* Supporta il ripristino in una posizione alternativa
+* Consente di montare backup di database Oracle
+* Supporta lo spostamento dei backup da GCP a Tier di archiviazione
+
+
+
+
+==== Miglioramenti al backup e ripristino BlueXP per macchine virtuali (ibrido)
+
+* Supporta la protezione di datastore di tipo NFS e VMFS
+* Consente di annullare la registrazione del plug-in SnapCenter per l'host VMware vSphere
+* Supporta il refresh e il rilevamento di datastore e backup più recenti
+
+
+
+
 === 5 giugno 2023
 
 
@@ -1198,6 +1238,24 @@ Ora puoi scoprire i tuoi sistemi StorageGRID direttamente da BlueXP. Discovering
 
 
 
+=== 4 luglio 2023
+
+
+
+==== Ora è possibile regolare la larghezza di banda utilizzata per caricare i dati inattivi nello storage a oggetti
+
+Quando si attiva il tiering BlueXP, ONTAP può utilizzare una quantità illimitata di larghezza di banda di rete per trasferire i dati inattivi dai volumi nel cluster allo storage a oggetti. Se si nota che il traffico di tiering influisce sui normali carichi di lavoro degli utenti, è possibile ridurre la quantità di larghezza di banda che può essere utilizzata durante il trasferimento. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["Scopri di più"].
+
+
+
+==== L'evento di tiering per "tiering basso" viene visualizzato nel Centro notifiche
+
+L'evento di tiering "Tiering additional data from cluster <name> to object storage to aumento your storage efficiency" viene ora visualizzato come notifica quando un cluster tiering meno del 20% dei suoi dati cold - compresi i cluster che non tierano dati.
+
+Questa notifica è un "consiglio" per rendere i sistemi più efficienti e risparmiare sui costi di storage. Fornisce un collegamento a https://bluexp.netapp.com/cloud-tiering-service-tco["Calcolo del costo totale di proprietà e del risparmio di BlueXP Tiering"^] per aiutarti a calcolare i risparmi sui costi.
+
+
+
 === 3 aprile 2023
 
 
@@ -1221,28 +1279,6 @@ La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Pr
 ==== Ora è possibile generare un report di tiering per i volumi
 
 È possibile scaricare un report dalla pagina Tier Volumes per esaminare lo stato di tiering di tutti i volumi nei cluster che si stanno gestendo. BlueXP Tiering genera un file .CSV che è possibile rivedere e inviare ad altre persone dell'azienda in base alle necessità. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Scopri come scaricare il report sul tiering"].
-
-
-
-=== 6 dicembre 2022
-
-
-
-==== Modifiche degli endpoint di accesso a Internet in uscita del connettore
-
-A causa di una modifica nel tiering BlueXP, è necessario modificare i seguenti endpoint del connettore per eseguire correttamente il tiering BlueXP:
-
-[cols="50,50"]
-|===
-| Vecchio endpoint | Nuovo endpoint 
-
-
-| https://cloudmanager.cloud.netapp.com | https://api.bluexp.netapp.com 
-
-
-| https://*.cloudmanager.cloud.netapp.com | https://*.api.bluexp.netapp.com 
-|===
-Consulta l'elenco completo degli endpoint per il https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^], https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^], o. https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] ambiente cloud.
 
 
 
