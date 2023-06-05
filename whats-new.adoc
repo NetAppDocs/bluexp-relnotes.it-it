@@ -53,6 +53,10 @@ Nell'ambito di questa modifica, la registrazione al supporto per un account Blue
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Una schermata della ricerca BlueXP disponibile nella parte superiore della console."]
 
+* Il connettore consente ora di aggiungere e gestire gli account di storage Azure da BlueXP.
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Scopri come aggiungere nuovi account di storage Azure negli abbonamenti Azure di BlueXP"^].
+
 * Il connettore è ora supportato nelle seguenti aree AWS:
 +
 ** Hyderabad (ap-sud-2)
@@ -390,7 +394,7 @@ I nomi giapponesi possono ora essere inseriti quando si cerca il nome di un sogg
 
 ==== Ubuntu è ora una distribuzione Linux supportata su cui è possibile installare la classificazione BlueXP
 
-Ubuntu 22.04 è stato qualificato come sistema operativo supportato per la classificazione BlueXP. È possibile installare la classificazione BlueXP su un host Ubuntu Linux nella rete o su un host Linux nel cloud. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Scopri come installare la classificazione BlueXP su un host con Ubuntu installato"].
+Ubuntu 22.04 è stato qualificato come sistema operativo supportato per la classificazione BlueXP. È possibile installare la classificazione BlueXP su un host Ubuntu Linux nella rete o su un host Linux nel cloud quando si utilizza la versione 1.23 del programma di installazione. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Scopri come installare la classificazione BlueXP su un host con Ubuntu installato"].
 
 
 
