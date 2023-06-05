@@ -207,6 +207,14 @@ La possibilità di creare e gestire Azure NetApp Files direttamente da Cloud Man
 
 
 
+=== 02 luglio 2023
+
+* Ora puoi farlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Aggiungere una VM di storage"] Al file system Amazon FSX per NetApp ONTAP utilizzando BlueXP.
+* La scheda **le mie opportunità** è ora **la mia proprietà**. La documentazione viene aggiornata in modo da riflettere il nuovo nome.
+
+
+
+
 === 04 giugno 2023
 
 * Quando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["creazione di un ambiente di lavoro"], è possibile specificare l'ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non sia in conflitto con le attività aziendali critiche.
@@ -220,12 +228,6 @@ La possibilità di creare e gestire Azure NetApp Files direttamente da Cloud Man
 * Quando si crea un ambiente di lavoro, è ora possibile utilizzare BlueXP link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["generare un gruppo di sicurezza"^] Che consente il traffico solo all'interno del VPC selezionato. Questa funzione link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["richiede autorizzazioni aggiuntive"^].
 * È possibile scegliere se link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["aggiungi"^] e. link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["modificare"^] tag per categorizzare i volumi.
 
-
-
-
-=== 02 aprile 2023
-
-Il limite IOPS viene aumentato per consentire il provisioning manuale o automatico fino a 160,000.
 
 
 
@@ -501,6 +503,42 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 
 
+=== 2 luglio 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettore.
+
+
+
+==== Supporto per implementazioni di zone a disponibilità multipla in ha in Azure
+
+La centrale giapponese orientale e coreana di Azure ora supporta implementazioni di zone ad alta disponibilità per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
+
+Per un elenco di tutte le regioni che supportano più zone di disponibilità, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^].
+
+
+
+==== Supporto autonomo per la protezione ransomware
+
+La protezione ransomware autonoma (ARP) è ora supportata su Cloud Volumes ONTAP. Il supporto ARP è disponibile su Cloud Volumes ONTAP versione 9.12.1 e successive.
+
+Per ulteriori informazioni su ARP con Cloud Volumes ONTAP, vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Protezione ransomware autonoma"].
+
+
+
+=== 26 giugno 2023
+
+La seguente modifica è stata introdotta con la versione 3.9.30 del connettore.
+
+
+
+==== Cloud Volumes ONTAP 9.13.1 RC1
+
+BlueXP è ora in grado di implementare e gestire Cloud Volumes ONTAP 9.13.1 in AWS, Azure e Google Cloud.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
+
+
+
 === 4 giugno 2023
 
 La seguente modifica è stata introdotta con la versione 3.9.30 del connettore.
@@ -556,18 +594,6 @@ Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-clo
 ==== Viene ora visualizzata una notifica quando si accede a BlueXP senza un abbonamento al marketplace
 
 Viene visualizzata una notifica ogni volta che si accede a Cloud Volumes ONTAP in BlueXP senza un abbonamento al marketplace. La notifica indica "è necessario un abbonamento al mercato per questo ambiente di lavoro per essere conforme ai termini e alle condizioni di Cloud Volumes ONTAP".
-
-
-
-=== 4 aprile 2023
-
-A partire da Cloud Volumes ONTAP 9.12.1 GA, le regioni della Cina sono ora supportate in AWS come segue.
-
-* Sono supportati i sistemi a nodo singolo.
-* Sono supportate le licenze acquistate direttamente da NetApp.
-
-
-Per informazioni sulla disponibilità regionale, vedere link:https://bluexp.netapp.com/cloud-volumes-global-regions["Mappe delle regioni globali per Cloud Volumes ONTAP"^].
 
 
 
@@ -943,6 +969,18 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["Scopri
 
 
 
+=== 2 luglio 2023
+
+
+
+==== Rilevamento cluster da My estate
+
+Ora puoi scoprire i cluster ONTAP on-premise da *Canvas > My estate* selezionando un cluster che BlueXP ha scoperto in base ai cluster ONTAP associati all'indirizzo e-mail per il tuo login BlueXP.
+
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Scopri come scoprire i cluster dalla pagina My estate"].
+
+
+
 === 4 maggio 2023
 
 
@@ -981,18 +1019,6 @@ Quando si avvia il processo di rilevamento, BlueXP rileva il cluster come segue:
 
 
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Scopri di più sulle opzioni di rilevamento e gestione"].
-
-
-
-=== 1 gennaio 2023
-
-
-
-==== Salva le credenziali ONTAP
-
-Quando si apre un ambiente di lavoro ONTAP on-premise scoperto direttamente senza utilizzare un connettore, è ora possibile salvare le credenziali del cluster ONTAP in modo che non sia necessario inserirle ogni volta che si apre l'ambiente di lavoro.
-
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-manage-ontap-direct.html["Scopri di più su questa opzione."]
 
 
 
