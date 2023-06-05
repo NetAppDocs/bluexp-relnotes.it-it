@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-05-31 15:36:50 +0000">05/31/2023</time>
+    <time datetime="2023-06-05 18:46:03 +0000">06/05/2023</time>
     
   
 
@@ -500,9 +500,14 @@
 <li><a href="#introduzione-di-bluexp">Introduzione di BlueXP</a></li>
 <li><a href="#funzionalità-amministrative">Funzionalità amministrative</a>
 <ul class="sectlevel2">
+<li><a href="#4-giugno-2023">4 giugno 2023</a></li>
 <li><a href="#7-maggio-2023">7 maggio 2023</a></li>
 <li><a href="#4-aprile-2023">4 aprile 2023</a></li>
-<li><a href="#3-aprile-2023">3 aprile 2023</a></li>
+</ul>
+</li>
+<li><a href="#storage-azure-blob">Storage Azure Blob</a>
+<ul class="sectlevel2">
+<li><a href="#5-giugno-2023">5 giugno 2023</a></li>
 </ul>
 </li>
 <li><a href="#azure-netapp-files">Azure NetApp Files</a>
@@ -514,9 +519,9 @@
 </li>
 <li><a href="#amazon-fsx-per-ontap">Amazon FSX per ONTAP</a>
 <ul class="sectlevel2">
+<li><a href="#04-giugno-2023">04 giugno 2023</a></li>
 <li><a href="#07-maggio-2023">07 maggio 2023</a></li>
 <li><a href="#02-aprile-2023">02 aprile 2023</a></li>
-<li><a href="#05-marzo-2023">05 marzo 2023</a></li>
 </ul>
 </li>
 <li><a href="#storage-amazon-s3">Storage Amazon S3</a>
@@ -541,9 +546,9 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
+<li><a href="#4-giugno-2023-2">4 giugno 2023</a></li>
 <li><a href="#7-maggio-2023-2">7 maggio 2023</a></li>
 <li><a href="#4-aprile-2023-3">4 aprile 2023</a></li>
-<li><a href="#3-aprile-2023-2">3 aprile 2023</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-service-per-google-cloud">Cloud Volumes Service per Google Cloud</a>
@@ -572,7 +577,7 @@
 <li><a href="#portafoglio-digitale">Portafoglio digitale</a>
 <ul class="sectlevel2">
 <li><a href="#7-maggio-2023-3">7 maggio 2023</a></li>
-<li><a href="#3-aprile-2023-3">3 aprile 2023</a></li>
+<li><a href="#3-aprile-2023">3 aprile 2023</a></li>
 <li><a href="#6-novembre-2022">6 novembre 2022</a></li>
 </ul>
 </li>
@@ -596,14 +601,19 @@
 <li><a href="#kubernetes">Kubernetes</a>
 <ul class="sectlevel2">
 <li><a href="#02-aprile-2023-3">02 aprile 2023</a></li>
-<li><a href="#05-marzo-2023-2">05 marzo 2023</a></li>
+<li><a href="#05-marzo-2023">05 marzo 2023</a></li>
 <li><a href="#06-novembre-2022">06 novembre 2022</a></li>
+</ul>
+</li>
+<li><a href="#report-sulla-migrazione">Report sulla migrazione</a>
+<ul class="sectlevel2">
+<li><a href="#02-giugno-2023">02 giugno 2023</a></li>
 </ul>
 </li>
 <li><a href="#cluster-ontap-on-premise">Cluster ONTAP on-premise</a>
 <ul class="sectlevel2">
 <li><a href="#4-maggio-2023">4 maggio 2023</a></li>
-<li><a href="#3-aprile-2023-4">3 aprile 2023</a></li>
+<li><a href="#3-aprile-2023-2">3 aprile 2023</a></li>
 <li><a href="#1-gennaio-2023">1 gennaio 2023</a></li>
 </ul>
 </li>
@@ -614,7 +624,7 @@
 </li>
 <li><a href="#protezione-ransomware">Protezione ransomware</a>
 <ul class="sectlevel2">
-<li><a href="#3-aprile-2023-5">3 aprile 2023</a></li>
+<li><a href="#3-aprile-2023-3">3 aprile 2023</a></li>
 <li><a href="#7-marzo-2023-2">7 marzo 2023</a></li>
 <li><a href="#5-febbraio-2023">5 febbraio 2023</a></li>
 </ul>
@@ -640,9 +650,14 @@
 </li>
 <li><a href="#tiering">Tiering</a>
 <ul class="sectlevel2">
-<li><a href="#3-aprile-2023-6">3 aprile 2023</a></li>
+<li><a href="#3-aprile-2023-4">3 aprile 2023</a></li>
 <li><a href="#5-marzo-2023-2">5 marzo 2023</a></li>
 <li><a href="#6-dicembre-2022">6 dicembre 2022</a></li>
+</ul>
+</li>
+<li><a href="#caching-dei-volumi">Caching dei volumi</a>
+<ul class="sectlevel2">
+<li><a href="#04-giugno-2023-2">04 giugno 2023</a></li>
 </ul>
 </li>
 </ul>
@@ -667,6 +682,104 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>In questa sezione vengono descritte le nuove funzionalità relative alle funzioni di amministrazione di BlueXP: Account, connettori, credenziali del provider cloud e altro ancora.</p>
+</div>
+<div class="sect2">
+<h3 id="4-giugno-2023">4 giugno 2023</h3>
+<div class="sect3">
+<h4 id="connettore-3-9-30">Connettore 3.9.30</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Quando si apre un caso di supporto NetApp dalla dashboard di supporto, BlueXP apre il caso utilizzando l&#8217;account del sito di supporto NetApp associato all&#8217;accesso a BlueXP. In precedenza, BlueXP ha utilizzato l&#8217;account del sito di supporto NetApp associato all&#8217;intero account BlueXP.</p>
+<div class="paragraph">
+<p>Nell&#8217;ambito di questa modifica, la registrazione al supporto per un account BlueXP viene ora effettuata tramite l&#8217;account del sito di supporto NetApp associato all&#8217;accesso BlueXP di un utente. In precedenza, la registrazione al supporto era effettuata tramite un account NSS associato all&#8217;intero account BlueXP. Di conseguenza, altri utenti di BlueXP non visualizzeranno lo stesso stato di registrazione del supporto se non hanno associato un account del sito di supporto NetApp al proprio login BlueXP. Se in precedenza hai registrato il tuo account BlueXP per il supporto, lo stato di registrazione è ancora valido. Basta aggiungere un account NSS a livello utente per visualizzare lo stato.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support">"Scopri come creare un caso con il supporto NetApp"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html">"Scopri come gestire le credenziali associate all&#8217;accesso a BlueXP"</a></p>
+</li>
+<li>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html">"Scopri come registrarti per il supporto"</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Ora puoi cercare la documentazione da BlueXP. I risultati della ricerca ora forniscono link ai contenuti su docs.netapp.com e kb.netapp.com, che potrebbero aiutare a rispondere a una domanda che hai.</p>
+<div class="paragraph">
+<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png" alt="Una schermata della ricerca BlueXP disponibile nella parte superiore della console."></span></p>
+</div>
+</li>
+<li>
+<p>Il connettore è ora supportato nelle seguenti aree AWS:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Hyderabad (ap-sud-2)</p>
+</li>
+<li>
+<p>Melbourne (ap-sud-est-4)</p>
+</li>
+<li>
+<p>Spagna (ue-Sud-2)</p>
+</li>
+<li>
+<p>Emirati Arabi Uniti (me-Central-1)</p>
+</li>
+<li>
+<p>Zurigo (eu-Central-2)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Il connettore è ora supportato nelle seguenti aree di Azure:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Brasile Sud</p>
+</li>
+<li>
+<p>Francia Sud</p>
+</li>
+<li>
+<p>Jio India Central</p>
+</li>
+<li>
+<p>Jio India ovest</p>
+</li>
+<li>
+<p>Polonia centrale</p>
+</li>
+<li>
+<p>Qatar Central</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Il connettore è ora supportato nelle seguenti aree di Google Cloud:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Columbus (US-east5)</p>
+</li>
+<li>
+<p>Dallas (US-South1)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Visualizza l&#8217;elenco completo delle regioni supportate"</a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="7-maggio-2023">7 maggio 2023</h3>
@@ -745,56 +858,17 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="storage-azure-blob">Storage Azure Blob</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="3-aprile-2023">3 aprile 2023</h3>
+<h3 id="5-giugno-2023">5 giugno 2023</h3>
 <div class="sect3">
-<h4 id="connettore-3-9-28">Connettore 3.9.28</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Le notifiche e-mail sono ora supportate con il portafoglio digitale BlueXP.</p>
+<h4 id="possibilità-di-aggiungere-nuovi-account-storage-da-bluexp">Possibilità di aggiungere nuovi account storage da BlueXP</h4>
 <div class="paragraph">
-<p>Se si configurano le impostazioni di notifica, è possibile ricevere notifiche via email quando le licenze BYOL stanno per scadere (una notifica di "avviso") o se sono già scadute (una notifica di "errore").</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html">"Scopri come configurare le notifiche via e-mail"</a>.</p>
-</div>
-</li>
-<li>
-<p>Il connettore è ora supportato nella regione di Google Cloud Turin.</p>
-<div class="paragraph">
-<p><a href="https://cloud.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Visualizza l&#8217;elenco completo delle regioni supportate"</a></p>
-</div>
-</li>
-<li>
-<p>È ora possibile gestire le credenziali utente associate all&#8217;accesso BlueXP: Credenziali ONTAP e credenziali del sito di supporto NetApp.</p>
-<div class="paragraph">
-<p>Quando si seleziona <strong>Impostazioni &gt; credenziali</strong>, è possibile visualizzare le credenziali, aggiornare le credenziali ed eliminarle. Ad esempio, se si modifica la password per queste credenziali, sarà necessario aggiornare la password in BlueXP.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.html">"Scopri come gestire le credenziali utente"</a>.</p>
-</div>
-</li>
-<li>
-<p>È ora possibile caricare gli allegati quando si crea un caso di supporto o quando si aggiornano le note del caso per un caso di supporto esistente.</p>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases">"Scopri come creare e gestire i casi di supporto"</a>.</p>
-</div>
-</li>
-<li>
-<p>Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023" target="_blank" rel="noopener">"Scopri i miglioramenti di Cloud Volumes ONTAP"</a></p>
-</li>
-<li>
-<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023" target="_blank" rel="noopener">"Scopri i miglioramenti del cluster on-premise di ONTAP"</a></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
+<p>Hai avuto la possibilità di visualizzare Azure Blob Storage su BlueXP Canvas per un bel po' di tempo. Ora puoi aggiungere nuovi account storage e modificare le proprietà degli account storage esistenti direttamente da BlueXP. <a href="https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html" target="_blank" rel="noopener">"Scopri come aggiungere nuovi account di storage Azure Blob"</a>.</p>
 </div>
 </div>
 </div>
@@ -868,6 +942,19 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h2 id="amazon-fsx-per-ontap">Amazon FSX per ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="04-giugno-2023">04 giugno 2023</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Quando <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment">"creazione di un ambiente di lavoro"</a>, è possibile specificare l&#8217;ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non sia in conflitto con le attività aziendali critiche.</p>
+</li>
+<li>
+<p>Quando <a href="https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html">"creazione di un volume"</a>, È possibile abilitare l&#8217;ottimizzazione dei dati creando un FlexGroup per distribuire i dati tra i volumi.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
 <h3 id="07-maggio-2023">07 maggio 2023</h3>
 <div class="ulist">
 <ul>
@@ -884,12 +971,6 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h3 id="02-aprile-2023">02 aprile 2023</h3>
 <div class="paragraph">
 <p>Il limite IOPS viene aumentato per consentire il provisioning manuale o automatico fino a 160,000.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="05-marzo-2023">05 marzo 2023</h3>
-<div class="paragraph">
-<p>Sono stati apportati miglioramenti all&#8217;interfaccia utente e sono state aggiornate le schermate nella documentazione.</p>
 </div>
 </div>
 </div>
@@ -1222,6 +1303,21 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="4-giugno-2023-2">4 giugno 2023</h3>
+<div class="paragraph">
+<p>La seguente modifica è stata introdotta con la versione 3.9.30 del connettore.</p>
+</div>
+<div class="sect3">
+<h4 id="aggiornamento-del-selettore-della-versione-di-aggiornamento-di-cloud-volumes-ontap">Aggiornamento del selettore della versione di aggiornamento di Cloud Volumes ONTAP</h4>
+<div class="paragraph">
+<p>Dalla pagina Upgrade Cloud Volumes ONTAP (aggiornamento versione), è possibile scegliere di eseguire l&#8217;aggiornamento alla versione più recente disponibile di Cloud Volumes ONTAP o a una versione precedente.</p>
+</div>
+<div class="paragraph">
+<p>Per ulteriori informazioni sull&#8217;aggiornamento di Cloud Volumes ONTAP tramite BlueXP, vedere <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap" target="_blank" rel="noopener">"Aggiornare Cloud Volumes ONTAP"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="7-maggio-2023-2">7 maggio 2023</h3>
 <div class="paragraph">
 <p>Le seguenti modifiche sono state introdotte con la versione 3.9.29 del connettore.</p>
@@ -1293,66 +1389,6 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 <div class="paragraph">
 <p>Per informazioni sulla disponibilità regionale, vedere <a href="https://bluexp.netapp.com/cloud-volumes-global-regions" target="_blank" rel="noopener">"Mappe delle regioni globali per Cloud Volumes ONTAP"</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="3-aprile-2023-2">3 aprile 2023</h3>
-<div class="paragraph">
-<p>Le seguenti modifiche sono state introdotte con la versione 3.9.28 del connettore.</p>
-</div>
-<div class="sect3">
-<h4 id="regione-di-torino-ora-supportata-in-google-cloud">Regione di Torino ora supportata in Google Cloud</h4>
-<div class="paragraph">
-<p>La regione di Torino è ora supportata in Google Cloud per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="ottimizzazione-del-portafoglio-digitale-bluexp">Ottimizzazione del portafoglio digitale BlueXP</h4>
-<div class="paragraph">
-<p>Il portafoglio digitale BlueXP ora mostra la capacità concessa in licenza acquistata con le offerte private Marketplace.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html" target="_blank" rel="noopener">"Scopri come visualizzare la capacità consumata nel tuo account"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="supporto-per-i-commenti-durante-la-creazione-del-volume">Supporto per i commenti durante la creazione del volume</h4>
-<div class="paragraph">
-<p>Questa versione consente di creare commenti durante la creazione di un volume Cloud Volumes ONTAP FlexGroup o FlexVol quando si utilizza l&#8217;API.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="riprogettazione-dellinterfaccia-utente-di-bluexp-per-le-pagine-panoramica-volumi-e-aggregati-di-cloud-volumes-ontap">Riprogettazione dell&#8217;interfaccia utente di BlueXP per le pagine Panoramica, volumi e aggregati di Cloud Volumes ONTAP</h4>
-<div class="paragraph">
-<p>BlueXP dispone ora di un&#8217;interfaccia utente riprogettata per le pagine Panoramica, volumi e aggregati di Cloud Volumes ONTAP. Il design basato su sezioni presenta informazioni più complete in ogni sezione per una migliore esperienza utente.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png" alt="Questa schermata mostra l&#8217;interfaccia utente di BlueXP riprogettata nella pagina di panoramica di Cloud Volumes ONTAP. Varie sezioni mostrano l&#8217;efficienza dello storage, la versione, la distribuzione della capacità, le informazioni sull&#8217;implementazione di Cloud Volumes ONTAP, i volumi, gli aggregati, le repliche e i backup."></span></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="volumi-flexgroup-visualizzabili-tramite-cloud-volumes-ontap">Volumi FlexGroup visualizzabili tramite Cloud Volumes ONTAP</h4>
-<div class="paragraph">
-<p>I volumi FlexGroup creati direttamente tramite CLI o Gestore di sistema sono ora visualizzabili attraverso il riquadro dei volumi riprogettati in BlueXP. Identico alle informazioni fornite per i volumi FlexVol, BlueXP fornisce informazioni dettagliate per i volumi FlexGroup creati attraverso una sezione dedicata ai volumi.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/bluexp-relnotes/images/note.svg" alt="Nota">
-</td>
-<td class="content">
-Attualmente, in BlueXP è possibile visualizzare solo i volumi FlexGroup esistenti. La possibilità di creare volumi FlexGroup in BlueXP non è disponibile, ma è prevista per una release futura.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png" alt="Una schermata che mostra l&#8217;icona del volume FlexGroup con il mouse sotto il riquadro Volumes (volumi)."></span></p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html" target="_blank" rel="noopener">"Scopri di più sulla visualizzazione dei volumi FlexGroup creati."</a></p>
-</div>
 </div>
 </div>
 </div>
@@ -1567,7 +1603,7 @@ Attualmente, in BlueXP è possibile visualizzare solo i volumi FlexGroup esisten
 </div>
 </div>
 <div class="sect2">
-<h3 id="3-aprile-2023-3">3 aprile 2023</h3>
+<h3 id="3-aprile-2023">3 aprile 2023</h3>
 <div class="sect3">
 <h4 id="notifiche-via-email">Notifiche via email</h4>
 <div class="paragraph">
@@ -1577,7 +1613,7 @@ Attualmente, in BlueXP è possibile visualizzare solo i volumi FlexGroup esisten
 <p>Se si configurano le impostazioni di notifica, è possibile ricevere notifiche via email quando le licenze BYOL stanno per scadere (una notifica di "avviso") o se sono già scadute (una notifica di "errore").</p>
 </div>
 <div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html" target="_blank" rel="noopener">"Scopri come configurare le notifiche via e-mail"</a></p>
+<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html" target="_blank" rel="noopener">"Scopri come configurare le notifiche via e-mail"</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1743,7 +1779,7 @@ Attualmente, in BlueXP è possibile visualizzare solo i volumi FlexGroup esisten
 </div>
 </div>
 <div class="sect2">
-<h3 id="05-marzo-2023-2">05 marzo 2023</h3>
+<h3 id="05-marzo-2023">05 marzo 2023</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -1759,6 +1795,23 @@ Attualmente, in BlueXP è possibile visualizzare solo i volumi FlexGroup esisten
 <h3 id="06-novembre-2022">06 novembre 2022</h3>
 <div class="paragraph">
 <p>Quando <a href="https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage-storage-classes.html#add-storage-classes">"definizione delle classi di storage"</a>, è ora possibile abilitare lo storage economy di classe storage per lo storage a blocchi o su file system.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="report-sulla-migrazione">Report sulla migrazione</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="02-giugno-2023">02 giugno 2023</h3>
+<div class="paragraph">
+<p>Con il nuovo servizio di report sulla migrazione di BlueXP, puoi identificare rapidamente il numero di file, directory, collegamenti simbolici, hard link, profondità e ampiezza degli alberi dei file system, file di grandi dimensioni e altro ancora nel tuo ambiente di storage.</p>
+</div>
+<div class="paragraph">
+<p>Grazie a queste informazioni, saprai in anticipo che il processo che desideri utilizzare può gestire l&#8217;inventario in modo efficiente e efficace.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html">"Scopri di più sui report di migrazione BlueXP"</a>.</p>
 </div>
 </div>
 </div>
@@ -1794,7 +1847,7 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 </div>
 </div>
 <div class="sect2">
-<h3 id="3-aprile-2023-4">3 aprile 2023</h3>
+<h3 id="3-aprile-2023-2">3 aprile 2023</h3>
 <div class="sect3">
 <h4 id="singola-opzione-di-rilevamento-dalla-console-bluexp">Singola opzione di rilevamento dalla console BlueXP</h4>
 <div class="paragraph">
@@ -1859,7 +1912,7 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 <h2 id="protezione-ransomware">Protezione ransomware</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="3-aprile-2023-5">3 aprile 2023</h3>
+<h3 id="3-aprile-2023-3">3 aprile 2023</h3>
 <div class="sect3">
 <h4 id="nuove-azioni-consigliate-per-proteggere-i-dati-da-attacchi-ransomware">Nuove azioni consigliate per proteggere i dati da attacchi ransomware</h4>
 <div class="ulist">
@@ -2019,7 +2072,7 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 <h2 id="tiering">Tiering</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="3-aprile-2023-6">3 aprile 2023</h3>
+<h3 id="3-aprile-2023-4">3 aprile 2023</h3>
 <div class="sect3">
 <h4 id="la-scheda-licensing-licenze-è-stata-rimossa">La scheda Licensing (licenze) è stata rimossa</h4>
 <div class="paragraph">
@@ -2074,6 +2127,23 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 <div class="paragraph">
 <p>Consulta l&#8217;elenco completo degli endpoint per il <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access" target="_blank" rel="noopener">"AWS"</a>, <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access" target="_blank" rel="noopener">"Google Cloud"</a>, o. <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access" target="_blank" rel="noopener">"Azure"</a> ambiente cloud.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="caching-dei-volumi">Caching dei volumi</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="04-giugno-2023-2">04 giugno 2023</h3>
+<div class="paragraph">
+<p>Il caching dei volumi, una funzionalità del software ONTAP 9, è una funzionalità di caching remoto che semplifica la distribuzione dei file, riduce la latenza WAN avvicinando le risorse a dove si trovano gli utenti e le risorse di calcolo e riduce i costi della larghezza di banda della WAN. Il caching dei volumi fornisce un volume persistente e scrivibile in un luogo remoto. È possibile utilizzare il caching dei volumi BlueXP per accelerare l&#8217;accesso ai dati o per trasferire il traffico dai volumi ad accesso elevato. I volumi della cache sono ideali per carichi di lavoro a elevata intensità di lettura, in particolare quando i client devono accedere ripetutamente agli stessi dati.</p>
+</div>
+<div class="paragraph">
+<p>Con il caching dei volumi BlueXP, hai a disposizione funzionalità di caching per il cloud, in particolare per Amazon FSX per NetApp ONTAP, Cloud Volumes ONTAP e on-premise come ambienti di lavoro.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-volume-caching/get-started/cache-intro.html">"Scopri di più sul caching dei volumi BlueXP"</a>.</p>
 </div>
 </div>
 </div>
