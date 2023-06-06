@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-05 18:46:03 +0000">06/05/2023</time>
+    <time datetime="2023-06-06 18:55:09 +0000">06/06/2023</time>
     
   
 
@@ -531,14 +531,15 @@
 </li>
 <li><a href="#backup-e-recovery">Backup e recovery</a>
 <ul class="sectlevel2">
+<li><a href="#5-giugno-2023-2">5 giugno 2023</a></li>
 <li><a href="#8-maggio-2023">8 maggio 2023</a></li>
 <li><a href="#14-aprile-2023">14 aprile 2023</a></li>
 <li><a href="#4-aprile-2023-2">4 aprile 2023</a></li>
-<li><a href="#9-marzo-2023">9 marzo 2023</a></li>
 </ul>
 </li>
 <li><a href="#classificazione">Classificazione</a>
 <ul class="sectlevel2">
+<li><a href="#6-giugno-2023-versione-1-23">6 giugno 2023 (versione 1.23)</a></li>
 <li><a href="#3-aprile-2023-versione-1-22">3 aprile 2023 (versione 1.22)</a></li>
 <li><a href="#7-marzo-2023-versione-1-21">7 marzo 2023 (versione 1.21)</a></li>
 <li><a href="#5-febbraio-2023-versione-1-20">5 febbraio 2023 (versione 1.20)</a></li>
@@ -993,6 +994,42 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h2 id="backup-e-recovery">Backup e recovery</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="5-giugno-2023-2">5 giugno 2023</h3>
+<div class="sect3">
+<h4 id="è-possibile-eseguire-il-backup-e-la-protezione-dei-volumi-flexgroup-utilizzando-datalock-e-la-protezione-ransomware">È possibile eseguire il backup e la protezione dei volumi FlexGroup utilizzando DataLock e la protezione ransomware</h4>
+<div class="paragraph">
+<p>I criteri di backup per i volumi FlexGroup possono ora utilizzare la protezione DataLock e ransomware quando il cluster esegue ONTAP 9.13.1 o superiore.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="nuove-funzionalità-di-reporting">Nuove funzionalità di reporting</h4>
+<div class="paragraph">
+<p>È ora disponibile una scheda Report in cui è possibile generare un report di Backup Inventory, che include tutti i backup per un account specifico, un ambiente di lavoro o un inventario SVM. È inoltre possibile creare un report Data Protection Job Activity, che fornisce informazioni sulle operazioni di Snapshot, backup, clonazione e ripristino che possono essere utili per il monitoraggio dei contratti di servizio. Fare riferimento a. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-report-inventory.html">"Report sulla copertura per la data Protection"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="miglioramenti-di-job-monitor">Miglioramenti di Job Monitor</h4>
+<div class="paragraph">
+<p>È ora possibile rivedere il <em>ciclo di vita del backup</em> come tipo di lavoro nella pagina Job Monitor, per tenere traccia dell&#8217;intero ciclo di vita del backup. È inoltre possibile visualizzare i dettagli di tutte le operazioni nella timeline di BlueXP. Fare riferimento a. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html">"Monitorare lo stato dei processi di backup e ripristino"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="avviso-di-notifica-aggiuntivo-per-etichette-di-policy-non-corrispondenti">Avviso di notifica aggiuntivo per etichette di policy non corrispondenti</h4>
+<div class="paragraph">
+<p>È stato aggiunto un nuovo avviso di backup: "I file di backup non sono stati creati perché le etichette dei criteri Snapshot non corrispondono". Se la <em>label</em> definita in un criterio di backup non ha un&#8217;etichetta <em>corrispondente</em> nel criterio Snapshot, non verrà creato alcun file di backup. Per aggiungere l&#8217;etichetta mancante al criterio Snapshot del volume, è necessario utilizzare Gestione di sistema o l&#8217;interfaccia utente di ONTAP.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center">"Esaminare tutti gli avvisi che il backup e ripristino BlueXP può inviare"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="backup-automatico-dei-file-critici-di-backup-e-ripristino-bluexp-in-siti-bui">Backup automatico dei file critici di backup e ripristino BlueXP in siti bui</h4>
+<div class="paragraph">
+<p>Quando si utilizza il backup e ripristino BlueXP in un sito senza accesso a Internet, noto come implementazione in "modalità privata", le informazioni di backup e ripristino di BlueXP vengono memorizzate solo sul sistema di connessione locale. Questa nuova funzionalità esegue automaticamente il backup dei dati critici di backup e ripristino di BlueXP su un bucket del sistema StorageGRID connesso, in modo da poter ripristinare questi dati su un nuovo connettore, se necessario. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/reference-backup-cbs-db-in-dark-site.html">"Scopri di più"</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="8-maggio-2023">8 maggio 2023</h3>
 <div class="sect3">
 <h4 id="le-operazioni-di-ripristino-a-livello-di-cartella-sono-ora-supportate-dallo-storage-di-archiviazione-e-dai-backup-bloccati">Le operazioni di ripristino a livello di cartella sono ora supportate dallo storage di archiviazione e dai backup bloccati</h4>
@@ -1016,7 +1053,7 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 </div>
 <div class="sect3">
-<h4 id="miglioramenti-di-job-monitor">Miglioramenti di Job Monitor</h4>
+<h4 id="miglioramenti-di-job-monitor-2">Miglioramenti di Job Monitor</h4>
 <div class="paragraph">
 <p>I processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi ONTAP on-premise che eseguono ONTAP 9.13.1 o versione successiva. Le versioni precedenti di ONTAP visualizzano solo i processi avviati dall&#8217;utente.</p>
 </div>
@@ -1088,7 +1125,7 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <div class="sect3">
 <h4 id="possibilità-di-eseguire-il-backup-dei-dati-nel-cloud-dai-sistemi-cloud-volumes-ontap-in-modalità-limitata">Possibilità di eseguire il backup dei dati nel cloud dai sistemi Cloud Volumes ONTAP in modalità "limitata"</h4>
 <div class="paragraph">
-<p>Ora è possibile eseguire il backup dei dati dai sistemi Cloud Volumes ONTAP installati nelle aree commerciali AWS, Azure e GCP in "modalità limitata". Ciò richiede l&#8217;installazione del connettore nella regione commerciale "limitata". <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html" target="_blank" rel="noopener">"Scopri di più sulle modalità di implementazione di BlueXP"</a>. Vedere <a href="https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-s3.html">"Backup dei dati Cloud Volumes ONTAP su Amazon S3"</a> e. <a href="https://docs.netapp.com/us-en/bluexp-backup-restore/task-backup-to-azure.html">"Backup dei dati Cloud Volumes ONTAP in Azure Blob"</a>.</p>
+<p>Ora è possibile eseguire il backup dei dati dai sistemi Cloud Volumes ONTAP installati nelle aree commerciali AWS, Azure e GCP in "modalità limitata". Ciò richiede l&#8217;installazione del connettore nella regione commerciale "limitata". <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html" target="_blank" rel="noopener">"Scopri di più sulle modalità di implementazione di BlueXP"</a>. Vedere <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html">"Backup dei dati Cloud Volumes ONTAP su Amazon S3"</a> e. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html">"Backup dei dati Cloud Volumes ONTAP in Azure Blob"</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1104,11 +1141,11 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 </div>
 <div class="sect3">
-<h4 id="miglioramenti-di-job-monitor-2">Miglioramenti di Job Monitor</h4>
+<h4 id="miglioramenti-di-job-monitor-3">Miglioramenti di Job Monitor</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Sia le operazioni di backup e ripristino avviate dall&#8217;utente dall&#8217;interfaccia utente e dall&#8217;API di backup e ripristino di BlueXP, sia i processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi ONTAP on-premise che eseguono ONTAP 9.13.1 o versione successiva. Le versioni precedenti di ONTAP visualizzano solo i processi avviati dall&#8217;utente.</p>
+<p>Sia le operazioni di backup e ripristino avviate dall&#8217;utente dall&#8217;interfaccia utente e dall&#8217;API di backup e ripristino di BlueXP, sia i processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi Cloud Volumes ONTAP che eseguono ONTAP 9.13.0 o versione successiva. Le versioni precedenti di ONTAP visualizzano solo i processi avviati dall&#8217;utente.</p>
 </li>
 <li>
 <p>Oltre a poter scaricare un file CSV per la creazione di report su tutti i lavori, ora è possibile scaricare un file JSON per un singolo lavoro e visualizzarne i dettagli. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report">"Scopri di più"</a>.</p>
@@ -1120,39 +1157,44 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="9-marzo-2023">9 marzo 2023</h3>
-<div class="sect3">
-<h4 id="le-operazioni-di-ripristino-a-livello-di-cartella-ora-includono-tutte-le-sottocartelle-e-i-file">Le operazioni di ripristino a livello di cartella ora includono tutte le sottocartelle e i file</h4>
-<div class="paragraph">
-<p>In passato, quando si ripristinava una cartella, venivano ripristinati solo i file di tale cartella, senza alcuna sottocartella o file di sottocartelle. Ora, se si utilizza ONTAP 9.13.0 o versione successiva, vengono ripristinate tutte le sottocartelle e i file nella cartella selezionata. Ciò consente di risparmiare molto tempo e denaro nei casi in cui si dispone di più cartelle nidificate in una cartella di primo livello.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="possibilità-di-eseguire-il-backup-dei-dati-dai-sistemi-cloud-volumes-ontap-in-siti-oscuri">Possibilità di eseguire il backup dei dati dai sistemi Cloud Volumes ONTAP in siti oscuri</h4>
-<div class="paragraph">
-<p>Ora puoi eseguire il backup dei dati dai sistemi Cloud Volumes ONTAP installati nelle aree commerciali di AWS e Azure su Amazon S3 o Azure Blob. Ciò richiede l&#8217;installazione del connettore su un host Linux nell&#8217;area commerciale e l&#8217;implementazione del sistema Cloud Volumes ONTAP. Vedere <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html">"Backup dei dati Cloud Volumes ONTAP su Amazon S3"</a> e. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html">"Backup dei dati Cloud Volumes ONTAP in Azure Blob"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="miglioramenti-multipli-di-job-monitor">Miglioramenti multipli di Job Monitor</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>La pagina Job Monitoring ha aggiunto un filtro avanzato che consente di cercare i processi di backup e ripristino in base al tempo, al carico di lavoro (volumi, applicazioni, macchine virtuali o Kubernetes), Tipo di lavoro, stato, ambiente di lavoro e VM di storage. È anche possibile inserire testo libero per cercare qualsiasi risorsa, ad esempio "application_3".  <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#searching-and-filtering-the-list-of-jobs">"Scopri come utilizzare i filtri avanzati"</a>.</p>
-</li>
-<li>
-<p>Sia le operazioni di backup e ripristino avviate dall&#8217;utente dall&#8217;interfaccia utente e dall&#8217;API di backup e ripristino di BlueXP, sia i processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi Cloud Volumes ONTAP che eseguono ONTAP 9.13.0 o versione successiva. Le versioni precedenti dei sistemi Cloud Volumes ONTAP e dei sistemi ONTAP on-premise visualizzano solo i processi avviati dall&#8217;utente.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="classificazione">Classificazione</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="6-giugno-2023-versione-1-23">6 giugno 2023 (versione 1.23)</h3>
+<div class="sect3">
+<h4 id="il-giapponese-è-ora-supportato-durante-la-ricerca-dei-nomi-dei-soggetti-dei-dati">Il giapponese è ora supportato durante la ricerca dei nomi dei soggetti dei dati</h4>
+<div class="paragraph">
+<p>I nomi giapponesi possono ora essere inseriti quando si cerca il nome di un soggetto in risposta a una richiesta di accesso soggetto a dati (DSAR). È possibile generare un <a href="https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request">"Report Data Subject Access Request"</a> con le informazioni risultanti. È inoltre possibile immettere i nomi giapponesi in <a href="https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content">"Filtro "Data Subject" nella pagina Data Investigation"</a> identificare i file che contengono il nome dell&#8217;oggetto.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ubuntu-è-ora-una-distribuzione-linux-supportata-su-cui-è-possibile-installare-la-classificazione-bluexp">Ubuntu è ora una distribuzione Linux supportata su cui è possibile installare la classificazione BlueXP</h4>
+<div class="paragraph">
+<p>Ubuntu 22.04 è stato qualificato come sistema operativo supportato per la classificazione BlueXP. È possibile installare la classificazione BlueXP su un host Ubuntu Linux nella rete o su un host Linux nel cloud. <a href="https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html">"Scopri come installare la classificazione BlueXP su un host con Ubuntu installato"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="red-hat-enterprise-linux-8-6-e-8-7-non-sono-più-supportati-con-le-nuove-installazioni-di-classificazione-bluexp">Red Hat Enterprise Linux 8.6 e 8.7 non sono più supportati con le nuove installazioni di classificazione BlueXP</h4>
+<div class="paragraph">
+<p>Queste versioni non sono supportate con le nuove implementazioni perché Red Hat non supporta più Docker, che è un prerequisito. Se si dispone di una macchina di classificazione BlueXP esistente in esecuzione su RHEL 8.6 o 8.7, NetApp continuerà a supportare la configurazione.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="la-classificazione-bluexp-può-essere-configurata-come-fpolicy-collector-per-ricevere-eventi-fpolicy-dai-sistemi-ontap">La classificazione BlueXP può essere configurata come FPolicy Collector per ricevere eventi FPolicy dai sistemi ONTAP</h4>
+<div class="paragraph">
+<p>È possibile consentire la raccolta dei registri di controllo dell&#8217;accesso ai file nel sistema di classificazione BlueXP per gli eventi di accesso ai file rilevati sui volumi negli ambienti di lavoro. La classificazione BlueXP può acquisire i seguenti tipi di eventi FPolicy e gli utenti che hanno eseguito le azioni sui file: Creare, leggere, scrivere, eliminare, rinominare, Modificare il proprietario/le autorizzazioni e modificare SACL/DACL. <a href="https://docs.netapp.com/us-en/bluexp-classification/task-manage-file-access-events.html">"Scopri come monitorare e gestire gli eventi di accesso ai file"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="le-licenze-data-sense-byol-sono-ora-supportate-nei-siti-bui">Le licenze Data Sense BYOL sono ora supportate nei siti bui</h4>
+<div class="paragraph">
+<p>Ora puoi caricare la tua licenza BYOL Data Sense nel portafoglio digitale BlueXP in un sito buio, in modo da ricevere una notifica quando la tua licenza sta per esaurirsi. <a href="https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file">"Scopri come ottenere e caricare la licenza BYOL Data Sense"</a>.</p>
+</div>
+</div>
+</div>
 <div class="sect2">
 <h3 id="3-aprile-2023-versione-1-22">3 aprile 2023 (versione 1.22)</h3>
 <div class="sect3">
@@ -1245,9 +1287,6 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h4 id="miglioramenti-allinstallazione">Miglioramenti all&#8217;installazione</h4>
 <div class="ulist">
 <ul>
-<li>
-<p>La classificazione BlueXP può essere installata sugli host Linux che eseguono CentOS Stream 8.</p>
-</li>
 <li>
 <p>Il programma di installazione della classificazione BlueXP per i siti senza accesso a Internet (siti oscuri) ora esegue un controllo preliminare per assicurarsi che i requisiti di sistema e di rete siano stati soddisfatti per un&#8217;installazione corretta.</p>
 </li>
