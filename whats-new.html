@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-06-14 13:43:29 +0000">06/14/2023</time>
+    <time datetime="2023-06-15 16:52:32 +0000">06/15/2023</time>
     
   
 
@@ -542,7 +542,6 @@
 <li><a href="#6-giugno-2023-versione-1-23">6 giugno 2023 (versione 1.23)</a></li>
 <li><a href="#3-aprile-2023-versione-1-22">3 aprile 2023 (versione 1.22)</a></li>
 <li><a href="#7-marzo-2023-versione-1-21">7 marzo 2023 (versione 1.21)</a></li>
-<li><a href="#5-febbraio-2023-versione-1-20">5 febbraio 2023 (versione 1.20)</a></li>
 </ul>
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
@@ -1300,45 +1299,6 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <p>I file di log di audit dell&#8217;installazione vengono salvati ora e scritti in <code>/ops/netapp/install_logs</code>.</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="5-febbraio-2023-versione-1-20">5 febbraio 2023 (versione 1.20)</h3>
-<div class="sect3">
-<h4 id="possibilità-di-inviare-e-mail-di-notifica-basate-su-policy-a-qualsiasi-indirizzo-e-mail">Possibilità di inviare e-mail di notifica basate su policy a qualsiasi indirizzo e-mail</h4>
-<div class="paragraph">
-<p>Nelle versioni precedenti della classificazione BlueXP, è possibile inviare avvisi e-mail agli utenti BlueXP del proprio account quando alcuni criteri critici restituiscono risultati. Questa funzione ti consente di ricevere notifiche per proteggere i tuoi dati quando non sei online. Ora puoi anche inviare avvisi e-mail dalle policy a qualsiasi altro utente (fino a 20 indirizzi e-mail) che non sia presente nel tuo account BlueXP.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found">"Scopri di più sull&#8217;invio di avvisi e-mail in base ai risultati della policy"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="ora-è-possibile-aggiungere-modelli-personali-dallinterfaccia-utente-di-classificazione-bluexp">Ora è possibile aggiungere modelli personali dall&#8217;interfaccia utente di classificazione BlueXP</h4>
-<div class="paragraph">
-<p>La classificazione BlueXP ha avuto la possibilità di aggiungere "dati personali" personalizzati che la classificazione BlueXP identificherà per un certo periodo di tempo nelle scansioni future. Tuttavia, era necessario accedere all&#8217;host Linux di classificazione BlueXP e utilizzare una riga di comando per aggiungere i modelli personalizzati. In questa release, la possibilità di aggiungere modelli personali utilizzando un regex è nell&#8217;interfaccia utente di classificazione BlueXP, rendendo molto semplice aggiungere e modificare questi modelli personalizzati.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex" target="_blank" rel="noopener">"Scopri di più sull&#8217;aggiunta di modelli personalizzati dall&#8217;interfaccia utente di classificazione BlueXP"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="possibilità-di-spostare-15-milioni-di-file-utilizzando-la-classificazione-bluexp">Possibilità di spostare 15 milioni di file utilizzando la classificazione BlueXP</h4>
-<div class="paragraph">
-<p>In passato era possibile che la classificazione BlueXP spostasse un massimo di 100,000 file di origine in qualsiasi condivisione NFS. Ora puoi spostare fino a 15 milioni di file alla volta. <a href="https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share">"Scopri di più sullo spostamento dei file di origine utilizzando la classificazione BlueXP"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="possibilità-di-visualizzare-il-numero-di-utenti-che-hanno-accesso-ai-file-di-sharepoint-online">Possibilità di visualizzare il numero di utenti che hanno accesso ai file di SharePoint Online</h4>
-<div class="paragraph">
-<p>Il filtro "numero di utenti con accesso" ora supporta i file memorizzati nei repository SharePoint Online. In passato erano supportati solo i file su condivisioni CIFS. Si noti che i gruppi SharePoint che non sono basati su Active Directory non verranno conteggiati in questo filtro al momento.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="il-nuovo-stato-partial-success-operazione-riuscita-parziale-è-stato-aggiunto-al-pannello-action-status-stato-azione">Il nuovo stato "Partial Success" (operazione riuscita parziale) è stato aggiunto al pannello Action Status (Stato azione)</h4>
-<div class="paragraph">
-<p>Il nuovo stato "Partial Success" (successo parziale) indica che un&#8217;azione di classificazione BlueXP è terminata e che alcuni elementi hanno avuto esito negativo, ad esempio quando si spostano o si eliminano file 100. Inoltre, lo stato "Finished" (terminato) è stato rinominato "Success" (riuscito). In passato, lo stato "Finished" (terminato) potrebbe elencare le azioni riuscite e non riuscite. Ora lo stato "Success" significa che tutte le azioni sono riuscite su tutti gli elementi. <a href="https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html">"Vedere come visualizzare il pannello Actions Status (Stato azioni)"</a>.</p>
 </div>
 </div>
 </div>
