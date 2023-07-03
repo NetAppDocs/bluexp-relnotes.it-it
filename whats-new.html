@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-03 14:43:36 +0000">07/03/2023</time>
+    <time datetime="2023-07-03 15:20:52 +0000">07/03/2023</time>
     
   
 
@@ -500,9 +500,9 @@
 <li><a href="#introduzione-di-bluexp">Introduzione di BlueXP</a></li>
 <li><a href="#funzionalità-amministrative">Funzionalità amministrative</a>
 <ul class="sectlevel2">
+<li><a href="#2-luglio-2023">2 luglio 2023</a></li>
 <li><a href="#4-giugno-2023">4 giugno 2023</a></li>
 <li><a href="#7-maggio-2023">7 maggio 2023</a></li>
-<li><a href="#4-aprile-2023">4 aprile 2023</a></li>
 </ul>
 </li>
 <li><a href="#storage-azure-blob">Storage Azure Blob</a>
@@ -534,7 +534,7 @@
 <li><a href="#5-giugno-2023-2">5 giugno 2023</a></li>
 <li><a href="#8-maggio-2023">8 maggio 2023</a></li>
 <li><a href="#14-aprile-2023">14 aprile 2023</a></li>
-<li><a href="#4-aprile-2023-2">4 aprile 2023</a></li>
+<li><a href="#4-aprile-2023">4 aprile 2023</a></li>
 </ul>
 </li>
 <li><a href="#classificazione">Classificazione</a>
@@ -546,7 +546,7 @@
 </li>
 <li><a href="#cloud-volumes-ontap">Cloud Volumes ONTAP</a>
 <ul class="sectlevel2">
-<li><a href="#2-luglio-2023">2 luglio 2023</a></li>
+<li><a href="#2-luglio-2023-2">2 luglio 2023</a></li>
 <li><a href="#26-giugno-2023">26 giugno 2023</a></li>
 <li><a href="#4-giugno-2023-2">4 giugno 2023</a></li>
 <li><a href="#7-maggio-2023-2">7 maggio 2023</a></li>
@@ -613,7 +613,7 @@
 </li>
 <li><a href="#cluster-ontap-on-premise">Cluster ONTAP on-premise</a>
 <ul class="sectlevel2">
-<li><a href="#2-luglio-2023-2">2 luglio 2023</a></li>
+<li><a href="#2-luglio-2023-3">2 luglio 2023</a></li>
 <li><a href="#4-maggio-2023">4 maggio 2023</a></li>
 <li><a href="#3-aprile-2023-2">3 aprile 2023</a></li>
 </ul>
@@ -683,6 +683,40 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>In questa sezione vengono descritte le nuove funzionalità relative alle funzioni di amministrazione di BlueXP: Account, connettori, credenziali del provider cloud e altro ancora.</p>
+</div>
+<div class="sect2">
+<h3 id="2-luglio-2023">2 luglio 2023</h3>
+<div class="sect3">
+<h4 id="connettore-3-9-31">Connettore 3.9.31</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Ora puoi scoprire i cluster ONTAP on-premise dalla scheda <strong>My estate</strong> (in precedenza <strong>My Opportunities</strong>)</p>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster">"Scopri come scoprire i cluster dalla pagina My estate"</a>.</p>
+</div>
+</li>
+<li>
+<p>Se si utilizza il connettore in un&#8217;area governativa di Azure, assicurarsi che il connettore possa contattare il seguente endpoint:</p>
+<div class="paragraph">
+<p>https://occmclientinfragov.azurecr.us</p>
+</div>
+<div class="paragraph">
+<p>Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.</p>
+</div>
+<div class="paragraph">
+<p>A seguito di questa modifica, un connettore in un&#8217;area governativa di Azure non contatta più il seguente endpoint:</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div>
+<div class="paragraph">
+<p>Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="4-giugno-2023">4 giugno 2023</h3>
@@ -825,43 +859,6 @@
 </div>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="4-aprile-2023">4 aprile 2023</h3>
-<div class="sect3">
-<h4 id="modalità-di-implementazione">Modalità di implementazione</h4>
-<div class="paragraph">
-<p>Le <em>modalità di implementazione</em> di BlueXP consentono di utilizzare BlueXP in modo da soddisfare i requisiti di sicurezza e di business. È possibile scegliere tra tre modalità:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Modalità standard</p>
-</li>
-<li>
-<p>Modalità limitata</p>
-</li>
-<li>
-<p>Modalità privata</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html">"Scopri di più su queste modalità di implementazione"</a>.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/bluexp-relnotes/images/note.svg" alt="Nota">
-</td>
-<td class="content">
-L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di attivazione o disattivazione della piattaforma SaaS. È possibile attivare la modalità limitata al momento della creazione dell&#8217;account. Non può essere attivato o disattivato in un secondo momento.
-</td>
-</tr>
-</table>
 </div>
 </div>
 </div>
@@ -1134,7 +1131,7 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 </div>
 </div>
 <div class="sect2">
-<h3 id="4-aprile-2023-2">4 aprile 2023</h3>
+<h3 id="4-aprile-2023">4 aprile 2023</h3>
 <div class="sect3">
 <h4 id="possibilità-di-eseguire-il-backup-dei-dati-nel-cloud-dai-sistemi-cloud-volumes-ontap-in-modalità-limitata">Possibilità di eseguire il backup dei dati nel cloud dai sistemi Cloud Volumes ONTAP in modalità "limitata"</h4>
 <div class="paragraph">
@@ -1316,7 +1313,7 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h2 id="cloud-volumes-ontap">Cloud Volumes ONTAP</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2-luglio-2023">2 luglio 2023</h3>
+<h3 id="2-luglio-2023-2">2 luglio 2023</h3>
 <div class="paragraph">
 <p>Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettore.</p>
 </div>
@@ -1862,7 +1859,7 @@ L&#8217;introduzione della modalità limitata sostituisce l&#8217;opzione di att
 <h2 id="cluster-ontap-on-premise">Cluster ONTAP on-premise</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="2-luglio-2023-2">2 luglio 2023</h3>
+<h3 id="2-luglio-2023-3">2 luglio 2023</h3>
 <div class="sect3">
 <h4 id="rilevamento-cluster-da-my-estate">Rilevamento cluster da My estate</h4>
 <div class="paragraph">
