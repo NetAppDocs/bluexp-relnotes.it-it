@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-03 15:20:52 +0000">07/03/2023</time>
+    <time datetime="2023-07-05 16:23:37 +0000">07/05/2023</time>
     
   
 
@@ -531,6 +531,7 @@
 </li>
 <li><a href="#backup-e-recovery">Backup e recovery</a>
 <ul class="sectlevel2">
+<li><a href="#04-luglio-2023">04 luglio 2023</a></li>
 <li><a href="#5-giugno-2023-2">5 giugno 2023</a></li>
 <li><a href="#8-maggio-2023">8 maggio 2023</a></li>
 <li><a href="#14-aprile-2023">14 aprile 2023</a></li>
@@ -651,9 +652,9 @@
 </li>
 <li><a href="#tiering">Tiering</a>
 <ul class="sectlevel2">
+<li><a href="#4-luglio-2023">4 luglio 2023</a></li>
 <li><a href="#3-aprile-2023-4">3 aprile 2023</a></li>
 <li><a href="#5-marzo-2023-2">5 marzo 2023</a></li>
-<li><a href="#6-dicembre-2022">6 dicembre 2022</a></li>
 </ul>
 </li>
 <li><a href="#caching-dei-volumi">Caching dei volumi</a>
@@ -1004,6 +1005,74 @@
 <h2 id="backup-e-recovery">Backup e recovery</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="04-luglio-2023">04 luglio 2023</h3>
+<div class="sect3">
+<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-nativo-del-cloud">Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Sistemi SAP HANA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Supporta il ripristino di connessione e copia di volumi non dati e volumi non dati globali con protezione secondaria Azure NetApp Files</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Database Oracle</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Supporta il ripristino dei database Oracle su Azure NetApp Files in una posizione alternativa</p>
+</li>
+<li>
+<p>Supporta la catalogazione di Oracle Recovery Manager (RMAN) dei backup dei database Oracle su Azure NetApp Files</p>
+</li>
+<li>
+<p>Consente di impostare l&#8217;host del database in modalità di manutenzione per eseguire le attività di manutenzione</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-ibrido">Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Supporta il ripristino in una posizione alternativa</p>
+</li>
+<li>
+<p>Consente di montare backup di database Oracle</p>
+</li>
+<li>
+<p>Supporta lo spostamento dei backup da GCP a Tier di archiviazione</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-macchine-virtuali-ibrido">Miglioramenti al backup e ripristino BlueXP per macchine virtuali (ibrido)</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Supporta la protezione di datastore di tipo NFS e VMFS</p>
+</li>
+<li>
+<p>Consente di annullare la registrazione del plug-in SnapCenter per l&#8217;host VMware vSphere</p>
+</li>
+<li>
+<p>Supporta il refresh e il rilevamento di datastore e backup più recenti</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="5-giugno-2023-2">5 giugno 2023</h3>
 <div class="sect3">
 <h4 id="è-possibile-eseguire-il-backup-e-la-protezione-dei-volumi-flexgroup-utilizzando-datalock-e-la-protezione-ransomware">È possibile eseguire il backup e la protezione dei volumi FlexGroup utilizzando DataLock e la protezione ransomware</h4>
@@ -1072,7 +1141,7 @@
 <div class="sect2">
 <h3 id="14-aprile-2023">14 aprile 2023</h3>
 <div class="sect3">
-<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-nativo-del-cloud">Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)</h4>
+<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-nativo-del-cloud-2">Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1114,7 +1183,7 @@
 </div>
 </div>
 <div class="sect3">
-<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-ibrido">Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)</h4>
+<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-ibrido-2">Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -2111,6 +2180,24 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 <h2 id="tiering">Tiering</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="4-luglio-2023">4 luglio 2023</h3>
+<div class="sect3">
+<h4 id="ora-è-possibile-regolare-la-larghezza-di-banda-utilizzata-per-caricare-i-dati-inattivi-nello-storage-a-oggetti">Ora è possibile regolare la larghezza di banda utilizzata per caricare i dati inattivi nello storage a oggetti</h4>
+<div class="paragraph">
+<p>Quando si attiva il tiering BlueXP, ONTAP può utilizzare una quantità illimitata di larghezza di banda di rete per trasferire i dati inattivi dai volumi nel cluster allo storage a oggetti. Se si nota che il traffico di tiering influisce sui normali carichi di lavoro degli utenti, è possibile ridurre la quantità di larghezza di banda che può essere utilizzata durante il trasferimento. <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage">"Scopri di più"</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="levento-di-tiering-per-tiering-basso-viene-visualizzato-nel-centro-notifiche">L&#8217;evento di tiering per "tiering basso" viene visualizzato nel Centro notifiche</h4>
+<div class="paragraph">
+<p>L&#8217;evento di tiering "Tiering additional data from cluster &lt;name&gt; to object storage to aumento your storage efficiency" viene ora visualizzato come notifica quando un cluster tiering meno del 20% dei suoi dati cold - compresi i cluster che non tierano dati.</p>
+</div>
+<div class="paragraph">
+<p>Questa notifica è un "consiglio" per rendere i sistemi più efficienti e risparmiare sui costi di storage. Fornisce un collegamento a <a href="https://bluexp.netapp.com/cloud-tiering-service-tco" target="_blank" rel="noopener">"Calcolo del costo totale di proprietà e del risparmio di BlueXP Tiering"</a> per aiutarti a calcolare i risparmi sui costi.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="3-aprile-2023-4">3 aprile 2023</h3>
 <div class="sect3">
 <h4 id="la-scheda-licensing-licenze-è-stata-rimossa">La scheda Licensing (licenze) è stata rimossa</h4>
@@ -2131,40 +2218,6 @@ Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal 
 <h4 id="ora-è-possibile-generare-un-report-di-tiering-per-i-volumi">Ora è possibile generare un report di tiering per i volumi</h4>
 <div class="paragraph">
 <p>È possibile scaricare un report dalla pagina Tier Volumes per esaminare lo stato di tiering di tutti i volumi nei cluster che si stanno gestendo. BlueXP Tiering genera un file .CSV che è possibile rivedere e inviare ad altre persone dell&#8217;azienda in base alle necessità. <a href="https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes">"Scopri come scaricare il report sul tiering"</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="6-dicembre-2022">6 dicembre 2022</h3>
-<div class="sect3">
-<h4 id="modifiche-degli-endpoint-di-accesso-a-internet-in-uscita-del-connettore">Modifiche degli endpoint di accesso a Internet in uscita del connettore</h4>
-<div class="paragraph">
-<p>A causa di una modifica nel tiering BlueXP, è necessario modificare i seguenti endpoint del connettore per eseguire correttamente il tiering BlueXP:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Vecchio endpoint</th>
-<th class="tableblock halign-left valign-top">Nuovo endpoint</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://api.bluexp.netapp.com" class="bare">https://api.bluexp.netapp.com</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://*.cloudmanager.cloud.netapp.com" class="bare">https://*.cloudmanager.cloud.netapp.com</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://*.api.bluexp.netapp.com" class="bare">https://*.api.bluexp.netapp.com</a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Consulta l&#8217;elenco completo degli endpoint per il <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access" target="_blank" rel="noopener">"AWS"</a>, <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access" target="_blank" rel="noopener">"Google Cloud"</a>, o. <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access" target="_blank" rel="noopener">"Azure"</a> ambiente cloud.</p>
 </div>
 </div>
 </div>
