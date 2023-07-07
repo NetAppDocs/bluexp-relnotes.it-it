@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-05 16:23:37 +0000">07/05/2023</time>
+    <time datetime="2023-07-07 14:31:24 +0000">07/07/2023</time>
     
   
 
@@ -531,11 +531,10 @@
 </li>
 <li><a href="#backup-e-recovery">Backup e recovery</a>
 <ul class="sectlevel2">
+<li><a href="#6-luglio-2023">6 luglio 2023</a></li>
 <li><a href="#04-luglio-2023">04 luglio 2023</a></li>
 <li><a href="#5-giugno-2023-2">5 giugno 2023</a></li>
 <li><a href="#8-maggio-2023">8 maggio 2023</a></li>
-<li><a href="#14-aprile-2023">14 aprile 2023</a></li>
-<li><a href="#4-aprile-2023">4 aprile 2023</a></li>
 </ul>
 </li>
 <li><a href="#classificazione">Classificazione</a>
@@ -1005,6 +1004,59 @@
 <h2 id="backup-e-recovery">Backup e recovery</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="6-luglio-2023">6 luglio 2023</h3>
+<div class="sect3">
+<h4 id="il-backup-e-ripristino-di-bluexp-include-ora-la-possibilità-di-pianificare-e-creare-copie-snapshot-e-volumi-replicati">Il backup e ripristino di BlueXP include ora la possibilità di pianificare e creare copie Snapshot e volumi replicati</h4>
+<div class="paragraph">
+<p>Il backup e ripristino BlueXP consente ora di implementare una strategia 3-2-1 in cui è possibile avere 3 copie dei dati di origine su 2 sistemi storage diversi e 1 copia nel cloud. Dopo l&#8217;attivazione, si avrà a disposizione:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copia Snapshot del volume sul sistema di origine</p>
+</li>
+<li>
+<p>Volume replicato su un sistema storage diverso</p>
+</li>
+<li>
+<p>Backup del volume nello storage a oggetti</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html">"Scopri di più sulle nuove funzionalità di backup e ripristino a spettro completo"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Questa nuova funzionalità si applica anche alle operazioni di recovery. È possibile eseguire operazioni di ripristino da una copia Snapshot, da un volume replicato o da un file di backup nel cloud. In questo modo è possibile scegliere il file di backup che soddisfa i requisiti di ripristino, inclusi costi e velocità di ripristino.</p>
+</div>
+<div class="paragraph">
+<p>Si noti che questa nuova funzionalità e l&#8217;interfaccia utente sono supportate solo per i cluster che eseguono ONTAP 9.8 o versione successiva. Se il cluster dispone di una versione precedente del software, è possibile continuare a utilizzare la versione precedente di backup e ripristino di BlueXP. Tuttavia, si consiglia di eseguire l&#8217;aggiornamento a una versione supportata di ONTAP per ottenere le funzionalità e le funzionalità più recenti. Per continuare a utilizzare la versione precedente del software, attenersi alla seguente procedura:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Dalla scheda <strong>Volumes</strong> (volumi), selezionare <strong>Backup Settings</strong> (Impostazioni di backup).</p>
+</li>
+<li>
+<p>Dalla pagina <em>Backup Settings</em>, fare clic sul pulsante di opzione <strong>Visualizza la versione precedente di backup e ripristino di BlueXP</strong>.</p>
+<div class="paragraph">
+<p>Quindi, puoi gestire i cluster meno recenti utilizzando la versione precedente del software.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="possibilità-di-creare-i-bucket-per-il-backup-sullo-storage-a-oggetti">Possibilità di creare i bucket per il backup sullo storage a oggetti</h4>
+<div class="paragraph">
+<p>Per impostazione predefinita, quando si creano file di backup nello storage a oggetti, il servizio di backup e ripristino crea i bucket nello storage a oggetti. È possibile creare autonomamente i bucket se si desidera utilizzare un determinato nome o assegnare proprietà speciali. Se si desidera creare un bucket personalizzato, è necessario crearlo prima di avviare l&#8217;attivazione guidata.</p>
+</div>
+<div class="paragraph">
+<p>Questa funzionalità non è attualmente supportata quando si creano file di backup su sistemi StorageGRID.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="04-luglio-2023">04 luglio 2023</h3>
 <div class="sect3">
 <h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-nativo-del-cloud">Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)</h4>
@@ -1135,104 +1187,6 @@
 <h4 id="miglioramenti-di-job-monitor-2">Miglioramenti di Job Monitor</h4>
 <div class="paragraph">
 <p>I processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi ONTAP on-premise che eseguono ONTAP 9.13.1 o versione successiva. Le versioni precedenti di ONTAP visualizzano solo i processi avviati dall&#8217;utente.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="14-aprile-2023">14 aprile 2023</h3>
-<div class="sect3">
-<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-nativo-del-cloud-2">Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Database SAP HANA</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Supporta l&#8217;aggiornamento del sistema basato su script</p>
-</li>
-<li>
-<p>Supporta Single-file-Snapshot-Restore se è configurato il backup Azure NetApp Files</p>
-</li>
-<li>
-<p>Supporta l&#8217;upgrade del plug-in</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Database Oracle</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Miglioramenti all&#8217;implementazione del plug-in attraverso la semplificazione della configurazione utente sudo non root</p>
-</li>
-<li>
-<p>Supporta l&#8217;upgrade del plug-in</p>
-</li>
-<li>
-<p>Supporta il rilevamento automatico e la protezione basata su policy dei database Oracle su Azure NetApp Files</p>
-</li>
-<li>
-<p>Supporta il ripristino del database Oracle nella posizione originale con ripristino granulare</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="miglioramenti-al-backup-e-ripristino-bluexp-per-le-applicazioni-ibrido-2">Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Il backup e ripristino BlueXP per le applicazioni (ibrido) è basato sul piano di controllo SaaS</p>
-</li>
-<li>
-<p>Sono state modificate le API REST ibride per allinearle alle API native del cloud.</p>
-</li>
-<li>
-<p>Supporta la notifica via email</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="4-aprile-2023">4 aprile 2023</h3>
-<div class="sect3">
-<h4 id="possibilità-di-eseguire-il-backup-dei-dati-nel-cloud-dai-sistemi-cloud-volumes-ontap-in-modalità-limitata">Possibilità di eseguire il backup dei dati nel cloud dai sistemi Cloud Volumes ONTAP in modalità "limitata"</h4>
-<div class="paragraph">
-<p>Ora è possibile eseguire il backup dei dati dai sistemi Cloud Volumes ONTAP installati nelle aree commerciali AWS, Azure e GCP in "modalità limitata". Ciò richiede l&#8217;installazione del connettore nella regione commerciale "limitata". <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html" target="_blank" rel="noopener">"Scopri di più sulle modalità di implementazione di BlueXP"</a>. Vedere <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html">"Backup dei dati Cloud Volumes ONTAP su Amazon S3"</a> e. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-azure.html">"Backup dei dati Cloud Volumes ONTAP in Azure Blob"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="possibilità-di-eseguire-il-backup-dei-volumi-ontap-on-premise-su-ontap-s3-utilizzando-lapi">Possibilità di eseguire il backup dei volumi ONTAP on-premise su ONTAP S3 utilizzando l&#8217;API</h4>
-<div class="paragraph">
-<p>Le nuove funzionalità delle API consentono di eseguire il backup delle snapshot dei volumi in ONTAP S3 utilizzando il backup e ripristino BlueXP. Questa funzionalità è attualmente disponibile solo per i sistemi ONTAP on-premise. Per istruzioni dettagliate, consulta il blog <a href="https://community.netapp.com/t5/Tech-ONTAP-Blogs/BlueXP-Backup-and-Recovery-Feature-Blog-April-23-Updates/ba-p/443075#toc-hId&#8212;&#8203;846533830" target="_blank" rel="noopener">"Integrazione con ONTAP S3 come destinazione"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="possibilità-di-modificare-laspetto-della-ridondanza-di-zona-dellaccount-di-storage-azure-da-lrs-a-zrs">Possibilità di modificare l&#8217;aspetto della ridondanza di zona dell&#8217;account di storage Azure da LRS a ZRS</h4>
-<div class="paragraph">
-<p>Quando si creano backup dai sistemi Cloud Volumes ONTAP allo storage Azure, per impostazione predefinita, il backup e ripristino BlueXP esegue il provisioning del container Blob con ridondanza locale (LRS) per l&#8217;ottimizzazione dei costi. È possibile modificare questa impostazione in ZRS (zone Redundancy) se si desidera che i dati vengano replicati tra zone diverse. Consultare le istruzioni Microsoft per <a href="https://learn.microsoft.com/en-us/azure/storage/common/redundancy-migration?tabs=portal" target="_blank" rel="noopener">"modifica della modalità di replica dell&#8217;account storage"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="miglioramenti-di-job-monitor-3">Miglioramenti di Job Monitor</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Sia le operazioni di backup e ripristino avviate dall&#8217;utente dall&#8217;interfaccia utente e dall&#8217;API di backup e ripristino di BlueXP, sia i processi avviati dal sistema, come le operazioni di backup in corso, sono ora disponibili nella scheda <strong>monitoraggio del processo</strong> per i sistemi Cloud Volumes ONTAP che eseguono ONTAP 9.13.0 o versione successiva. Le versioni precedenti di ONTAP visualizzano solo i processi avviati dall&#8217;utente.</p>
-</li>
-<li>
-<p>Oltre a poter scaricare un file CSV per la creazione di report su tutti i lavori, ora è possibile scaricare un file JSON per un singolo lavoro e visualizzarne i dettagli. <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#download-job-monitoring-results-as-a-report">"Scopri di più"</a>.</p>
-</li>
-<li>
-<p>Sono stati aggiunti due nuovi avvisi relativi al processo di backup: "Errore del processo pianificato" e "il processo di ripristino viene completato ma con avvisi". <a href="https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html#review-backup-and-restore-alerts-in-the-bluexp-notification-center">"Esaminare tutti gli avvisi che il backup e ripristino BlueXP può inviare"</a>.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
