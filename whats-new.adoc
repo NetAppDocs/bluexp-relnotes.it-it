@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud' 
 summary: Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per ulteriori informazioni, consultare la serie completa di note di rilascio per ciascun servizio. 
 ---
 = Recenti cambiamenti in BlueXP
@@ -672,6 +672,32 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 9 luglio 2023
+
+
+
+==== Rimuovere più relazioni di sincronizzazione contemporaneamente
+
+Gli utenti possono ora eliminare più di una relazione di sincronizzazione alla volta nell'interfaccia utente.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships["Scopri di più sull'eliminazione delle relazionizzazioni di sincronizzazione."]
+
+
+
+==== Copia solo ACL
+
+Gli utenti dispongono ora di opzioni aggiuntive per la copia delle informazioni ACL nelle relazioni CIF e NFS. Quando si crea o si gestisce una relazione di sincronizzazione, è possibile copiare solo i file, copiare solo le informazioni ACL o copiare file e informazioni ACL.
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html["Scopri di più sulla copia degli ACL."]
+
+
+
+==== Aggiornato a Node.js 20
+
+Copy and Sync è stato aggiornato a Node.js 20. Tutti i broker di dati disponibili verranno aggiornati. I sistemi operativi incompatibili con questo aggiornamento non possono essere installati e i sistemi esistenti incompatibili potrebbero riscontrare problemi di performance.
+
+
+
 === 11 giugno 2023
 
 
@@ -723,32 +749,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 Gli utenti che utilizzano l'API RESTful possono ora filtrare le relazioni utilizzando gli ID di relazione.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["Scopri di più sull'utilizzo dell'API RESTful con copia e sincronizzazione BlueXP"].
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Escludi directory"].
-
-
-
-=== 2 aprile 2023
-
-
-
-==== Supporto aggiuntivo per le relazioni di Azure Data Lake Storage Gen2
-
-Ora puoi creare relazioni di sincronizzazione con Azure Data Lake Storage Gen2 come origine e destinazione con i seguenti elementi:
-
-* Azure NetApp Files
-* Amazon FSX per ONTAP
-* Cloud Volumes ONTAP
-* ONTAP on-premise
-
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html["Scopri di più sulle relazioni di sincronizzazione supportate"].
-
-
-
-==== Filtra le directory in base al percorso completo
-
-Oltre a filtrare le directory in base al nome, è possibile filtrare le directory in base al percorso completo.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Escludi directory"].
 
@@ -943,6 +943,20 @@ Durante la configurazione della licenza, il License Management Server (LMS) deve
 
 
 ==== L'interfaccia utente di Edge Sync in Optimus è stata migliorata per mostrare l'elenco dei client connessi su un Edge coordinatore
+
+
+
+== Storage Google Cloud
+
+
+
+=== 10 luglio 2023
+
+
+
+==== Possibilità di aggiungere nuovi bucket e gestire i bucket esistenti da BlueXP
+
+Hai avuto la possibilità di visualizzare i bucket di storage di Google Cloud su BlueXP Canvas per un bel po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html["Scopri come aggiungere nuovi bucket di storage Google Cloud"^].
 
 
 

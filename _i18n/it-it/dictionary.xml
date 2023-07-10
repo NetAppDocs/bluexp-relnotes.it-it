@@ -181,13 +181,6 @@
   <block id="aca73b993cefdbe81afe166bf8692c50" category="paragraph">Gli utenti che utilizzano l'API RESTful possono ora filtrare le relazioni utilizzando gli ID di relazione.</block>
   <block id="37a616e16a0f4d18ac25d57ddb913bf8" category="inline-link">Scopri di più sull'utilizzo dell'API RESTful con copia e sincronizzazione BlueXP</block>
   <block id="d1624b8f3b686e981a178c03616a370b" category="inline-link">Scopri di più sull'impostazione Escludi directory</block>
-  <block id="c7326baf2ea51b61fafa4f4680d916c0" category="section-title">2 aprile 2023</block>
-  <block id="9c305cf5f9f8051acc945eda0fc8a1be" category="section-title">Supporto aggiuntivo per le relazioni di Azure Data Lake Storage Gen2</block>
-  <block id="61babc330ca2ea0af752965dd3965d41" category="paragraph">Ora puoi creare relazioni di sincronizzazione con Azure Data Lake Storage Gen2 come origine e destinazione con i seguenti elementi:</block>
-  <block id="a37b0a91d7c4d8ac6ce924a7f8e1ce5a" category="list-text">ONTAP on-premise</block>
-  <block id="c7360b05ac6a5646b2770ea0c162d4fb" category="inline-link">Scopri di più sulle relazioni di sincronizzazione supportate</block>
-  <block id="ad5a82acd30f0d971a29fdb4632bd7d4" category="section-title">Filtra le directory in base al percorso completo</block>
-  <block id="b7395f4da221ab7779cce11224436fb3" category="paragraph">Oltre a filtrare le directory in base al nome, è possibile filtrare le directory in base al percorso completo.</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 marzo 2023</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Consulente digitale</block>
   <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1° novembre 2022</block>
@@ -361,7 +354,6 @@
   <block id="5b1faa5c627185bd8774ba759dbbcf1d" category="paragraph"><block ref="528a28b28e8f5d9df665a229e7a7fa63" category="inline-link-rx"></block>.</block>
   <block id="ce907128271b3f13161731af69efdb83" category="paragraph"><block ref="7d45213b584f83e1010772ef58d497ad" category="inline-link-rx"></block>.</block>
   <block id="791d072486b9f4524702996962f5cb1d" category="paragraph"><block ref="525fcee9e0cdf0ea236cb2377cb58f7b" category="inline-link-rx"></block>.</block>
-  <block id="4e0e0be812e0732ff08c371803f4157c" category="paragraph"><block ref="aabef2d7a8f8ee536d1fe9fe0f22b561" category="inline-link-rx"></block>.</block>
   <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
@@ -546,4 +538,21 @@
   <block id="098acc7a6e2aef2e0ffd66cabdde369e" category="section-title">Possibilità di creare i bucket per il backup sullo storage a oggetti</block>
   <block id="7882c4532e24f1cac41cc043cde436b7" category="paragraph">Per impostazione predefinita, quando si creano file di backup nello storage a oggetti, il servizio di backup e ripristino crea i bucket nello storage a oggetti. È possibile creare autonomamente i bucket se si desidera utilizzare un determinato nome o assegnare proprietà speciali. Se si desidera creare un bucket personalizzato, è necessario crearlo prima di avviare l'attivazione guidata.</block>
   <block id="ea600ff03360da539b9cf2f109798fac" category="paragraph">Questa funzionalità non è attualmente supportata quando si creano file di backup su sistemi StorageGRID.</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="inline-link">Storage Google Cloud</block>
+  <block id="68269a7fe7304a0e7d5a0232d5e7141b" category="list-text"><block ref="68269a7fe7304a0e7d5a0232d5e7141b" category="inline-link-rx"></block></block>
+  <block id="744c3e2d9eefd2af0d741a4bdf013531" category="section-title">9 luglio 2023</block>
+  <block id="0d31f76acc0f0585c0ce6603aae95bf9" category="section-title">Rimuovere più relazioni di sincronizzazione contemporaneamente</block>
+  <block id="86f4ab992201dfe7e7a91d9236676ea1" category="paragraph">Gli utenti possono ora eliminare più di una relazione di sincronizzazione alla volta nell'interfaccia utente.</block>
+  <block id="f56872f7cec9149a7ac802d7a22773f7" category="inline-link">Scopri di più sull'eliminazione delle relazionizzazioni di sincronizzazione.</block>
+  <block id="8841a5cc4fff05bb6e2a277bb234a5e9" category="paragraph"><block ref="8841a5cc4fff05bb6e2a277bb234a5e9" category="inline-link-rx"></block></block>
+  <block id="0bf8da16e84dc021192c3cce07860470" category="section-title">Copia solo ACL</block>
+  <block id="dda93ca03de99accfa039adc8007a91c" category="paragraph">Gli utenti dispongono ora di opzioni aggiuntive per la copia delle informazioni ACL nelle relazioni CIF e NFS. Quando si crea o si gestisce una relazione di sincronizzazione, è possibile copiare solo i file, copiare solo le informazioni ACL o copiare file e informazioni ACL.</block>
+  <block id="75188372815d8c81aa145bb6bd881697" category="inline-link">Scopri di più sulla copia degli ACL.</block>
+  <block id="f14be32be1b0e46b478529e782afc130" category="paragraph"><block ref="f14be32be1b0e46b478529e782afc130" category="inline-link-rx"></block></block>
+  <block id="c3605c10e6753f736b31bbe56975b312" category="section-title">Aggiornato a Node.js 20</block>
+  <block id="62ace2991e0846010d9d30c14cb37645" category="paragraph">Copy and Sync è stato aggiornato a Node.js 20. Tutti i broker di dati disponibili verranno aggiornati. I sistemi operativi incompatibili con questo aggiornamento non possono essere installati e i sistemi esistenti incompatibili potrebbero riscontrare problemi di performance.</block>
+  <block id="145634d473d937448dc7bdb5a6797ea7" category="section-title">10 luglio 2023</block>
+  <block id="5a6d96b9a020e520981bf7fe4c7af203" category="section-title">Possibilità di aggiungere nuovi bucket e gestire i bucket esistenti da BlueXP</block>
+  <block id="2706c3785e1f78099c28d555600c918b" category="inline-link">Scopri come aggiungere nuovi bucket di storage Google Cloud</block>
+  <block id="71d86d6b260e92b047d7453cd653bd4c" category="paragraph">Hai avuto la possibilità di visualizzare i bucket di storage di Google Cloud su BlueXP Canvas per un bel po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP.<block ref="df1f25cc6ac4c2f26feeca1367b4ae92" category="inline-link-rx"></block>.</block>
 </blocks>
