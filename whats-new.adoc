@@ -33,6 +33,32 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 30 luglio
+
+
+
+==== Connettore 3.9.32
+
+* È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.
++
+Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi gli indirizzi IP di origine, le aree di lavoro, i connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Scopri di più sull'utilizzo dell'API del servizio di audit"^]
+
++
+Questo collegamento è accessibile anche dall'interfaccia utente di BlueXP nella pagina Timeline.
+
+* Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Scopri i miglioramenti del cluster on-premise di ONTAP"^]
+
+
+
+
+
+
 === 2 luglio 2023
 
 
@@ -114,36 +140,6 @@ https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Sc
 
 +
 https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
-
-
-
-
-
-=== 7 maggio 2023
-
-
-
-==== Connettore 3.9.29
-
-* Ubuntu 22.04 è il nuovo sistema operativo per il connettore quando si implementa un connettore da BlueXP o dal mercato del cloud provider.
-+
-È inoltre possibile installare manualmente il connettore sul proprio host Linux su cui è in esecuzione Ubuntu 22.04.
-
-* Red Hat Enterprise Linux 8.6 e 8.7 non sono più supportati con le nuove implementazioni di connettori.
-+
-Queste versioni non sono supportate con le nuove implementazioni perché Red Hat non supporta più Docker, necessario per il connettore. Se si dispone di un connettore esistente in esecuzione su RHEL 8.6 o 8.7, NetApp continuerà a supportare la configurazione.
-
-+
-Red Hat 7.6, 7.7, 7.8 e 7.9 sono ancora supportati con connettori nuovi ed esistenti.
-
-* Il connettore è ora supportato nell'area Qatar di Google Cloud.
-* Il connettore è supportato anche nella regione Sweden Central di Microsoft Azure.
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
-
-* Questa versione del connettore include i miglioramenti di Cloud Volumes ONTAP.
-+
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-may-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
 
 
 
@@ -499,6 +495,58 @@ Se si desidera verificare che il sistema Linux soddisfi tutti i prerequisiti ind
 
 
 
+=== 30 luglio 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.32 del connettore.
+
+
+
+==== Flash cache e supporto ad alta velocità di scrittura in Google Cloud
+
+Flash cache e alta velocità di scrittura possono essere attivate separatamente in Google Cloud per Cloud Volumes ONTAP 9.13.1 e versioni successive. È disponibile un'elevata velocità di scrittura su tutti i tipi di istanze supportati. Flash cache è supportata nei seguenti tipi di istanze:
+
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+
+
+È possibile utilizzare queste funzionalità separatamente o insieme nelle implementazioni a singolo nodo e a coppia ad alta disponibilità.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Avviare Cloud Volumes ONTAP in Google Cloud"]
+
+
+
+==== Miglioramenti dei report sull'utilizzo
+
+Sono ora disponibili diversi miglioramenti alle informazioni visualizzate nei report di utilizzo. Di seguito sono riportati i miglioramenti apportati ai report sull'utilizzo:
+
+* L'unità TIB è ora inclusa nel nome delle colonne.
+* È ora incluso un nuovo campo "nodi" per i numeri di serie.
+* Una nuova colonna "tipo di carico di lavoro" è ora inclusa nel report sull'utilizzo delle VM di storage.
+* I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
+* Il tipo di volume "file" è ora denominato "Primary (Read/Write)" (primario (lettura/scrittura).
+* Il tipo di volume "secondario" è ora denominato "secondario (DP)".
+
+
+Per ulteriori informazioni sui report sull'utilizzo, vedere link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"^].
+
+
+
+=== 26 luglio 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettore.
+
+
+
+==== Cloud Volumes ONTAP 9.13.1 GA
+
+BlueXP è ora in grado di implementare e gestire la release di disponibilità generale di Cloud Volumes ONTAP 9.13.1 in AWS, Azure e Google Cloud.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
+
+
+
 === 2 luglio 2023
 
 Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettore.
@@ -510,86 +558,6 @@ Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettor
 La centrale giapponese orientale e coreana di Azure ora supporta implementazioni di zone ad alta disponibilità per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
 
 Per un elenco di tutte le regioni che supportano più zone di disponibilità, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^].
-
-
-
-==== Supporto autonomo per la protezione ransomware
-
-La protezione ransomware autonoma (ARP) è ora supportata su Cloud Volumes ONTAP. Il supporto ARP è disponibile su Cloud Volumes ONTAP versione 9.12.1 e successive.
-
-Per ulteriori informazioni su ARP con Cloud Volumes ONTAP, vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Protezione ransomware autonoma"].
-
-
-
-=== 26 giugno 2023
-
-La seguente modifica è stata introdotta con la versione 3.9.30 del connettore.
-
-
-
-==== Cloud Volumes ONTAP 9.13.1 RC1
-
-BlueXP è ora in grado di implementare e gestire Cloud Volumes ONTAP 9.13.1 in AWS, Azure e Google Cloud.
-
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
-
-
-
-=== 4 giugno 2023
-
-La seguente modifica è stata introdotta con la versione 3.9.30 del connettore.
-
-
-
-==== Aggiornamento del selettore della versione di aggiornamento di Cloud Volumes ONTAP
-
-Dalla pagina Upgrade Cloud Volumes ONTAP (aggiornamento versione), è possibile scegliere di eseguire l'aggiornamento alla versione più recente disponibile di Cloud Volumes ONTAP o a una versione precedente.
-
-Per ulteriori informazioni sull'aggiornamento di Cloud Volumes ONTAP tramite BlueXP, vedere https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Aggiornare Cloud Volumes ONTAP"^].
-
-
-
-=== 7 maggio 2023
-
-Le seguenti modifiche sono state introdotte con la versione 3.9.29 del connettore.
-
-
-
-==== Regione del Qatar ora supportata in Google Cloud
-
-La regione del Qatar è ora supportata in Google Cloud per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-
-
-==== Regione centrale della Svezia ora supportata in Azure
-
-La regione centrale svedese è ora supportata in Azure per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-
-
-==== Supporto per implementazioni di zone ad alta disponibilità in Azure Australia Est
-
-La regione orientale australiana di Azure ora supporta le implementazioni di zone ad alta disponibilità per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-
-
-==== Guasto nell'utilizzo della carica
-
-Ora puoi scoprire cosa ti verrà addebitato quando sei iscritto a licenze basate sulla capacità. I seguenti tipi di report sull'utilizzo sono disponibili per il download dal portafoglio digitale in BlueXP. I report sull'utilizzo forniscono i dettagli relativi alla capacità delle sottoscrizioni e indicano come vengono addebitate le risorse nelle sottoscrizioni Cloud Volumes ONTAP. I report scaricabili possono essere facilmente condivisi con altri.
-
-* Utilizzo del pacchetto Cloud Volumes ONTAP
-* Utilizzo di alto livello
-* Utilizzo delle VM di storage
-* Utilizzo dei volumi
-
-
-Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestione delle licenze basate sulla capacità"^].
-
-
-
-==== Viene ora visualizzata una notifica quando si accede a BlueXP senza un abbonamento al marketplace
-
-Viene visualizzata una notifica ogni volta che si accede a Cloud Volumes ONTAP in BlueXP senza un abbonamento al marketplace. La notifica indica "è necessario un abbonamento al mercato per questo ambiente di lavoro per essere conforme ai termini e alle condizioni di Cloud Volumes ONTAP".
 
 
 
@@ -747,6 +715,26 @@ https://docs.netapp.com/us-en/active-iq/index.html["Scopri di più su BlueXP Dig
 
 
 
+=== 30 luglio 2023
+
+
+
+==== Miglioramenti dei report sull'utilizzo
+
+Sono ora disponibili diversi miglioramenti ai report sull'utilizzo di Cloud Volumes ONTAP:
+
+* L'unità TIB è ora inclusa nel nome delle colonne.
+* È ora incluso un nuovo campo _node(s)_ per i numeri di serie.
+* Una nuova colonna _workload Type_ è ora inclusa nel report sull'utilizzo delle VM di storage.
+* I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
+* Il tipo di volume _file_ è ora denominato _Primary (Read/Write)_.
+* Il tipo di volume _secondario_ è ora denominato _secondario (DP)_.
+
+
+Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"].
+
+
+
 === 7 maggio 2023
 
 
@@ -767,7 +755,7 @@ Ora puoi scoprire cosa ti verrà addebitato quando sei iscritto a licenze basate
 * Utilizzo dei volumi
 
 
-Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gestione delle licenze basate sulla capacità"].
+Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"].
 
 
 
@@ -790,18 +778,6 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html
 Quando si visualizzano le licenze basate sulla capacità per Cloud Volumes ONTAP, il portafoglio digitale BlueXP mostra ora la capacità concessa in licenza acquistata con le offerte private Marketplace.
 
 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Scopri come visualizzare la capacità consumata nel tuo account"].
-
-
-
-=== 6 novembre 2022
-
-
-
-==== Abbonamenti e contratti annuali
-
-Gli abbonamenti PAYGO e i contratti annuali per BlueXP sono ora disponibili per la visualizzazione e la gestione dal portafoglio digitale BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html["Scopri come gestire gli abbonamenti"].
 
 
 
@@ -979,6 +955,20 @@ link:https://docs.netapp.com/us-en/bluexp-reports/get-started/intro.html["Scopri
 
 
 
+=== 30 luglio 2023
+
+
+
+==== Creare volumi FlexGroup
+
+Se si gestisce un cluster con un connettore, è ora possibile creare volumi FlexGroup utilizzando l'API BlueXP.
+
+* https://docs.netapp.com/us-en/bluexp-automation/cm/wf_onprem_flexgroup_ontap_create_vol.html["Scopri come creare un volume FlexGroup"^]
+* https://docs.netapp.com/us-en/ontap/flexgroup/definition-concept.html["Scopri cos'è un volume FlexGroup"^]
+
+
+
+
 === 2 luglio 2023
 
 
@@ -1007,28 +997,6 @@ A partire da ONTAP 9.10.1, è possibile utilizzare Gestione sistema (visualizzaz
 
 
 NOTE: Se non si dispone di un connettore, non è possibile eseguire aggiornamenti dal computer locale, solo da un server a cui è possibile accedere utilizzando BlueXP.
-
-
-
-=== 3 aprile 2023
-
-
-
-==== Singola opzione di rilevamento dalla console BlueXP
-
-Quando si scopre un cluster ONTAP on-premise dalla console BlueXP, viene visualizzata una singola opzione:
-
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-ontap-onprem/main/media/screenshot-discover-on-prem-ontap.png["Una schermata che mostra l'opzione Discover on-premise ONTAP disponibile durante la creazione di un ambiente di lavoro"]
-
-In precedenza, esistevano flussi separati per il rilevamento diretto e per il rilevamento con un connettore. Entrambe le opzioni sono ancora disponibili, ma unite in un singolo flusso.
-
-Quando si avvia il processo di rilevamento, BlueXP rileva il cluster come segue:
-
-* Se si dispone di un connettore attivo che dispone di una connessione al cluster ONTAP, BlueXP utilizzerà tale connettore per rilevare e gestire il cluster.
-* Se non si dispone di un connettore o se il connettore non dispone di una connessione al cluster ONTAP, BlueXP utilizzerà automaticamente l'opzione di rilevamento e gestione diretta.
-
-
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["Scopri di più sulle opzioni di rilevamento e gestione"].
 
 
 
