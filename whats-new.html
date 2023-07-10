@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per ulteriori informazioni, consultare la serie completa...">
-  <meta name="keywords" content=" what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp"><!-- Icons -->
+  <meta name="keywords" content=" what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, kubernetes, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, cloud manager, bluexp, google cloud"><!-- Icons -->
   <link rel="icon" href="/it-it/bluexp-relnotes/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/bluexp-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -482,7 +482,7 @@
 <p class="page-details">
   
     
-    <time datetime="2023-07-07 14:31:24 +0000">07/07/2023</time>
+    <time datetime="2023-07-10 16:55:58 +0000">07/10/2023</time>
     
   
 
@@ -565,9 +565,9 @@
 </li>
 <li><a href="#copia-e-sincronizzazione">Copia e sincronizzazione</a>
 <ul class="sectlevel2">
+<li><a href="#9-luglio-2023">9 luglio 2023</a></li>
 <li><a href="#11-giugno-2023">11 giugno 2023</a></li>
 <li><a href="#8-maggio-2023-2">8 maggio 2023</a></li>
-<li><a href="#2-aprile-2023">2 aprile 2023</a></li>
 </ul>
 </li>
 <li><a href="#consulente-digitale">Consulente digitale</a>
@@ -597,6 +597,11 @@
 <li><a href="#5-aprile-2023-versione-2-2">5 aprile 2023 (versione 2.2)</a></li>
 <li><a href="#24-ottobre-2022-versione-2-1">24 ottobre 2022 (versione 2.1)</a></li>
 <li><a href="#25-luglio-2022-versione-2-0">25 luglio 2022 (versione 2.0)</a></li>
+</ul>
+</li>
+<li><a href="#storage-google-cloud">Storage Google Cloud</a>
+<ul class="sectlevel2">
+<li><a href="#10-luglio-2023">10 luglio 2023</a></li>
 </ul>
 </li>
 <li><a href="#kubernetes">Kubernetes</a>
@@ -1512,6 +1517,33 @@
 <h2 id="copia-e-sincronizzazione">Copia e sincronizzazione</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="9-luglio-2023">9 luglio 2023</h3>
+<div class="sect3">
+<h4 id="rimuovere-più-relazioni-di-sincronizzazione-contemporaneamente">Rimuovere più relazioni di sincronizzazione contemporaneamente</h4>
+<div class="paragraph">
+<p>Gli utenti possono ora eliminare più di una relazione di sincronizzazione alla volta nell&#8217;interfaccia utente.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-relationships.html#deleting-relationships">"Scopri di più sull&#8217;eliminazione delle relazionizzazioni di sincronizzazione."</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="copia-solo-acl">Copia solo ACL</h4>
+<div class="paragraph">
+<p>Gli utenti dispongono ora di opzioni aggiuntive per la copia delle informazioni ACL nelle relazioni CIF e NFS. Quando si crea o si gestisce una relazione di sincronizzazione, è possibile copiare solo i file, copiare solo le informazioni ACL o copiare file e informazioni ACL.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-copying-acls.html">"Scopri di più sulla copia degli ACL."</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="aggiornato-a-node-js-20">Aggiornato a Node.js 20</h4>
+<div class="paragraph">
+<p>Copy and Sync è stato aggiornato a Node.js 20. Tutti i broker di dati disponibili verranno aggiornati. I sistemi operativi incompatibili con questo aggiornamento non possono essere installati e i sistemi esistenti incompatibili potrebbero riscontrare problemi di performance.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="11-giugno-2023">11 giugno 2023</h3>
 <div class="sect3">
 <h4 id="supporta-linterruzione-automatica-in-pochi-minuti">Supporta l&#8217;interruzione automatica in pochi minuti</h4>
@@ -1565,43 +1597,6 @@
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html">"Scopri di più sull&#8217;utilizzo dell&#8217;API RESTful con copia e sincronizzazione BlueXP"</a>.</p>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings">"Scopri di più sull&#8217;impostazione Escludi directory"</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="2-aprile-2023">2 aprile 2023</h3>
-<div class="sect3">
-<h4 id="supporto-aggiuntivo-per-le-relazioni-di-azure-data-lake-storage-gen2">Supporto aggiuntivo per le relazioni di Azure Data Lake Storage Gen2</h4>
-<div class="paragraph">
-<p>Ora puoi creare relazioni di sincronizzazione con Azure Data Lake Storage Gen2 come origine e destinazione con i seguenti elementi:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Azure NetApp Files</p>
-</li>
-<li>
-<p>Amazon FSX per ONTAP</p>
-</li>
-<li>
-<p>Cloud Volumes ONTAP</p>
-</li>
-<li>
-<p>ONTAP on-premise</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/reference-supported-relationships.html">"Scopri di più sulle relazioni di sincronizzazione supportate"</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="filtra-le-directory-in-base-al-percorso-completo">Filtra le directory in base al percorso completo</h4>
-<div class="paragraph">
-<p>Oltre a filtrare le directory in base al nome, è possibile filtrare le directory in base al percorso completo.</p>
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings">"Scopri di più sull&#8217;impostazione Escludi directory"</a>.</p>
@@ -1820,6 +1815,20 @@
 <div class="sect3">
 <h4 id="linterfaccia-utente-di-edge-sync-in-optimus-è-stata-migliorata-per-mostrare-lelenco-dei-client-connessi-su-un-edge-coordinatore">L&#8217;interfaccia utente di Edge Sync in Optimus è stata migliorata per mostrare l&#8217;elenco dei client connessi su un Edge coordinatore</h4>
 
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="storage-google-cloud">Storage Google Cloud</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="10-luglio-2023">10 luglio 2023</h3>
+<div class="sect3">
+<h4 id="possibilità-di-aggiungere-nuovi-bucket-e-gestire-i-bucket-esistenti-da-bluexp">Possibilità di aggiungere nuovi bucket e gestire i bucket esistenti da BlueXP</h4>
+<div class="paragraph">
+<p>Hai avuto la possibilità di visualizzare i bucket di storage di Google Cloud su BlueXP Canvas per un bel po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP. <a href="https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html" target="_blank" rel="noopener">"Scopri come aggiungere nuovi bucket di storage Google Cloud"</a>.</p>
+</div>
 </div>
 </div>
 </div>
