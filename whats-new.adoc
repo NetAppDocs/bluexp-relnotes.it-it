@@ -213,6 +213,14 @@ La possibilità di creare e gestire Azure NetApp Files direttamente da Cloud Man
 
 
 
+=== 30 luglio 2023
+
+I clienti possono ora creare file system Amazon FSX per NetApp ONTAP in tre nuove regioni AWS: Europa (Zurigo), Europa (Spagna) e Asia-Pacifico (Hyderabad).
+
+Fare riferimento a. link:https://aws.amazon.com/about-aws/whats-new/2023/04/amazon-fsx-netapp-ontap-three-regions/#:~:text=Customers%20can%20now%20create%20Amazon,file%20systems%20in%20the%20cloud["Amazon FSX per NetApp ONTAP è ora disponibile in altre tre regioni"^] per informazioni dettagliate.
+
+
+
 === 02 luglio 2023
 
 * Ora puoi farlo link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-svm.html["Aggiungere una VM di storage"] Al file system Amazon FSX per NetApp ONTAP utilizzando BlueXP.
@@ -225,14 +233,6 @@ La possibilità di creare e gestire Azure NetApp Files direttamente da Cloud Man
 
 * Quando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["creazione di un ambiente di lavoro"], è possibile specificare l'ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non sia in conflitto con le attività aziendali critiche.
 * Quando link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-add-fsx-volumes.html["creazione di un volume"], È possibile abilitare l'ottimizzazione dei dati creando un FlexGroup per distribuire i dati tra i volumi.
-
-
-
-
-=== 07 maggio 2023
-
-* Quando si crea un ambiente di lavoro, è ora possibile utilizzare BlueXP link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-creating-fsx-working-environment.html#create-an-amazon-fsx-for-netapp-ontap-working-environment["generare un gruppo di sicurezza"^] Che consente il traffico solo all'interno del VPC selezionato. Questa funzione link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["richiede autorizzazioni aggiuntive"^].
-* È possibile scegliere se link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-add-fsx-volumes.html#create-volumes["aggiungi"^] e. link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-volume-tags["modificare"^] tag per categorizzare i volumi.
 
 
 
@@ -435,6 +435,16 @@ Ora è possibile eseguire l'aggiornamento a una versione più recente della clas
 
 
 
+==== L'API di classificazione BlueXP è ora disponibile
+
+L'API di classificazione BlueXP ti consente di eseguire azioni, creare query ed esportare informazioni sui dati che stai analizzando. La documentazione interattiva è disponibile utilizzando Swagger. La documentazione è suddivisa in più categorie, tra cui analisi, conformità, governance e configurazione. Ogni categoria è un riferimento alle schede nell'interfaccia utente di classificazione BlueXP.
+
+Per accedere a Swagger, è necessario l'indirizzo IP dell'istanza di classificazione BlueXP. Nel caso di un'implementazione cloud, verrà utilizzato l'indirizzo IP pubblico. Quindi, è necessario accedere a questo endpoint:
+
+https://<classification_ip>/documentation[]
+
+
+
 === 6 giugno 2023 (versione 1.23)
 
 
@@ -615,6 +625,38 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 6 agosto 2023
+
+
+
+==== Utilizzo dei gruppi di sicurezza di Azure esistenti durante la creazione di un broker di dati
+
+Gli utenti possono ora utilizzare i gruppi di sicurezza di Azure esistenti durante la creazione di un broker di dati.
+
+L'account di servizio utilizzato durante la creazione del broker di dati deve disporre delle seguenti autorizzazioni:
+
+* "Microsoft.Network/networkSecurityGroups/securityRules/read"
+* "Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Scopri di più sulla creazione di un broker di dati in Azure."]
+
+
+
+==== Crittografare i dati durante la sincronizzazione con Google Storage
+
+Gli utenti possono ora specificare una chiave di crittografia gestita dal cliente quando creano una relazione di sincronizzazione con un bucket Google Storage come destinazione. È possibile inserire manualmente la chiave o scegliere una chiave da un elenco di chiavi di un'unica regione.
+
+L'account di servizio utilizzato durante la creazione del broker di dati deve disporre delle seguenti autorizzazioni:
+
+* Cloudkms.cryptographies.list
+* Cloudkms.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Scopri di più sui requisiti del bucket Google Cloud Storage."]
+
+
+
 === 9 luglio 2023
 
 
@@ -658,42 +700,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 Nelle relazioni, incluso un file system, la funzione *Copy for Objects* copia ora i metadati del tempo di accesso.
 
 https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Copia per oggetti"].
-
-
-
-=== 8 maggio 2023
-
-
-
-==== Funzionalità hard link
-
-Gli utenti possono ora includere hard link per sincronizzazioni che coinvolgono relazioni NFS non protette con NFS.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione dei tipi di file"].
-
-
-
-==== Possibilità di aggiungere un certificato utente per i broker di dati in relazioni NFS sicure
-
-Gli utenti sono ora in grado di impostare il proprio certificato per il data broker di destinazione quando creano una relazione NFS sicura. In tal caso, è necessario impostare un nome server e fornire una chiave privata e un ID certificato. Questa funzione è disponibile per tutti i data broker.
-
-
-
-==== Periodo di esclusione esteso per i file modificati di recente
-
-Gli utenti possono ora escludere i file modificati fino a 365 giorni prima della sincronizzazione pianificata.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione dei file modificati di recente"].
-
-
-
-==== Filtrare le relazioni nell'interfaccia utente in base all'ID relazione
-
-Gli utenti che utilizzano l'API RESTful possono ora filtrare le relazioni utilizzando gli ID di relazione.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/api-sync.html["Scopri di più sull'utilizzo dell'API RESTful con copia e sincronizzazione BlueXP"].
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#settings["Scopri di più sull'impostazione Escludi directory"].
 
 
 
@@ -811,9 +817,15 @@ link:https://docs.netapp.com/us-en/bluexp-economic-efficiency/get-started/intro.
 
 
 
+=== 1 agosto 2023 (versione 2,3)
+
+Questa versione risolve i problemi descritti in https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemi risolti"]. I pacchetti software aggiornati sono disponibili all'indirizzo https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["questa pagina"].
+
+
+
 === 5 aprile 2023 (versione 2.2)
 
-Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemi risolti"]. I pacchetti software aggiornati sono disponibili all'indirizzo https://docs.netapp.com/us-en/bluexp-edge-caching/download-gfc-resources.html#download-required-resources["questa pagina"].
+Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemi risolti"].
 
 
 
@@ -862,38 +874,6 @@ Una singola istanza Global file cache Edge può servire fino a 500 utenti per is
 
 
 ==== È stata migliorata la funzione Edge Sync nell'interfaccia utente di Optimus (configurazione Edge) per mostrare tutti i client connessi
-
-
-
-=== 25 luglio 2022 (versione 2.0)
-
-Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in https://docs.netapp.com/us-en/bluexp-edge-caching/fixed-issues.html["Problemi risolti"].
-
-
-
-==== Nuovo modello di licenza basato sulla capacità per Global file cache attraverso Azure Marketplace
-
-Una nuova licenza "Edge cache" ha le stesse funzionalità della licenza "CVO Professional", ma include anche il supporto per Global file cache. Questa opzione viene visualizzata quando si implementa un nuovo sistema Cloud Volumes ONTAP in Azure. Hai diritto a implementare un sistema edge Global file cache per ogni 3 TIB di capacità fornita sul sistema Cloud Volumes ONTAP. È necessario eseguire il provisioning di un minimo di 30 TIB. Il servizio GFC License Manager è stato migliorato per fornire licenze basate sulla capacità.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Scopri di più sul pacchetto di licenza Edge cache."]
-
-
-
-==== Global file cache è ora integrato con Cloud Insights
-
-NetApp Cloud Insights (ci) offre una visibilità completa dell'infrastruttura e delle applicazioni. Global file cache è ora integrato con ci per fornire una visibilità completa di tutti i core e i margini, monitorando i processi in esecuzione sulle istanze. Varie metriche Global file cache vengono inviate al ci per fornire una panoramica completa sul dashboard ci. Vedere il capitolo 11 della https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf["Guida utente di NetApp Global file cache"^]
-
-https://cloud.netapp.com/cloud-insights["Scopri di più su Cloud Insights."]
-
-
-
-==== License Management Server è stato migliorato per funzionare in ambienti molto restrittivi
-
-Durante la configurazione della licenza, il License Management Server (LMS) deve avere accesso a Internet per raccogliere i dettagli della licenza da NetApp/Zuora. Una volta completata la configurazione, il sistema LMS può continuare a lavorare in modalità offline e fornire funzionalità di licenza anche se si trova in ambienti restrittivi.
-
-
-
-==== L'interfaccia utente di Edge Sync in Optimus è stata migliorata per mostrare l'elenco dei client connessi su un Edge coordinatore
 
 
 
@@ -1166,6 +1146,22 @@ Ora puoi scoprire i tuoi sistemi StorageGRID direttamente da BlueXP. Discovering
 
 
 
+=== 9 agosto 2023
+
+
+
+==== Utilizzare un prefisso personalizzato per il nome del bucket in cui sono memorizzati i dati a più livelli
+
+In passato era necessario utilizzare il prefisso predefinito "fabric-pool" per definire il nome del bucket, ad esempio _fabric-pool-bucket1_. Ora è possibile utilizzare un prefisso personalizzato per assegnare un nome al bucket. Questa funzionalità è disponibile solo con il tiering dei dati su Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["Scopri di più"].
+
+
+
+==== Cerca un cluster in tutti i connettori BlueXP
+
+Se si utilizzano più connettori per gestire tutti i sistemi storage del proprio ambiente, alcuni cluster in cui si desidera implementare il tiering potrebbero trovarsi in diversi connettori. Se non sai con certezza quale connettore gestisce un determinato cluster, puoi cercare in tutti i connettori utilizzando il tiering BlueXP. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#search-for-a-cluster-across-all-bluexp-connectors["Scopri di più"].
+
+
+
 === 4 luglio 2023
 
 
@@ -1197,16 +1193,6 @@ La scheda Licensing (licenze) è stata rimossa dall'interfaccia di tiering BlueX
 ==== Le schede di tiering sono state rinominate e il contenuto è stato aggiornato
 
 La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Prem Overview" è stata rinominata "on-premise Dashboard". In queste pagine sono state aggiunte alcune informazioni utili per valutare se è possibile ottimizzare lo spazio di storage con una configurazione di tiering aggiuntiva.
-
-
-
-=== 5 marzo 2023
-
-
-
-==== Ora è possibile generare un report di tiering per i volumi
-
-È possibile scaricare un report dalla pagina Tier Volumes per esaminare lo stato di tiering di tutti i volumi nei cluster che si stanno gestendo. BlueXP Tiering genera un file .CSV che è possibile rivedere e inviare ad altre persone dell'azienda in base alle necessità. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["Scopri come scaricare il report sul tiering"].
 
 
 
