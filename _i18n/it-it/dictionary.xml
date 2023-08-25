@@ -110,12 +110,6 @@
   <block id="6ae18045fc1ab0bf7898b13f3ef31c9a" category="inline-image-macro">Una schermata che mostra la pagina analisi dei costi in Cloud Manager</block>
   <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">7 marzo 2023</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Consulente digitale</block>
-  <block id="c642de9f40ee79267e2e62e3ebed032e" category="section-title">1° novembre 2022</block>
-  <block id="fd31042d52571c6f22cae041d72fc4dd" category="paragraph">Digital Advisor (in precedenza Active IQ) è ora completamente integrato con BlueXP e offre un'esperienza di accesso migliorata.</block>
-  <block id="bde16c93c046fa9870a736978717607f" category="paragraph">Quando accedi a BlueXP Digital Advisor, ti verrà chiesto di inserire le credenziali del NetApp Support Site per visualizzare i dati relativi ai tuoi sistemi. L'account NSS a cui si effettua l'accesso è associato solo all'accesso utente. Non è associato ad altri utenti del tuo account NetApp.</block>
-  <block id="e1a4f9c5e73602864d1ef18966b243f2" category="inline-link">Scopri di più su BlueXP Digital Advisor</block>
-  <block id="829877d29208a3548ee11017a15158af" category="paragraph"><block ref="829877d29208a3548ee11017a15158af" category="inline-link-rx"></block></block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="section-title">Portafoglio digitale</block>
   <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Offerte private di Google Cloud</block>
   <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">Il portafoglio digitale BlueXP identifica ora gli abbonamenti a Google Cloud Marketplace associati a un'offerta privata e mostra la data e la durata dell'abbonamento. Questo miglioramento consente di verificare che l'offerta privata sia stata accettata correttamente e di validarne i termini.</block>
   <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">Ora puoi scoprire cosa ti verrà addebitato quando sei iscritto a licenze basate sulla capacità. I seguenti tipi di report sull'utilizzo sono disponibili per il download dal portafoglio digitale BlueXP. I report sull'utilizzo forniscono i dettagli relativi alla capacità delle sottoscrizioni e indicano come vengono addebitate le risorse nelle sottoscrizioni Cloud Volumes ONTAP. I report scaricabili possono essere facilmente condivisi con altri.</block>
@@ -572,4 +566,16 @@
   <block id="405e835e0544bb4cc8bbd26a2c840b54" category="section-title">18 maggio 2023</block>
   <block id="acff175f1bababdb2baa1348412d501d" category="paragraph">Questa è la versione iniziale del disaster recovery di BlueXP.</block>
   <block id="1ba37effd0ce32bb6cfe5ede3a761ee2" category="paragraph">Il disaster recovery di BlueXP è un servizio di disaster recovery basato sul cloud che automatizza i flussi di lavoro di disaster recovery. Inizialmente, con la versione beta di disaster recovery di BlueXP, puoi proteggere i tuoi carichi di lavoro VMware on-premise basati su NFS che eseguono lo storage NetApp in VMware Cloud (VMC) su AWS con Amazon FSX per ONTAP.</block>
+  <block id="51f8ba1e739f07ed09f1ba20bff5e7fc" category="section-title">16 luglio 2023</block>
+  <block id="91b681e174a782226d26fb4056e14081" category="section-title">Efficienza dello storage</block>
+  <block id="520e6a90f7dfce96c54641856d8584f2" category="list-text">L'etichetta *efficienza di archiviazione*, che visualizza il rapporto di efficienza, viene rinominata *riduzione dati*.</block>
+  <block id="cc50d008d8b1e1f6ba13bbe127a1bf29" category="list-text">L'etichetta *dati salvati dall'efficienza di archiviazione* viene rinominata *risparmio riduzione dati*.</block>
+  <block id="2a88859b894ead28756789553bc66754" category="list-text">L'opzione *risparmio senza backup snapshot* viene rinominata *con copie snapshot* insieme a una modifica alla relativa funzionalità. <block ref="3a01d99aaa6c74ce8f92a2ac5ca4e5e9" category="inline-link-macro-rx"></block>.</block>
+  <block id="325e4e14529c96a60b99d9cecba4d5a6" category="section-title">21 giugno 2023</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard sulla sostenibilità</block>
+  <block id="157e4d0632e88d94ee663058894a5415" category="paragraph">La Sustainability Dashboard fornisce preziose informazioni sulla sostenibilità ambientale del tuo sistema storage. È possibile visualizzare informazioni come il punteggio di sostenibilità, la percentuale di riduzione del carbonio, l'utilizzo previsto di energia, il carbonio diretto e il calore. È possibile regolare la percentuale di riduzione del carbonio per siti specifici. È inoltre possibile visualizzare il punteggio di sostenibilità a livello di cluster. Valutando il punteggio di sostenibilità, puoi valutare l'efficienza complessiva del tuo sistema storage e allinearlo alle azioni consigliate da NetApp per migliorare la sostenibilità. <block ref="14f04672b3a078b1589b8f46c67500a4" category="inline-link-macro-rx"></block>.</block>
+  <block id="7002d0318dc4f195c464ca83f3d2ca86" category="section-title">22 febbraio 2023</block>
+  <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">Grafici delle performance</block>
+  <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">È possibile visualizzare la media delle operazioni di lettura, scrittura e altre operazioni nel grafico IOPS del volume.</block>
+  <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">L'efficienza dello storage SAN e NAS è disponibile, a livello di nodo, per i sistemi ONTAP tra cui AFF Serie A, AFF C190, All SAN Array e FAS500 con ONTAP 9.10 e versioni successive.</block>
 </blocks>

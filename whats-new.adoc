@@ -718,13 +718,42 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
-=== 1° novembre 2022
+=== 16 luglio 2023
 
-Digital Advisor (in precedenza Active IQ) è ora completamente integrato con BlueXP e offre un'esperienza di accesso migliorata.
 
-Quando accedi a BlueXP Digital Advisor, ti verrà chiesto di inserire le credenziali del NetApp Support Site per visualizzare i dati relativi ai tuoi sistemi. L'account NSS a cui si effettua l'accesso è associato solo all'accesso utente. Non è associato ad altri utenti del tuo account NetApp.
 
-https://docs.netapp.com/us-en/active-iq/index.html["Scopri di più su BlueXP Digital Advisor"^]
+==== Efficienza dello storage
+
+* L'etichetta *efficienza di archiviazione*, che visualizza il rapporto di efficienza, viene rinominata *riduzione dati*.
+* L'etichetta *dati salvati dall'efficienza di archiviazione* viene rinominata *risparmio riduzione dati*.
+* L'opzione *risparmio senza backup snapshot* viene rinominata *con copie snapshot* insieme a una modifica alla relativa funzionalità. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["Scopri di più"].
+
+
+
+
+=== 21 giugno 2023
+
+
+
+==== Dashboard sulla sostenibilità
+
+La Sustainability Dashboard fornisce preziose informazioni sulla sostenibilità ambientale del tuo sistema storage. È possibile visualizzare informazioni come il punteggio di sostenibilità, la percentuale di riduzione del carbonio, l'utilizzo previsto di energia, il carbonio diretto e il calore. È possibile regolare la percentuale di riduzione del carbonio per siti specifici. È inoltre possibile visualizzare il punteggio di sostenibilità a livello di cluster. Valutando il punteggio di sostenibilità, puoi valutare l'efficienza complessiva del tuo sistema storage e allinearlo alle azioni consigliate da NetApp per migliorare la sostenibilità. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Scopri di più"].
+
+
+
+=== 22 febbraio 2023
+
+
+
+==== Grafici delle performance
+
+È possibile visualizzare la media delle operazioni di lettura, scrittura e altre operazioni nel grafico IOPS del volume.
+
+
+
+==== Efficienza dello storage
+
+L'efficienza dello storage SAN e NAS è disponibile, a livello di nodo, per i sistemi ONTAP tra cui AFF Serie A, AFF C190, All SAN Array e FAS500 con ONTAP 9.10 e versioni successive.
 
 
 
