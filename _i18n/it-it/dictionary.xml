@@ -76,13 +76,6 @@
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">Scopri come aggiungere nuovi bucket Amazon S3</block>
   <block id="91402ca539ef196ec17265c55db694dc" category="paragraph">Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas per un po' di tempo. Ora puoi aggiungere nuovi bucket e modificare le proprietà dei bucket esistenti direttamente da BlueXP.<block ref="2c8909472f79d70b0988a1b1340a52c9" category="inline-link-rx"></block>.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Scopri di più</block>
-  <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">3 aprile 2023 (versione 1.22)</block>
-  <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">Nuovo report sulla valutazione del rilevamento dei dati</block>
-  <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">Scopri come generare e utilizzare il Data Discovery Assessment Report</block>
-  <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">Possibilità di implementare la classificazione BlueXP su istanze più piccole nel cloud</block>
-  <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">Vedere i tipi di istanze e le limitazioni disponibili</block>
-  <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">È ora disponibile uno script standalone per qualificare il sistema Linux prima dell'installazione della classificazione BlueXP</block>
-  <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">Scopri come verificare se il tuo host Linux è pronto per installare la classificazione BlueXP</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">La classificazione BlueXP è in grado di identificare e classificare i file che contengono i seguenti tipi di dati:</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">Scopri tutti i tipi di dati personali che la classificazione BlueXP può identificare nei tuoi dati</block>
   <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Guasto nell'utilizzo della carica</block>
@@ -227,9 +220,6 @@
   <block id="a80baf4fa5d71b9ef418edfcaebd2759" category="list-text"><block ref="a80baf4fa5d71b9ef418edfcaebd2759" category="inline-link-rx"></block></block>
   <block id="45ee83d3cd24c8a79ff15330399da6a7" category="list-text"><block ref="45ee83d3cd24c8a79ff15330399da6a7" category="inline-link-rx"></block></block>
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
-  <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">Il Data Discovery Assessment Report fornisce un'analisi di alto livello dell'ambiente sottoposto a scansione per evidenziare i risultati del sistema e mostrare le aree problematiche e le potenziali fasi di risoluzione dei problemi. L'obiettivo di questo report è aumentare la consapevolezza dei problemi di governance dei dati, delle esposizioni alla sicurezza dei dati e delle lacune nella compliance dei dati del tuo set di dati.<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>.</block>
-  <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">Quando si implementa la classificazione BlueXP da un connettore BlueXP in un ambiente AWS, è ora possibile scegliere tra due tipi di istanze più piccoli rispetto a quelli disponibili con l'istanza predefinita. Se si esegue la scansione di un ambiente di piccole dimensioni, questo può contribuire a risparmiare sui costi del cloud. Tuttavia, esistono alcune limitazioni quando si utilizza l'istanza più piccola.<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>.</block>
-  <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">Se si desidera verificare che il sistema Linux soddisfi tutti i prerequisiti indipendentemente dall'esecuzione dell'installazione di classificazione BlueXP, è possibile scaricare uno script separato che esegue solo i prerequisiti.<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>.</block>
   <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
@@ -386,7 +376,6 @@
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">La classificazione BlueXP è ora completamente supportata nei siti senza accesso a Internet (modalità privata) e con accesso Internet in uscita limitato (modalità limitata).<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="section-title">Possibilità di saltare le versioni durante l'aggiornamento di un'installazione in modalità privata della classificazione BlueXP</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">Ora è possibile eseguire l'aggiornamento a una versione più recente della classificazione BlueXP anche se non è sequenziale. Ciò significa che l'attuale limite di aggiornamento della classificazione BlueXP per una versione alla volta non è più necessario. Questa funzione è rilevante a partire dalla versione 1.24 in poi.</block>
-  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">30 luglio</block>
   <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Connettore 3.9.32</block>
   <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.</block>
   <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">Scopri di più sull'utilizzo dell'API del servizio di audit</block>
@@ -578,4 +567,26 @@
   <block id="e10f6958064ae5f36e8b132d4142e626" category="section-title">Grafici delle performance</block>
   <block id="1c6ca21b0d3e6f38c91e416032c3b178" category="paragraph">È possibile visualizzare la media delle operazioni di lettura, scrittura e altre operazioni nel grafico IOPS del volume.</block>
   <block id="80a2eb22b09cbe781077565f06b74dbf" category="paragraph">L'efficienza dello storage SAN e NAS è disponibile, a livello di nodo, per i sistemi ONTAP tra cui AFF Serie A, AFF C190, All SAN Array e FAS500 con ONTAP 9.10 e versioni successive.</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 settembre 2023</block>
+  <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Connettore 3.9.33</block>
+  <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Quando crei un connettore in AWS da BlueXP, puoi cercare nel campo Coppia di chiavi per trovare più facilmente la coppia di chiavi da utilizzare con l'istanza del connettore.</block>
+  <block id="5fa35188b7dd9c428afc77ce84eeb10b" category="inline-image-macro">Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP.</block>
+  <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Questo aggiornamento include anche le correzioni dei bug.</block>
+  <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 settembre (versione 1,25)</block>
+  <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Applicare le etichette su un massimo di 100.000 elementi dalla pagina risultati analisi</block>
+  <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Scopri come</block>
+  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">In passato, nella pagina dei risultati dell'analisi era possibile applicare tag a una singola pagina alla volta (20 elementi). Ora è possibile selezionare *tutti* elementi nelle pagine dei risultati dell'analisi e applicare tag a tutti gli elementi, fino a 100.000 elementi alla volta. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
+  <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identificare i file duplicati con una dimensione minima di 1 MB</block>
+  <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Classificazione BlueXP utilizzata per identificare i file duplicati solo quando avevano 50 MB o più. Ora è possibile identificare i file duplicati che iniziano con 1 MB. È possibile utilizzare i filtri della pagina di analisi "dimensione file" insieme a "duplicati" per vedere quali file di una certa dimensione sono duplicati nell'ambiente in uso.</block>
+  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 settembre 2023</block>
+  <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">Escludi file tramite regex</block>
+  <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">Gli utenti hanno ora la possibilità di escludere i file utilizzando regex.</block>
+  <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">Ulteriori informazioni sulla funzione *Escludi estensioni file*.</block>
+  <block id="8ca7330f80b3c6b405f94cdadf97a80c" category="paragraph"><block ref="8ca7330f80b3c6b405f94cdadf97a80c" category="inline-link-rx"></block></block>
+  <block id="f32e3be81b145c34740db00a44c46e93" category="section-title">Aggiungi S3 chiavi durante la creazione di broker dati Azure</block>
+  <block id="7631c04fd88511e09fd26f0ce9f65ce1" category="paragraph">Ora gli utenti possono aggiungere chiavi di accesso e chiavi segrete di AWS S3 durante la creazione di un broker dati Azure.</block>
+  <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
+  <block id="d687b97df8e082fb1a95e853c70aa1c2" category="section-title">03 settembre 2023</block>
+  <block id="a0c145fadd8b464775a61d2f1a2e0474" category="paragraph">Il servizio di report di migrazione BlueXP aggiornato fornisce aggiornamenti ai dati dei report. I report ora includono la capacità allocata.</block>
 </blocks>
