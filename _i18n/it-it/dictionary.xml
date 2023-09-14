@@ -346,9 +346,6 @@
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="section-title">Due nuovi tipi di dati personali tedeschi sono identificati dalla classificazione BlueXP</block>
   <block id="e2f64dc02ab3f9d3b659d24b9503b545" category="list-text">ID tedesco (Personalausweisnummer)</block>
   <block id="ac01084f4d5a1af5de639eaf04ad94ff" category="list-text">Numero tedesco di previdenza sociale (Sozialversicherungsnummer)</block>
-  <block id="f6731e0bd9f7a8a40f83ba1c622ffe25" category="section-title">Rocky Linux 9 è ora una distribuzione Linux supportata su cui è possibile installare la classificazione BlueXP</block>
-  <block id="76264cc2bc8d3793465d31c38655f588" category="inline-link">Scopri come installare la classificazione BlueXP su un host con Rocky Linux installato</block>
-  <block id="059df2e0abacded1764d0222f6ab3b42" category="paragraph">Rocky Linux 9 (9.0, 9.1 e 9.2) è stato qualificato come sistema operativo supportato per la classificazione BlueXP. È possibile installare la classificazione BlueXP su un host Rocky Linux nella rete o su un host Linux nel cloud quando si utilizza la versione 1.24 del programma di installazione.<block ref="b549f731e0826bdc1659ea47e9a6f422" category="inline-link-rx"></block>.</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="section-title">La classificazione BlueXP è completamente supportata in modalità limitata e privata</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link">Scopri di più sulle modalità di implementazione di BlueXP per il connettore</block>
   <block id="e7c3514a81618b80dab1e9591ba97368" category="paragraph">La classificazione BlueXP è ora completamente supportata nei siti senza accesso a Internet (modalità privata) e con accesso Internet in uscita limitato (modalità limitata).<block ref="7ee715aa70b4c6d819896ee955e59621" category="inline-link-rx"></block>.</block>
@@ -524,7 +521,6 @@
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">5 settembre (versione 1,25)</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">Applicare le etichette su un massimo di 100.000 elementi dalla pagina risultati analisi</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Scopri come</block>
-  <block id="6d37cd3f2b76637efa533f6623bf7ceb" category="paragraph">In passato, nella pagina dei risultati dell'analisi era possibile applicare tag a una singola pagina alla volta (20 elementi). Ora è possibile selezionare *tutti* elementi nelle pagine dei risultati dell'analisi e applicare tag a tutti gli elementi, fino a 100.000 elementi alla volta. <block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identificare i file duplicati con una dimensione minima di 1 MB</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Classificazione BlueXP utilizzata per identificare i file duplicati solo quando avevano 50 MB o più. Ora è possibile identificare i file duplicati che iniziano con 1 MB. È possibile utilizzare i filtri della pagina di analisi "dimensione file" insieme a "duplicati" per vedere quali file di una certa dimensione sono duplicati nell'ambiente in uso.</block>
   <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 settembre 2023</block>
@@ -557,4 +553,7 @@
   <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Visualizza i limiti di storage per Cloud Volumes ONTAP in Azure</block>
   <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
 <block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
+  <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">Implementazioni di piccole e medie dimensioni temporaneamente non disponibili</block>
+  <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">Quando implementi un'istanza di classificazione BlueXP in AWS, al momento non è disponibile l'opzione per selezionare *implementa &gt; Configurazione* e scegliere un'istanza di piccole o medie dimensioni. È comunque possibile distribuire l'istanza utilizzando le dimensioni dell'istanza di grandi dimensioni selezionando *distribuisci &gt; distribuisci*.</block>
+  <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">In passato, nella pagina dei risultati dell'analisi era possibile applicare tag a una singola pagina alla volta (20 elementi). Ora è possibile selezionare *tutti* elementi nelle pagine dei risultati dell'analisi e applicare tag a tutti gli elementi, fino a 100.000 elementi alla volta.<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>.</block>
 </blocks>
