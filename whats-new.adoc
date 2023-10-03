@@ -33,6 +33,16 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 6 ottobre 2023
+
+
+
+==== Connettore 3.9.34
+
+Questa versione contiene piccoli miglioramenti e correzioni di bug.
+
+
+
 === 10 settembre 2023
 
 
@@ -461,6 +471,20 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Sco
 
 
 
+=== 6 ottobre 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettore.
+
+
+
+==== Cloud Volumes ONTAP 9.14.0
+
+BlueXP può ora implementare e gestire la release di disponibilità generale di Cloud Volumes ONTAP 9.14.0 in AWS, Azure e Google Cloud.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
+
+
+
 === 10 settembre 2023
 
 Le seguenti modifiche sono state introdotte con la versione 3.9.33 del connettore.
@@ -511,20 +535,6 @@ Sono ora disponibili diversi miglioramenti alle informazioni visualizzate nei re
 
 
 Per ulteriori informazioni sui report sull'utilizzo, vedere link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"^].
-
-
-
-=== 26 luglio 2023
-
-Le seguenti modifiche sono state introdotte con la versione 3.9.31 del connettore.
-
-
-
-==== Cloud Volumes ONTAP 9.13.1 GA
-
-BlueXP è ora in grado di implementare e gestire la release di disponibilità generale di Cloud Volumes ONTAP 9.13.1 in AWS, Azure e Google Cloud.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
 
 
 
@@ -690,13 +700,9 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 ==== Upgrade Advisor
 
-È possibile accedere alla pagina di Upgrade Advisor per l'elenco di controllo o il dashboard predefinito utilizzando link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] collegamento. Se non si dispone di un elenco di controllo o di un pannello di controllo predefinito, fare clic sul collegamento per visualizzare la pagina di ricerca.
+* È possibile accedere alla pagina di Upgrade Advisor per l'elenco di controllo predefinito utilizzando link:https://activeiq.netapp.com/redirect/upgrade-advisor["Upgrade Advisor"^] collegamento.
+* Il piano di upgrade è ottimizzato per rimuovere i passaggi di upgrade ridondanti e semplificare il piano di backout. I passaggi comuni in tutti i nodi di un cluster sono consolidati e disponibili nella sezione informazioni generali del piano di aggiornamento. link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Scoprite come generare e visualizzare il piano di aggiornamento"].
 
-
-
-==== Piano di aggiornamento
-
-Il piano di aggiornamento è stato ottimizzato per rimuovere passaggi di aggiornamento ridondanti, modificare informazioni e avvisi e semplificare il piano di backup. I passaggi comuni in tutti i nodi di un cluster sono consolidati e disponibili nella sezione informazioni generali. Per visualizzare il piano migliorato, generare il piano di aggiornamento seguendo i passaggi descritti nella link:https://docs.netapp.com/us-en/active-iq/task_view_upgrade.html["Aggiornare la versione ONTAP utilizzando il piano di aggiornamento"].
 
 
 
@@ -719,7 +725,7 @@ Il piano di aggiornamento è stato ottimizzato per rimuovere passaggi di aggiorn
 
 ==== Dashboard sulla sostenibilità
 
-La Sustainability Dashboard fornisce preziose informazioni sulla sostenibilità ambientale del tuo sistema storage. È possibile visualizzare informazioni come il punteggio di sostenibilità, la percentuale di riduzione del carbonio, l'utilizzo previsto di energia, il carbonio diretto e il calore. È possibile regolare la percentuale di riduzione del carbonio per siti specifici. È inoltre possibile visualizzare il punteggio di sostenibilità a livello di cluster. Valutando il punteggio di sostenibilità, puoi valutare l'efficienza complessiva del tuo sistema storage e allinearlo alle azioni consigliate da NetApp per migliorare la sostenibilità. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Scopri di più"].
+La dashboard Sustainability fornisce preziose informazioni sulla sostenibilità ambientale del tuo sistema storage. È possibile visualizzare informazioni come il punteggio di sostenibilità, la percentuale di riduzione del carbonio, l'utilizzo previsto di energia, il carbonio diretto e il calore. È possibile regolare la percentuale di riduzione del carbonio per siti specifici. È inoltre possibile visualizzare il punteggio di sostenibilità a livello di cluster. In base al punteggio di sostenibilità, puoi valutare l'efficienza generale del tuo sistema storage e allinearla alle azioni consigliate da NetApp per migliorare la sostenibilità. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Scopri di più"].
 
 
 
