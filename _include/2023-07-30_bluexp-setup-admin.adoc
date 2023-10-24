@@ -1,10 +1,6 @@
-= Connettore 3.9.32
+= 
 :allow-uri-read: 
 
-
-
-
-=== Connettore 3.9.32
 
 * È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.
 +

@@ -1,10 +1,6 @@
-= Connettore 3.9.33
+= 
 :allow-uri-read: 
 
-
-
-
-=== Connettore 3.9.33
 
 * Quando crei un connettore in AWS da BlueXP, puoi cercare nel campo Coppia di chiavi per trovare più facilmente la coppia di chiavi da utilizzare con l'istanza del connettore.
 +
