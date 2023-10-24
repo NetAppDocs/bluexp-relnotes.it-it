@@ -200,6 +200,16 @@ Inoltre, il monitoraggio dei processi di backup e ripristino di BlueXP mostra in
 
 
 
+==== Supporto per i processi pianificati in Job Monitor
+
+Il monitoraggio del processo di backup e recovery di BlueXP, in precedenza, ha monitorato processi di backup e ripristino pianificati da volume a archivio oggetti, ma non processi di snapshot, replica, backup e ripristino locali pianificati tramite l'interfaccia utente o l'API.
+
+Il monitoraggio dei processi di backup e ripristino di BlueXP include ora i processi pianificati per Snapshot locali, repliche e backup sullo storage a oggetti.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.html["Ulteriori informazioni su Job Monitor aggiornato"].
+
+
+
 === 13 ottobre 2023
 
 
@@ -897,6 +907,12 @@ Quando link:https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-k8s-manage
 
 
 == Report sulla migrazione
+
+
+
+=== 13 novembre 2023
+
+Ora puoi creare report per i volumi che utilizzano il protocollo SMB/CIFS.
 
 
 

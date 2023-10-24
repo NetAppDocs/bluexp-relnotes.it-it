@@ -549,4 +549,9 @@
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">La seguente modifica è stata introdotta con la versione 3.9.34 del connettore.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Questa release dell'efficienza economica di BlueXP include una nuova opzione per valutare gli asset e identificare se si consiglia un refresh tecnologico. Il servizio include una nuova opzione di aggiornamento tecnico nel riquadro a sinistra, nuove pagine in cui è possibile effettuare una valutazione dei carichi di lavoro e delle risorse correnti e un report che fornisce consigli.</block>
+  <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Supporto per i processi pianificati in Job Monitor</block>
+  <block id="314b40130d46a229c3a19dc5e2e23aa4" category="paragraph">Il monitoraggio del processo di backup e recovery di BlueXP, in precedenza, ha monitorato processi di backup e ripristino pianificati da volume a archivio oggetti, ma non processi di snapshot, replica, backup e ripristino locali pianificati tramite l'interfaccia utente o l'API.</block>
+  <block id="04c6b318fe9c7f19ae925a90e52c6569" category="paragraph">Il monitoraggio dei processi di backup e ripristino di BlueXP include ora i processi pianificati per Snapshot locali, repliche e backup sullo storage a oggetti.</block>
+  <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 novembre 2023</block>
+  <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ora puoi creare report per i volumi che utilizzano il protocollo SMB/CIFS.</block>
 </blocks>
