@@ -280,6 +280,66 @@ Hai avuto la possibilità di visualizzare i bucket Amazon S3 su BlueXP Canvas pe
 
 
 
+=== 23 ottobre 2023
+
+
+
+==== creazione del criterio di backup 3-2-1 durante l'attivazione del backup
+
+In precedenza, era necessario creare criteri personalizzati prima di avviare una snapshot, una replica o un backup. Ora puoi creare una policy durante il processo di attivazione del backup utilizzando l'interfaccia utente di backup e recovery di BlueXP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Ulteriori informazioni sulle politiche"].
+
+
+
+==== Supporto del ripristino rapido on-demand dei volumi ONTAP
+
+Il backup e recovery di BlueXP ora permette di eseguire un "ripristino rapido" di un volume dal cloud storage a un sistema Cloud Volumes ONTAP. Il ripristino rapido è ideale per le situazioni di disaster recovery in cui è necessario fornire accesso a un volume il prima possibile. Un ripristino rapido ripristina i metadati dal file di backup a un volume invece di ripristinare l'intero file di backup.
+
+Il sistema di destinazione Cloud Volumes ONTAP deve eseguire ONTAP versione 9.13.0 o successiva. https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Ulteriori informazioni sul ripristino dei dati"].
+
+Inoltre, il monitoraggio dei processi di backup e ripristino di BlueXP mostra informazioni sullo stato di avanzamento dei processi di ripristino rapido.
+
+
+
+=== 13 ottobre 2023
+
+
+
+==== Miglioramenti al backup e ripristino BlueXP per le applicazioni (nativo del cloud)
+
+* Database Microsoft SQL Server
++
+** Supporta backup, ripristino e recovery di database Microsoft SQL Server che risiedono in Amazon FSX per NetApp ONTAP
+** Tutte le operazioni sono supportate solo tramite API REST.
+
+
+* Sistemi SAP HANA
++
+** Durante l'aggiornamento del sistema, il montaggio e la disinstallazione automatici dei volumi vengono eseguiti utilizzando workflow e non script
+** Supporta aggiunta, rimozione, modifica, eliminazione, manutenzione, e l'aggiornamento dell'host plug-in utilizzando l'interfaccia utente
+
+
+
+
+
+
+==== Miglioramenti al backup e ripristino BlueXP per le applicazioni (ibrido)
+
+* Supporto del blocco dei dati e della protezione da ransomware
+* Supporta lo spostamento dei backup da StorageGRID a Tier di archiviazione
+* Supporta il backup dei dati delle applicazioni MongoDB, MySQL e PostgreSQL dai sistemi ONTAP on-premise ad Amazon Web Services, Microsoft Azure, Google Cloud Platform e StorageGRID. È possibile ripristinare i dati quando necessario.
+
+
+
+
+==== Miglioramenti al backup e recovery di BlueXP per Virtual Machine
+
+* Supporto per il modello di distribuzione proxy del connettore
+
+
+
+
 === 11 settembre 2023
 
 
@@ -300,6 +360,12 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.
 
 
 
+==== Possibilità di archiviare immediatamente i dati di backup invece della prima scrittura su storage standard
+
+Ora puoi inviare immediatamente i file di backup allo storage di archiviazione invece di scrivere i dati su un cloud storage standard. Ciò risulta particolarmente utile per gli utenti che raramente hanno bisogno di accedere ai dati da backup del cloud o per gli utenti che stanno sostituendo un ambiente di backup su nastro.
+
+
+
 ==== Supporto aggiuntivo per il backup e il ripristino di volumi SnapLock
 
 Il backup e ripristino ora può eseguire il backup dei volumi FlexVol e FlexGroup configurati utilizzando le modalità SnapLock Compliance o SnapLock Enterprise Protection. Per supportare questo tipo di supporto, i cluster devono eseguire ONTAP 9,14 o versione successiva. Il backup dei volumi FlexVol utilizzando la modalità SnapLock Enterprise è supportato a partire dalla versione ONTAP 9.11.1. Le release precedenti di ONTAP non supportano il backup di volumi di protezione SnapLock.
@@ -312,9 +378,12 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-clo
 
 [IMPORTANT]
 ====
-A causa di un importante miglioramento della sicurezza, il connettore ora richiede l'accesso a Internet outbound a un endpoint aggiuntivo per gestire le risorse di backup e ripristino all'interno dell'ambiente cloud pubblico. Se questo endpoint non è stato aggiunto all'elenco "consentito" del firewall, nell'interfaccia utente viene visualizzato un errore relativo a "Servizio non disponibile" o "Impossibile determinare lo stato del servizio":
-
+* A causa di un importante miglioramento della sicurezza, il connettore ora richiede l'accesso a Internet outbound a un endpoint aggiuntivo per gestire le risorse di backup e ripristino all'interno dell'ambiente cloud pubblico. Se questo endpoint non è stato aggiunto all'elenco "consentito" del firewall, nell'interfaccia utente viene visualizzato un errore relativo a "Servizio non disponibile" o "Impossibile determinare lo stato del servizio":
++
 \https://netapp-cloud-account.auth0.com
+
+* Quando utilizzi il pacchetto "CVO Professional" per integrare backup e recovery di Cloud Volumes ONTAP e BlueXP, è necessaria un'iscrizione PAYGO per backup e recovery. Questo non era necessario in passato. Non verranno addebitati costi per l'abbonamento di backup e recovery ai sistemi Cloud Volumes ONTAP idonei, tuttavia tali costi sono necessari durante la configurazione del backup su nuovi volumi.
+
 
 ====
 
@@ -351,42 +420,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
-=== 6 luglio 2023
-
-
-
-==== Il backup e ripristino di BlueXP include ora la possibilità di pianificare e creare copie Snapshot e volumi replicati
-
-Il backup e ripristino BlueXP consente ora di implementare una strategia 3-2-1 in cui è possibile avere 3 copie dei dati di origine su 2 sistemi storage diversi e 1 copia nel cloud. Dopo l'attivazione, si avrà a disposizione:
-
-* Copia Snapshot del volume sul sistema di origine
-* Volume replicato su un sistema storage diverso
-* Backup del volume nello storage a oggetti
-
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html["Scopri di più sulle nuove funzionalità di backup e ripristino a spettro completo"].
-
-Questa nuova funzionalità si applica anche alle operazioni di recovery. È possibile eseguire operazioni di ripristino da una copia Snapshot, da un volume replicato o da un file di backup nel cloud. In questo modo è possibile scegliere il file di backup che soddisfa i requisiti di ripristino, inclusi costi e velocità di ripristino.
-
-Si noti che questa nuova funzionalità e l'interfaccia utente sono supportate solo per i cluster che eseguono ONTAP 9.8 o versione successiva. Se il cluster dispone di una versione precedente del software, è possibile continuare a utilizzare la versione precedente di backup e ripristino di BlueXP. Tuttavia, si consiglia di eseguire l'aggiornamento a una versione supportata di ONTAP per ottenere le funzionalità e le funzionalità più recenti. Per continuare a utilizzare la versione precedente del software, attenersi alla seguente procedura:
-
-. Dalla scheda *Volumes* (volumi), selezionare *Backup Settings* (Impostazioni di backup).
-. Dalla pagina _Backup Settings_, fare clic sul pulsante di opzione *Visualizza la versione precedente di backup e ripristino di BlueXP*.
-+
-Quindi, puoi gestire i cluster meno recenti utilizzando la versione precedente del software.
-
-
-
-
-
-==== Possibilità di creare un container di storage per il backup sullo storage a oggetti
-
-Per impostazione predefinita, quando si creano file di backup nello storage a oggetti, il servizio di backup e ripristino crea i bucket nello storage a oggetti. È possibile creare autonomamente i bucket se si desidera utilizzare un determinato nome o assegnare proprietà speciali. Se si desidera creare un bucket personalizzato, è necessario crearlo prima di avviare l'attivazione guidata. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Scopri come creare i bucket di storage a oggetti"].
-
-Questa funzionalità non è attualmente supportata quando si creano file di backup su sistemi StorageGRID.
-
-
-
 == Classificazione
 
 
@@ -395,17 +428,11 @@ Questa funzionalità non è attualmente supportata quando si creano file di back
 
 
 
-==== Supporto per installazioni in loco con RHEL versione 9
+==== Supporto per le installazioni on-premise della classificazione BlueXP su RHEL versione 9
 
-Le versioni 8 e 9 di Red Hat Enterprise Linux non supportano il motore Docker, necessario per l'installazione della classificazione BlueXP. Ora supportiamo l'installazione su RHEL 9,0, 9,1 e 9,2 utilizzando Podman versione 4 o successiva come infrastruttura container. Se il tuo ambiente richiede l'utilizzo delle versioni più recenti di RHEL, ora puoi installare la classificazione BlueXP (versione 1,26 o superiore) quando utilizzi Podman.
+Le versioni 8 e 9 di Red Hat Enterprise Linux non supportano il motore Docker, necessario per l'installazione della classificazione BlueXP. Ora supportiamo l'installazione della classificazione BlueXP su RHEL 9,0, 9,1 e 9,2 utilizzando Podman versione 4 o superiore come infrastruttura container. Se il tuo ambiente richiede l'utilizzo delle versioni più recenti di RHEL, ora puoi installare la classificazione BlueXP (versione 1,26 o superiore) quando utilizzi Podman.
 
-Al momento non supportiamo installazioni in siti oscuri o ambienti di scansione distribuiti (utilizzando nodi scanner master e remoti).
-
-
-
-==== I risultati della pagina di analisi ora visualizzano le dimensioni totali oltre al numero totale di elementi
-
-I risultati filtrati nella pagina di analisi ora mostrano la dimensione totale degli elementi oltre al numero totale di file. Ciò può essere utile quando si spostano file, si eliminano file e altro ancora.
+Al momento non supportiamo installazioni in siti oscuri o ambienti di scansione distribuiti (utilizzando nodi di scansione master e remoti) quando si utilizza RHEL 9.x.
 
 
 
@@ -471,6 +498,30 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Sco
 
 
 
+=== 23 ottobre 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettore.
+
+
+
+==== Nuove regioni supportate per le implementazioni ha a zone di disponibilità multiple in Azure
+
+Le seguenti regioni in Azure ora supportano implementazioni a più zone di disponibilità altamente disponibili per Cloud Volumes ONTAP 9.14.0 e versioni successive:
+
+* Australia Est
+* Asia orientale
+* Francia centrale
+* Nord Europa
+* Qatar Central
+* Svezia centrale
+* Europa occidentale
+* Stati Uniti occidentali 2
+
+
+Per un elenco di tutte le regioni che supportano più zone di disponibilità, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^].
+
+
+
 === 6 ottobre 2023
 
 Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettore.
@@ -495,46 +546,8 @@ Le seguenti modifiche sono state introdotte con la versione 3.9.33 del connettor
 
 I tipi di istanze L48s_v3 e L64s_v3 sono ora supportati con Cloud Volumes ONTAP in Azure per implementazioni a nodo singolo e coppia ad alta disponibilità con dischi gestiti condivisi in zone di disponibilità singole e multiple, a partire dalla release 9.13.1. Questi tipi di istanze supportano Flash cache.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Visualizza le configurazioni supportate per Cloud Volumes ONTAP in Azure"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Visualizza i limiti di storage per Cloud Volumes ONTAP in Azure"]
-
-
-
-=== 30 luglio 2023
-
-Le seguenti modifiche sono state introdotte con la versione 3.9.32 del connettore.
-
-
-
-==== Flash cache e supporto ad alta velocità di scrittura in Google Cloud
-
-Flash cache e alta velocità di scrittura possono essere attivate separatamente in Google Cloud per Cloud Volumes ONTAP 9.13.1 e versioni successive. È disponibile un'elevata velocità di scrittura su tutti i tipi di istanze supportati. Flash cache è supportata nei seguenti tipi di istanze:
-
-* n2-standard-16
-* n2-standard-32
-* n2-standard-48
-* n2-standard-64
-
-
-È possibile utilizzare queste funzionalità separatamente o insieme nelle implementazioni a singolo nodo e a coppia ad alta disponibilità.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Avviare Cloud Volumes ONTAP in Google Cloud"]
-
-
-
-==== Miglioramenti dei report sull'utilizzo
-
-Sono ora disponibili diversi miglioramenti alle informazioni visualizzate nei report di utilizzo. Di seguito sono riportati i miglioramenti apportati ai report sull'utilizzo:
-
-* L'unità TIB è ora inclusa nel nome delle colonne.
-* È ora incluso un nuovo campo "nodi" per i numeri di serie.
-* Una nuova colonna "tipo di carico di lavoro" è ora inclusa nel report sull'utilizzo delle VM di storage.
-* I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
-* Il tipo di volume "file" è ora denominato "Primary (Read/Write)" (primario (lettura/scrittura).
-* Il tipo di volume "secondario" è ora denominato "secondario (DP)".
-
-
-Per ulteriori informazioni sui report sull'utilizzo, vedere link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Visualizza le configurazioni supportate per Cloud Volumes ONTAP in Azure"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Visualizza i limiti di storage per Cloud Volumes ONTAP in Azure"^]
 
 
 
@@ -694,6 +707,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 
+=== 04 ottobre 2023
+
+
+
+==== Widget di pianificazione
+
+I conteggi dei consigli per Tech Refresh sono inclusi nel widget di pianificazione della dashboard di livello cliente. Questi consigli aiutano a pianificare le attività di tech refresh dell'hardware quando l'hardware si esaurisce o si sta avvicinando alla fine del supporto.
+
+
+
 === 27 settembre 2023
 
 
@@ -716,16 +739,6 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 * L'etichetta *dati salvati dall'efficienza di archiviazione* viene rinominata *risparmio riduzione dati*.
 * L'opzione *risparmio senza backup snapshot* viene rinominata *con copie snapshot* insieme a una modifica alla relativa funzionalità. link:https://docs.netapp.com/us-en/active-iq/reference_aiq_faq.html#storage-efficiency["Scopri di più"].
 
-
-
-
-=== 21 giugno 2023
-
-
-
-==== Dashboard sulla sostenibilità
-
-La dashboard Sustainability fornisce preziose informazioni sulla sostenibilità ambientale del tuo sistema storage. È possibile visualizzare informazioni come il punteggio di sostenibilità, la percentuale di riduzione del carbonio, l'utilizzo previsto di energia, il carbonio diretto e il calore. È possibile regolare la percentuale di riduzione del carbonio per siti specifici. È inoltre possibile visualizzare il punteggio di sostenibilità a livello di cluster. In base al punteggio di sostenibilità, puoi valutare l'efficienza generale del tuo sistema storage e allinearla alle azioni consigliate da NetApp per migliorare la sostenibilità. link:https://docs.netapp.com/us-en/active-iq/learn_BlueXP_sustainability.html["Scopri di più"].
 
 
 
@@ -803,22 +816,74 @@ https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-license
 
 
 
+=== 20 ottobre 2023
+
+Questa versione di anteprima del disaster recovery di BlueXP include i seguenti aggiornamenti.
+
+Ora con il disaster recovery di BlueXP, puoi proteggere i tuoi carichi di lavoro VMware on-premise basati su NFS dai disastri in un altro ambiente VMware on-premise basato su NFS, oltre al cloud pubblico. Il disaster recovery di BlueXP orchestra il completamento dei piani di disaster recovery.
+
+
+NOTE: Con questa offerta di anteprima, NetApp si riserva il diritto di modificare i dettagli dell'offerta, i contenuti e la tempistica prima della disponibilità generale.
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Scopri di più sul disaster recovery di BlueXP"].
+
+
+
+=== 27 settembre 2023
+
+Questa release di anteprima del disaster recovery di BlueXP include i seguenti aggiornamenti:
+
+* *Aggiornamenti del dashboard*: Ora puoi fare clic sulle opzioni del dashboard, semplificando la revisione rapida delle informazioni. Inoltre, la dashboard ora mostra lo stato di failover e migrazioni.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["Visualizzare lo stato dei piani di disaster recovery sul Dashboard"].
+
+* *Aggiornamenti del piano di replica*:
++
+** *RPO*: È ora possibile inserire l'obiettivo del punto di ripristino (RPO) e il conteggio della conservazione nella sezione datastore del piano di replica. Indica la quantità di dati che deve esistere non più vecchia dell'ora impostata. Se, ad esempio, viene impostato su 5 minuti, il sistema può perdere fino a 5 minuti di dati in caso di disastro, senza influire sulle esigenze business-critical.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+** *Miglioramenti al networking*: Quando si esegue il mapping del networking tra le posizioni di origine e di destinazione nella sezione macchine virtuali del piano di replica, il disaster recovery di BlueXP ora offre due opzioni: DHCP o IP statico. In precedenza era supportato solo DHCP. Per gli indirizzi IP statici, configurare la subnet, il gateway e i server DNS. Inoltre, è ora possibile immettere le credenziali per le macchine virtuali.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+** *Modifica pianificazioni*: È ora possibile aggiornare le pianificazioni dei piani di replica.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gestione delle risorse"].
+
+** *Automazione di SnapMirror*: Durante la creazione del piano di replica in questa release, è possibile definire la relazione di SnapMirror tra volumi di origine e di destinazione in una delle seguenti configurazioni:
++
+*** da 1 a 1
+*** 1 a molti in un'architettura fanout
+*** Molti a 1 come gruppo di coerenza
+*** Molti a molti
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+
+
+
+
+
+
+
+
 === 1 agosto 2023
 
-Il disaster recovery di BlueXP Beta è un servizio di disaster recovery basato sul cloud che automatizza i flussi di lavoro di disaster recovery. Inizialmente, con la versione Beta di disaster recovery di BlueXP, puoi proteggere i tuoi workload VMware on-premise basati su NFS che eseguono lo storage NetApp in VMware Cloud (VMC) su AWS con Amazon FSX per ONTAP.
+L'anteprima del disaster recovery di BlueXP è un servizio di disaster recovery basato sul cloud che automatizza i flussi di lavoro di disaster recovery. Inizialmente, con l'anteprima del disaster recovery di BlueXP, puoi proteggere i tuoi workload VMware on-premise basati su NFS che eseguono lo storage NetApp in VMware Cloud (VMC) su AWS con Amazon FSX per ONTAP.
 
 
-NOTE: Con questa offerta Beta, NetApp si riserva il diritto di modificare i dettagli dell'offerta, i contenuti e la tempistica prima della disponibilità generale.
+NOTE: Con questa offerta di anteprima, NetApp si riserva il diritto di modificare i dettagli dell'offerta, i contenuti e la tempistica prima della disponibilità generale.
+
+https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Scopri di più sul disaster recovery di BlueXP"].
 
 Questa versione include i seguenti aggiornamenti:
 
-* *Aggiornamento dei gruppi di risorse per l'ordine di avvio*: Quando si crea un piano di ripristino di emergenza o di replica, è possibile aggiungere macchine virtuali a gruppi di risorse funzionali. I gruppi di risorse consentono di inserire una serie di macchine virtuali dipendenti in gruppi logici che soddisfano i requisiti. Ad esempio, i gruppi possono contenere l'ordine di avvio che può essere eseguito al momento del ripristino. Con questa versione, ciascun gruppo di risorse può includere una o più macchine virtuali. Le macchine virtuali si accenderanno in base alla sequenza in cui vengono incluse nel piano. Fare riferimento a. link:../use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["Selezionare le applicazioni da replicare e assegnare gruppi di risorse"].
-* *Verifica della replica*: Dopo aver creato il piano di disaster recovery o di replica, identificare la ricorrenza nella procedura guidata e avviare una replica su un sito di disaster recovery, il disaster recovery di BlueXP verifica ogni 30 minuti che la replica venga effettivamente eseguita secondo il piano. È possibile monitorare l'avanzamento nella pagina monitoraggio processi. Fare riferimento a. link:../use/replicate.html["Replicare le applicazioni in un altro sito"].
-* *Il piano di replica mostra le pianificazioni dei trasferimenti degli obiettivi RPO (Recovery Point Objective)*: Quando si crea un piano di ripristino di emergenza o di replica, si selezionano le VM. In questa release, ora puoi vedere lo SnapMirror associato a ciascuno dei volumi associati al datastore o alla macchina virtuale. Inoltre, puoi vedere le pianificazioni del trasferimento RPO associate alla pianificazione SnapMirror. RPO consente di determinare se la pianificazione del backup è sufficiente per il ripristino dopo un evento disastroso. Fare riferimento a. link:../use/drplan-create.html["Creare un piano di replica"].
-* *Aggiornamento di Job Monitor*: La pagina Job Monitor ora include un'opzione Aggiorna che consente di ottenere uno stato aggiornato delle operazioni. Fare riferimento a. link:../use/monitor-jobs.html["Monitorare i processi di disaster recovery"].
+* *Aggiornamento dei gruppi di risorse per l'ordine di avvio*: Quando si crea un piano di ripristino di emergenza o di replica, è possibile aggiungere macchine virtuali a gruppi di risorse funzionali. I gruppi di risorse consentono di inserire una serie di macchine virtuali dipendenti in gruppi logici che soddisfano i requisiti. Ad esempio, i gruppi possono contenere l'ordine di avvio che può essere eseguito al momento del ripristino. Con questa versione, ciascun gruppo di risorse può includere una o più macchine virtuali. Le macchine virtuali si accenderanno in base alla sequenza in cui vengono incluse nel piano. Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html#select-applications-to-replicate-and-assign-resource-groups["Selezionare le applicazioni da replicare e assegnare gruppi di risorse"].
+* *Verifica della replica*: Dopo aver creato il piano di disaster recovery o di replica, identificare la ricorrenza nella procedura guidata e avviare una replica su un sito di disaster recovery, il disaster recovery di BlueXP verifica ogni 30 minuti che la replica venga effettivamente eseguita secondo il piano. È possibile monitorare l'avanzamento nella pagina monitoraggio processi. Fare riferimento a.  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/replicate.html["Replicare le applicazioni in un altro sito"].
+* *Il piano di replica mostra le pianificazioni dei trasferimenti degli obiettivi RPO (Recovery Point Objective)*: Quando si crea un piano di ripristino di emergenza o di replica, si selezionano le VM. In questa release, ora puoi vedere lo SnapMirror associato a ciascuno dei volumi associati al datastore o alla macchina virtuale. Inoltre, puoi vedere le pianificazioni del trasferimento RPO associate alla pianificazione SnapMirror. RPO consente di determinare se la pianificazione del backup è sufficiente per il ripristino dopo un evento disastroso. Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+* *Aggiornamento di Job Monitor*: La pagina Job Monitor ora include un'opzione Aggiorna che consente di ottenere uno stato aggiornato delle operazioni. Fare riferimento a.  https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Monitorare i processi di disaster recovery"].
 
-
-link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Scopri di più sul disaster recovery di BlueXP"].
 
 
 
@@ -826,7 +891,7 @@ link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro
 
 Questa è la versione iniziale del disaster recovery di BlueXP.
 
-Il disaster recovery di BlueXP è un servizio di disaster recovery basato sul cloud che automatizza i flussi di lavoro di disaster recovery. Inizialmente, con la versione beta di disaster recovery di BlueXP, puoi proteggere i tuoi carichi di lavoro VMware on-premise basati su NFS che eseguono lo storage NetApp in VMware Cloud (VMC) su AWS con Amazon FSX per ONTAP.
+Il disaster recovery di BlueXP è un servizio di disaster recovery basato sul cloud che automatizza i flussi di lavoro di disaster recovery. Inizialmente, con l'anteprima del disaster recovery di BlueXP, puoi proteggere i tuoi workload VMware on-premise basati su NFS che eseguono lo storage NetApp in VMware Cloud (VMC) su AWS con Amazon FSX per ONTAP.
 
 link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html["Scopri di più sul disaster recovery di BlueXP"].
 
@@ -842,7 +907,7 @@ link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro
 
 ==== Supporto per e-Series
 
-Ora puoi scoprire i tuoi sistemi storage e-Series direttamente da BlueXP. La scoperta dei sistemi e-Series ti offre una vista completa dei dati nel tuo multicloud ibrido.
+Ora puoi scoprire i tuoi sistemi e-Series direttamente da BlueXP. La scoperta dei sistemi e-Series ti offre una vista completa dei dati nel tuo multicloud ibrido.
 
 
 

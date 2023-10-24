@@ -1,0 +1,38 @@
+= 
+:allow-uri-read: 
+
+
+Questa release di anteprima del disaster recovery di BlueXP include i seguenti aggiornamenti:
+
+* *Aggiornamenti del dashboard*: Ora puoi fare clic sulle opzioni del dashboard, semplificando la revisione rapida delle informazioni. Inoltre, la dashboard ora mostra lo stato di failover e migrazioni.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/dashboard-view.html["Visualizzare lo stato dei piani di disaster recovery sul Dashboard"].
+
+* *Aggiornamenti del piano di replica*:
++
+** *RPO*: È ora possibile inserire l'obiettivo del punto di ripristino (RPO) e il conteggio della conservazione nella sezione datastore del piano di replica. Indica la quantità di dati che deve esistere non più vecchia dell'ora impostata. Se, ad esempio, viene impostato su 5 minuti, il sistema può perdere fino a 5 minuti di dati in caso di disastro, senza influire sulle esigenze business-critical.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+** *Miglioramenti al networking*: Quando si esegue il mapping del networking tra le posizioni di origine e di destinazione nella sezione macchine virtuali del piano di replica, il disaster recovery di BlueXP ora offre due opzioni: DHCP o IP statico. In precedenza era supportato solo DHCP. Per gli indirizzi IP statici, configurare la subnet, il gateway e i server DNS. Inoltre, è ora possibile immettere le credenziali per le macchine virtuali.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+** *Modifica pianificazioni*: È ora possibile aggiornare le pianificazioni dei piani di replica.
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gestione delle risorse"].
+
+** *Automazione di SnapMirror*: Durante la creazione del piano di replica in questa release, è possibile definire la relazione di SnapMirror tra volumi di origine e di destinazione in una delle seguenti configurazioni:
++
+*** da 1 a 1
+*** 1 a molti in un'architettura fanout
+*** Molti a 1 come gruppo di coerenza
+*** Molti a molti
++
+Fare riferimento a. https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+
+
+
+
+

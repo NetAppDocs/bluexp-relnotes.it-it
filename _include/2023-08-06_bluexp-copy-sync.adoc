@@ -1,0 +1,31 @@
+= Utilizzo dei gruppi di sicurezza di Azure esistenti durante la creazione di un broker di dati
+:allow-uri-read: 
+
+
+
+
+=== Utilizzo dei gruppi di sicurezza di Azure esistenti durante la creazione di un broker di dati
+
+Gli utenti possono ora utilizzare i gruppi di sicurezza di Azure esistenti durante la creazione di un broker di dati.
+
+L'account di servizio utilizzato durante la creazione del broker di dati deve disporre delle seguenti autorizzazioni:
+
+* "Microsoft.Network/networkSecurityGroups/securityRules/read"
+* "Microsoft.Network/networkSecurityGroups/read"
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html["Scopri di più sulla creazione di un broker di dati in Azure."]
+
+
+
+=== Crittografare i dati durante la sincronizzazione con Google Storage
+
+Gli utenti possono ora specificare una chiave di crittografia gestita dal cliente quando creano una relazione di sincronizzazione con un bucket Google Storage come destinazione. È possibile inserire manualmente la chiave o scegliere una chiave da un elenco di chiavi di un'unica regione.
+
+L'account di servizio utilizzato durante la creazione del broker di dati deve disporre delle seguenti autorizzazioni:
+
+* Cloudkms.cryptographies.list
+* Cloudkms.keyrings.list
+
+
+https://docs.netapp.com/us-en/bluexp-copy-sync/reference-requirements.html#google-cloud-storage-bucket-requirements["Scopri di più sui requisiti del bucket Google Cloud Storage."]

@@ -1,0 +1,14 @@
+= Supporto di macchine virtuali serie Lsv3 in Azure
+:allow-uri-read: 
+
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.33 del connettore.
+
+
+
+=== Supporto di macchine virtuali serie Lsv3 in Azure
+
+I tipi di istanze L48s_v3 e L64s_v3 sono ora supportati con Cloud Volumes ONTAP in Azure per implementazioni a nodo singolo e coppia ad alta disponibilità con dischi gestiti condivisi in zone di disponibilità singole e multiple, a partire dalla release 9.13.1. Questi tipi di istanze supportano Flash cache.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Visualizza le configurazioni supportate per Cloud Volumes ONTAP in Azure"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Visualizza i limiti di storage per Cloud Volumes ONTAP in Azure"^]

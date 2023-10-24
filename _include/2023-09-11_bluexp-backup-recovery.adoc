@@ -1,0 +1,33 @@
+= Nuova gestione delle policy per i dati ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Nuova gestione delle policy per i dati ONTAP
+
+Questa versione include la possibilità, all'interno dell'interfaccia utente, di creare policy Snapshot personalizzate, policy di replica e policy per i backup sullo storage a oggetti per i dati ONTAP.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-ontap.html["Ulteriori informazioni sulle politiche"].
+
+
+
+=== Supporto del ripristino di file e cartelle dai volumi nello storage a oggetti ONTAP S3
+
+In precedenza, non era possibile ripristinare file e cartelle utilizzando la funzione "Sfoglia e ripristina" quando veniva eseguito il backup dei volumi nello storage a oggetti ONTAP S3. Questa versione elimina tale restrizione.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html["Ulteriori informazioni sul ripristino dei dati"].
+
+
+
+=== Possibilità di archiviare immediatamente i dati di backup invece della prima scrittura su storage standard
+
+Ora puoi inviare immediatamente i file di backup allo storage di archiviazione invece di scrivere i dati su un cloud storage standard. Ciò risulta particolarmente utile per gli utenti che raramente hanno bisogno di accedere ai dati da backup del cloud o per gli utenti che stanno sostituendo un ambiente di backup su nastro.
+
+
+
+=== Supporto aggiuntivo per il backup e il ripristino di volumi SnapLock
+
+Il backup e ripristino ora può eseguire il backup dei volumi FlexVol e FlexGroup configurati utilizzando le modalità SnapLock Compliance o SnapLock Enterprise Protection. Per supportare questo tipo di supporto, i cluster devono eseguire ONTAP 9,14 o versione successiva. Il backup dei volumi FlexVol utilizzando la modalità SnapLock Enterprise è supportato a partire dalla versione ONTAP 9.11.1. Le release precedenti di ONTAP non supportano il backup di volumi di protezione SnapLock.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Scopri di più sulla protezione dei dati di ONTAP"].

@@ -1,0 +1,37 @@
+= Flash cache e supporto ad alta velocità di scrittura in Google Cloud
+:allow-uri-read: 
+
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.32 del connettore.
+
+
+
+=== Flash cache e supporto ad alta velocità di scrittura in Google Cloud
+
+Flash cache e alta velocità di scrittura possono essere attivate separatamente in Google Cloud per Cloud Volumes ONTAP 9.13.1 e versioni successive. È disponibile un'elevata velocità di scrittura su tutti i tipi di istanze supportati. Flash cache è supportata nei seguenti tipi di istanze:
+
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+
+
+È possibile utilizzare queste funzionalità separatamente o insieme nelle implementazioni a singolo nodo e a coppia ad alta disponibilità.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Avviare Cloud Volumes ONTAP in Google Cloud"^]
+
+
+
+=== Miglioramenti dei report sull'utilizzo
+
+Sono ora disponibili diversi miglioramenti alle informazioni visualizzate nei report di utilizzo. Di seguito sono riportati i miglioramenti apportati ai report sull'utilizzo:
+
+* L'unità TIB è ora inclusa nel nome delle colonne.
+* È ora incluso un nuovo campo "nodi" per i numeri di serie.
+* Una nuova colonna "tipo di carico di lavoro" è ora inclusa nel report sull'utilizzo delle VM di storage.
+* I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
+* Il tipo di volume "file" è ora denominato "Primary (Read/Write)" (primario (lettura/scrittura).
+* Il tipo di volume "secondario" è ora denominato "secondario (DP)".
+
+
+Per ulteriori informazioni sui report sull'utilizzo, vedere link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"^].

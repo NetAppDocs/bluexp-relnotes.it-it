@@ -1,0 +1,19 @@
+= Miglioramenti dei report sull'utilizzo
+:allow-uri-read: 
+
+
+
+
+=== Miglioramenti dei report sull'utilizzo
+
+Sono ora disponibili diversi miglioramenti ai report sull'utilizzo di Cloud Volumes ONTAP:
+
+* L'unità TIB è ora inclusa nel nome delle colonne.
+* È ora incluso un nuovo campo _node(s)_ per i numeri di serie.
+* Una nuova colonna _workload Type_ è ora inclusa nel report sull'utilizzo delle VM di storage.
+* I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
+* Il tipo di volume _file_ è ora denominato _Primary (Read/Write)_.
+* Il tipo di volume _secondario_ è ora denominato _secondario (DP)_.
+
+
+Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"].
