@@ -33,6 +33,16 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 8 novembre 2023
+
+
+
+==== Connettore 3.9.35
+
+Questa versione contiene piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+
+
 === 6 ottobre 2023
 
 
@@ -54,118 +64,6 @@ Questa versione contiene piccoli miglioramenti e correzioni di bug.
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Schermata dell'opzione di ricerca nel campo Key Pair (Coppia di chiavi) visualizzata nella pagina Network quando si crea un connettore in AWS da BlueXP."]
 
 * Questo aggiornamento include anche le correzioni dei bug.
-
-
-
-
-=== 30 luglio 2023
-
-
-
-==== Connettore 3.9.32
-
-* È ora possibile utilizzare l'API del servizio di audit BlueXP per esportare i registri di audit.
-+
-Il servizio di audit registra le informazioni sulle operazioni eseguite dai servizi BlueXP. Sono inclusi spazi di lavoro, connettori utilizzati e altri dati di telemetria. È possibile utilizzare questi dati per determinare quali azioni sono state eseguite, chi le ha eseguite e quando si sono verificate.
-
-+
-https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["Scopri di più sull'utilizzo dell'API del servizio di audit"^]
-
-+
-Questo collegamento è accessibile anche dall'interfaccia utente di BlueXP nella pagina Timeline.
-
-* Questa versione del connettore include anche miglioramenti Cloud Volumes ONTAP e miglioramenti del cluster ONTAP on-premise.
-+
-** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Scopri i miglioramenti di Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Scopri i miglioramenti del cluster on-premise di ONTAP"^]
-
-
-
-
-
-
-=== 2 luglio 2023
-
-
-
-==== Connettore 3.9.31
-
-* Ora puoi scoprire i cluster ONTAP on-premise dalla scheda *My estate* (in precedenza *My Opportunities*)
-+
-https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Scopri come scoprire i cluster dalla pagina My estate"].
-
-* Se si utilizza il connettore in un'area governativa di Azure, assicurarsi che il connettore possa contattare il seguente endpoint:
-+
-\https://occmclientinfragov.azurecr.us
-
-+
-Questo endpoint è necessario per installare manualmente il connettore e per aggiornare il connettore e i relativi componenti Docker.
-
-+
-A seguito di questa modifica, un connettore in un'area governativa di Azure non contatta più il seguente endpoint:
-
-+
-\https://cloudmanagerinfraprod.azurecr.io
-
-+
-Si noti che questo endpoint è ancora necessario per tutte le altre configurazioni in modalità limitata e per la modalità standard.
-
-
-
-
-
-=== 4 giugno 2023
-
-
-
-==== Connettore 3.9.30
-
-* Quando si apre un caso di supporto NetApp dalla dashboard di supporto, BlueXP apre il caso utilizzando l'account del sito di supporto NetApp associato all'accesso a BlueXP. In precedenza, BlueXP ha utilizzato l'account del sito di supporto NetApp associato all'intero account BlueXP.
-+
-Nell'ambito di questa modifica, la registrazione al supporto per un account BlueXP viene ora effettuata tramite l'account del sito di supporto NetApp associato all'accesso BlueXP di un utente. In precedenza, la registrazione al supporto era effettuata tramite un account NSS associato all'intero account BlueXP. Di conseguenza, altri utenti di BlueXP non visualizzeranno lo stesso stato di registrazione del supporto se non hanno associato un account del sito di supporto NetApp al proprio login BlueXP. Se in precedenza hai registrato il tuo account BlueXP per il supporto, lo stato di registrazione è ancora valido. Basta aggiungere un account NSS a livello utente per visualizzare lo stato.
-
-+
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Scopri come creare un caso con il supporto NetApp"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Scopri come gestire le credenziali associate all'accesso a BlueXP"]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["Scopri come registrarti per il supporto"]
-
-
-* Ora puoi cercare la documentazione da BlueXP. I risultati della ricerca ora forniscono link ai contenuti su docs.netapp.com e kb.netapp.com, che potrebbero aiutare a rispondere a una domanda che hai.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Una schermata della ricerca BlueXP disponibile nella parte superiore della console."]
-
-* Il connettore consente ora di aggiungere e gestire gli account di storage Azure da BlueXP.
-+
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Scopri come aggiungere nuovi account di storage Azure negli abbonamenti Azure di BlueXP"^].
-
-* Il connettore è ora supportato nelle seguenti aree AWS:
-+
-** Hyderabad (ap-sud-2)
-** Melbourne (ap-sud-est-4)
-** Spagna (ue-Sud-2)
-** Emirati Arabi Uniti (me-Central-1)
-** Zurigo (eu-Central-2)
-
-
-* Il connettore è ora supportato nelle seguenti aree di Azure:
-+
-** Brasile Sud
-** Francia Sud
-** Jio India Central
-** Jio India ovest
-** Polonia centrale
-** Qatar Central
-
-
-* Il connettore è ora supportato nelle seguenti aree di Google Cloud:
-+
-** Columbus (US-east5)
-** Dallas (US-South1)
-
-
-+
-https://cloud.netapp.com/cloud-volumes-global-regions["Visualizza l'elenco completo delle regioni supportate"^]
-
 
 
 
@@ -424,6 +322,18 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/task-monitor-backup-jobs.ht
 
 
 
+=== 6 novembre (versione 1.26.3)
+
+
+
+==== In questa versione sono stati risolti i seguenti problemi
+
+* È stata risolta un'incoerenza quando si presenta il numero di file sottoposti a scansione dal sistema nei dashboard.
+* Miglioramento del comportamento di scansione mediante la gestione e la creazione di report su file e directory con caratteri speciali nel nome e nei metadati.
+
+
+
+
 === 4 ottobre (versione 1,26)
 
 
@@ -458,43 +368,21 @@ Classificazione BlueXP utilizzata per identificare i file duplicati solo quando 
 
 
 
-=== 17 luglio 2023 (versione 1.24)
-
-
-
-==== Due nuovi tipi di dati personali tedeschi sono identificati dalla classificazione BlueXP
-
-La classificazione BlueXP è in grado di identificare e classificare i file che contengono i seguenti tipi di dati:
-
-* ID tedesco (Personalausweisnummer)
-* Numero tedesco di previdenza sociale (Sozialversicherungsnummer)
-
-
-https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Scopri tutti i tipi di dati personali che la classificazione BlueXP può identificare nei tuoi dati"].
-
-
-
-==== La classificazione BlueXP è completamente supportata in modalità limitata e privata
-
-La classificazione BlueXP è ora completamente supportata nei siti senza accesso a Internet (modalità privata) e con accesso Internet in uscita limitato (modalità limitata). https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Scopri di più sulle modalità di implementazione di BlueXP per il connettore"^].
-
-
-
-==== Possibilità di saltare le versioni durante l'aggiornamento di un'installazione in modalità privata della classificazione BlueXP
-
-Ora è possibile eseguire l'aggiornamento a una versione più recente della classificazione BlueXP anche se non è sequenziale. Ciò significa che l'attuale limite di aggiornamento della classificazione BlueXP per una versione alla volta non è più necessario. Questa funzione è rilevante a partire dalla versione 1.24 in poi.
-
-
-
-==== L'API di classificazione BlueXP è ora disponibile
-
-L'API di classificazione BlueXP ti consente di eseguire azioni, creare query ed esportare informazioni sui dati che stai analizzando. La documentazione interattiva è disponibile utilizzando Swagger. La documentazione è suddivisa in più categorie, tra cui analisi, conformità, governance e configurazione. Ogni categoria è un riferimento alle schede nell'interfaccia utente di classificazione BlueXP.
-
-https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["Scopri di più sulle API di classificazione BlueXP"].
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 1 novembre 2023
+
+Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettore.
+
+
+
+==== Regione dell'Arabia Saudita ora supportata in Google Cloud
+
+La regione dell'Arabia Saudita è ora supportata in Google Cloud per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
+
+Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali in Google Cloud"^].
 
 
 
@@ -506,7 +394,7 @@ Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettor
 
 ==== Nuove regioni supportate per le implementazioni ha a zone di disponibilità multiple in Azure
 
-Le seguenti regioni in Azure ora supportano implementazioni a più zone di disponibilità altamente disponibili per Cloud Volumes ONTAP 9.14.0 e versioni successive:
+Le seguenti regioni in Azure ora supportano implementazioni a più zone di disponibilità altamente disponibili per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:
 
 * Australia Est
 * Asia orientale
@@ -533,21 +421,6 @@ Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettor
 BlueXP può ora implementare e gestire la release di disponibilità generale di Cloud Volumes ONTAP 9.14.0 in AWS, Azure e Google Cloud.
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
-
-
-
-=== 10 settembre 2023
-
-Le seguenti modifiche sono state introdotte con la versione 3.9.33 del connettore.
-
-
-
-==== Supporto di macchine virtuali serie Lsv3 in Azure
-
-I tipi di istanze L48s_v3 e L64s_v3 sono ora supportati con Cloud Volumes ONTAP in Azure per implementazioni a nodo singolo e coppia ad alta disponibilità con dischi gestiti condivisi in zone di disponibilità singole e multiple, a partire dalla release 9.13.1. Questi tipi di istanze supportano Flash cache.
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Visualizza le configurazioni supportate per Cloud Volumes ONTAP in Azure"^]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Visualizza i limiti di storage per Cloud Volumes ONTAP in Azure"^]
 
 
 
