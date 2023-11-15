@@ -6,14 +6,11 @@ lead: These release notes describe recent enhancements to the cloud services tha
 summary: Queste note di rilascio descrivono i recenti miglioramenti ai servizi cloud che fanno parte di BlueXP. Sono disponibili collegamenti alla serie completa di note di rilascio per ogni singolo servizio. 
 ---
 = Note sulla versione di BlueXP
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 

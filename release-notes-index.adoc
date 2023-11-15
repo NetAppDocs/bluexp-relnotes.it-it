@@ -5,15 +5,12 @@ keywords: release notes
 summary: Visualizza la serie completa di note di rilascio per ogni singolo servizio. 
 ---
 = Indice delle note di rilascio
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
