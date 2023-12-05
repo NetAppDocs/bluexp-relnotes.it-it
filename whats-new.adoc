@@ -381,6 +381,52 @@ Classificazione BlueXP utilizzata per identificare i file duplicati solo quando 
 
 
 
+=== 6 dicembre 2023
+
+
+
+==== Cloud Volumes ONTAP 9.14.1 RC1
+
+BlueXP ora può implementare e gestire Cloud Volumes ONTAP 9.14.1 in AWS, Azure e Google Cloud.
+
+
+
+=== 5 dicembre 2023
+
+Sono state introdotte le seguenti modifiche.
+
+
+
+==== Nuovo supporto di regione in Azure
+
+
+
+===== Supporto per regione a zona di disponibilità singola
+
+Le seguenti regioni supportano ora implementazioni a zona di disponibilità singola altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:
+
+* Tel Aviv
+* Milano
+
+
+
+
+===== Supporto di aree di disponibilità multiple
+
+Le seguenti regioni ora supportano implementazioni a più zone di disponibilità altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:
+
+* India Centrale
+* Norvegia Est
+* Svizzera Nord
+* Sud Africa, Nord
+* Emirati Arabi Uniti Nord
+* Cina Nord 3
+
+
+Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^].
+
+
+
 === 10 novembre 2023
 
 La seguente modifica è stata introdotta con la versione 3.9.35 del connettore.
@@ -390,34 +436,6 @@ La seguente modifica è stata introdotta con la versione 3.9.35 del connettore.
 ==== La regione di Berlino ora è supportata in Google Cloud
 
 La regione di Berlino è ora supportata in Google Cloud per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali in Google Cloud"^].
-
-
-
-=== 8 novembre 2023
-
-La seguente modifica è stata introdotta con la versione 3.9.35 del connettore.
-
-
-
-==== La regione di Tel Aviv è ora supportata in AWS
-
-La regione di Tel Aviv è ora supportata in AWS per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto AWS"^].
-
-
-
-=== 1 novembre 2023
-
-La seguente modifica è stata introdotta con la versione 3.9.34 del connettore.
-
-
-
-==== Regione dell'Arabia Saudita ora supportata in Google Cloud
-
-La regione dell'Arabia Saudita è ora supportata in Google Cloud per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
 
 Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali in Google Cloud"^].
 

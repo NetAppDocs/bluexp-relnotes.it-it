@@ -504,20 +504,12 @@
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">In questa versione sono stati risolti i seguenti problemi</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">È stata risolta un'incoerenza quando si presenta il numero di file sottoposti a scansione dal sistema nei dashboard.</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Miglioramento del comportamento di scansione mediante la gestione e la creazione di report su file e directory con caratteri speciali nel nome e nei metadati.</block>
-  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">1 novembre 2023</block>
-  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">Regione dell'Arabia Saudita ora supportata in Google Cloud</block>
-  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">La regione dell'Arabia Saudita è ora supportata in Google Cloud per Cloud Volumes ONTAP e nel connettore per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.</block>
   <block id="2bc724993144e8002899059117620062" category="inline-link">Mappa delle regioni globali in Google Cloud</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
   <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 novembre 2023</block>
   <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">La seguente modifica è stata introdotta con la versione 3.9.35 del connettore.</block>
   <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">La regione di Berlino ora è supportata in Google Cloud</block>
   <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La regione di Berlino è ora supportata in Google Cloud per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.</block>
-  <block id="bbb4cf526641d95bbb8ab8bada56fa79" category="section-title">La regione di Tel Aviv è ora supportata in AWS</block>
-  <block id="04afad264aa486baec91a1ade145665a" category="paragraph">La regione di Tel Aviv è ora supportata in AWS per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.</block>
-  <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Mappa delle regioni globali sotto AWS</block>
-  <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
-  <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">La seguente modifica è stata introdotta con la versione 3.9.34 del connettore.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Questa release dell'efficienza economica di BlueXP include una nuova opzione per valutare gli asset e identificare se si consiglia un refresh tecnologico. Il servizio include una nuova opzione di aggiornamento tecnico nel riquadro a sinistra, nuove pagine in cui è possibile effettuare una valutazione dei carichi di lavoro e delle risorse correnti e un report che fornisce consigli.</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Supporto per i processi pianificati in Job Monitor</block>
@@ -553,4 +545,22 @@
   <block id="752f0c78427b5fffe498798d609a58a7" category="list-text">Raccomandazioni sui tech refresh sono ora disponibili nelle dashboard di watchlist, sito e gruppo.</block>
   <block id="5abb66a3f2a4a3a5e6083eb0e9cb8016" category="list-text">Da oggi puoi vedere i potenziali candidati per i tech refresh quando il numero dei consigli forniti dai tech refresh è zero.</block>
   <block id="bd644bc36e5d6955b3d49189c83c45f3" category="paragraph">I conteggi dei consigli degli aggiornamenti tecnici sono inclusi nel widget di pianificazione della dashboard di livello cliente. Questi consigli aiutano a pianificare le attività di tech refresh dell'hardware quando l'hardware si esaurisce o si sta avvicinando alla fine del supporto.</block>
+  <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">6 dicembre 2023</block>
+  <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
+  <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP ora può implementare e gestire Cloud Volumes ONTAP 9.14.1 in AWS, Azure e Google Cloud.</block>
+  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">Sono state introdotte le seguenti modifiche.</block>
+  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Nuovo supporto di regione in Azure</block>
+  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">Supporto per regione a zona di disponibilità singola</block>
+  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">Le seguenti regioni supportano ora implementazioni a zona di disponibilità singola altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:</block>
+  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">Tel Aviv</block>
+  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">Milano</block>
+  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">Supporto di aree di disponibilità multiple</block>
+  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">Le seguenti regioni ora supportano implementazioni a più zone di disponibilità altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:</block>
+  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">India Centrale</block>
+  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">Norvegia Est</block>
+  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">Svizzera Nord</block>
+  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">Sud Africa, Nord</block>
+  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">Emirati Arabi Uniti Nord</block>
+  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">Cina Nord 3</block>
+  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
 </blocks>
