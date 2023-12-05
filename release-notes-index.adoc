@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: release-notes-index.html 
 keywords: release notes 
-summary: Visualizza la serie completa di note di rilascio per ogni singolo servizio. 
+summary: Visualizza la serie completa di note di release per ogni singolo servizio BlueXP. 
 ---
 = Indice delle note di rilascio
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Visualizza la serie completa di note di rilascio per ogni singolo servi
 
 
 [role="lead"]
-Visualizza la serie completa di note di rilascio per ogni singolo servizio.
+Visualizza la serie completa di note di release per ogni singolo servizio BlueXP.
 
 
 
