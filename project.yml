@@ -19,24 +19,6 @@ sidebar:
     url: "/release-notes-index.html"
   - title: Note legali
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: Novità
-    links:
-    - title: Recenti cambiamenti in BlueXP
-      url: whats-new.html
-  - title: Note di rilascio per servizio
-    links:
-    - title: Indice delle note di rilascio
-      url: release-notes-index.html
-  - title: Blog e community
-    links:
-    - title: Community NetApp
-      url: https://community.netapp.com/t5/Public-Cloud-Services/ct-p/CDS
-    - title: Blog BlueXP
-      url: https://bluexp.netapp.com/blog
-    - title: Webinar sul cloud
-      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family

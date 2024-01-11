@@ -171,12 +171,6 @@
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Le schede di tiering sono state rinominate e il contenuto è stato aggiornato</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Prem Overview" è stata rinominata "on-premise Dashboard". In queste pagine sono state aggiunte alcune informazioni utili per valutare se è possibile ottimizzare lo spazio di storage con una configurazione di tiering aggiuntiva.</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">Modifiche recenti</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
-  <block id="f5f7a4d1535be1d0940e398b2997dfc0" category="sidebar">Note di rilascio per servizio</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blog e community</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
-  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blog BlueXP</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
   <block id="0ce55dbe491d96365e2c6abd492cbf95" category="list-text"><block ref="0ce55dbe491d96365e2c6abd492cbf95" category="inline-link-rx"></block></block>
   <block id="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="list-text"><block ref="dd4e767d5e7ac992c0ec2ecf41b2b08c" category="inline-link-rx"></block></block>
@@ -539,21 +533,6 @@
   <block id="a037be7aafc2f071c4517e8f2c6e58e9" category="section-title">6 dicembre 2023</block>
   <block id="4a76045b19fb3233070f77ae414d5810" category="section-title">Cloud Volumes ONTAP 9.14.1 RC1</block>
   <block id="efb4d9478ba663f514e18b3310c2de65" category="paragraph">BlueXP ora può implementare e gestire Cloud Volumes ONTAP 9.14.1 in AWS, Azure e Google Cloud.</block>
-  <block id="1fdbf90814a4e25f5b9e765470846181" category="paragraph">Sono state introdotte le seguenti modifiche.</block>
-  <block id="de3678aecacdbfc2cde1f365589103a8" category="section-title">Nuovo supporto di regione in Azure</block>
-  <block id="2d87524b148f67773bbd84eaceabd1a8" category="section-title">Supporto per regione a zona di disponibilità singola</block>
-  <block id="b778fb7051f3e08881d95bd99b033b37" category="paragraph">Le seguenti regioni supportano ora implementazioni a zona di disponibilità singola altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:</block>
-  <block id="b5eed9442adc540b3e59ae08aa129632" category="list-text">Tel Aviv</block>
-  <block id="437d461430ecc08e2d51abbcf5ce9b3c" category="list-text">Milano</block>
-  <block id="657afe0033330876ccc58b79bded6c83" category="section-title">Supporto di aree di disponibilità multiple</block>
-  <block id="20576a03f90633178b591a3e73ee5d59" category="paragraph">Le seguenti regioni ora supportano implementazioni a più zone di disponibilità altamente disponibili in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:</block>
-  <block id="910918c80516a55b4ba940f0b485cea1" category="list-text">India Centrale</block>
-  <block id="e57064b31b815fd4c1124aa7f2cc1fd4" category="list-text">Norvegia Est</block>
-  <block id="524a897e665c757be360f9ceaca6b0a5" category="list-text">Svizzera Nord</block>
-  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">Sud Africa, Nord</block>
-  <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">Emirati Arabi Uniti Nord</block>
-  <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">Cina Nord 3</block>
-  <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 gennaio 2024</block>
   <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Connettore 3.9.36</block>
   <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Questa release include miglioramenti minori, correzioni di bug e supporto per il connettore nelle seguenti aree cloud:</block>
@@ -583,7 +562,6 @@
   <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">I risultati filtrati nella pagina di analisi ora mostrano la dimensione totale degli elementi oltre al numero totale di file. Ciò può essere utile quando si spostano file, si eliminano file e altro ancora.</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurare gli ID gruppo aggiuntivi come "aperti all'organizzazione"</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Aggiungere altri ID gruppo come "aperti all'organizzazione"</block>
-  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">Ora puoi configurare gli ID di gruppo in NFS in modo che siano considerati "aperti all'organizzazione" direttamente nella classificazione BlueXP se non erano stati inizialmente impostati con tale autorizzazione. Scopri come<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>.</block>
   <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">8 gennaio 2024</block>
   <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Nuove macchine virtuali per più zone di disponibilità di Azure</block>
   <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">A partire da Cloud Volumes ONTAP 9.13.1, i seguenti tipi di macchine virtuali supportano le zone di disponibilità multiple Azure per le implementazioni di coppia ad alta disponibilità nuove ed esistenti:</block>
@@ -596,4 +574,10 @@
   <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">03 gennaio 2024</block>
   <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">Scoprite come visualizzare i suggerimenti per l'aggiornamento e generare un piano di aggiornamento.</block>
   <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor è stato migliorato per fornire piani di upgrade automatici e senza interruzioni per un singolo cluster e più cluster. Puoi vedere i consigli di upgrade solo per un singolo cluster, che include un riepilogo dei rischi, un report di controllo pre-aggiornamento e informazioni su nuove funzionalità e miglioramenti. <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
+  <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Ora puoi configurare gli ID di gruppo in NFS in modo che siano considerati "aperti all'organizzazione" direttamente dalla classificazione BlueXP se il gruppo non era stato inizialmente impostato con tale autorizzazione. Tutti i file e le cartelle con questi ID di gruppo allegati verranno visualizzati come "Apri all'organizzazione" nella pagina Dettagli analisi. Scopri come<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
+  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">16 gennaio 2024</block>
+  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">Release di patch in BlueXP</block>
+  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">Le release delle patch sono disponibili in BlueXP solo per le tre versioni più recenti di Cloud Volumes ONTAP.</block>
+  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link-macro">Aggiornare Cloud Volumes ONTAP</block>
+  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
 </blocks>
