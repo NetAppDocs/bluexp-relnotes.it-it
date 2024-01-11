@@ -392,7 +392,6 @@
   <block id="0aa08047034186671d34875b5617b057" category="paragraph"><block ref="0aa08047034186671d34875b5617b057" category="inline-link-rx"></block></block>
   <block id="d687b97df8e082fb1a95e853c70aa1c2" category="section-title">03 settembre 2023</block>
   <block id="a0c145fadd8b464775a61d2f1a2e0474" category="paragraph">Il servizio di report di migrazione BlueXP aggiornato fornisce aggiornamenti ai dati dei report. I report ora includono la capacità allocata.</block>
-  <block id="63ded913a4470920f93edd534ec90156" category="section-title">11 settembre 2023</block>
   <block id="101143ec501ddd03e76bf93ad136c2de" category="section-title">Nuova gestione delle policy per i dati ONTAP</block>
   <block id="d3744875712ea1e210c10ab00d139b5b" category="paragraph">Questa versione include la possibilità, all'interno dell'interfaccia utente, di creare policy Snapshot personalizzate, policy di replica e policy per i backup sullo storage a oggetti per i dati ONTAP.</block>
   <block id="99a56480b438dfe7afa3558f8c8e61d0" category="inline-link">Ulteriori informazioni sulle politiche</block>
@@ -416,8 +415,6 @@
   <block id="0d2ad64b559232943585fd7b1d8a6a97" category="section-title">27 settembre 2023</block>
   <block id="1e3c19e3742fbfc0e6dd22bb91d109a3" category="section-title">Upgrade Advisor</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">4 ottobre (versione 1,26)</block>
-  <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 ottobre 2023</block>
-  <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">Connettore 3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Questa versione contiene piccoli miglioramenti e correzioni di bug.</block>
   <block id="5612c729ea34f27969af31fd815184e0" category="paragraph">Le seguenti modifiche sono state introdotte con la versione 3.9.34 del connettore.</block>
   <block id="44d133359b344c4542acdebe6209e101" category="section-title">Cloud Volumes ONTAP 9.14.0</block>
@@ -504,12 +501,6 @@
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">In questa versione sono stati risolti i seguenti problemi</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">È stata risolta un'incoerenza quando si presenta il numero di file sottoposti a scansione dal sistema nei dashboard.</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">Miglioramento del comportamento di scansione mediante la gestione e la creazione di report su file e directory con caratteri speciali nel nome e nei metadati.</block>
-  <block id="2bc724993144e8002899059117620062" category="inline-link">Mappa delle regioni globali in Google Cloud</block>
-  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
-  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 novembre 2023</block>
-  <block id="8e40e7e4940e30b2ce260ff97ad74d25" category="paragraph">La seguente modifica è stata introdotta con la versione 3.9.35 del connettore.</block>
-  <block id="1c13ec96dac1171608b6dbd65bb2245c" category="section-title">La regione di Berlino ora è supportata in Google Cloud</block>
-  <block id="56e0da46254ac9c6f784da40f466bda0" category="paragraph">La regione di Berlino è ora supportata in Google Cloud per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.</block>
   <block id="41e96c41b82196674a6b6c99d0c0b8ad" category="section-title">08 novembre 2023</block>
   <block id="c4cd570753ca79cf809d24d7723c0e82" category="paragraph">Questa release dell'efficienza economica di BlueXP include una nuova opzione per valutare gli asset e identificare se si consiglia un refresh tecnologico. Il servizio include una nuova opzione di aggiornamento tecnico nel riquadro a sinistra, nuove pagine in cui è possibile effettuare una valutazione dei carichi di lavoro e delle risorse correnti e un report che fornisce consigli.</block>
   <block id="aa4c67fd3731395f4450c9686b20f799" category="section-title">Supporto per i processi pianificati in Job Monitor</block>
@@ -563,4 +554,46 @@
   <block id="92e19d728517dc371c0f37ee23fa9d03" category="list-text">Emirati Arabi Uniti Nord</block>
   <block id="343c78956fe2e30b58a341de94a8673a" category="list-text">Cina Nord 3</block>
   <block id="ee39417afe0e7b7726a65f6235448846" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 gennaio 2024</block>
+  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Connettore 3.9.36</block>
+  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Questa release include miglioramenti minori, correzioni di bug e supporto per il connettore nelle seguenti aree cloud:</block>
+  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">La regione di Israele (Tel Aviv) in AWS</block>
+  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">L'Arabia Saudita in Google Cloud</block>
+  <block id="8017dc46d55f13a6a86439ecb091248d" category="section-title">15 dicembre 2023</block>
+  <block id="7ab0753b80059fbad40a2fd72c4592ce" category="section-title">Report disponibili per le copie Snapshot locali e di replica</block>
+  <block id="9e6cfaae073aa85c2c955e17e29074a8" category="paragraph">In precedenza, era possibile generare report solo sulle copie di backup. Adesso puoi creare report sulle copie Snapshot locali e sulle copie Snapshot di replica.</block>
+  <block id="df4821b02d035c9862b3a2ae32691ed8" category="paragraph">Con questi rapporti, è possibile effettuare le seguenti operazioni:</block>
+  <block id="bb80777a047b566ac3b10e32c370ca6a" category="list-text">Assicurati che i dati critici siano protetti in base alla tua politica organizzativa.</block>
+  <block id="4af8855be3acb3531c504c5560e50187" category="list-text">Accertarsi che i backup siano stati eseguiti correttamente per un gruppo di volumi.</block>
+  <block id="21c3f5d157e063b8c2a027ddc88be774" category="list-text">Offri una prova della protezione sui dati di produzione.</block>
+  <block id="7423bbe1d34880696cfb7dd51492349f" category="inline-link">Report sulla copertura per la data Protection</block>
+  <block id="eb6103dddc4e26822e765e4e36dce6cb" category="paragraph">Fare riferimento a.<block ref="76fbdf5883fabf4a66bc2a9d2bdc8b58" category="inline-link-rx"></block>.</block>
+  <block id="e24cbc73c28ff71b40798b880015fb21" category="section-title">Tagging personalizzato disponibile sui volumi per l'ordinamento e il filtraggio</block>
+  <block id="080dddcbfae67093013a7e013a7a9bff" category="paragraph">Ora puoi aggiungere tag personalizzati ai volumi a partire da ONTAP 9.13.1 in modo da raggruppare i volumi all'interno e tra gli ambienti di lavoro. In questo modo, puoi ordinare i volumi nelle pagine dell'interfaccia utente di backup e recovery di BlueXP e filtrarli nei report.</block>
+  <block id="6bc380f29d7a62cc8a2bd6b0b4dc9ccd" category="section-title">Backup del catalogo conservati per 30 giorni</block>
+  <block id="2a7d8d5d92a8e8110b2bc2ab71c0c002" category="paragraph">In precedenza, Catalog.zip backup venivano conservati per 7 giorni. Ora, sono conservati per 30 giorni.</block>
+  <block id="16f6196e265bdbd3f9da022848c51d8a" category="inline-link">Ripristina i dati di backup e recovery di BlueXP nei siti oscuri</block>
+  <block id="89b2c6f6be45f8f05d713b7bae69cd15" category="paragraph">Fare riferimento a.<block ref="5596168e45150b1d53148898addeba07" category="inline-link-rx"></block>.</block>
+  <block id="08953d12d492df51bc90f2f43cd41a5e" category="section-title">Aumento dei backup dei dati ONTAP on-premise su bucket StorageGRID di conservazione</block>
+  <block id="c07f9ba29ac424f316877aae26aa07b0" category="paragraph">StorageGRID ora può conservare fino a 30 backup dei dati ONTAP on-premise da backup e recovery BlueXP in un singolo bucket. In precedenza, il numero massimo era di 7 backup in un bucket.</block>
+  <block id="a4304a5e5ad0523cd1e2516efcbb04ea" category="inline-link">Scopri di più sul backup on-premise dei dati ONTAP su StorageGRID</block>
+  <block id="9fa7efa5e741bc1c7fa825541ca578ff" category="paragraph"><block ref="c5cc080595ac6d000b39fc62e24bb795" category="inline-link-rx"></block>.</block>
+  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">10 gennaio (versione 1,27)</block>
+  <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">I risultati della pagina di analisi ora visualizzano le dimensioni totali oltre al numero totale di elementi</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">I risultati filtrati nella pagina di analisi ora mostrano la dimensione totale degli elementi oltre al numero totale di file. Ciò può essere utile quando si spostano file, si eliminano file e altro ancora.</block>
+  <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurare gli ID gruppo aggiuntivi come "aperti all'organizzazione"</block>
+  <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Aggiungere altri ID gruppo come "aperti all'organizzazione"</block>
+  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">Ora puoi configurare gli ID di gruppo in NFS in modo che siano considerati "aperti all'organizzazione" direttamente nella classificazione BlueXP se non erano stati inizialmente impostati con tale autorizzazione. Scopri come<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>.</block>
+  <block id="fd9107be3db2a4144e054c68a7eab15f" category="section-title">8 gennaio 2024</block>
+  <block id="dba248d0d18e6170f9bd4a4286edda53" category="section-title">Nuove macchine virtuali per più zone di disponibilità di Azure</block>
+  <block id="c8d113632e2ef2b901829a0843658f2c" category="paragraph">A partire da Cloud Volumes ONTAP 9.13.1, i seguenti tipi di macchine virtuali supportano le zone di disponibilità multiple Azure per le implementazioni di coppia ad alta disponibilità nuove ed esistenti:</block>
+  <block id="ceac2355e7d70d7e31592bc8ded88ab3" category="list-text">L16s_v3</block>
+  <block id="2b89a58d3269391f70f9c7fb8d68f746" category="list-text">L32s_v3</block>
+  <block id="c7316b16841dc002d14d45c38a750287" category="list-text">L48s_v3</block>
+  <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
+  <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Configurazioni supportate in Azure</block>
+  <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="0850cf3036348eacfcb9da9c7e6dff71" category="section-title">03 gennaio 2024</block>
+  <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">Scoprite come visualizzare i suggerimenti per l'aggiornamento e generare un piano di aggiornamento.</block>
+  <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor è stato migliorato per fornire piani di upgrade automatici e senza interruzioni per un singolo cluster e più cluster. Puoi vedere i consigli di upgrade solo per un singolo cluster, che include un riepilogo dei rischi, un report di controllo pre-aggiornamento e informazioni su nuove funzionalità e miglioramenti. <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
 </blocks>
