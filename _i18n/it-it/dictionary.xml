@@ -529,11 +529,6 @@
   <block id="9c818280eee76d75834ab648289ae85f" category="inline-link-macro">Scoprite come visualizzare i suggerimenti per l'aggiornamento e generare un piano di aggiornamento.</block>
   <block id="bdc2200252b96cc6ed0c081012882ca8" category="paragraph">Upgrade Advisor è stato migliorato per fornire piani di upgrade automatici e senza interruzioni per un singolo cluster e più cluster. Puoi vedere i consigli di upgrade solo per un singolo cluster, che include un riepilogo dei rischi, un report di controllo pre-aggiornamento e informazioni su nuove funzionalità e miglioramenti. <block ref="5432771afbfeb8bee17b110b384d0041" category="inline-link-macro-rx"></block></block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Ora puoi configurare gli ID di gruppo in NFS in modo che siano considerati "aperti all'organizzazione" direttamente dalla classificazione BlueXP se il gruppo non era stato inizialmente impostato con tale autorizzazione. Tutti i file e le cartelle con questi ID di gruppo allegati verranno visualizzati come "Apri all'organizzazione" nella pagina Dettagli analisi. Scopri come<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
-  <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">16 gennaio 2024</block>
-  <block id="9ed7d4ae8d042664394e899e9c1f5e9a" category="section-title">Release di patch in BlueXP</block>
-  <block id="5c04c0351e9f1e168f13ca5689c21d92" category="paragraph">Le release delle patch sono disponibili in BlueXP solo per le tre versioni più recenti di Cloud Volumes ONTAP.</block>
-  <block id="3a3843b2672bd389702bef2d50b13ac2" category="inline-link-macro">Aggiornare Cloud Volumes ONTAP</block>
-  <block id="debc8fcbe9103b95d21857d1276dbb26" category="paragraph"><block ref="debc8fcbe9103b95d21857d1276dbb26" category="inline-link-macro-rx"></block></block>
   <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">01 febbraio 2024</block>
   <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">Supporta il ripristino di macchine virtuali in una posizione alternativa</block>
   <block id="9c75b0f26dddf07ed827e32aaf28bee9" category="list-text">Supporto per la mancata protezione dei datastore</block>
@@ -668,4 +663,8 @@
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Se hai bisogno della classificazione BlueXP per analizzare più di 250 milioni di file, puoi utilizzare un'istanza Extra Large nell'implementazione del cloud o nell'installazione on-premise. Questo tipo di sistema è in grado di eseguire la scansione di un massimo di 500 milioni di file.</block>
   <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>.</block>
   <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
+  <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Supporto di Amazon Instant Metadata Service v2</block>
+  <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">In AWS, Cloud Volumes ONTAP, il mediatore e il connettore supportano ora Amazon Instant Metadata Service v2 (IMDSv2) per tutte le funzioni. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.</block>
+  <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">Documentazione di configurazione e amministrazione di BlueXP per la gestione dei connettori esistenti</block>
+  <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">Se richiesto dai criteri di protezione, è possibile configurare le istanze EC2 in modo che utilizzino IMDSv2. Per istruzioni, fare riferimento a. <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
 </blocks>
