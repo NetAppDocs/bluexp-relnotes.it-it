@@ -24,6 +24,54 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 8 marzo 2024
+
+
+
+==== Connettore 3.9.38
+
+A questo punto, la versione 3.9.38 è disponibile per la modalità standard e la modalità limitata. Questa release include il supporto per IMDSv2 in AWS e un aggiornamento dei permessi AWS.
+
+
+
+===== Supporto di IMDSv2
+
+BlueXP ora supporta Amazon EC2 Instance Metadata Service versione 2 (IMDSv2) con l'istanza del connettore e con le istanze di Cloud Volumes ONTAP. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.
+
+https://aws.amazon.com/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/["Scopri di più su IMDSv2 dal blog sulla sicurezza AWS"^]
+
+Il servizio IMDS (Instance Metadata Service) viene attivato come segue nelle istanze EC2:
+
+* Per le nuove implementazioni di connettori da BlueXP, da AWS Marketplace o utilizzando https://docs.netapp.com/us-en/bluexp-automation/automate/overview.html["Script di terraform"^], IMDSv2 è attivato per impostazione predefinita nell'istanza EC2.
+* Se si avvia una nuova istanza EC2 in AWS e quindi si installa manualmente il software del connettore, anche IMDSv2 viene attivato per impostazione predefinita.
+* Per i connettori esistenti, IMDSv1 è ancora supportato, ma è possibile configurare manualmente IMDSv2 sull'istanza EC2, se si preferisce.
+* Per Cloud Volumes ONTAP, IMDSv1 è attivato per impostazione predefinita sulle istanze nuove ed esistenti. Se si preferisce, è possibile configurare manualmente IMDSv2 sulle istanze EC2.
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["Scopri come configurare IMDSv2 sulle istanze esistenti"].
+
+
+
+===== Aggiornamento delle autorizzazioni AWS
+
+Abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è necessaria per una prossima release. Aggiorneremo le note di rilascio con ulteriori dettagli quando tale release sarà disponibile.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Visualizza le autorizzazioni AWS per il connettore"].
+
+
+
+==== Impostazioni proxy e Cloud Volumes ONTAP
+
+Le impostazioni del server proxy per il connettore sono ora disponibili nella pagina *Gestisci connettori* (modalità standard) o nella pagina *Modifica connettori* (modalità limitata e modalità privata).
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Informazioni su come configurare il connettore per l'utilizzo di un server proxy"].
+
+Inoltre, abbiamo rinominato la pagina *Impostazioni connettore* in *Impostazioni Cloud Volumes ONTAP*.
+
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-cvo-settings.png["Schermata che mostra l'opzione Impostazioni Cloud Volumes ONTAP disponibile nel menu Impostazioni."]
+
+
+
 === 15 febbraio 2024
 
 
@@ -43,14 +91,6 @@ Se utilizzi le credenziali cloud di NetApp per accedere a BlueXP, puoi modificar
 image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Schermata che mostra la possibilità di modificare il nome in Impostazioni utente."]
 
 La modifica del nome non è supportata se si effettua l'accesso con una connessione federata o con l'account del sito di supporto NetApp.
-
-
-
-==== Requisito IMDSv1 per EC2 istanze
-
-Devi essere consapevole che la versione 1 (IMDSv1) del servizio metadati istanza è necessaria sulle istanze Amazon EC2 prima di installare manualmente il software del connettore in AWS.
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["Scopri di più sul requisito per IMDSv1 in AWS"].
 
 
 
@@ -298,11 +338,11 @@ https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html
 
 
 
-==== 6505788c29b47651fe2e94f0607a2ef7
+==== Il supporto di istanze di grandi dimensioni è ora qualificato
 
-1647534ed4603d68f73fd3f261af9b65
+Se hai bisogno della classificazione BlueXP per analizzare più di 250 milioni di file, puoi utilizzare un'istanza Extra Large nell'implementazione del cloud o nell'installazione on-premise. Questo tipo di sistema è in grado di eseguire la scansione di un massimo di 500 milioni di file.
 
-1b4f4b549e0860b1392190bfc2a23f81
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Scopri di più"].
 
 
 
