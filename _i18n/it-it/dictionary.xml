@@ -366,7 +366,6 @@
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">Scopri come</block>
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="section-title">Identificare i file duplicati con una dimensione minima di 1 MB</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">Classificazione BlueXP utilizzata per identificare i file duplicati solo quando avevano 50 MB o più. Ora è possibile identificare i file duplicati che iniziano con 1 MB. È possibile utilizzare i filtri della pagina di analisi "dimensione file" insieme a "duplicati" per vedere quali file di una certa dimensione sono duplicati nell'ambiente in uso.</block>
-  <block id="18cf4605db6670514e116119da7de0a0" category="section-title">3 settembre 2023</block>
   <block id="84a4e9be01e1e0b2123f0992743bb3be" category="section-title">Escludi file tramite regex</block>
   <block id="8a2aa0d6caae0bb9fe34491d59f66a36" category="paragraph">Gli utenti hanno ora la possibilità di escludere i file utilizzando regex.</block>
   <block id="1f3154fef8201e2bc88bd5111528535c" category="inline-link">Ulteriori informazioni sulla funzione *Escludi estensioni file*.</block>
@@ -541,15 +540,6 @@
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Se si desidera che la classificazione BlueXP escluda la scansione dei dati che risiedono in determinate directory di origine dati, è possibile aggiungere questi nomi di directory a un file di configurazione elaborato dalla classificazione BlueXP. Questa funzione consente di evitare la scansione di directory non necessarie o che potrebbero generare risultati falsi positivi per i dati personali.</block>
   <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
   <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">10 gennaio 2024 (versione 1,27)</block>
-  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">14 dicembre 2023 (versione 1.26.6)</block>
-  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">Questa versione includeva alcuni miglioramenti minori.</block>
-  <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">Inoltre, la versione ha temporaneamente rimosso le seguenti opzioni:</block>
-  <block id="aebeafb9d6b45d6e3629685737b0b510" category="inline-link-macro">Monitorare e gestire gli eventi di accesso ai file</block>
-  <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">L'opzione per attivare la raccolta del registro di controllo è stata disattivata. Fare riferimento a. <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>.</block>
-  <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">Esaminare i dati memorizzati nella propria organizzazione</block>
-  <block id="ea2bddf8f5366e4e19e9f92e993db900" category="list-text">Durante l'analisi Directory, l'opzione per calcolare il numero di dati personali identificabili (PII) per directory non è disponibile. Fare riferimento a. <block ref="5f0cc912e1424f54004e4ab3376e7552" category="inline-link-macro-rx"></block>.</block>
-  <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="inline-link-macro">Organizzare i dati privati</block>
-  <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">L'opzione per integrare i dati utilizzando le etichette AIP (Azure Information Protection) è stata disattivata. Fare riferimento a. <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>.</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">5 marzo 2024</block>
   <block id="cf8f238c2116738b5ed3bacdbd527d14" category="section-title">Cloud Volumes ONTAP 9.14.1 GA</block>
   <block id="fc0f9e3eef3a6eff3efe2fe7cf358466" category="paragraph">BlueXP può ora implementare e gestire la release General Availability di Cloud Volumes ONTAP 9.14.1 in AWS, Azure e Google Cloud.</block>
@@ -558,12 +548,6 @@
   <block id="df5c4f17d479f00c828a9edc617f2277" category="paragraph">Gli utenti hanno ora la possibilità di filtrare le directory usando regex.</block>
   <block id="32d736bf69b032967c9ca2f284cd6218" category="inline-link">Ulteriori informazioni sulla funzione *Escludi directory*.</block>
   <block id="9afa1c757f9d9c1d7a951ff852629645" category="paragraph"><block ref="9afa1c757f9d9c1d7a951ff852629645" category="inline-link-rx"></block></block>
-  <block id="82e62a186bc8e1499e10d1400cd762e1" category="section-title">08 febbraio 2024</block>
-  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard sulla sostenibilità</block>
-  <block id="f66a566e9695faf3a9ac3f398a6e5dcd" category="inline-link-macro">Dashboard sulla sostenibilità</block>
-  <block id="abb657094a0038dadd2b0ad8a1f2644b" category="paragraph">È ora possibile accedere direttamente alle metriche Sustainability per il dashboard o l'elenco di controllo predefinito utilizzando <block ref="3bfa14a7a0d533bd50f797d3680bb9e4" category="inline-link-macro-rx"></block> collegamento.</block>
-  <block id="8d1c3a552ad49163efb4753de2a95773" category="section-title">ClusterViewer</block>
-  <block id="3f0a64c1722e89371bae517923a9f798" category="paragraph">A questo punto è possibile visualizzare le informazioni RPM del disco nella sezione Riepilogo disco, disponibile nella scheda Storage e nei report ClusterViewer.</block>
   <block id="c08885153d0680dab7349b930f5310c4" category="section-title">Disaster recovery di BlueXP</block>
   <block id="1804830d648adf9126d51f4a827ca950" category="paragraph">Ora il Digital Wallet di BlueXP ti permette di gestire le licenze per il disaster recovery di BlueXP. Puoi aggiungere licenze, aggiornare le licenze e visualizzare i dettagli sulla capacità concessa in licenza.</block>
   <block id="85bdddc8ce218c6365f105f9d309d898" category="inline-link">Scopri come gestire le licenze per i servizi dati BlueXP</block>
@@ -696,4 +680,28 @@
   <block id="8006e6282233bdaa99ca3e9db65fc693" category="paragraph">La funzione è ora parte dell'opzione aggiornamento tecnico nel menu di navigazione a sinistra.</block>
   <block id="33a9c4b5f0c522c38ff9b1b46ebd1498" category="inline-link-macro">Valutazione di un refresh tecnologico</block>
   <block id="914b4ad9ada7977f36d427a9664a4235" category="paragraph">Scopri di più su <block ref="4305c0855ed1712385868c1ca4414cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="1e3ff9766d4708d7de4568322138b5f8" category="section-title">1 aprile 2024 (versione 1,30)</block>
+  <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">Supporto aggiunto per la classificazione RHEL v8,8 e v9,3 BlueXP</block>
+  <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">Questa versione fornisce il supporto per Red Hat Enterprise Linux v8,8 e v9,3 oltre a 9.x, che richiede Podman, anziché il motore Docker. Applicabile a qualsiasi installazione manuale on-premise della classificazione BlueXP.</block>
+  <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">I seguenti sistemi operativi richiedono l'utilizzo del motore del container Podman e richiedono la classificazione BlueXP versione 1,30 o superiore: Red Hat Enterprise Linux versione 8,8, 9,0, 9,1, 9,2 e 9,3.</block>
+  <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link">Panoramica sulle implementazioni di classificazione BlueXP</block>
+  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">Scopri di più<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
+  <block id="efdeb6220b979140e56f16caceb1d7e9" category="section-title">Opzione per attivare la raccolta del registro di controllo rimossa</block>
+  <block id="bd387dbe20d15a2a0ff5e7602549388e" category="paragraph">L'opzione per attivare la raccolta del registro di controllo è stata disattivata.</block>
+  <block id="6cf7e053021d02a6a394c1e69f8e8352" category="section-title">Velocità di scansione migliorata</block>
+  <block id="0989b495229f449df36968cf973306ca" category="inline-link">Installare la classificazione BlueXP su un host con accesso a Internet</block>
+  <block id="9d343bee917ed42deed4a08429d2e86f" category="paragraph">Le prestazioni di scansione sui nodi scanner secondari sono state migliorate. È possibile aggiungere ulteriori nodi scanner se è necessaria una potenza di elaborazione aggiuntiva per le scansioni. Per ulteriori informazioni, fare riferimento a.<block ref="bccb2247e180b6227640eec7d70d0351" category="inline-link-rx"></block>.</block>
+  <block id="747585a36be1e14a4dd3ff25c4bf1e48" category="section-title">Aggiornamenti automatici</block>
+  <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link">Installazione su un host Linux con accesso a Internet</block>
+  <block id="5908128f01988745be85a67845195980" category="paragraph">Se hai implementato la classificazione BlueXP su un sistema con accesso Internet, il sistema si aggiorna automaticamente. In precedenza, l'aggiornamento si è verificato dopo un tempo specifico trascorso dall'ultima attività dell'utente. Con questa release, la classificazione BlueXP si aggiorna automaticamente se l'ora locale è compresa tra le 9:1:00 e le 9:5:00. Se l'ora locale è al di fuori di queste ore, l'aggiornamento avviene dopo un intervallo di tempo specifico trascorso dall'ultima attività dell'utente. Per ulteriori informazioni, fare riferimento a.<block ref="ec7f7d5f354f2c39e4e863a85c31a7f9" category="inline-link-rx"></block>.</block>
+  <block id="f943db85a7c2edd799890ddb18f29cab" category="inline-link">Installare la classificazione BlueXP su un host Linux senza accesso Internet</block>
+  <block id="7adcca7abf8ead9407a9511a195904c3" category="paragraph">Se hai implementato la classificazione BlueXP senza accesso a Internet, dovrai eseguire l'aggiornamento manualmente. Per ulteriori informazioni, fare riferimento a.<block ref="9aedc51770264f0d93a81417a0d08768" category="inline-link-rx"></block>.</block>
+  <block id="8580342935824bb5edc626fa6371115e" category="section-title">8 aprile 2024</block>
+  <block id="cd5e0880386a1f1f9deebd1fe0422847" category="section-title">Supporto per RHEL 8,9</block>
+  <block id="b2eb229bee01785cca939d890a06b37c" category="paragraph">Il broker di dati è ora supportato sugli host che eseguono Red Hat Enterprise Linux 8,9.</block>
+  <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Visualizza i requisiti dell'host Linux</block>
+  <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>.</block>
+  <block id="83c0915932deaf70b0873b6eb47c3a28" category="section-title">28 marzo 2024</block>
+  <block id="888059a12fa3532d54872d17517e780c" category="inline-link-macro">Scopri come visualizzare consigli sull'upgrade e generare un piano di upgrade.</block>
+  <block id="9d10674ae163e749f65c1eeb852cdf2b" category="paragraph">La versione precedente di Upgrade Advisor è ora obsoleta. Puoi utilizzare la versione avanzata di Upgrade Advisor per generare piani di upgrade per un singolo cluster e più cluster. <block ref="b6cac2681a05b9a8dd19bf0553cd1066" category="inline-link-macro-rx"></block></block>
 </blocks>
