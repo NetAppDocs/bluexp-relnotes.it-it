@@ -32,10 +32,8 @@
   <block id="337c62c6b6eb7319bae58701105e889c" category="inline-link">Tiering</block>
   <block id="6d924727c00a77a63749e2f8aa0860d4" category="summary">Queste note di rilascio descrivono i recenti miglioramenti ai servizi cloud che fanno parte di BlueXP. Sono disponibili collegamenti alla serie completa di note di rilascio per ogni singolo servizio.</block>
   <block id="db502201c33ba3b3f867c8360cce228a" category="doc">Note sulla versione di BlueXP</block>
-  <block id="8d9e30572c7be0b05a6e777166ea7d0b" category="summary">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per ulteriori informazioni, consultare la serie completa di note di rilascio per ciascun servizio.</block>
   <block id="67d516de6d58e90ec46d8a36eecbf35a" category="doc">Recenti cambiamenti in BlueXP</block>
   <block id="06ec635aca479394e3f10f59b57ce807" category="inline-link-macro">set completo di note di rilascio</block>
-  <block id="6beb41a356d9287866f0b22c4b4eadcb" category="paragraph">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per ulteriori informazioni, visitare il <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> per ogni singolo servizio.</block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Funzionalità amministrative</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">In questa sezione vengono descritte le nuove funzionalità relative alle funzioni di amministrazione di BlueXP: Account, connettori, credenziali del provider cloud e altro ancora.</block>
   <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 maggio 2023</block>
@@ -105,15 +103,6 @@
   <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Scopri di più sul pacchetto di licenza Edge cache.</block>
   <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">La configurazione guidata e l'interfaccia utente di configurazione GFC sono state migliorate per eseguire la registrazione della licenza NetApp</block>
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM ottimizzato per configurare la funzionalità Edge Sync</block>
-  <block id="d88ec9141ca0f799220b70e6188c8c33" category="section-title">24 ottobre 2022 (versione 2.1)</block>
-  <block id="51d465a61bb0f252b570a31acdf628be" category="section-title">Global file cache è ora disponibile con un numero qualsiasi di licenze</block>
-  <block id="c4579941f945f9c013bc5d2b34483751" category="paragraph">Il precedente requisito minimo di 10 licenze, o 30 TB di storage, è stato rimosso. Verrà rilasciata una licenza Global file cache per ogni 3 TB di storage.</block>
-  <block id="a05df94e25a3fdf3c6809915be7db21b" category="section-title">È stato aggiunto il supporto per l'utilizzo di un server di gestione delle licenze offline</block>
-  <block id="9952545455211dde3dd54a36ff1e0fd9" category="paragraph">Un server di gestione delle licenze (LMS) non in linea, o sito oscuro, è particolarmente utile quando il sistema LMS non dispone di una connessione Internet per la convalida delle licenze con le origini delle licenze. Durante la configurazione iniziale, è necessario disporre di una connessione a Internet e di una connessione all'origine della licenza. Una volta configurata, l'istanza di LMS può diventare scura. Tutti i bordi/core devono avere una connessione con LMS per la convalida continua delle licenze.</block>
-  <block id="c0e3f3bf15a62c059b94a8ed402b05a1" category="section-title">Le istanze edge possono supportare altri utenti simultanei</block>
-  <block id="dac6d17442feba1d57f29d8031c05963" category="paragraph">Una singola istanza Global file cache Edge può servire fino a 500 utenti per istanza fisica Edge dedicata e fino a 300 utenti per implementazioni virtuali dedicate. Il numero massimo di utenti utilizzato era 400 e 200, rispettivamente.</block>
-  <block id="7954886e5818e91e397e0ca331d15d48" category="section-title">Optimus PSM ottimizzato per configurare le licenze cloud</block>
-  <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">È stata migliorata la funzione Edge Sync nell'interfaccia utente di Optimus (configurazione Edge) per mostrare tutti i client connessi</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Disinstallare Astra Trident</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">Kubernetes in BlueXP supporta ora Astra Trident 23.01.</block>
@@ -461,9 +450,6 @@
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">Configurare gli ID gruppo aggiuntivi come "aperti all'organizzazione"</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">Aggiungere altri ID gruppo come "aperti all'organizzazione"</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">Ora puoi configurare gli ID di gruppo in NFS in modo che siano considerati "aperti all'organizzazione" direttamente dalla classificazione BlueXP se il gruppo non era stato inizialmente impostato con tale autorizzazione. Tutti i file e le cartelle con questi ID di gruppo allegati verranno visualizzati come "Apri all'organizzazione" nella pagina Dettagli analisi. Scopri come<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>.</block>
-  <block id="4e1f7d458412b18adef0e5ff0db2eee8" category="section-title">01 febbraio 2024</block>
-  <block id="a409179aac0b12213b3fa77e0a22bd61" category="list-text">Supporta il ripristino di macchine virtuali in una posizione alternativa</block>
-  <block id="9c75b0f26dddf07ed827e32aaf28bee9" category="list-text">Supporto per la mancata protezione dei datastore</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 marzo 2024 (versione 1,29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Ora è possibile escludere la scansione dei dati che risiedono in determinate directory di origine dati</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Se si desidera che la classificazione BlueXP escluda la scansione dei dati che risiedono in determinate directory di origine dati, è possibile aggiungere questi nomi di directory a un file di configurazione elaborato dalla classificazione BlueXP. Questa funzione consente di evitare la scansione di directory non necessarie o che potrebbero generare risultati falsi positivi per i dati personali.</block>
@@ -517,7 +503,6 @@
   <block id="9e599e81fbf58f35a4e8ea8d4d14b0f6" category="inline-link">Scopri di più sulla risposta a un avviso ransomware rilevato</block>
   <block id="e3647ee6d2bf29ee74ee9f4e9ff4e201" category="list-text">*Caratteristiche aggiuntive per esaminare i potenziali attacchi*: Ora puoi visualizzare ulteriori dettagli forensi per analizzare il potenziale attacco rilevato.<block ref="707fb9c7332f6aa933e8445c28830d7a" category="inline-link-rx"></block>.</block>
   <block id="bda01efb679b0ca92bc4e76a23294328" category="inline-link">Scopri di più sul ripristino in seguito a un attacco ransomware (dopo la neutralizzazione degli incidenti)</block>
-  <block id="1661fc233cecf8b9c070d8d398293283" category="list-text">*Processo di ripristino*. Il processo di ripristino è stato migliorato. Ora è possibile eseguire il ripristino di un volume per volume, di tutti i volumi per un carico di lavoro o anche di alcuni file dal volume, tutto in un singolo flusso di lavoro.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
   <block id="8aea370efa0da7f8c985a03488d3b9a7" category="inline-link">Scopri di più sulla protezione ransomware di BlueXP</block>
   <block id="41e5a42a8cc2023ceb0f8dd06cce7a27" category="paragraph"><block ref="5a80707c96309e25f4c73aee7d2327b1" category="inline-link-rx"></block>.</block>
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 ottobre 2023</block>
@@ -541,24 +526,7 @@
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">In AWS, Cloud Volumes ONTAP, il mediatore e il connettore supportano ora Amazon Instant Metadata Service v2 (IMDSv2) per tutte le funzioni. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">Documentazione di configurazione e amministrazione di BlueXP per la gestione dei connettori esistenti</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">Se richiesto dai criteri di protezione, è possibile configurare le istanze EC2 in modo che utilizzino IMDSv2. Per istruzioni, fare riferimento a. <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
-  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">26 marzo 2024</block>
-  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">Rilascio in modalità privata (3,9.38)</block>
-  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Una nuova release in modalità privata è ora disponibile per BlueXP. Questa release include le seguenti versioni dei servizi BlueXP che sono supportate in modalità privata.</block>
-  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Servizio</block>
-  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Versione inclusa</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connettore</block>
-  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
   <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 marzo 2024</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">4 marzo 2024</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Gestione di Cloud Volumes ONTAP</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">Gestione del cluster ONTAP on-premise</block>
-  <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Questa nuova versione è disponibile per il download dal sito del supporto NetApp.</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Informazioni sulla modalità privata</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Scopri come iniziare a utilizzare BlueXP in modalità privata</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Informazioni su come aggiornare il connettore quando si utilizza la modalità privata</block>
-  <block id="4e208e7f54024bf731fae02025ce34d9" category="list-text"><block ref="4e208e7f54024bf731fae02025ce34d9" category="inline-link-rx"></block></block>
   <block id="e713d6072685bf32f36150e9f76ce0c1" category="section-title">Possibilità di eseguire "ripristini rapidi" dai backup cloud ai volumi ONTAP on-premise</block>
   <block id="5a9ee632cba573d0f7355f7d12d908ca" category="paragraph">Ora puoi eseguire un _ripristino rapido_ di un volume dal cloud storage a un volume di destinazione ONTAP on-premise. In precedenza era possibile eseguire un ripristino rapido solo su un sistema Cloud Volumes ONTAP. Il ripristino rapido è ideale per le situazioni di disaster recovery in cui è necessario fornire accesso a un volume il prima possibile. Un ripristino rapido è molto più veloce di un ripristino completo di volumi e ripristina i metadati da una snapshot cloud a un volume di destinazione ONTAP. L'origine potrebbe provenire da AWS S3, BLOB di Azure, Google Cloud Services o NetApp StorageGRID.</block>
   <block id="07f61dfe973846130f7066ef7bc459ef" category="paragraph">Il sistema di destinazione ONTAP on-premise deve eseguire ONTAP versione 9.14.1 o successiva.</block>
@@ -654,4 +622,62 @@
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Per un elenco di tutte le regioni, vedere la<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
   <block id="ee94ea94211470599a81d49f8c4b586f" category="section-title">Tag e modelli di volume non più supportati</block>
   <block id="96b0b2a19dd9deb6b94e53f2e29f4387" category="paragraph">Non è più possibile creare un volume da un modello o modificare i tag di un volume. Queste azioni sono state associate al servizio di correzione di BlueXP, che non è più disponibile.</block>
+  <block id="c13da60647a8b44e99d5352b1e2338e4" category="summary">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per una cronologia completa delle versioni, andare alla serie completa di note di rilascio per ogni singolo servizio.</block>
+  <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per una cronologia completa delle versioni, andare al <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> per ogni singolo servizio.</block>
+  <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 maggio 2024</block>
+  <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">Connettore 3.9.40</block>
+  <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Questa versione di BlueXP Connector include il supporto per ulteriori sistemi operativi, piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
+  <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Supporto per RHEL 8 e 9</block>
+  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori:</block>
+  <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">da 8,6 a 8,9</block>
+  <block id="d80ef147e70626ef64e723b33860d715" category="list-text">da 9,1 a 9,3</block>
+  <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman è necessario come strumento di orchestrazione del container per questi sistemi operativi.</block>
+  <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Dovresti essere a conoscenza dei requisiti di Podman, delle limitazioni note, di un riepilogo del supporto del sistema operativo, di cosa fare se hai un host RHEL 7, di come iniziare e di altro ancora.</block>
+  <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Informazioni sul supporto per RHEL 8 e 9 con il connettore</block>
+  <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>.</block>
+  <block id="d9fb1337dfb6a869dd0a2630e14b4543" category="section-title">Fine del supporto per RHEL 7 e CentOS 7</block>
+  <block id="16051bd228f38a4877773f8f795d59a9" category="paragraph">Il 30 giugno 2024, RHEL 7 arriverà alla fine della manutenzione (EOM), mentre CentOS 7 arriverà alla fine del ciclo di vita (EOL). NetApp continuerà a supportare il connettore su queste distribuzioni Linux fino al 30 giugno 2024.</block>
+  <block id="cc33fea72b72b4631424774600dd1785" category="inline-link">Scopri come procedere se disponi già di un connettore in esecuzione su RHEL 7 o CentOS 7</block>
+  <block id="ab95c14710d4a4d5d91375c4a1b3315b" category="paragraph"><block ref="079fd36262e0750841aa2ea8902cdc7a" category="inline-link-rx"></block>.</block>
+  <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Aggiornamento delle autorizzazioni AWS</block>
+  <block id="2f4b86d46e79a7a3f22d1c784c12799e" category="paragraph">Nella release 3.9.38, abbiamo aggiornato la policy del connettore per AWS in modo da includere l'autorizzazione "EC2:DescribeAvailabilityZones". Questa autorizzazione è ora necessaria per supportare le zone locali di AWS con Cloud Volumes ONTAP.</block>
+  <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Visualizza le autorizzazioni AWS per il connettore</block>
+  <block id="bad85d32b5f3e46e956809c13b502817" category="list-text"><block ref="7e42187d6259f740c2e1915df5429efc" category="inline-link-rx"></block>.</block>
+  <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">Scopri di più sul supporto per le zone locali di AWS</block>
+  <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
+  <block id="701c188698e8adc8e0dffa2a107bf9f4" category="section-title">30 aprile 2024</block>
+  <block id="24c8d17b3d2e5d56e90675c0755252e0" category="section-title">Capacità di abilitare o disabilitare scansioni pianificate di ransomware</block>
+  <block id="1d5d9f598ed0ef9d579321fc5f2dea76" category="paragraph">In precedenza potevi abilitare o disabilitare le scansioni ransomware, ma non potevi farlo per le scansioni pianificate.</block>
+  <block id="c05a6e1c401ef496decb0a82c8e569e3" category="paragraph">Con questa release, puoi ora abilitare o disabilitare le scansioni ransomware pianificate sull'ultima copia Snapshot utilizzando l'opzione nella pagina Advanced Settings. Se si attiva, le scansioni vengono eseguite settimanalmente per impostazione predefinita. È possibile modificare la pianificazione in giorni o settimane o disattivarla, risparmiando sui costi.</block>
+  <block id="70d2aaea6b19d033a76faef23053a806" category="section-title">6 maggio 2024 (versione 2,4)</block>
+  <block id="33ac6c6578bc8387b0ba6aaebc3f939a" category="paragraph">Questa versione risolve alcuni problemi minori. Il pacchetto software aggiornato è disponibile all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
+  <block id="5e76a23879d0e6f7325f31678e623972" category="section-title">14 maggio 2024</block>
+  <block id="8607002d4574854ad87d556bd31731f4" category="paragraph">Questa release è la release di disponibilità generale della protezione dal ransomware di BlueXP. Include i seguenti aggiornamenti:</block>
+  <block id="729537ed9af29f0ad92ade6f8dd22b9b" category="list-text">*Aggiornamenti delle licenze*: Puoi iscriverti a una prova gratuita di 90 giorni, acquistare un abbonamento pay-as-you-go per 1, 2 o 3 anni con Amazon Web Services Marketplace o portare la tua licenza NetApp.</block>
+  <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">Ulteriori informazioni sull'impostazione delle licenze</block>
+  <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>.</block>
+  <block id="66d53b21a4f1cbecf308bbb38b047ea6" category="list-text">*Protocollo CIFS*: Il servizio ora supporta ONTAP e Cloud Volumes ONTAP on-premise negli ambienti di lavoro AWS utilizzando protocolli NFS e CIFS. La release precedente supportava solo il protocollo NFS.</block>
+  <block id="eddae5934fb0a404d8d56b1d10d268b5" category="list-text">*Dettagli del carico di lavoro*: Questa versione fornisce ora ulteriori dettagli sulle informazioni sul carico di lavoro dalle pagine di protezione per una migliore valutazione della protezione del carico di lavoro. Dai dettagli del carico di lavoro, è possibile modificare il nome del carico di lavoro, modificare l'importanza del carico di lavoro, esaminare il criterio attualmente assegnato ed esaminare le destinazioni di backup configurate.</block>
+  <block id="e959f6b23824b1ea02ac36779938412d" category="inline-link">Ulteriori informazioni sulla visualizzazione dei dettagli sul carico di lavoro sono disponibili nelle pagine protezione</block>
+  <block id="f51a97d186491b354b8046c13692a070" category="paragraph"><block ref="59ecb8b9925d0039512c75c461b0b86c" category="inline-link-rx"></block>.</block>
+  <block id="6ec902543fa94dd3c38bb21e7402c153" category="list-text">*Protezione e ripristino coerenti con le applicazioni e con le VM*: È ora possibile eseguire una protezione coerente con le applicazioni con il software NetApp SnapCenter e una protezione coerente con le VM con il plug-in SnapCenter per VMware vSphere, ottenendo uno stato di inattività e coerente per evitare potenziali perdite di dati in un secondo momento se è necessario il ripristino. Se è necessario il ripristino, è possibile ripristinare lo stato precedente e l'ultima transazione dell'applicazione o della macchina virtuale.</block>
+  <block id="ee689c35077ba98079c7b0a4f05a6dc5" category="inline-link">Scopri di più sulla protezione dei carichi di lavoro</block>
+  <block id="928fea0953d8c6c88422d673f9e9c5e3" category="paragraph"><block ref="140488255a280124a6e845e64767d54f" category="inline-link-rx"></block>.</block>
+  <block id="d041207e4dcdfed1283b155492e91f0e" category="list-text">*Strategie di protezione dal ransomware*: Se le policy di backup o snapshot non esistono sul workload, puoi creare una strategia di protezione dal ransomware, che può includere le seguenti policy create in questo servizio:</block>
+  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Policy di Snapshot</block>
+  <block id="7759a4720271a1ab3b4e6b1c36a67058" category="list-text">Policy di backup</block>
+  <block id="bdadcbba411cf56b92967e5b0248cc77" category="list-text">Policy di rilevamento</block>
+  <block id="f536bb08e409e96a3949c3f12e8e392b" category="list-text">*L'attivazione del rilevamento delle minacce* è ora disponibile utilizzando un sistema SIEM (Security and Event Management) di terze parti. Il dashboard ora mostra una nuova raccomandazione per "attivare il rilevamento delle minacce" che può essere configurata nella pagina Impostazioni.</block>
+  <block id="10bc4591a9635a8100fbcf18a580cc29" category="inline-link">Ulteriori informazioni sulla configurazione delle opzioni di impostazione</block>
+  <block id="119863034bfc7ae6b0e2d324ec3da549" category="paragraph"><block ref="fa172403ab7c635a07324b1168d8ce19" category="inline-link-rx"></block>.</block>
+  <block id="81a40dc02620f19a1a34a9edcd87f471" category="list-text">*Nuovi stati di rilevamento* vengono visualizzati nella pagina protezione, che mostra lo stato del rilevamento ransomware applicato al carico di lavoro.</block>
+  <block id="af255af71067c5961f87ea2321b69295" category="inline-link">Scopri di più sulla protezione dei carichi di lavoro e sulla visualizzazione degli stati di protezione</block>
+  <block id="df142910ec0f256cf3fe94834edd616c" category="paragraph"><block ref="2db9e604787e93c0ca53ebeb4c1a3e79" category="inline-link-rx"></block>.</block>
+  <block id="2a09f9149501945b53f1e79e28c98d97" category="list-text">*Scaricare i file CSV* dalle pagine Dashboard, Protection, Alerts e Recovery.</block>
+  <block id="ca8c09727e8b36d15981c9455d697516" category="inline-link">Ulteriori informazioni sul download di file CSV dal dashboard e da altre pagine</block>
+  <block id="db81907bf6476a20c8b94b94556f627f" category="paragraph"><block ref="29cf990dea934b0f767d4567074aaff5" category="inline-link-rx"></block>.</block>
+  <block id="858c0eb001d380e6c1276da7ebebbd32" category="inline-image-macro">Opzione azioni verticali</block>
+  <block id="cd336e06464d96c3b5ece4caa37cc727" category="list-text">Il collegamento *Visualizza documentazione* è ora incluso nell'interfaccia utente. È possibile accedere a questa documentazione da Dasbhoard Vertical *Actions* <block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block> opzione. Seleziona *Novità* per visualizzare i dettagli nelle Note sulla versione o *documentazione* per visualizzare la home page della documentazione relativa alla protezione dal ransomware di BlueXP.</block>
+  <block id="d8689490b3697bc11eb889288d616515" category="list-text">*Processo di ripristino*. Il processo di ripristino è stato migliorato. Ora è possibile ripristinare volume per volume, tutti i volumi per un carico di lavoro o persino alcuni file dal volume, tutto in un singolo flusso di lavoro.<block ref="a36a14eacaa464cdf2747d859c29de55" category="inline-link-rx"></block>.</block>
 </blocks>
