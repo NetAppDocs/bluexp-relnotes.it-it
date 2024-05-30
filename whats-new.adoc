@@ -24,6 +24,53 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 4 giugno 2024
+
+
+
+==== Rilascio in modalità privata (3,9.40)
+
+Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp. Questa release include le seguenti versioni dei servizi BlueXP che sono supportate in modalità privata.
+
+Si noti che questa versione in modalità privata _non_ include il supporto per il connettore con Red Hat Enterprise Linux 8 e 9.
+
+[cols="2*"]
+|===
+| Servizio | Versione inclusa 
+
+
+| Connettore | 3.9.40 
+
+
+| Backup e recovery | 17 maggio 2024 
+
+
+| Classificazione | 15 maggio 2024 (versione 1,31) 
+
+
+| Gestione di Cloud Volumes ONTAP | 17 maggio 2024 
+
+
+| Portafoglio digitale | 30 luglio 2023 
+
+
+| Gestione del cluster ONTAP on-premise | 30 luglio 2023 
+
+
+| Replica | 18 settembre 2022 
+|===
+Per ulteriori informazioni su ciò che è incluso nelle versioni di questi servizi BlueXP, fai riferimento alle note della release per ogni servizio BlueXP.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informazioni sulla modalità privata"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Scopri come iniziare a utilizzare BlueXP in modalità privata"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Informazioni su come aggiornare il connettore quando si utilizza la modalità privata"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Scopri le novità del backup e recovery di BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Scopri le novità della classificazione BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Scopri le novità della gestione Cloud Volumes ONTAP in BlueXP"^]
+
+
+
+
 === 17 maggio 2024
 
 
@@ -377,6 +424,9 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 ==== Supporto per le zone locali di Amazon Web Services
 
 Il supporto per le zone locali di AWS è ora disponibile per le implementazioni ha di Cloud Volumes ONTAP. Le zone locali di AWS sono un'implementazione dell'infrastruttura in cui storage, calcolo, database e altri servizi AWS selezionati sono situati vicino a grandi città e aree del settore.
+
+
+NOTE: Le zone locali di AWS sono supportate quando si utilizza BlueXP in modalità standard. Al momento, i zone locali di AWS non sono supportati quando si utilizza BlueXP in modalità limitata o privata.
 
 Per ulteriori informazioni sulle zone locali di AWS con implementazioni ha, fare riferimento a. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["Zone locali di AWS"^].
 
@@ -949,6 +999,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html["Ulteriori informazioni sul download di file CSV dal dashboard e da altre pagine"].
 
 * Il collegamento *Visualizza documentazione* è ora incluso nell'interfaccia utente. È possibile accedere a questa documentazione da Dasbhoard Vertical *Actions* image:button-actions-vertical.png["Opzione azioni verticali"] opzione. Seleziona *Novità* per visualizzare i dettagli nelle Note sulla versione o *documentazione* per visualizzare la home page della documentazione relativa alla protezione dal ransomware di BlueXP.
+* *Backup e recovery di BlueXP*: Il servizio di backup e recovery di BlueXP non deve più essere già abilitato nell'ambiente di lavoro. Vedere link:rp-start-prerequisites.html["prerequisiti"]. Il servizio di protezione dal ransomware di BlueXP aiuta a configurare una destinazione di backup tramite l'opzione Settings. Vedere link:rp-use-settings.html["Configurare le impostazioni"].
 
 
 
