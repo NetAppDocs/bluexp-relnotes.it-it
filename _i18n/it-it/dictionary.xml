@@ -424,10 +424,6 @@
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ora puoi creare report per i volumi che utilizzano il protocollo SMB/CIFS.</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Visualizza la serie completa di note di release per ogni singolo servizio BlueXP.</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Lista di controllo</block>
-  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 marzo 2024 (versione 1,29)</block>
-  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Ora è possibile escludere la scansione dei dati che risiedono in determinate directory di origine dati</block>
-  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">Se si desidera che la classificazione BlueXP escluda la scansione dei dati che risiedono in determinate directory di origine dati, è possibile aggiungere questi nomi di directory a un file di configurazione elaborato dalla classificazione BlueXP. Questa funzione consente di evitare la scansione di directory non necessarie o che potrebbero generare risultati falsi positivi per i dati personali.</block>
-  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>.</block>
   <block id="592997dde366d5775e7e052816854f74" category="section-title">5 marzo 2024</block>
   <block id="4b51a8df678b7448fbc55b79ad365ed7" category="section-title">11 febbraio 2024</block>
   <block id="66a743c4896414f00b485685ab377a19" category="section-title">Filtra le directory per regex</block>
@@ -487,9 +483,6 @@
   <block id="c615da36d364061ce672b091d8aa7d3b" category="list-text"><block ref="c615da36d364061ce672b091d8aa7d3b" category="inline-link-rx"></block></block>
   <block id="19532230e3ff8a5fc0c27cc8389cac67" category="list-text"><block ref="19532230e3ff8a5fc0c27cc8389cac67" category="inline-link-rx"></block></block>
   <block id="4a1a05ee22994e328d9ec0402052b926" category="section-title">8 marzo 2024</block>
-  <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">Il supporto di istanze di grandi dimensioni è ora qualificato</block>
-  <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">Se hai bisogno della classificazione BlueXP per analizzare più di 250 milioni di file, puoi utilizzare un'istanza Extra Large nell'implementazione del cloud o nell'installazione on-premise. Questo tipo di sistema è in grado di eseguire la scansione di un massimo di 500 milioni di file.</block>
-  <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>.</block>
   <block id="1582ce9c3a0b0079717e0b0c6edf2347" category="section-title">Supporto di Amazon Instant Metadata Service v2</block>
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">In AWS, Cloud Volumes ONTAP, il mediatore e il connettore supportano ora Amazon Instant Metadata Service v2 (IMDSv2) per tutte le funzioni. IMDSv2 fornisce una maggiore protezione contro le vulnerabilità. In precedenza era supportato solo IMDSv1.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">Documentazione di configurazione e amministrazione di BlueXP per la gestione dei connettori esistenti</block>
@@ -597,7 +590,6 @@
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Questa versione di BlueXP Connector include il supporto per ulteriori sistemi operativi, piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Supporto per RHEL 8 e 9</block>
-  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori:</block>
   <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">da 8,6 a 8,9</block>
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">da 9,1 a 9,3</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman è necessario come strumento di orchestrazione del container per questi sistemi operativi.</block>
@@ -714,4 +706,32 @@
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">prerequisiti</block>
   <block id="fb197ee87a0f850dc3b7bb98fe408518" category="inline-link-macro">Configurare le impostazioni</block>
   <block id="8b003b58b4532bbf9f07c58827819319" category="list-text">*Backup e recovery di BlueXP*: Il servizio di backup e recovery di BlueXP non deve più essere già abilitato nell'ambiente di lavoro. Vedere <block ref="7cc100a4e35b42109d34b0d1c6d432c9" category="inline-link-macro-rx"></block>. Il servizio di protezione dal ransomware di BlueXP aiuta a configurare una destinazione di backup tramite l'opzione Settings. Vedere <block ref="522f9942d2238ef69c22ece6b9af5205" category="inline-link-macro-rx"></block>.</block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori quando si utilizza BlueXP in modalità standard o limitata:</block>
+  <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">5 giugno 2024 (versione 1,32)</block>
+  <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">Questa versione include i seguenti aggiornamenti.</block>
+  <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">Le scansioni di mappatura raccolgono i metadati</block>
+  <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">I seguenti metadati vengono estratti dai file durante le scansioni di mappatura e visualizzati nelle dashboard Governance, Compliance e Investigation:</block>
+  <block id="16627cf42947f5240556f0586110db9b" category="list-text">Ambiente di lavoro</block>
+  <block id="6c63358fa61dbacebcb3b3cabf06b4f3" category="list-text">Tipo di ambiente di lavoro</block>
+  <block id="8e1608d6951087912c426bcb53d12280" category="list-text">Repository di storage</block>
+  <block id="6622c14ce91b6b9683505626a5eebdd2" category="list-text">Tipo di file</block>
+  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">Capacità utilizzata</block>
+  <block id="18de356008c3efffac62590fd7849509" category="list-text">Numero di file</block>
+  <block id="1908624a0bca678cd26b99bfd405324e" category="list-text">Dimensione del file</block>
+  <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">Creazione di file</block>
+  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">Ultimo accesso al file</block>
+  <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">Ultima modifica al file</block>
+  <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">Ora di rilevamento file</block>
+  <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">Estrazione delle autorizzazioni</block>
+  <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="section-title">Dati aggiuntivi nelle dashboard</block>
+  <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">Questa versione aggiorna i dati visualizzati nei dashboard Governance, Compliance e Investigation durante le scansioni di mappatura.</block>
+  <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">Qual è la differenza tra la mappatura e la classificazione delle scansioni</block>
+  <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">Per ulteriori informazioni, vedere<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
+  <block id="7910c8307cac3d62eca8ac0d42301b38" category="section-title">Nuova colonna Stato mapping nella pagina di configurazione</block>
+  <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">In questa versione viene ora visualizzata una nuova colonna Stato mapping nella pagina di configurazione. La nuova colonna consente di identificare se la mappatura è in esecuzione, in coda, in pausa o superiore.</block>
+  <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">Modificare le impostazioni di scansione</block>
+  <block id="2f94c0116c501abdbd5c76ddef86d94a" category="paragraph">Per la spiegazione degli stati, vedere<block ref="cacd3972a6d9bfb8b2d3cde3ba576e77" category="inline-link-rx"></block>.</block>
+  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard sulla sostenibilità</block>
+  <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Panoramica della dashboard Sustainability</block>
+  <block id="0108740b4afbf178bb60484e5406b8b8" category="paragraph">La sostenibilità è ora supportata dai sistemi e-Series e StorageGRID. È possibile visualizzare un elenco delle azioni consigliate e degli indicatori ambientali che visualizzano le proiezioni relative all'alimentazione, all'utilizzo diretto di carbonio e al calore dal dashboard Sustainability di questi sistemi. Per ulteriori informazioni, vedere <block ref="8ef455a63dd9427c902954b8e3c7f21b" category="inline-link-macro-rx"></block>.</block>
 </blocks>

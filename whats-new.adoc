@@ -85,7 +85,7 @@ A questo punto, la versione 3.9.40 è disponibile per la modalità standard e la
 
 ===== Supporto per RHEL 8 e 9
 
-Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori:
+Il connettore è ora supportato sugli host che eseguono le seguenti versioni di Red Hat Enterprise Linux con _nuove_ installazioni di connettori quando si utilizza BlueXP in modalità standard o limitata:
 
 * da 8,6 a 8,9
 * da 9,1 a 9,3
@@ -345,6 +345,48 @@ In precedenza, potevi ripristinare file e cartelle solo dalle copie di backup in
 
 
 
+=== 5 giugno 2024 (versione 1,32)
+
+Questa versione include i seguenti aggiornamenti.
+
+
+
+==== Le scansioni di mappatura raccolgono i metadati
+
+I seguenti metadati vengono estratti dai file durante le scansioni di mappatura e visualizzati nelle dashboard Governance, Compliance e Investigation:
+
+* Ambiente di lavoro
+* Tipo di ambiente di lavoro
+* Repository di storage
+* Tipo di file
+* Capacità utilizzata
+* Numero di file
+* Dimensione del file
+* Creazione di file
+* Ultimo accesso al file
+* Ultima modifica al file
+* Ora di rilevamento file
+* Estrazione delle autorizzazioni
+
+
+
+
+==== Dati aggiuntivi nelle dashboard
+
+Questa versione aggiorna i dati visualizzati nei dashboard Governance, Compliance e Investigation durante le scansioni di mappatura.
+
+Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["Qual è la differenza tra la mappatura e la classificazione delle scansioni"]
+
+
+
+==== Nuova colonna Stato mapping nella pagina di configurazione
+
+In questa versione viene ora visualizzata una nuova colonna Stato mapping nella pagina di configurazione. La nuova colonna consente di identificare se la mappatura è in esecuzione, in coda, in pausa o superiore.
+
+Per la spiegazione degli stati, vedere https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["Modificare le impostazioni di scansione"].
+
+
+
 === 15 maggio 2024 (versione 1,31)
 
 
@@ -390,26 +432,6 @@ Le prestazioni di scansione sui nodi scanner secondari sono state migliorate. È
 Se hai implementato la classificazione BlueXP su un sistema con accesso Internet, il sistema si aggiorna automaticamente. In precedenza, l'aggiornamento si è verificato dopo un tempo specifico trascorso dall'ultima attività dell'utente. Con questa release, la classificazione BlueXP si aggiorna automaticamente se l'ora locale è compresa tra le 9:1:00 e le 9:5:00. Se l'ora locale è al di fuori di queste ore, l'aggiornamento avviene dopo un intervallo di tempo specifico trascorso dall'ultima attività dell'utente. Per ulteriori informazioni, fare riferimento a. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["Installazione su un host Linux con accesso a Internet"].
 
 Se hai implementato la classificazione BlueXP senza accesso a Internet, dovrai eseguire l'aggiornamento manualmente. Per ulteriori informazioni, fare riferimento a. https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Installare la classificazione BlueXP su un host Linux senza accesso Internet"].
-
-
-
-=== 4 marzo 2024 (versione 1,29)
-
-
-
-==== Ora è possibile escludere la scansione dei dati che risiedono in determinate directory di origine dati
-
-Se si desidera che la classificazione BlueXP escluda la scansione dei dati che risiedono in determinate directory di origine dati, è possibile aggiungere questi nomi di directory a un file di configurazione elaborato dalla classificazione BlueXP. Questa funzione consente di evitare la scansione di directory non necessarie o che potrebbero generare risultati falsi positivi per i dati personali.
-
-https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html["Scopri di più"].
-
-
-
-==== Il supporto di istanze di grandi dimensioni è ora qualificato
-
-Se hai bisogno della classificazione BlueXP per analizzare più di 250 milioni di file, puoi utilizzare un'istanza Extra Large nell'implementazione del cloud o nell'installazione on-premise. Questo tipo di sistema è in grado di eseguire la scansione di un massimo di 500 milioni di file.
-
-https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["Scopri di più"].
 
 
 
@@ -563,6 +585,16 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#
 
 
 == Consulente digitale
+
+
+
+=== 15 maggio 2024
+
+
+
+==== Dashboard sulla sostenibilità
+
+La sostenibilità è ora supportata dai sistemi e-Series e StorageGRID. È possibile visualizzare un elenco delle azioni consigliate e degli indicatori ambientali che visualizzano le proiezioni relative all'alimentazione, all'utilizzo diretto di carbonio e al calore dal dashboard Sustainability di questi sistemi. Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/active-iq/BlueXP_sustainability_dashboard_overview.html["Panoramica della dashboard Sustainability"^].
 
 
 
