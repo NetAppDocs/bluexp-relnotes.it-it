@@ -1,0 +1,27 @@
+---
+indexpage:
+  title: Note sulla versione di BlueXP
+  summary: Queste note di rilascio descrivono i recenti miglioramenti ai servizi cloud
+    che fanno parte di BlueXP. Sono disponibili collegamenti alla serie completa di
+    note di rilascio per ogni singolo servizio.
+  keywords: release notes, enhancements, cloud services, bluexp
+  lead: Queste note di rilascio descrivono i recenti miglioramenti ai servizi cloud
+    che fanno parte di BlueXP. Sono disponibili collegamenti alla serie completa di
+    note di rilascio per ogni singolo servizio.
+  tiles:
+  - title: Novità
+    links:
+    - title: Recenti cambiamenti in BlueXP
+      url: whats-new.html
+  - title: Note di rilascio per servizio
+    links:
+    - title: Indice delle note di rilascio
+      url: release-notes-index.html
+  - title: Blog e community
+    links:
+    - title: Community NetApp
+      url: https://community.netapp.com/t5/Public-Cloud-Services/ct-p/CDS
+    - title: Blog BlueXP
+      url: https://bluexp.netapp.com/blog
+    - title: Webinar sul cloud
+      url: https://bluexp.netapp.com/events
