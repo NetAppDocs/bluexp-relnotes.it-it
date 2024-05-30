@@ -95,14 +95,8 @@
   <block id="35c28a4f1250fc5c59dd5bfa5d9993ce" category="paragraph">Il nuovo servizio di efficienza economica BlueXP identifica le risorse storage con capacità bassa corrente o prevista e fornisce consigli sul tiering dei dati o sulla capacità aggiuntiva per i sistemi AFF on-premise.</block>
   <block id="345d0e0aeae5ae7cbf8cdd1fc138e5e6" category="inline-link-macro">Scopri di più sull'efficienza economica di BlueXP</block>
   <block id="838d01d8bf08e23ff670a400ad2cb368" category="paragraph"><block ref="c4b58b1c24fbcd13ec6df8ee9e6c3a23" category="inline-link-macro-rx"></block>.</block>
-  <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5 aprile 2023 (versione 2.2)</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">Problemi risolti</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">questa pagina</block>
-  <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Supporto per Global file cache su sistemi Cloud Volumes ONTAP implementati in Google Cloud</block>
-  <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Una nuova licenza "Edge cache" è disponibile quando si implementa un sistema Cloud Volumes ONTAP in Google Cloud. Hai diritto a implementare un sistema edge Global file cache per ogni 3 TIB di capacità acquistata sul sistema Cloud Volumes ONTAP.</block>
-  <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Scopri di più sul pacchetto di licenza Edge cache.</block>
-  <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">La configurazione guidata e l'interfaccia utente di configurazione GFC sono state migliorate per eseguire la registrazione della licenza NetApp</block>
-  <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM ottimizzato per configurare la funzionalità Edge Sync</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
   <block id="7786076739da628161f45de338cd6e69" category="inline-link-macro">Disinstallare Astra Trident</block>
   <block id="ed9855757b31d516a4fa8f955edec2eb" category="list-text">Kubernetes in BlueXP supporta ora Astra Trident 23.01.</block>
@@ -151,8 +145,6 @@
   <block id="50677882efe321e7fec19456f58faadc" category="paragraph"><block ref="536037d368170de6e6fbdb576d167663" category="inline-link-rx"></block>.</block>
   <block id="9cb4f066718ada1a845659033318004c" category="paragraph"><block ref="19c68668f7d6a95b64e909c5da1cb9b0" category="inline-link-rx"></block>.</block>
   <block id="16364877a101c1787c34f2fe604ef9e9" category="paragraph"><block ref="16364877a101c1787c34f2fe604ef9e9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
-  <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
   <block id="4e4ff5b7850bf0aae4966bf2353d2764" category="list-text">Ora puoi farlo <block ref="79330a9a9d35860d426f0d48c9f654a7" category="inline-link-macro-rx"></block> Che è stato installato utilizzando l'operatore Trident o BlueXP.</block>
   <block id="08dbc554156c2764d1696fe55d768aed" category="paragraph">Quando <block ref="c5aa031d705396e63c7e52a97cf56f86" category="inline-link-macro-rx"></block>, è ora possibile abilitare lo storage economy di classe storage per lo storage a blocchi o su file system.</block>
   <block id="51959da1122b405c90c18be52282f18f" category="paragraph"><block ref="1bc1e485e9f9d41e344f0d10f6ad3511" category="inline-link-rx"></block>.</block>
@@ -431,17 +423,6 @@
   <block id="35214f9b3df21ed35db22cb765a9b147" category="section-title">13 novembre 2023</block>
   <block id="c14af667110ffb482c0adaaed623dbe2" category="paragraph">Ora puoi creare report per i volumi che utilizzano il protocollo SMB/CIFS.</block>
   <block id="563cbb5befcc35d67fb204c94be0bffb" category="summary">Visualizza la serie completa di note di release per ogni singolo servizio BlueXP.</block>
-  <block id="a76b69f0eac891a6dad210c8c894f70c" category="section-title">26 novembre 2023</block>
-  <block id="5dbbe39e8d4eedbcb5aafdf7e0e66a80" category="section-title">Supporto di classe Cold Storage per Azure Blob</block>
-  <block id="2be7473e47d2102f9d51ff1a3cd36305" category="paragraph">Il Tier Azure Blob del Cold Storage è ora disponibile quando si crea una relazione di sincronizzazione.</block>
-  <block id="6e90305f3ad22c32d20c662a0bb06726" category="inline-link">Ulteriori informazioni sulla creazione di una relazione di sincronizzazione.</block>
-  <block id="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="paragraph"><block ref="2bfe6803528ed3d1b4758e7bc6eb4cb6" category="inline-link-rx"></block></block>
-  <block id="e35f035cdd0e53d6ac8e57e89c9a3994" category="section-title">Supporto della regione di Tel Aviv in AWS data broker</block>
-  <block id="bc601240bd77a257f82ad29245da02ee" category="paragraph">Tel Aviv è ora una regione supportata quando si crea un broker di dati in AWS.</block>
-  <block id="f296e44bbf15ea94dfcce2d2a4649e6d" category="inline-link">Scopri di più sulla creazione di un data broker in AWS</block>
-  <block id="48938ec2ae208dc89827f9e55c8f1c41" category="paragraph"><block ref="42f00e873b388cac01d84d3ba1605497" category="inline-link-rx"></block>.</block>
-  <block id="e24f754057dce2d0f9791240fec7d494" category="section-title">Effettua l'update alla versione del nodo per i broker di dati</block>
-  <block id="a020a6afcaa5c0d333b5cfb93c8d4d79" category="paragraph">Tutti i nuovi broker di dati utilizzeranno ora la versione del nodo 21,2.0. I broker di dati non compatibili con questo aggiornamento, ad esempio CentOS 7,0 e Ubuntu Server 18,0, non funzionano più con la copia e sincronizzazione BlueXP.</block>
   <block id="e057979f7791f37ec4a8704baa00923d" category="section-title">Lista di controllo</block>
   <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">4 marzo 2024 (versione 1,29)</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="section-title">Ora è possibile escludere la scansione dei dati che risiedono in determinate directory di origine dati</block>
@@ -698,4 +679,11 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
+  <block id="6849ea484f5664c887acc6f1ff990dfd" category="section-title">2 giugno 2024</block>
+  <block id="cfa477f3b89d95c12ff30d6390b89dd9" category="paragraph">Il servizio di copia e sincronizzazione di BlueXP è stato aggiornato per correggere alcuni bug. Anche il broker di dati è stato aggiornato per applicare gli aggiornamenti per la sicurezza. La nuova versione del broker di dati è la 1,0.52.</block>
+  <block id="fc31bdab270f34f9dbc1c826f879ec7a" category="section-title">31 maggio 2024</block>
+  <block id="a38c9755f3e363e5fcc012f982f27744" category="paragraph">NetApp ha annunciato la fine della disponibilità (EOA) di NetApp Global file cache al 31 maggio 2024. La fine del ciclo di vita interessa tutti i prodotti NetApp Global file cache, incluse le sottoscrizioni software Global file cache standalone e le soluzioni in bundle Global file cache con NetApp Cloud Volumes ONTAP, note come NetApp Cloud Volumes Edge cache.</block>
+  <block id="fe85d677b887f84abb319ef4415495b6" category="inline-link">Vedi i dettagli della fine della disponibilità di Global file cache di NetApp</block>
+  <block id="84037427a2c8d669a1e7b95e23492189" category="paragraph">NetApp continuerà a supportare questi prodotti per i clienti esistenti per un minimo di 3 anni.<block ref="c260bd0a32453373dfa997871e7c7312" category="inline-link-rx"></block>.</block>
+  <block id="ce6cf9ea6138c79aab74ff110d376b23" category="paragraph">Inoltre, è stata rimossa la possibilità di abilitare, implementare e gestire i componenti Global file cache dall'interfaccia utente BlueXP.</block>
 </blocks>
