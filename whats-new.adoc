@@ -589,6 +589,12 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-ops/main/media/s
 
 
 
+=== 11 agosto 2024
+
+Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.54.
+
+
+
 === 14 luglio 2024
 
 Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.53.
@@ -598,30 +604,6 @@ Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker
 === 2 giugno 2024
 
 Il servizio di copia e sincronizzazione di BlueXP è stato aggiornato per correggere alcuni bug. Anche il broker di dati è stato aggiornato per applicare gli aggiornamenti per la sicurezza. La nuova versione del broker di dati è la 1,0.52.
-
-
-
-=== 8 aprile 2024
-
-
-
-==== Supporto per RHEL 8,9
-
-Il broker di dati è ora supportato sugli host che eseguono Red Hat Enterprise Linux 8,9.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#linux-host-requirements["Visualizza i requisiti dell'host Linux"].
-
-
-
-=== 11 febbraio 2024
-
-
-
-==== Filtra le directory per regex
-
-Gli utenti hanno ora la possibilità di filtrare le directory usando regex.
-
-https://docs.netapp.com/us-en/bluexp-copy-sync/task-creating-relationships.html#create-other-types-of-sync-relationships["Ulteriori informazioni sulla funzione *Escludi directory*."]
 
 
 
