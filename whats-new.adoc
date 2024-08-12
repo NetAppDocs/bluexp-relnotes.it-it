@@ -24,6 +24,49 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 8 agosto 2024
+
+
+
+==== Connettore 3.9.43
+
+Questa versione include miglioramenti minori, correzioni di bug e il requisito per le nuove autorizzazioni di Azure.
+
+La versione 3.9.43 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+==== Aggiornamento dei requisiti di CPU e RAM
+
+Per garantire una maggiore affidabilità e migliorare le prestazioni di BlueXP  e del connettore, sono ora necessarie CPU e RAM aggiuntive per la macchina virtuale del connettore:
+
+* CPU: 8 core o 8 vCPU (il requisito precedente era 4)
+* RAM: 32 GB (il requisito precedente era 14 GB)
+
+
+Come risultato di questa modifica, il tipo di istanza VM predefinita quando si implementa il connettore da BlueXP  o dal mercato del provider di servizi cloud è il seguente:
+
+* AWS: t3.2xlarge
+* Azure: Standard_D8s_v3
+* Google Cloud: N2-standard-8
+
+
+Questo requisito si applica ai connettori nuovi ed esistenti.
+
+
+
+==== Supporto per Podman 4.9.4 con RHEL 8,10
+
+Podman versione 4.9.4 è ora supportata quando si installa il connettore su un host Red Hat Enterprise Linux 8,10.
+
+
+
+==== Convalida utente per federazione identità
+
+Se si utilizza la federazione delle identità con BlueXP , ogni utente che accede a BlueXP  per la prima volta dovrà compilare un modulo rapido per convalidare la propria identità.
+
+
+
 === 31 luglio 2024
 
 
@@ -433,6 +476,38 @@ link:reference-free-paid.html["Ulteriori informazioni sulle funzioni obsolete"].
 
 
 
+=== 8 agosto 2024
+
+
+
+==== Pacchetti di licenze Edge cache obsoleti
+
+I pacchetti di licenza basati sulla capacità di Edge cache non saranno più disponibili per implementazioni future di Cloud Volumes ONTAP. Tuttavia, è possibile utilizzare l'API per utilizzare questa funzionalità.
+
+
+
+==== Versione minima supportata di ONTAP per Flash cache in Azure
+
+La versione minima di ONTAP richiesta per la configurazione di Flash cache su Azure è 9.13.1 GA. Per l'implementazione di Flash cache sui sistemi Cloud Volumes ONTAP per Azure è possibile utilizzare solo ONTAP 9.13.1 GA e versioni successive.
+
+Per le configurazioni supportate, vedere https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Configurazioni supportate in Azure"^].
+
+
+
+==== Versioni di prova gratuite per gli abbonamenti al mercato obsolete
+
+La prova automatica gratuita di 30 giorni per gli abbonamenti pay-as-you-go nel marketplace del cloud provider non sarà più disponibile in Cloud Volumes ONTAP. L'addebito per qualsiasi tipo di abbonamento al mercato (PAYGO o contratto annuale) sarà attivato dal primo utilizzo, senza alcun periodo di prova gratuito.
+
+
+
+==== Regione del Canada occidentale ora supportata in AWS
+
+La regione del Canada occidentale è ora supportata in AWS per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
+
+Per un elenco di tutte le regioni, vedere https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto AWS"^].
+
+
+
 === 10 giugno 2024
 
 
@@ -457,40 +532,6 @@ Il supporto per le zone locali di AWS è ora disponibile per le implementazioni 
 NOTE: Le zone locali di AWS sono supportate quando si utilizza BlueXP in modalità standard. Al momento, i zone locali di AWS non sono supportati quando si utilizza BlueXP in modalità limitata o privata.
 
 Per ulteriori informazioni sulle zone locali di AWS con implementazioni ha, fare riferimento a. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha.html#aws-local-zones["Zone locali di AWS"^].
-
-
-
-=== 23 aprile 2024
-
-
-
-==== Nuove regioni supportate per le implementazioni di zone di disponibilità multiple in Azure
-
-Le seguenti regioni ora supportano le implementazioni ha di zone di disponibilità multiple in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:
-
-* Germania Centro Ovest
-* Polonia centrale
-* US 3 ovest
-* Israele Centrale
-* Italia Nord
-* Canada centrale
-
-
-Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^].
-
-
-
-==== Regione di Johannesburg ora supportata in Google Cloud
-
-La regione di Johannesburg (`africa-south1` Regionale) è ora supportato in Google Cloud per Cloud Volumes ONTAP 9.12.1 GA e versioni successive.
-
-Per un elenco di tutte le regioni, vedere la https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali in Google Cloud"^].
-
-
-
-==== Tag e modelli di volume non più supportati
-
-Non è più possibile creare un volume da un modello o modificare i tag di un volume. Queste azioni sono state associate al servizio di correzione di BlueXP, che non è più disponibile.
 
 
 
@@ -1058,6 +1099,22 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Sco
 Ora puoi replicare i dati da un sistema Cloud Volumes ONTAP o un cluster ONTAP on-premise su un file system Amazon FSX per ONTAP.
 
 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Scopri come configurare la replica dei dati"].
+
+
+
+== Aggiornamenti software
+
+
+
+=== 07 agosto 2024
+
+
+
+==== Aggiornamento ONTAP
+
+Il servizio di aggiornamenti software di BlueXP  offre agli utenti un'esperienza di aggiornamento senza problemi, riducendo i rischi e garantendo ai clienti la possibilità di sfruttare appieno le funzionalità di ONTAP.
+
+Ulteriori informazioni su link:https://docs.netapp.com/us-en/bluexp-software-updates/get-started/software-updates.html["Aggiornamenti software BlueXP"^].
 
 
 
