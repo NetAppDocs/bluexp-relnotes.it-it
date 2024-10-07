@@ -423,8 +423,6 @@
   <block id="14b1c6bd63866971a4cd695c3c2a3d80" category="paragraph">Non è più possibile creare un volume da un modello. Questa azione è stata associata al servizio di correzione BlueXP, che non è più disponibile.</block>
   <block id="0a9bbb6e81dd21b77886235f2ce33af9" category="paragraph">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. Per una cronologia completa delle versioni, andare al <block ref="1e9f4589e5d2713376df79f13fc9ba0a" category="inline-link-macro-rx"></block> per ogni singolo servizio.</block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 maggio 2024</block>
-  <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Informazioni sul supporto per RHEL 8 e 9 con il connettore</block>
-  <block id="5fb3739fbc4ea4c4f6ecf12db77ae604" category="paragraph"><block ref="a34a36a25f711a4d3e7acd813af66ea1" category="inline-link-rx"></block>.</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">Ulteriori informazioni sull'impostazione delle licenze</block>
   <block id="17f6ba003825118fb67d19c8c26be794" category="paragraph"><block ref="36f38233d2460bc4dacb6b4bd4fd46ab" category="inline-link-rx"></block>.</block>
   <block id="c817ad6139f116906ee3d7991cfdcba9" category="section-title">Limitazioni nell'uso di RHEL 8 e RHEL 9 per il connettore in loco</block>
@@ -517,7 +515,6 @@
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">14 luglio 2024</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.53.</block>
   <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp.</block>
-  <block id="597f1630cd21d22c527f63002e42f059" category="list-text">da 8,6 a 8,10</block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Servizio</block>
   <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Versione inclusa</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connettore</block>
@@ -609,29 +606,7 @@
   <block id="0970aa81dd486fe1c8e03549b29f3d46" category="inline-link">Mappa delle regioni globali sotto AWS</block>
   <block id="96c6a6277896e4ed7c2cef558b5542c1" category="paragraph">Per un elenco di tutte le regioni, vedere<block ref="24faa078890c2d8c97de1a6b5a5789e3" category="inline-link-rx"></block>.</block>
   <block id="c842acaca9e3ea9ec2dc61f28e69ea15" category="section-title">9 settembre 2024</block>
-  <block id="2e5948b55d019081bde9b17268d72c2c" category="section-title">Connettore 3.9.44</block>
-  <block id="eef503d0bc4de5d76d47f4691b412e15" category="paragraph">Questa versione include il supporto per Docker Engine 26, un miglioramento dei certificati SSL e correzioni di bug.</block>
-  <block id="8e05f2728c2c4042bd5165b33b122aa7" category="paragraph">La versione 3.9.44 è disponibile per la modalità standard e la modalità limitata.</block>
-  <block id="15ba9bb026c53a148756b12826c46f8b" category="section-title">Certificato SSL aggiornato per l'accesso all'interfaccia utente locale</block>
-  <block id="b96edd49155123375756b26e44b38121" category="paragraph">Quando si utilizza BlueXP  in modalità limitata o privata, l'interfaccia utente è accessibile dalla macchina virtuale del connettore implementata nella regione cloud o in sede. Per impostazione predefinita, BlueXP  utilizza un certificato SSL autofirmato per fornire l'accesso HTTPS sicuro alla console basata sul Web in esecuzione sul connettore.</block>
-  <block id="2737440e84d6c8a13a097fa583a6e67a" category="paragraph">In questa versione, abbiamo apportato modifiche al certificato SSL per i connettori nuovi ed esistenti:</block>
-  <block id="6cb49682fd1f125736d18f28cbce1f23" category="list-text">Il nome comune del certificato corrisponde ora al nome host breve</block>
-  <block id="982638142d38ac9441736ff5402f4e2a" category="list-text">Il nome alternativo dell'oggetto del certificato è il nome di dominio completo (FQDN, Fully Qualified Domain Name) del computer host</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Supporto per RHEL 9,4</block>
-  <block id="70a7dd17e18fef168a9d377653df73ca" category="paragraph">BlueXP  ora supporta l'installazione del connettore su un host Red Hat Enterprise Linux 9,4 quando si utilizza BlueXP  in modalità standard o limitata.</block>
-  <block id="2ba7632ac1d83ea5ae8e4c11321eb1d3" category="paragraph">Il supporto per RHEL 9,4 inizia con la versione 3.9.40 del connettore.</block>
-  <block id="d624d762d93c33c9dde16183d90a90e0" category="paragraph">L'elenco aggiornato delle versioni RHEL supportate per la modalità standard e la modalità limitata include ora quanto segue:</block>
-  <block id="94d03d842e38bfc8ebeb1cd5999b1321" category="list-text">da 9,1 a 9,4</block>
-  <block id="7a8260cd47a221886a3337b85ff2ec45" category="section-title">Supporto per Podman 4.9.4 con tutte le versioni RHEL</block>
-  <block id="3a5941c5e1e3e3c4cb703b2d9d78963c" category="paragraph">Podman 4.9.4 è ora supportato con tutte le versioni supportate di Red Hat Enterprise Linux. La versione 4.9.4 era precedentemente supportata solo con RHEL 8,10.</block>
-  <block id="d0f584a070c78efb8fff64b377dbf729" category="paragraph">L'elenco aggiornato delle versioni di Podman supportate include 4.6.1 e 4.9.4 con host Red Hat Enterprise Linux.</block>
-  <block id="fef89f8fc6e9d583565954d5abe02ec4" category="paragraph">Podman è necessario per gli host RHEL a partire dalla versione 3.9.40 del connettore.</block>
-  <block id="842ce6e5c3bdb8cf81ffbd4f90a57649" category="section-title">Autorizzazioni AWS e Azure aggiornate</block>
-  <block id="c1f46e9419a384f29f23682739cc8d58" category="paragraph">Abbiamo aggiornato le policy di AWS e Azure per Connector in modo da rimuovere i permessi non più necessari. Le autorizzazioni erano correlate al caching edge di BlueXP , al rilevamento e alla gestione dei cluster Kubernetes, che non sono più supportati ad agosto 2024.</block>
-  <block id="d201eff65f4516de2c618efea5a7edde" category="inline-link">Scopri cosa è cambiato nella policy AWS</block>
-  <block id="b0c050c316c776928b8b8bc0c327449e" category="list-text"><block ref="aff0e765a5d2f4e281feabd61d1dd500" category="inline-link-rx"></block>.</block>
-  <block id="2f036a4385aa02ab7c67e7932bd4036f" category="inline-link">Scopri cosa è cambiato nella policy di Azure</block>
-  <block id="31fa3b726cc2ab8e192bc70a792168a7" category="list-text"><block ref="c65ef862e4776cf4a66f5e1d7163d89e" category="inline-link-rx"></block>.</block>
   <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2 settembre 2024 (versione 1,35)</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">Eseguire la scansione dei dati StorageGRID</block>
   <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La classificazione BlueXP  può ora eseguire la scansione dei dati in StorageGRID.</block>
@@ -662,11 +637,6 @@
   <block id="98f1cb1ebd09ccf6e678d5bae1920213" category="list-text">*Role-based access control*: Ora puoi limitare l'accesso ad attività specifiche grazie al role-based access control (RBAC). La protezione ransomware BlueXP  utilizza due ruoli di BlueXP : BlueXP  account Admin e non-account Admin (Viewer).</block>
   <block id="c7038711405bbbe2f0f37c53c5eb81ad" category="inline-link">Privileges per il controllo degli accessi in base al ruolo</block>
   <block id="edf15150f2ed24145a29e67792372ecc" category="paragraph">Per informazioni dettagliate sulle azioni che ogni ruolo può eseguire, vedere<block ref="03cd1069228e8895d221bed8eef34f69" category="inline-link-rx"></block>.</block>
-  <block id="f258c97f55e85bfbd607e70e86d840dc" category="section-title">Supporto di Docker Engine 26 con le nuove installazioni</block>
-  <block id="5c968eab53d6065ccf63e9766935cb7b" category="paragraph">A partire dalla versione 3.9.44 del connettore, Docker Engine 26 è ora supportato con _nuove_ installazioni di connettori sugli host Ubuntu.</block>
-  <block id="0e80b6146d7736683cb1292a9c1ba4af" category="paragraph">Se si dispone di un connettore esistente creato prima della release 3.9.44, Docker Engine 25.0.5 resta la versione massima supportata sugli host Ubuntu.</block>
-  <block id="c64c773fbe16e4df6ae417c106a467ef" category="inline-link">Scopri di più sui requisiti di Docker Engine</block>
-  <block id="395f31b2f1bc9cb3993acbb14cf4fb1f" category="paragraph"><block ref="724b4d6e1bb3e6bea768572a2ce7c10e" category="inline-link-rx"></block>.</block>
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">16 settembre 2024</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.55.</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 settembre 2024</block>
@@ -776,4 +746,15 @@
   <block id="84142ff06d4e9d4646fc2a3b18cc1d91" category="paragraph"><block ref="a21af64035213e0424a2bf24b7431646" category="inline-link-rx"></block>.</block>
   <block id="2f080abae9949a746e32fbd78d3382f7" category="paragraph">Per informazioni dettagliate su DataLock e suggerimenti su come ridurre i costi associati, fare riferimento a<block ref="116b2987b0e6fcf4c15ff7c1a1a47ed3" category="inline-link-rx"></block>.</block>
   <block id="b1b12c3c76c5dc414df3c68e8a811c2a" category="paragraph">Per ulteriori informazioni, fare riferimento alla<block ref="ef40acf6b73cf65ed40d9b8f7f6be1c3" category="inline-link-rx"></block>.</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 ottobre 2024</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">Connettore 3.9.45 patch</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Questa patch include correzioni di bug.</block>
+  <block id="e75804de09e19a35ad3cd360d45cd0fb" category="section-title">10 ottobre 2024 (versione 1,36)</block>
+  <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">Questa versione di classificazione BlueXP  include i seguenti aggiornamenti.</block>
+  <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">Questa versione fornisce il supporto per Red Hat Enterprise Linux v9,4 oltre alle versioni precedentemente supportate. Ciò è applicabile a qualsiasi installazione manuale in loco della classificazione BlueXP , comprese le implementazioni in ambienti oscuri.</block>
+  <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">I seguenti sistemi operativi richiedono l'utilizzo del motore del contenitore Podman e richiedono la classificazione BlueXP  versione 1,30 o superiore: Red Hat Enterprise Linux versione 8,8, 9,0, 9,1, 9,2, 9,3 e 9,4.</block>
+  <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link">Panoramica sulle implementazioni di classificazione BlueXP</block>
+  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">Ulteriori informazioni su<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
+  <block id="7062dd46798946172bc9078744756dfc" category="section-title">Prestazioni di scansione migliorate</block>
+  <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Questa versione offre prestazioni di scansione migliorate.</block>
 </blocks>
