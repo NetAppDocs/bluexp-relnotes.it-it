@@ -47,6 +47,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Installazione e
 
 == Servizi dati
 
+* https://docs.netapp.com/us-en/bluexp-alerts/whats-new.html["Avvisi"^]
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Backup e recovery"^]
 * https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Classificazione"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-ops/whats-new.html["Operazioni cloud"^]
