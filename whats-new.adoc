@@ -970,7 +970,7 @@ Il servizio di report sulla migrazione BlueXP  è stato rimosso il 7 agosto 202
 
 ==== Supporto per i sistemi ASA R2
 
-È ora possibile scoprire i sistemi NetApp ASA R2 in BlueXP  quando si utilizza BlueXP  in modalità standard o privata. Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.
+È ora possibile scoprire i sistemi NetApp ASA R2 in BlueXP  quando si utilizza BlueXP  in modalità standard o limitata. Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.
 
 Non sono disponibili altre opzioni di gestione con i sistemi ASA R2. Non è possibile utilizzare la vista Standard e non è possibile attivare i servizi BlueXP.
 
@@ -1217,7 +1217,7 @@ Ora puoi scoprire i tuoi sistemi StorageGRID direttamente da BlueXP. Discovering
 
 
 
-==== Utilizzare un prefisso personalizzato per il nome del bucket in cui sono memorizzati i dati a più livelli
+==== Utilizzare un prefisso personalizzato per il nome del bucket
 
 In passato era necessario utilizzare il prefisso predefinito "fabric-pool" per definire il nome del bucket, ad esempio _fabric-pool-bucket1_. Ora è possibile utilizzare un prefisso personalizzato per assegnare un nome al bucket. Questa funzionalità è disponibile solo con il tiering dei dati su Amazon S3. https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["Scopri di più"].
 
@@ -1233,13 +1233,13 @@ Se si utilizzano più connettori per gestire tutti i sistemi storage del proprio
 
 
 
-==== Ora è possibile regolare la larghezza di banda utilizzata per caricare i dati inattivi nello storage a oggetti
+==== Regolare la larghezza di banda per trasferire i dati inattivi
 
 Quando si attiva il tiering BlueXP, ONTAP può utilizzare una quantità illimitata di larghezza di banda di rete per trasferire i dati inattivi dai volumi nel cluster allo storage a oggetti. Se si nota che il traffico di tiering influisce sui normali carichi di lavoro degli utenti, è possibile ridurre la quantità di larghezza di banda che può essere utilizzata durante il trasferimento. https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["Scopri di più"].
 
 
 
-==== L'evento di tiering per "tiering basso" viene visualizzato nel Centro notifiche
+==== Evento di tiering visualizzato nel Centro notifiche
 
 L'evento di tiering "Tiering additional data from cluster <name> to object storage to aumento your storage efficiency" viene ora visualizzato come notifica quando un cluster tiering meno del 20% dei suoi dati cold - compresi i cluster che non tierano dati.
 
@@ -1257,7 +1257,7 @@ La scheda Licensing (licenze) è stata rimossa dall'interfaccia di tiering BlueX
 
 
 
-==== Le schede di tiering sono state rinominate e il contenuto è stato aggiornato
+==== Le schede di tiering sono state rinominate e aggiornate
 
 La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Prem Overview" è stata rinominata "on-premise Dashboard". In queste pagine sono state aggiunte alcune informazioni utili per valutare se è possibile ottimizzare lo spazio di storage con una configurazione di tiering aggiuntiva.
 

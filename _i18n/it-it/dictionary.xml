@@ -110,7 +110,6 @@
   <block id="0b17baeba205d071cc0142cf4aba9b76" category="paragraph">Ora puoi scoprire i tuoi sistemi StorageGRID direttamente da BlueXP. Discovering StorageGRID ti offre una vista completa dei dati nel tuo multicloud ibrido.</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">La scheda Licensing (licenze) è stata rimossa</block>
   <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">La scheda Licensing (licenze) è stata rimossa dall'interfaccia di tiering BlueXP. Tutte le licenze per gli abbonamenti pay-as-you-go (PAYGO) sono accessibili subito dal pannello di controllo on-premise di BlueXP Tiering. Da questa pagina è inoltre disponibile un collegamento al portafoglio digitale BlueXP, che consente di visualizzare e gestire qualsiasi tipo di licenza BYOL (Bring-Your-Own-licenses) BlueXP tiering.</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">Le schede di tiering sono state rinominate e il contenuto è stato aggiornato</block>
   <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">La scheda "Clusters Dashboard" è stata rinominata "Clusters" e la scheda "on-Prem Overview" è stata rinominata "on-premise Dashboard". In queste pagine sono state aggiunte alcune informazioni utili per valutare se è possibile ottimizzare lo spazio di storage con una configurazione di tiering aggiuntiva.</block>
   <block id="dcf4ee5c8f297d1f5e0da7b22e359023" category="sidebar">Modifiche recenti</block>
   <block id="b2bc6f51638406715d089920f0b12029" category="paragraph"><block ref="b2bc6f51638406715d089920f0b12029" category="inline-link-rx"></block></block>
@@ -163,9 +162,7 @@
   <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Scopri come scoprire i cluster dalla pagina My estate</block>
   <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 luglio 2023</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">Ora è possibile regolare la larghezza di banda utilizzata per caricare i dati inattivi nello storage a oggetti</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">Quando si attiva il tiering BlueXP, ONTAP può utilizzare una quantità illimitata di larghezza di banda di rete per trasferire i dati inattivi dai volumi nel cluster allo storage a oggetti. Se si nota che il traffico di tiering influisce sui normali carichi di lavoro degli utenti, è possibile ridurre la quantità di larghezza di banda che può essere utilizzata durante il trasferimento.<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>.</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">L'evento di tiering per "tiering basso" viene visualizzato nel Centro notifiche</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">L'evento di tiering "Tiering additional data from cluster &lt;name&gt; to object storage to aumento your storage efficiency" viene ora visualizzato come notifica quando un cluster tiering meno del 20% dei suoi dati cold - compresi i cluster che non tierano dati.</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">Calcolo del costo totale di proprietà e del risparmio di BlueXP Tiering</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">Questa notifica è un "consiglio" per rendere i sistemi più efficienti e risparmiare sui costi di storage. Fornisce un collegamento a<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> per aiutarti a calcolare i risparmi sui costi.</block>
@@ -756,8 +753,12 @@
   <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">Ulteriori informazioni su<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>.</block>
   <block id="7062dd46798946172bc9078744756dfc" category="section-title">Prestazioni di scansione migliorate</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">Questa versione offre prestazioni di scansione migliorate.</block>
-  <block id="d26c29507d869d48f4861c9b4bae1f6e" category="paragraph">È ora possibile scoprire i sistemi NetApp ASA R2 in BlueXP  quando si utilizza BlueXP  in modalità standard o privata. Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.</block>
   <block id="f2fba5567ec0d8ae5addf04c960ba6d0" category="paragraph">Il rilevamento dei sistemi ASA R2 non è supportato quando si utilizza BlueXP  in modalità privata.</block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link">Scopri le modalità di implementazione di BlueXP</block>
   <block id="d3342e15149bfef7fd9289d7025e506e" category="list-text"><block ref="d3342e15149bfef7fd9289d7025e506e" category="inline-link-rx"></block></block>
+  <block id="0c02bcea354671c5372f06a37c547a7d" category="paragraph">È ora possibile scoprire i sistemi NetApp ASA R2 in BlueXP  quando si utilizza BlueXP  in modalità standard o limitata. Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="section-title">Utilizzare un prefisso personalizzato per il nome del bucket</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="section-title">Regolare la larghezza di banda per trasferire i dati inattivi</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">Evento di tiering visualizzato nel Centro notifiche</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">Le schede di tiering sono state rinominate e aggiornate</block>
 </blocks>
