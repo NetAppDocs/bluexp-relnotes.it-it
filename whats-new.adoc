@@ -970,11 +970,15 @@ Il servizio di report sulla migrazione BlueXP  è stato rimosso il 7 agosto 202
 
 ==== Supporto per i sistemi ASA R2
 
-Ora puoi scoprire i sistemi NetApp ASA R2 in BlueXP . Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.
+È ora possibile scoprire i sistemi NetApp ASA R2 in BlueXP  quando si utilizza BlueXP  in modalità standard o privata. Dopo aver scoperto un sistema NetApp ASA R2 e aperto l'ambiente di lavoro, verrai indirizzato direttamente a Gestione sistema.
 
 Non sono disponibili altre opzioni di gestione con i sistemi ASA R2. Non è possibile utilizzare la vista Standard e non è possibile attivare i servizi BlueXP.
 
-https://docs.netapp.com/us-en/asa-r2/index.html["Scopri di più sui sistemi ASA R2"^]
+Il rilevamento dei sistemi ASA R2 non è supportato quando si utilizza BlueXP  in modalità privata.
+
+* https://docs.netapp.com/us-en/asa-r2/index.html["Scopri di più sui sistemi ASA R2"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Scopri le modalità di implementazione di BlueXP"^]
+
 
 
 
