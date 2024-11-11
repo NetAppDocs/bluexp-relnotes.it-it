@@ -125,10 +125,6 @@
   <block id="f9037e3eb23130835367334e3aa5a34b" category="section-title">Possibilità di aggiungere nuovi account storage da BlueXP</block>
   <block id="a39e8d6ee8bc43ef75656b419fe7a86e" category="inline-link">Scopri come aggiungere nuovi account di storage Azure Blob</block>
   <block id="a6aef5e3bbd8b059764f33a4044e30d6" category="section-title">04 giugno 2023</block>
-  <block id="b11363dc7ad08609dacf71adabc1e3d7" category="inline-link-macro">creazione di un ambiente di lavoro</block>
-  <block id="c21d5cf174dc36531d6990b13fe89573" category="list-text">Quando <block ref="ad9408e39808bf9ea4b07fa95cac5798" category="inline-link-macro-rx"></block>, è possibile specificare l'ora di inizio della finestra di manutenzione settimanale di 30 minuti per garantire che la manutenzione non sia in conflitto con le attività aziendali critiche.</block>
-  <block id="e2ba73f0e5661996e4350de09efee512" category="inline-link-macro">creazione di un volume</block>
-  <block id="fabdf5de30f7e7084ae6656930904d1d" category="list-text">Quando <block ref="1bfb452ce23fdd4301ee99a62317a7a6" category="inline-link-macro-rx"></block>, È possibile abilitare l'ottimizzazione dei dati creando un FlexGroup per distribuire i dati tra i volumi.</block>
   <block id="8f47a476ee12f068a45739014a319a65" category="paragraph">Il caching dei volumi, una funzionalità del software ONTAP 9, è una funzionalità di caching remoto che semplifica la distribuzione dei file, riduce la latenza WAN avvicinando le risorse a dove si trovano gli utenti e le risorse di calcolo e riduce i costi della larghezza di banda della WAN. Il caching dei volumi fornisce un volume persistente e scrivibile in un luogo remoto. È possibile utilizzare il caching dei volumi BlueXP per accelerare l'accesso ai dati o per trasferire il traffico dai volumi ad accesso elevato. I volumi della cache sono ideali per carichi di lavoro a elevata intensità di lettura, in particolare quando i client devono accedere ripetutamente agli stessi dati.</block>
   <block id="da20ff5e68ae0641ae1925c968ac0244" category="paragraph">Con il caching dei volumi BlueXP, hai a disposizione funzionalità di caching per il cloud, in particolare per Amazon FSX per NetApp ONTAP, Cloud Volumes ONTAP e on-premise come ambienti di lavoro.</block>
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Scopri di più sul caching dei volumi BlueXP</block>
@@ -428,18 +424,6 @@
   <block id="48e006c40a370e7b0dcc3f4f1e42eda7" category="paragraph"><block ref="17c138513bf5a78d755bed4038999b20" category="inline-link-rx"></block>.</block>
   <block id="9fc076386261ca80bfc67f7f57c641d3" category="section-title">14 luglio 2024</block>
   <block id="c18c776847f6d7588ddeab0632527364" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.53.</block>
-  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Una nuova versione in modalità privata è ora disponibile per il download dal sito di supporto NetApp.</block>
-  <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">Servizio</block>
-  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Versione inclusa</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connettore</block>
-  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Gestione di Cloud Volumes ONTAP</block>
-  <block id="900dd8f50d2294930a102034524e26b7" category="cell">Gestione del cluster ONTAP on-premise</block>
-  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">Informazioni sulla modalità privata</block>
-  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
-  <block id="8156defa13b44a36e67cab400c3b8bd4" category="inline-link">Scopri come iniziare a utilizzare BlueXP in modalità privata</block>
-  <block id="1183e1b8915696495b308d0bdfa59bd4" category="list-text"><block ref="1183e1b8915696495b308d0bdfa59bd4" category="inline-link-rx"></block></block>
-  <block id="b29a186d936b198dcafa3a0308485e2c" category="inline-link">Informazioni su come aggiornare il connettore quando si utilizza la modalità privata</block>
-  <block id="e5d325f390c70091b07096d63ab8f353" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block></block>
   <block id="ba874eb3ffbdba518b95ce26bc81a861" category="section-title">22 luglio 2024</block>
   <block id="9d5f0e2f1682000ac365243e21301823" category="section-title">Ripristina volumi inferiori a 1 GB</block>
   <block id="a429eb8c690c0a48131f4ae1267eafd1" category="paragraph">Con questa versione, è ora possibile ripristinare i volumi creati in ONTAP che sono inferiori a 1 GB. La dimensione minima del volume che è possibile creare utilizzando ONTAP è di 20 MB.</block>
@@ -522,24 +506,7 @@
   <block id="577f5f9474f1f4f6f56c1fb216328baf" category="section-title">16 settembre 2024</block>
   <block id="bc2c6ba9505b9e6d38d9f10c18186d1c" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.55.</block>
   <block id="964635dcf6206ebb279b58d13cf69a92" category="section-title">30 settembre 2024</block>
-  <block id="0beb94109608ff82d313b33947162f96" category="section-title">Rilascio in modalità privata (3,9.44)</block>
-  <block id="f1fb6fd189345cf04ef77974b58bcbfc" category="paragraph">Questa versione include le seguenti versioni dei componenti e dei servizi BlueXP  supportati con la modalità privata.</block>
-  <block id="8dd8dbe371973ff01954f1d0db6a6c30" category="cell">3.9.44</block>
   <block id="5fcc5d3ffc4bbbcf6d018ab4a9639205" category="cell">27 settembre 2024</block>
-  <block id="918de91f5332dad6620331712ef5c21d" category="cell">15 maggio 2024 (versione 1,31)</block>
-  <block id="48f2931f061b9d56d7805eddf6969cea" category="paragraph">Per il connettore, la versione in modalità privata 3.9.44 include gli aggiornamenti introdotti nelle versioni di agosto 2024 e settembre 2024. In particolare, il supporto per Red Hat Enterprise Linux 9,4.</block>
-  <block id="288ce8ff800de0648500c62f0658b96c" category="paragraph">Per ulteriori informazioni su ciò che è incluso nelle versioni di questi componenti e servizi BlueXP , fare riferimento alle note di rilascio per ogni servizio BlueXP :</block>
-  <block id="65439cdb7546ae11a93a141421129d1a" category="inline-link">Novità della versione di settembre 2024 del connettore</block>
-  <block id="46c02b08a8d12f7b5b9a43c01b252fe0" category="list-text"><block ref="46c02b08a8d12f7b5b9a43c01b252fe0" category="inline-link-rx"></block></block>
-  <block id="c531086859410bbf7d79b1d007644e8c" category="inline-link">Novità della versione agosto 2024 del connettore</block>
-  <block id="3447cde4c00b98b6428bff77da46fd8c" category="list-text"><block ref="3447cde4c00b98b6428bff77da46fd8c" category="inline-link-rx"></block></block>
-  <block id="116a2755907d33cc76c6cdc442c467b0" category="inline-link">Novità di backup e ripristino BlueXP </block>
-  <block id="4e02af58c02d9f0704b79eb4e000eb20" category="list-text"><block ref="4e02af58c02d9f0704b79eb4e000eb20" category="inline-link-rx"></block></block>
-  <block id="cdcec1bb4c8f6524979a702b1691d4f7" category="inline-link">Novità della classificazione BlueXP </block>
-  <block id="9212eddb7e41302606e7873d754ab3aa" category="list-text"><block ref="9212eddb7e41302606e7873d754ab3aa" category="inline-link-rx"></block></block>
-  <block id="00dc7f0b165829f9f81bfaf12a8db2e4" category="inline-link">Novità della gestione di Cloud Volumes ONTAP in BlueXP </block>
-  <block id="941cdb6d27c83c929d4abe28f2321665" category="list-text"><block ref="941cdb6d27c83c929d4abe28f2321665" category="inline-link-rx"></block></block>
-  <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggiornamento, fare riferimento a quanto segue:</block>
   <block id="aa6a53998d98bae73a6913ff1c2eecbc" category="section-title">Supporto Podman su RHEL 8 o 9 con Browse and Restore</block>
   <block id="c6bad3b272d5eeec569990b050d88123" category="paragraph">Il backup e il ripristino di BlueXP  ora supporta il ripristino di file e cartelle su Red Hat Enterprise Linux (RHEL) versioni 8 e 9 utilizzando il motore Podman. Ciò si applica al metodo di ricerca e ripristino del backup e ripristino di BlueXP .</block>
   <block id="f5d370ee9e029c4d62db915f308e04c0" category="paragraph">BlueXP  Connector versione 3.9.40 supporta alcune versioni di Red Hat Enterprise Linux versione 8 e 9 per qualsiasi installazione manuale del software del connettore su un host RHEL 8 o 9, indipendentemente dalla posizione in cui si trovano oltre ai sistemi operativi menzionati nella<block ref="9b2a96babeed2ab711a4327ec7f34b5c" category="inline-link-rx"></block> . Queste nuove versioni RHEL richiedono il motore Podman anziché Docker. In precedenza, il backup e il ripristino di BlueXP  avevano due limitazioni quando si utilizzava il motore Podman. Queste limitazioni sono state rimosse.</block>
@@ -648,8 +615,6 @@
   <block id="479422755a82da93d381b0baab5f8fe7" category="section-title">Sostegno a tre regioni supplementari</block>
   <block id="4343b2bdc884cb638429641e12c0514c" category="section-title">Aggiungere una VM di storage</block>
   <block id="c63d5220743c53eaddaae4ea5f0511e7" category="section-title">**Le mie opportunità** la scheda è ora **il mio patrimonio**</block>
-  <block id="c0fde7a894f20194ba5123471f8cf7e7" category="section-title">Ora di inizio della finestra di manutenzione</block>
-  <block id="12ad4af5f024e558448bad702ec7ef28" category="section-title">Distribuire i dati dei volumi utilizzando FlexGroup</block>
   <block id="2bb8a9ed1433f0f845b92c7da5440dea" category="section-title">25 ottobre 2024</block>
   <block id="dc1815932afdea52f1a4c12d73f2eed0" category="section-title">Macchine serie N1 non disponibili per la selezione su BlueXP</block>
   <block id="1bb0d11a534c8ee967cd62e4d75e3da3" category="paragraph">Le macchine della serie n1 non sono più disponibili per la selezione in BlueXP  quando implementano nuove istanze di Cloud Volumes ONTAP in Google Cloud. Le macchine della serie n1 verranno conservate e supportate solo nei sistemi esistenti meno recenti. Le nuove implementazioni di Cloud Volumes ONTAP sono supportate in Google Cloud solo a partire dalla release 9,8. Si consiglia di passare ai tipi di macchine della serie n2 compatibili con Cloud Volumes ONTAP 9,8 e versioni successive. Le macchine della serie n1, tuttavia, saranno disponibili per le nuove implementazioni eseguite tramite l'API.</block>
@@ -739,4 +704,36 @@
   <block id="9d163bfc4f18cfe82e5ab58246fe3e03" category="list-text">*Prova gratuita ora 30 giorni*: Con questa release, le nuove implementazioni della protezione anti-ransomware BlueXP  ora hanno 30 giorni per una prova gratuita. In precedenza, la protezione ransomware di BlueXP  ha fornito 90 giorni come prova gratuita. Se sei già in prova gratuita di 90 giorni, l'offerta continua per i 90 giorni.</block>
   <block id="2f5cba8ef7e3d3ce9ca484acfa021d1e" category="list-text">*Ripristina il workload dell'applicazione a livello di file per Podman*: Prima di ripristinare un workload dell'applicazione a livello di file, è ora possibile visualizzare un elenco di file che potrebbero essere stati influenzati da un attacco e identificare quelli che si desidera ripristinare. In precedenza, se i connettori BlueXP  di un'organizzazione (in precedenza un account) utilizzavano Podman, questa funzionalità era disattivata. Ora è abilitato per Podman. Puoi permettere alla protezione anti-ransomware di BlueXP di scegliere i file da ripristinare, caricare un file CSV che elenca tutti i file interessati da un avviso o identificare manualmente i file da ripristinare.</block>
   <block id="cf3625b0846a5497dd36ab2220da602a" category="paragraph">Ulteriori informazioni su <block ref="4ef0c81e219f07a508ae115770245e4e" category="inline-link-macro-rx"></block>.</block>
+  <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">Fabbrica dei carichi di lavoro</block>
+  <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
+  <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
+  <block id="54eca49362b96a7e1899f1d9f7fbdeef" category="section-title">Connettore 3.9.46</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
+  <block id="5b7c2a7de0cce99684e946ddad5735bd" category="paragraph">A questo punto, la versione 3.9.46 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">ID per progetti IAM</block>
+  <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">È ora possibile visualizzare l'ID di un progetto dalla gestione delle identità e degli accessi di BlueXP . Potrebbe essere necessario utilizzare l'ID quando si effettua una chiamata API.</block>
+  <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link">Informazioni su come ottenere l'ID per un progetto</block>
+  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
+  <block id="844ae8089b7faaed0a2b7abc588969d9" category="section-title">FSX per ONTAP si integra con lo storage in una fabbrica di workload BlueXP</block>
+  <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">FSX per i task di gestione del file system ONTAP, come l'aggiunta di volumi, l'espansione della capacità del file system e la gestione delle macchine virtuali storage, sono ora gestiti in una fabbrica di workload BlueXP , un nuovo servizio offerto da NetApp e Amazon FSX per NetApp ONTAP. È possibile utilizzare le credenziali e le autorizzazioni esistenti come in precedenza. Con la differenza che ora puoi fare di più dalla fabbrica dei carichi di lavoro BlueXP  per gestire i file system. Quando apri un ambiente di lavoro FSX per ONTAP da BlueXP  Canvas, passerai direttamente alla fabbrica di workload BlueXP .</block>
+  <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">Scopri le funzionalità di FSX per ONTAP in una fabbrica di workload BlueXP</block>
+  <block id="9043e597fd1a3537f95cd09a004d83dc" category="paragraph"><block ref="9043e597fd1a3537f95cd09a004d83dc" category="inline-link-macro-rx"></block></block>
+  <block id="07c8845dbdef949b860ebfc99bd558ac" category="section-title">6 novembre 2024</block>
+  <block id="a5fd9c132798873e9eb6aafb58e50034" category="section-title">Modalità di protezione SnapLock Compliance e SnapLock Enterprise</block>
+  <block id="139da935670a9f985194d3241917c359" category="paragraph">Il backup e recovery di BlueXP  ora può eseguire il backup dei volumi on-premise FlexVol e FlexGroup configurati con le modalità di protezione SnapLock Compliance o SnapLock Enterprise. Per supportare questo tipo di supporto, i cluster devono eseguire ONTAP 9,14 o versione successiva. Il backup dei volumi FlexVol utilizzando la modalità SnapLock Enterprise è supportato a partire dalla versione ONTAP 9.11.1. Le release precedenti di ONTAP non supportano il backup di volumi di protezione SnapLock.</block>
+  <block id="ba48140a3394818b661e6fd497e203a7" category="inline-link">Informazioni su backup e ripristino BlueXP</block>
+  <block id="9ddb3e6714694f5c7f619d474fec8169" category="paragraph">Consultare l'elenco completo dei volumi supportati nella<block ref="9e68a582cc487ad29425f5a4796c9e45" category="inline-link-rx"></block> .</block>
+  <block id="fec92c3dfb6a0b3db498488c7f4d2f29" category="section-title">Indicizzazione per il processo di ricerca e ripristino nella pagina dei volumi</block>
+  <block id="20d3b0b7cfe7a9f3dcfdb0faa9398efd" category="paragraph">Prima di utilizzare Search &amp; Restore, è necessario attivare l'indicizzazione su ogni ambiente di lavoro di origine da cui si desidera ripristinare i dati dei volumi. In questo modo, il catalogo indicizzato può tenere traccia dei file di backup per ogni volume. La pagina volumi ora mostra lo stato di indicizzazione:</block>
+  <block id="cd9b31737e78e0a0a755acc12151f766" category="list-text">Indicizzato: I volumi sono stati indicizzati.</block>
+  <block id="02e4eb80c967f3b9add2ba16a690eef2" category="list-text">In corso</block>
+  <block id="838534d879f74e7af515a7de57e72b71" category="list-text">Non indicizzato</block>
+  <block id="73d4d0de3c5f56849f3c1a290a6681f2" category="list-text">Indicizzazione in pausa</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="list-text">Errore</block>
+  <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Non attivato</block>
+  <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="section-title">Integrazione della fabbrica del carico di lavoro nella console BlueXP</block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">Console BlueXP</block>
+  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">È ora possibile utilizzare workload Factory da <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>. L'esperienza della console BlueXP  offre le stesse funzionalità della console workload Factory.</block>
+  <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">Scopri come accedere a workload Factory dalla console BlueXP</block>
+  <block id="1a34f743bd98b1658401ce2f8206ff9a" category="paragraph"><block ref="1a34f743bd98b1658401ce2f8206ff9a" category="inline-link-macro-rx"></block></block>
 </blocks>
