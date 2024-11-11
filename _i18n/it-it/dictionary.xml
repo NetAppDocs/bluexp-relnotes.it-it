@@ -130,8 +130,6 @@
   <block id="62f5b0396e259b44122ad3fd5f9581e0" category="inline-link-macro">Scopri di più sul caching dei volumi BlueXP</block>
   <block id="2ffe4affb627afa20f3783de7a26c8af" category="paragraph"><block ref="c926d704a05a7f256c6c14f4d9e77466" category="inline-link-macro-rx"></block>.</block>
   <block id="942e802a236d6542c0c6f797428d8abb" category="section-title">02 luglio 2023</block>
-  <block id="d41b120a4f792ebe6195de3355c6309a" category="inline-link-macro">Aggiungere una VM di storage</block>
-  <block id="ef4fe9904a05c0168f433db5ef979256" category="list-text">Ora puoi farlo <block ref="73429b7c98363ef2dcc9eca20bd224e7" category="inline-link-macro-rx"></block> Al file system Amazon FSX per NetApp ONTAP utilizzando BlueXP.</block>
   <block id="c835313828dae8f6f2e19118949a05ce" category="list-text">La scheda **le mie opportunità** è ora **la mia proprietà**. La documentazione viene aggiornata in modo da riflettere il nuovo nome.</block>
   <block id="9f97c3125a701942b4e6e648146819fc" category="inline-link">Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">4 luglio 2023</block>
@@ -753,4 +751,5 @@
   <block id="8d9d085ab6acd5074907258fafcff341" category="paragraph">In precedenza era possibile abilitare lo storage WORM per la creazione di un ambiente di lavoro Cloud Volumes ONTAP su BlueXP . Ora, BlueXP  offre la possibilità di abilitare IL WORM in un ambiente di lavoro anche se IL WORM non è stato attivato durante la creazione. Una volta attivato, non è possibile disattivare IL WORM.</block>
   <block id="664bf259381c1fa1513c4c79450fb0f4" category="inline-link">Abilitazione DI WORM in un ambiente di lavoro Cloud Volumes ONTAP</block>
   <block id="42009eda159da22132429f44bf400e6c" category="paragraph"><block ref="42009eda159da22132429f44bf400e6c" category="inline-link-rx"></block></block>
+  <block id="2cce67162f5e7dda1e726a6c1514801d" category="paragraph">Ora puoi aggiungere una macchina virtuale di storage al file system Amazon FSX per NetApp ONTAP utilizzando BlueXP .</block>
 </blocks>
