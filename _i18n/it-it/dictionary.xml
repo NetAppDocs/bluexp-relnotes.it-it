@@ -393,8 +393,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Community NetApp</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">Blog BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
-  <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard sulla sostenibilità</block>
-  <block id="8934fed115a0b826a4b438906a11bfa9" category="inline-link-macro">Panoramica della dashboard Sustainability</block>
   <block id="73cb3e305b75665c1f29817b70dd8a1f" category="summary">Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP.</block>
   <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 giugno 2024</block>
   <block id="bb123d17400bea06780499dfee0aa1eb" category="section-title">È richiesta una nuova autorizzazione</block>
@@ -404,7 +402,6 @@
   <block id="f1c8aee091d7af06827bd81ed4e56e5a" category="paragraph">Se attualmente gestisci Azure NetApp Files da BlueXP, devi aggiungere questa autorizzazione al ruolo personalizzato associato all'applicazione Microsoft Entra precedentemente creata.</block>
   <block id="49cb664c5b71b8da627e27d37fe9de88" category="inline-link">Informazioni su come configurare un'applicazione Microsoft Entra e visualizzare le autorizzazioni di ruolo personalizzate</block>
   <block id="dd9368e78fe4f3483d324b6a988d2f87" category="paragraph"><block ref="aa8b5c9ebdcb57c9427e7bd28a70f7d0" category="inline-link-rx"></block>.</block>
-  <block id="a6cba69e97a9115b21cbf35b24b33d83" category="section-title">04 luglio 2024</block>
   <block id="710abd7c1d5a2a3be1aa4c7dbff890cf" category="admonition">NetApp non ti addebita alcun costo per la capacità dei workload in anteprima.</block>
   <block id="b1fb5b4805d079fc23dedcbe4848437e" category="inline-link">Eseguire il failover delle applicazioni in un sito remoto</block>
   <block id="ab132121a366abdd7667443cc98f3a69" category="paragraph">Fare riferimento alla<block ref="1cbf59ee3e77dd0082612a21b0900f81" category="inline-link-rx"></block>.</block>
@@ -461,9 +458,6 @@
   <block id="846815401f996d92d6775164d37e6015" category="inline-link-macro">Aggiornamento dei sistemi di storage Data ONTAP 7-Mode</block>
   <block id="bebf3b3af19cc5d4d44b97e70e8b3ffb" category="paragraph">Il report *7-Mode Upgrade Advisor Plans* non è più disponibile in quanto i sistemi 7-Mode hanno raggiunto la fine del supporto limitato. Per ulteriori informazioni, vedere <block ref="20732c2f8b67b7236a6509e096709359" category="inline-link-macro-rx"></block>. Ulteriori informazioni su <block ref="ee2cd00409c56591f09249cc9e682f11" category="inline-link-macro-rx"></block>.</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="section-title">Supporto per RHEL 9,4</block>
-  <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="section-title">Eseguire la scansione dei dati StorageGRID</block>
-  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">La classificazione BlueXP  può ora eseguire la scansione dei dati in StorageGRID.</block>
-  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">Per ulteriori informazioni, fare riferimento alla <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>.</block>
   <block id="ec6210d470db7cd7b6f5408f088e1c02" category="paragraph">Alcune caratteristiche di efficienza economica di BlueXP  sono state temporaneamente disattivate:</block>
   <block id="d519fe60b31330425fdb5e1c21309f78" category="list-text">Aggiornamento tecnologico</block>
   <block id="dbaae314ffc8b46919877d02b85696cb" category="list-text">Aggiungere capacità</block>
@@ -565,10 +559,8 @@
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">Supporto di NFS v4,1</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">Questa release fornisce supporto per NFS v4,1 oltre alle versioni precedentemente supportate.</block>
   <block id="5413a43995a4a97a249b7b24fbf3e785" category="section-title">Versione 1,36</block>
-  <block id="2808185c0a48de3cd5dcc0d92f453531" category="section-title">Versione 1,35</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="section-title">Correzioni dei bug</block>
   <block id="cd0b2a52b53e1925d55439a6132bad52" category="section-title">Offerte di supporto</block>
-  <block id="38d80ed5e3a33df19ee71c05059b6258" category="paragraph">Gli indicatori ambientali che forniscono informazioni approfondite sulla salute ambientale dei sistemi di storage forniscono ora valori più precisi per l'utilizzo previsto dell'energia, l'utilizzo diretto del carbonio e l'emissione di calore basati su un modello predittivo avanzato. Per ulteriori informazioni, fare riferimento a <block ref="093aadbd7a28ff730cdbe5efbf5b8c02" category="inline-link-macro-rx"></block>.</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="section-title">Creazione di report</block>
   <block id="5139de9c5a9b2b36569213d7e9b32f21" category="paragraph">Ora puoi generare e scaricare report per analizzare il tuo scenario. I report preprogettati riassumono i failover e i failback, mostrano i dettagli di replica su tutti i siti e mostrano i dettagli dei processi degli ultimi sette giorni.</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">prova gratuita di 30 giorni</block>
@@ -610,13 +602,6 @@
   <block id="35ccbae2ce9b9594b9af9196a3bed361" category="inline-link">Fabbrica dei carichi di lavoro</block>
   <block id="0b672c7e4b6adbcc5d61df4659dfc304" category="list-text"><block ref="0b672c7e4b6adbcc5d61df4659dfc304" category="inline-link-rx"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
-  <block id="54eca49362b96a7e1899f1d9f7fbdeef" category="section-title">Connettore 3.9.46</block>
-  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
-  <block id="5b7c2a7de0cce99684e946ddad5735bd" category="paragraph">A questo punto, la versione 3.9.46 è disponibile per la modalità standard e la modalità limitata.</block>
-  <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">ID per progetti IAM</block>
-  <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">È ora possibile visualizzare l'ID di un progetto dalla gestione delle identità e degli accessi di BlueXP . Potrebbe essere necessario utilizzare l'ID quando si effettua una chiamata API.</block>
-  <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link">Informazioni su come ottenere l'ID per un progetto</block>
-  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
   <block id="844ae8089b7faaed0a2b7abc588969d9" category="section-title">FSX per ONTAP si integra con lo storage in una fabbrica di workload BlueXP</block>
   <block id="dc13de95ece93019b115a46e9259730f" category="paragraph">FSX per i task di gestione del file system ONTAP, come l'aggiunta di volumi, l'espansione della capacità del file system e la gestione delle macchine virtuali storage, sono ora gestiti in una fabbrica di workload BlueXP , un nuovo servizio offerto da NetApp e Amazon FSX per NetApp ONTAP. È possibile utilizzare le credenziali e le autorizzazioni esistenti come in precedenza. Con la differenza che ora puoi fare di più dalla fabbrica dei carichi di lavoro BlueXP  per gestire i file system. Quando apri un ambiente di lavoro FSX per ONTAP da BlueXP  Canvas, passerai direttamente alla fabbrica di workload BlueXP .</block>
   <block id="67c7aeb67508aad4a1a5b35bdab67864" category="inline-link-macro">Scopri le funzionalità di FSX per ONTAP in una fabbrica di workload BlueXP</block>
@@ -738,4 +723,27 @@
   <block id="ef57b1c89cee8819c5de2b079e4b0640" category="paragraph"><block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="section-title">Elenco delle VM supportate aggiornate per Google Cloud per allinearle alle Best practice</block>
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">L'analisi dei dati PII nella protezione ransomware BlueXP  è generalmente disponibile per i clienti che hanno implementato la classificazione BlueXP . La classificazione BlueXP  è disponibile come parte della piattaforma BlueXP  senza costi aggiuntivi e può essere implementata on-premise o nel cloud del cliente.</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 dicembre 2024</block>
+  <block id="ab83866f9abfe93d14a14fa21b156b05" category="section-title">Nuovi endpoint sicuri per ottenere immagini del connettore</block>
+  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">Quando si installa il connettore o quando si verifica un aggiornamento automatico, il connettore contatta i repository per scaricare le immagini per l'installazione o l'aggiornamento. Per impostazione predefinita, il connettore ha sempre contattato i seguenti endpoint:</block>
+  <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
+  <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">\https://cloudmanagerinfraprod.azurecr.io</block>
+  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">Il primo endpoint include un carattere jolly perché non possiamo fornire una posizione definitiva. Il bilanciamento del carico del repository viene gestito dal provider di servizi, il che significa che i download possono avvenire da endpoint diversi.</block>
+  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">Per una maggiore sicurezza, il connettore può ora scaricare le immagini di installazione e aggiornamento da endpoint dedicati:</block>
+  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
+  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
+  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">Si consiglia di iniziare a utilizzare questi nuovi endpoint rimuovendo gli endpoint esistenti dalle regole del firewall e consentendo i nuovi endpoint.</block>
+  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">Questi nuovi endpoint sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.</block>
+  <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenere presente quanto segue:</block>
+  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">Gli endpoint esistenti sono ancora supportati. Se non si desidera utilizzare i nuovi endpoint, non è necessario apportare modifiche.</block>
+  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">Il connettore contatta prima i punti finali esistenti. Se tali endpoint non sono accessibili, il connettore contatta automaticamente i nuovi endpoint.</block>
+  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">I nuovi endpoint non sono supportati nei seguenti scenari:</block>
+  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">Se il connettore è installato in un'area governativa.</block>
+  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">Se utilizzi il connettore con backup e recovery di BlueXP  o protezione dal ransomware BlueXP .</block>
+  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">Per entrambi questi scenari, è possibile continuare a utilizzare gli endpoint esistenti.</block>
+  <block id="5ae300808387123005a76abbd5a99f46" category="section-title">Versione 1,38</block>
+  <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Questa versione di classificazione BlueXP  include miglioramenti generali e correzioni dei bug.</block>
+  <block id="e3f867c1e04dce86520c139a0ae60b18" category="section-title">12 dicembre 2024</block>
+  <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Scopri come visualizzare i suggerimenti per l'aggiornamento del firmware</block>
+  <block id="af79dd5dc56c84e383198dba47e6f6fe" category="paragraph">Ora puoi vedere il firmware dello storage, il firmware SP/BMC e il pacchetto Autonomous ransomware (ARP) consigliato per un update. <block ref="bb189956f648b21665d5198deffedcc8" category="inline-link-macro-rx"></block>.</block>
 </blocks>
