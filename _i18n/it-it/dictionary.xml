@@ -422,22 +422,7 @@
   <block id="cb48cbf342305a9ae53e02e21fcb644c" category="list-text">Non attivato</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">È ora possibile scoprire i sistemi NetApp ASA R2 quando si utilizza BlueXP  in modalità privata. Questo supporto è disponibile a partire dalla versione 3.9.46 di BlueXP  in modalità privata.</block>
   <block id="3406306d1e826f71d49547332136491d" category="paragraph">L'analisi dei dati PII nella protezione ransomware BlueXP  è generalmente disponibile per i clienti che hanno implementato la classificazione BlueXP . La classificazione BlueXP  è disponibile come parte della piattaforma BlueXP  senza costi aggiuntivi e può essere implementata on-premise o nel cloud del cliente.</block>
-  <block id="78efdac7339a3a2a767f54e63e415b79" category="paragraph">Quando si installa il connettore o quando si verifica un aggiornamento automatico, il connettore contatta i repository per scaricare le immagini per l'installazione o l'aggiornamento. Per impostazione predefinita, il connettore ha sempre contattato i seguenti endpoint:</block>
-  <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
-  <block id="9dcb0a1d3281e001a6085626a264be49" category="list-text">\https://cloudmanagerinfraprod.azurecr.io</block>
-  <block id="e5eb8016a9764345b2f3dd5672e2f245" category="paragraph">Il primo endpoint include un carattere jolly perché non possiamo fornire una posizione definitiva. Il bilanciamento del carico del repository viene gestito dal provider di servizi, il che significa che i download possono avvenire da endpoint diversi.</block>
-  <block id="5a04f5940b391aa471ffcf2f682f6390" category="paragraph">Per una maggiore sicurezza, il connettore può ora scaricare le immagini di installazione e aggiornamento da endpoint dedicati:</block>
-  <block id="534d469c55031860cef85b868a9332d8" category="list-text">\https://bluexpinfraprod.eastus2.data.azurecr.io</block>
-  <block id="a86a33f4f6d9c203eb747987b6d104ca" category="list-text">\https://bluexpinfraprod.azurecr.io</block>
-  <block id="6265c6aedeb8e4c15d99cb681317d569" category="paragraph">Si consiglia di iniziare a utilizzare questi nuovi endpoint rimuovendo gli endpoint esistenti dalle regole del firewall e consentendo i nuovi endpoint.</block>
-  <block id="0569478319ea7c217c7aeaef42de04a2" category="paragraph">Questi nuovi endpoint sono supportati a partire dalla versione 3.9.47 del connettore. Non c'è compatibilità con le versioni precedenti del connettore.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">Tenere presente quanto segue:</block>
-  <block id="b7045cdc7261ab3a7b9e78efb0461bfa" category="list-text">Gli endpoint esistenti sono ancora supportati. Se non si desidera utilizzare i nuovi endpoint, non è necessario apportare modifiche.</block>
-  <block id="4cd508d6b82e76524216714f78d79d2c" category="list-text">Il connettore contatta prima i punti finali esistenti. Se tali endpoint non sono accessibili, il connettore contatta automaticamente i nuovi endpoint.</block>
-  <block id="a5f507c0714656865b1f8986b83613de" category="list-text">I nuovi endpoint non sono supportati nei seguenti scenari:</block>
-  <block id="6b4d63c99144b38df035c167f8c99b23" category="list-text">Se il connettore è installato in un'area governativa.</block>
-  <block id="b90e6d21a82e89d9e93683b887fce78e" category="list-text">Se utilizzi il connettore con backup e recovery di BlueXP  o protezione dal ransomware BlueXP .</block>
-  <block id="8ad91183ee4d83d215423d96651219b3" category="paragraph">Per entrambi questi scenari, è possibile continuare a utilizzare gli endpoint esistenti.</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Scopri come visualizzare i suggerimenti per l'aggiornamento del firmware</block>
   <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
   <block id="4d83c70b301d09d322c3d604e361a689" category="paragraph">A questo punto, la versione 3.9.48 è disponibile per la modalità standard e la modalità limitata.</block>
@@ -466,7 +451,6 @@
   <block id="8e64dfb0168516c0e7f7880ae745072a" category="section-title">Connettore 3.9.49</block>
   <block id="f5c64d3f640238b8d1e1ed7062c5561f" category="paragraph">A questo punto, la versione 3.9.49 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="99acbaa3cb87e4fe6650072fa6b0a905" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP</block>
-  <block id="36cef198e9fac4b4a194f5e01017b8d1" category="list-text">Supporto per l'assegnazione di più ruoli a un utente.</block>
   <block id="4fafa85612a8b2fff96d593213d6a0ec" category="paragraph">La gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP  viene ora utilizzata in modalità limitata.</block>
   <block id="2f73a8cbcbf617bd5a78738929bbe5b3" category="paragraph">BlueXP  Identity and Access Management (IAM) è un modello di gestione delle risorse e degli accessi che sostituisce e migliora le funzionalità precedenti fornite dagli account BlueXP  quando si utilizza BlueXP  in modalità standard e limitata.</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="list-title">Informazioni correlate</block>
@@ -521,13 +505,6 @@
   <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">Si prevede che l'esportazione di un milione di record richiederà circa 35 minuti.</block>
   <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">Esaminare i dati memorizzati nella propria organizzazione</block>
   <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">Per informazioni dettagliate sull'analisi dei dati e sul rapporto, vedere<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>.</block>
-  <block id="850fbc77665f926253af01767262460f" category="inline-link-macro">Amministrare Cloud Volumes ONTAP utilizzando Gestione di sistema</block>
-  <block id="58250d8c5d6f1e1a4d093e353f99e712" category="paragraph"><block ref="e2de8aa0d2ccd88dfc6febee51855766" category="inline-link-macro-rx"></block>.</block>
-  <block id="c89199b5a7b291ade2b859c6b2e0e726" category="list-text">Accedi facilmente alle informazioni sulla tua licenza Cloud Volumes ONTAP tramite le schede *Governance &gt; Digital Wallet &gt; Panoramica/licenze servizio dati*.</block>
-  <block id="e174e60d72b9816750ae5ea0588ea579" category="list-text">Fare clic su *Visualizza* nel pannello ONTAP volume cloud nella scheda *Panoramica* per ottenere una conoscenza completa delle licenze basate sulla capacità. Questa visualizzazione avanzata offre informazioni dettagliate su licenze e abbonamenti.</block>
-  <block id="210fb26ce941226a0e2a9726db671e8a" category="list-text">Se si preferisce l'interfaccia precedente, è possibile fare clic sul pulsante *passa alla visualizzazione precedente* per visualizzare i dettagli della licenza in base al tipo e modificare i metodi di addebito per le licenze.</block>
-  <block id="56a50532d8da2bebb09d6190c126140c" category="inline-link-macro">Gestione delle licenze basate sulla capacità</block>
-  <block id="62c835233e6bcf50084b7f7f3bfe8ee0" category="paragraph"><block ref="5aa81dcb1871cc4d565005ce5abe331d" category="inline-link-macro-rx"></block>.</block>
   <block id="403a870c3777a3434883cf3338197e1e" category="inline-link">Visualizza i requisiti dell'host Linux</block>
   <block id="33437394afeba112bc78a89e1164345e" category="paragraph"><block ref="bddca2b75222059ea164cace70f493c0" category="inline-link-rx"></block>.</block>
   <block id="2004b4ad1feb57e1e4505f5888cfbb60" category="paragraph"><block ref="2004b4ad1feb57e1e4505f5888cfbb60" category="inline-link-macro-rx"></block></block>
@@ -543,7 +520,6 @@
   <block id="3d725c77d5fb40a1e06f0ec1f3adb6bf" category="section-title">Gestione delle identità e degli accessi BlueXP</block>
   <block id="441419ddc3a341f3081b481a3084eef7" category="section-title">Crea un caso di supporto per ulteriori servizi BlueXP</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 dicembre 2024</block>
-  <block id="ab83866f9abfe93d14a14fa21b156b05" category="section-title">Nuovi endpoint sicuri per ottenere immagini del connettore</block>
   <block id="e5182edc3707e8e354c40ab7fa819f39" category="section-title">7 ottobre 2024</block>
   <block id="f4b2cfc6ddef927318d045f16b38d151" category="section-title">Pagina dell'elenco degli avvisi BlueXP</block>
   <block id="3108a0619eec0e2ef9c6c5bd796bbf0d" category="paragraph">Puoi identificare rapidamente i cluster ONTAP con bassa capacità o performance ridotte, valutare il grado di disponibilità e identificare i rischi per la sicurezza. Puoi visualizzare avvisi relativi a capacità, performance, protezione, disponibilità, sicurezza e configurazione.</block>
@@ -593,12 +569,6 @@
   <block id="5ae300808387123005a76abbd5a99f46" category="section-title">Versione 1,38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">Questa versione di classificazione BlueXP  include miglioramenti generali e correzioni dei bug.</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">Questa versione di classificazione BlueXP  include i seguenti aggiornamenti.</block>
-  <block id="f196d25aadb7411a1f827c0ca0317cfb" category="section-title">Autenticazione utente abilitata per l'accesso a Gestione sistema da BlueXP</block>
-  <block id="7a44ab81762cf5f3e018d99190cfe8ac" category="paragraph">In qualità di amministratore BlueXP , è ora possibile attivare l'autenticazione per gli utenti ONTAP che accedono a Gestione sistema ONTAP da BlueXP . È possibile attivare questa opzione modificando le impostazioni del connettore BlueXP . Questa opzione è disponibile per le modalità standard e privata.</block>
-  <block id="0f52c9a8aa841036bf7aaae893336a9b" category="section-title">Visualizzazione avanzata BlueXP  rinominata in Gestione sistema</block>
-  <block id="d34aa8cf529fee89c49e6c7c38dbf1e7" category="paragraph">L'opzione per la gestione avanzata di Cloud Volumes ONTAP da BlueXP  tramite Gestione di sistema di ONTAP è stata rinominata da *visualizzazione avanzata* a *Gestione di sistema*.</block>
-  <block id="75b76b021da36b8e8bf9678596449aa4" category="section-title">Ecco un modo più semplice per gestire le licenze con il portafoglio digitale di BlueXP</block>
-  <block id="5fbce01b2fa5bcad467f74186949bef5" category="paragraph">Ora puoi usufruire di una gestione semplificata delle licenze Cloud Volumes ONTAP utilizzando punti di navigazione migliorati all'interno del Digital Wallet di BlueXP :</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 settembre 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Supporto per Cloud Volumes Service per Google Cloud</block>
   <block id="7ee45649520b61796809750e472a8000" category="section-title">7 dicembre 2020</block>
@@ -805,7 +775,25 @@
   <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Eventi CloudShell in Tracker</block>
   <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">Ogni volta che usi CloudShell per eseguire operazioni FSX per ONTAP dai carichi di lavoro BlueXP , gli eventi appariranno in Tracker.</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">03 marzo 2025</block>
-  <block id="62c9277e75aee50ddfb792de79bd94d3" category="section-title">Nuova regione del Nord Zelanda ora supportata in Azure</block>
   <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">La regione del Nord della Nuova Zelanda è ora supportata in Azure per configurazioni a nodo singolo e ad alta disponibilità (ha) di Cloud Volumes ONTAP 9.12.1 GA e versioni successive. Si noti che il tipo di istanza Lsv3 non è supportato in questa regione.</block>
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">Per un elenco di tutte le regioni supportate, fare riferimento alla<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block> .</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 marzo 2025</block>
+  <block id="66a5f69d070814deb69bf917dd07a6af" category="section-title">Aggiornamento del connettore 3.9.49</block>
+  <block id="00d64ff7da906ec5530c4e990fb334cb" category="section-title">Accesso a Gestione di sistema di ONTAP quando BlueXP  utilizza un connettore</block>
+  <block id="b539e86fbaa7eae465366a0142624ec2" category="paragraph">Un amministratore di BlueXP  (utenti con il ruolo di amministratore dell'organizzazione) può configurare BlueXP  in modo che richieda agli utenti di immettere le proprie credenziali ONTAP per accedere a Gestione di sistema di ONTAP. Quando questa impostazione è attivata, gli utenti devono immettere le proprie credenziali ONTAP ogni volta che non vengono memorizzate in BlueXP .</block>
+  <block id="990a2328425e217648ea5dd2ae370ffb" category="inline-link-macro">Informazioni su come configurare le impostazioni delle credenziali.</block>
+  <block id="65ac46c0fd2260c1febd841aed98d599" category="paragraph">Questa funzione è disponibile nella versione del connettore 3.9.49 e successive. <block ref="3a5e8b35a098e08d607fb27978dec106" category="inline-link-macro-rx"></block>.</block>
+  <block id="a03c6dfbb1d64911f1090d54175ff8d3" category="section-title">Aggiornamento del connettore 3.9.48</block>
+  <block id="1697b2b05dc5c7ad63e22e713e94ba7c" category="section-title">Possibilità di disattivare l'impostazione di aggiornamento automatico per il connettore</block>
+  <block id="91f4c340492e583f80db57f970516c1f" category="paragraph">È possibile disattivare la funzione di aggiornamento automatico del connettore.</block>
+  <block id="459e65cb3fcf9e226149b023791951b2" category="paragraph">Quando si utilizza BlueXP  in modalità standard o limitata, BlueXP  aggiorna automaticamente il connettore all'ultima versione, purché disponga dell'accesso a Internet in uscita per ottenere l'aggiornamento software. Se è necessario gestire manualmente quando il connettore viene aggiornato, è ora possibile disattivare gli aggiornamenti automatici per la modalità standard o limitata.</block>
+  <block id="01d6125faf020265bf432216c335698c" category="admonition">Questa modifica non influisce sulla modalità privata BlueXP , in cui è necessario aggiornare sempre il connettore.</block>
+  <block id="0e9ee8d377b683ca8ac77de05c3539d9" category="paragraph">Questa funzione è disponibile nella versione del connettore 3.9.48 e successive.</block>
+  <block id="355c51d49cd780f57fe417fdede5f61c" category="inline-link-macro">Scopri come disattivare l'aggiornamento automatico per il connettore.</block>
+  <block id="530a13d3dc2fccc16ebe8e25a47286a1" category="paragraph"><block ref="530a13d3dc2fccc16ebe8e25a47286a1" category="inline-link-macro-rx"></block></block>
+  <block id="4bbf2de0e52eb20a42e04cf23bdb1683" category="list-text">Supporto per l'assegnazione di più ruoli a un utente BlueXP .</block>
+  <block id="0608305ed5721ad4a69c3643b176e371" category="list-text">Supporto per l'assegnazione di un ruolo a più risorse dell'organizzazione BlueXP  (org/cartella/progetto)</block>
+  <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
+  <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Ora puoi utilizzare BlueXP  per implementare e gestire la release della disponibilità generale di Cloud Volumes ONTAP 9.16.1 in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'aggiornamento in AWS.</block>
+  <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Supporto della regione del Nord della Nuova Zelanda in Azure</block>
 </blocks>
