@@ -536,6 +536,9 @@ Per riprovare tutte le scansioni:
 . Per riprovare tutte le scansioni non riuscite, selezionare *Riprova tutte le scansioni*.
 
 
+.Migliore precisione del modello di categorizzazione
+La precisione del modello di machine learning per link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["categorie predefinite"] è migliorata del 11%.
+
 
 
 === 22 gennaio 2025
