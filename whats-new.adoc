@@ -205,7 +205,7 @@ Puoi approfondire i dettagli degli avvisi e trovare consigli.
 
 
 
-==== Visualizza i dettagli del cluster collegati a System Manager
+==== Visualizza i dettagli del cluster collegati a Gestore di sistema di ONTAP
 
 Gli alert BlueXP  ti consentono di visualizzare gli alert associati all'ambiente storage ONTAP e di analizzare nei dettagli collegati a ONTAP System Manager.
 
@@ -451,6 +451,48 @@ Per informazioni dettagliate sull'attivazione manuale, fare riferimento alla htt
 
 
 
+=== 19 febbraio 2025
+
+
+
+==== Versione 1,40
+
+Questa versione di classificazione BlueXP  include i seguenti aggiornamenti.
+
+.Supporto per RHEL 9,5
+Questa versione fornisce il supporto per Red Hat Enterprise Linux v9,5 oltre alle versioni precedentemente supportate. Ciò è applicabile a qualsiasi installazione manuale in loco della classificazione BlueXP , comprese le implementazioni in ambienti oscuri.
+
+I seguenti sistemi operativi richiedono l'utilizzo del motore del contenitore Podman e richiedono la classificazione BlueXP  versione 1,30 o superiore: Red Hat Enterprise Linux versione 8,8, 8,10, 9,0, 9,1, 9,2, 9,3, 9,4 e 9,5.
+
+.Assegnare priorità alle scansioni
+Quando si eseguono scansioni di sola mappatura, è possibile assegnare priorità alle scansioni più importanti. Questa funzione è utile quando si hanno molti ambienti di lavoro e si desidera garantire che le scansioni ad alta priorità vengano completate per prime.
+
+Per impostazione predefinita, le scansioni vengono accodate in base all'ordine in cui vengono avviate. Grazie alla possibilità di assegnare priorità alle scansioni, è ora possibile spostarle in primo piano sulla coda. È possibile assegnare priorità a più scansioni. La priorità viene indicata in un ordine di primo ingresso e primo uscita, ovvero la prima scansione assegnata all'utente viene spostata in primo piano nella coda; la seconda scansione assegnata all'utente diventa seconda nella coda e così via.
+
+La priorità viene concessa una tantum. Le riscansioni automatiche dei dati di mappatura vengono eseguite nell'ordine predefinito.
+
+La prioritizzazione è limitata a link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["scansioni di sola mappatura"]; non è disponibile per le scansioni mappa e classificazione.
+
+Per modificare la priorità:
+
+. Dal menu classificazione BlueXP , selezionare *Configurazione*.
+. Selezionare le risorse a cui assegnare la priorità.
+. Dall'opzione azioni..., selezionare *prioritizza scansione*.
+
+
+.Riprovare tutte le scansioni
+La classificazione BlueXP  ora supporta la possibilità di ripetere in batch tutte le scansioni non riuscite.
+
+È ora possibile ritentare le scansioni in un'operazione batch con la funzione **Riprova tutto**. Se le scansioni di classificazione non vengono eseguite correttamente a causa di un problema temporaneo, ad esempio un'interruzione della rete, è possibile riprovare tutte le scansioni contemporaneamente con un solo pulsante invece di riprovare singolarmente. Le scansioni possono essere riavviate tutte le volte necessarie.
+
+Per riprovare tutte le scansioni:
+
+. Dal menu classificazione BlueXP , selezionare *Configurazione*.
+. Per riprovare tutte le scansioni non riuscite, selezionare *Riprova tutte le scansioni*.
+
+
+
+
 === 22 gennaio 2025
 
 
@@ -491,29 +533,21 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 
 
-=== 4 novembre 2024
-
-
-
-==== Versione 1,37
-
-Questa versione di classificazione BlueXP  include i seguenti aggiornamenti.
-
-.Supporto per RHEL 8,10
-Questa versione fornisce il supporto per Red Hat Enterprise Linux v8,10 oltre alle versioni precedentemente supportate. Ciò è applicabile a qualsiasi installazione manuale in loco della classificazione BlueXP , comprese le implementazioni in ambienti oscuri.
-
-I seguenti sistemi operativi richiedono l'utilizzo del motore del contenitore Podman e richiedono la classificazione BlueXP  versione 1,30 o superiore: Red Hat Enterprise Linux versione 8,8, 8,10, 9,0, 9,1, 9,2, 9,3 e 9,4.
-
-Ulteriori informazioni su https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classificazione BlueXP"].
-
-.Supporto di NFS v4,1
-Questa release fornisce supporto per NFS v4,1 oltre alle versioni precedentemente supportate.
-
-Ulteriori informazioni su https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["Classificazione BlueXP"].
-
-
-
 == Cloud Volumes ONTAP
+
+
+
+=== 18 febbraio 2025
+
+
+
+==== Presentazione dell'implementazione diretta del marketplace di Azure
+
+Ora puoi sfruttare l'implementazione diretta del marketplace di Azure per implementare in modo semplice e rapido Cloud Volumes ONTAP direttamente dal marketplace di Azure. Utilizzando questo metodo ottimizzato, puoi esplorare le caratteristiche e le funzionalità principali di Cloud Volumes ONTAP nel tuo ambiente senza dover configurare BlueXP  Connector o soddisfare altri criteri di onboarding richiesti per la distribuzione di Cloud Volumes ONTAP tramite BlueXP .
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["Scopri le opzioni di implementazione di Cloud Volumes ONTAP in Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Implementa Cloud Volumes ONTAP dal marketplace di Azure"^]
+
 
 
 
@@ -559,60 +593,6 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capaci
 Le famiglie di macchine DS_v2 ed es_v3 non sono più disponibili per la selezione in BlueXP  quando si distribuiscono nuove istanze di Cloud Volumes ONTAP in Azure. Queste famiglie verranno conservate e supportate solo nei sistemi esistenti più vecchi. Le nuove implementazioni di Cloud Volumes ONTAP sono supportate in Azure solo a partire dalla release 9.12.1. Si consiglia di passare a es_v4 o a qualsiasi altra serie compatibile con Cloud Volumes ONTAP 9.12.1 e versioni successive. Le macchine delle serie DS_v2 ed es_v3, tuttavia, saranno disponibili per le nuove implementazioni effettuate tramite l'API.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurazioni supportate in Azure"^]
-
-
-
-=== 11 novembre 2024
-
-
-
-==== Fine della disponibilità per le licenze basate su nodi
-
-NetApp ha pianificato la fine della disponibilità (EOA) e la fine del supporto (EOS) della licenza basata su nodi Cloud Volumes ONTAP. A partire dal 11 novembre 2024, la disponibilità limitata delle licenze basate su nodi è stata interrotta. Il supporto per le licenze basate su nodi termina il 31 dicembre 2024. Dopo la fine delle licenze basate su nodi, è necessario passare alla licenza basata sulla capacità utilizzando il tool di conversione delle licenze BlueXP .
-
-Per gli impegni annuali o a lungo termine, NetApp consiglia di contattare il rappresentante NetApp prima della data di fine disponibilità o della data di scadenza della licenza, per verificare che siano in essere i prerequisiti per la transizione. Se non disponi di un contratto a lungo termine per un nodo Cloud Volumes ONTAP ed esegui il sistema su un abbonamento PAY-as-you-go (PAYGO) on-demand, è importante pianificare la conversione prima della data dell'EOS. Sia per i contratti a lungo termine che per gli abbonamenti a PAYGO, è possibile utilizzare lo strumento di conversione delle licenze BlueXP  per una conversione perfetta.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fine della disponibilità delle licenze basate su nodi"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Converti le licenze basate su nodi in base alla capacità"^]
-
-
-
-==== Rimozione di implementazioni basate su nodi da BlueXP
-
-L'opzione di implementare i sistemi Cloud Volumes ONTAP utilizzando licenze basate su nodi è obsoleta in BlueXP . Ad eccezione di alcuni casi speciali, non puoi utilizzare le licenze basate su nodi per le implementazioni Cloud Volumes ONTAP per qualsiasi cloud provider.
-
-NetApp riconosce i seguenti requisiti di licenza esclusivi in conformità con obblighi contrattuali e esigenze operative e continuerà a supportare le licenze basate su nodi in queste situazioni:
-
-* Clienti USA del settore pubblico
-* Implementazioni in modalità privata
-* Implementazioni nella regione cinese di Cloud Volumes ONTAP in AWS
-* Se disponi di una BYOL (Bring Your Own License) valida e non scaduta
-
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fine della disponibilità delle licenze basate su nodi"^]
-
-
-
-==== Aggiunta di un Tier cold per i dati Cloud Volumes ONTAP nello storage BLOB di Azure
-
-BlueXP  ora ti permette di selezionare un Tier cold per archiviare i dati del Tier di capacità inattivi nell'storage BLOB di Azure. Aggiungendo il Tier cold ai Tier hot e cool esistenti potrai usufruire di un'opzione di storage più conveniente e di una maggiore efficienza dei costi.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Tiering dei dati in Azure"^]
-
-
-
-==== Possibilità di limitare l'accesso pubblico all'account di storage per Azure
-
-Ora puoi limitare l'accesso pubblico al tuo account di storage per i sistemi Cloud Volumes ONTAP in Azure. Disattivando l'accesso, è possibile proteggere l'indirizzo IP privato dall'esposizione anche all'interno dello stesso VNET, qualora fosse necessario conformarsi ai criteri di protezione dell'organizzazione. Questa opzione consente inoltre di disabilitare il tiering dei dati per i sistemi Cloud Volumes ONTAP ed è applicabile sia alle coppie a nodo singolo che a quelle ad alta disponibilità.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Regole del gruppo di sicurezza"^].
-
-
-
-==== Abilitazione WORM dopo l'implementazione di Cloud Volumes ONTAP
-
-Ora puoi attivare lo storage WORM (Write Once, Read Many) su un sistema Cloud Volumes ONTAP esistente utilizzando BlueXP . Questa funzionalità offre la flessibilità di abilitare IL WORM in un ambiente di lavoro, anche se IL WORM non è stato attivato durante la sua creazione. Una volta attivato, non è possibile disattivare IL WORM.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Abilitazione DI WORM in un ambiente di lavoro Cloud Volumes ONTAP"^]
 
 
 
@@ -806,6 +786,28 @@ Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https:/
 
 
 
+=== 19 febbraio 2025
+
+Versione 4,2
+
+
+
+==== Supporto di ASA R2 per macchine virtuali e datastore su storage VMFS
+
+Questa versione di BlueXP  Disaster Recovery fornisce supporto per ASA R2 per macchine virtuali e datastore sullo storage VMFS. In un sistema ASA R2, il software ONTAP supporta le funzionalità SAN essenziali, mentre rimuove le funzioni non supportate negli ambienti SAN.
+
+Questa versione supporta le seguenti funzioni per ASA R2:
+
+* Provisioning di gruppi di coerenza per lo storage primario (solo gruppo di coerenza flat, ovvero solo un livello senza struttura gerarchica)
+* Operazioni di backup (gruppo di coerenza) inclusa l'automazione SnapMirror
+
+
+Il supporto per ASA R2 nel disaster recovery di BlueXP  utilizza ONTAP 9.16.1.
+
+Mentre i datastore possono essere montati su un volume ONTAP o su un'unità storage ASA R2, un gruppo di risorse nel disaster recovery di BlueXP  non può includere un datastore di ONTAP e un datastore di ASA R2. È possibile selezionare un datastore da ONTAP o da ASA R2 in un gruppo di risorse.
+
+
+
 === 30 ottobre 2024
 
 
@@ -910,27 +912,6 @@ Di seguito sono riportate alcune considerazioni aggiuntive sui protocolli iSCSI 
 * Il disaster recovery di BlueXP  supporta solo una singola LUN per volume ONTAP. Il volume non deve avere più LUN.
 * Per qualsiasi piano di replica, il volume ONTAP di destinazione deve utilizzare gli stessi protocolli del volume ONTAP di origine che ospita le macchine virtuali protette. Ad esempio, se l'origine utilizza un protocollo FC, la destinazione deve utilizzare anche FC.
 
-
-
-
-=== 2 agosto 2024
-
-
-
-==== Supporto per datastore VMFS VMware on-premise e on-premise per FC
-
-Questa release include un'anteprima _tecnologica_ del supporto per le macchine virtuali montate su datastore VMFS (Virtual Machine file System) VMware vSphere per FC protetti nello storage on-premise. In precedenza, il servizio forniva un'anteprima tecnologica che supportava gli archivi dati VMFS per iSCSI.
-
-
-NOTE: NetApp non ti addebita alcun costo per la capacità dei workload in anteprima.
-
-
-
-==== Annullamento del processo
-
-Con questa versione, è ora possibile annullare un lavoro nell'interfaccia utente di Job Monitor.
-
-Fare riferimento alla https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/monitor-jobs.html["Monitorare i lavori"].
 
 
 
