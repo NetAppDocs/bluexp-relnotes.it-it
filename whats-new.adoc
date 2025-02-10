@@ -355,6 +355,60 @@ Non è più possibile creare un volume da un modello. Questa azione è stata ass
 
 
 
+=== 21 febbraio 2025
+
+Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
+
+
+
+==== Indicizzazione ad alte prestazioni
+
+Il backup e ripristino di BlueXP  introduce una funzionalità di indicizzazione aggiornata che rende più efficiente l'indicizzazione dei dati nell'ambiente di lavoro di origine. La nuova funzione di indicizzazione include aggiornamenti all'interfaccia utente, prestazioni migliorate del metodo di ricerca e ripristino per il ripristino dei dati, aggiornamenti alle funzionalità di ricerca globale e una migliore scalabilità.
+
+Ecco una descrizione dei miglioramenti:
+
+* *Consolidamento cartelle*: La versione aggiornata raggruppa le cartelle utilizzando nomi che includono identificatori specifici, rendendo più agevole il processo di indicizzazione.
+* *Compattazione dei file in parquet*: La versione aggiornata riduce il numero di file utilizzati per l'indicizzazione di ciascun volume, semplificando il processo e eliminando la necessità di un database aggiuntivo.
+* *Scale-out con più sessioni*: La nuova versione aggiunge più sessioni per gestire le attività di indicizzazione, velocizzando il processo.
+* *Supporto per più contenitori indice*: La nuova versione utilizza più contenitori per gestire e distribuire meglio le attività di indicizzazione.
+* *Split index workflow*: La nuova versione divide il processo di indicizzazione in due parti, migliorando l'efficienza.
+* *Concorrenza migliorata*: La nuova versione consente di eliminare o spostare le directory contemporaneamente, velocizzando il processo di indicizzazione.
+
+
+.Chi trae vantaggio da questa funzione?
+La nuova funzione di indicizzazione è disponibile per tutti i nuovi clienti.
+
+.Come si attiva l'indicizzazione?
+Prima di poter utilizzare il metodo Search & Restore per il ripristino dei dati, è necessario attivare l'indicizzazione in ogni ambiente di lavoro di origine da cui si prevede di ripristinare volumi o file. Ciò consente al Catalogo indicizzato di tenere traccia di ogni volume e di ogni file di backup, rendendo le ricerche veloci ed efficienti.
+
+Attivare l'indicizzazione nell'ambiente di lavoro di origine selezionando l'opzione "Abilita indicizzazione" quando si esegue una ricerca e ripristino.
+
+Per ulteriori informazioni, consultare la documentazione https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Come ripristinare i dati ONTAP utilizzando Cerca  Ripristina"].
+
+.Scala supportata
+La nuova funzione di indicizzazione supporta quanto segue:
+
+* Efficienza della ricerca globale in meno di 3 minuti
+* Fino a 5 miliardi di file
+* Fino a 5000 volumi per cluster
+* Fino a 100K snapshot per volume
+* Il tempo massimo per l'indicizzazione della linea di base è inferiore a 7 giorni. Il tempo effettivo varia a seconda dell'ambiente.
+
+
+
+
+==== Miglioramenti alle performance della ricerca globale
+
+Questa versione include anche miglioramenti alle prestazioni della ricerca globale. Verranno ora visualizzati indicatori di avanzamento e risultati di ricerca più dettagliati, inclusi il conteggio dei file e il tempo richiesto per la ricerca. I contenitori dedicati per la ricerca e l'indicizzazione garantiscono che le ricerche globali vengano completate in meno di cinque minuti.
+
+Tenere presente queste considerazioni relative alla ricerca globale:
+
+* Il nuovo indice non viene eseguito sulle istantanee etichettate come ogni ora.
+* La nuova funzione di indicizzazione funziona solo sugli snapshot su FlexVol e non sugli snapshot su FlexGroup.
+
+
+
+
 === 22 novembre 2024
 
 Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
