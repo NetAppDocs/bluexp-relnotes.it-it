@@ -733,6 +733,36 @@ L'offerta di servizi NetApp SupportEdge Basic ora include tutte le funzionalità
 
 
 
+=== 10 febbraio 2025
+
+Il portafoglio digitale di BlueXP  è stato riprogettato per garantire facilità d'uso e ora offre funzionalità aggiuntive di gestione delle licenze e delle sottoscrizioni.
+
+
+
+==== Nuova dashboard Panoramica
+
+La home page del portafoglio digitale dispone di una dashboard aggiornata delle licenze NetApp e delle iscrizioni al marketplace, con la possibilità di analizzare in dettaglio servizi, tipi di licenza e azioni richieste.
+
+
+
+==== Configurazione delle sottoscrizioni alle credenziali
+
+Il Digital Wallet di BlueXP  consente ora di configurare le iscrizioni per le credenziali del provider. In genere, questa operazione viene eseguita quando si sottoscrive per la prima volta un abbonamento a Marketplace o un contratto annuale. In precedenza, la modifica delle credenziali dell'abbonamento poteva essere effettuata solo nella pagina credenziali.
+
+
+
+==== Associazione delle sottoscrizioni alle organizzazioni
+
+Ora puoi aggiornare l'organizzazione a cui è associato un abbonamento direttamente dal portafoglio digitale.
+
+
+
+==== Gestione delle licenze di Cloud Volume ONTAP
+
+Ora è possibile gestire le licenze Cloud Volumes ONTAP tramite la home page o la scheda *licenze servizio dati*. Utilizzare la scheda *Marketplace sottoscrizioni* per visualizzare le informazioni relative all'abbonamento.
+
+
+
 === 5 marzo 2024
 
 
@@ -759,30 +789,6 @@ Sono ora disponibili diversi miglioramenti ai report sull'utilizzo di Cloud Volu
 * I nomi degli ambienti di lavoro sono ora inclusi nei report sull'utilizzo delle VM di storage e dei volumi.
 * Il tipo di volume _file_ è ora denominato _Primary (Read/Write)_.
 * Il tipo di volume _secondario_ è ora denominato _secondario (DP)_.
-
-
-Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"].
-
-
-
-=== 7 maggio 2023
-
-
-
-==== Offerte private di Google Cloud
-
-Il portafoglio digitale BlueXP identifica ora gli abbonamenti a Google Cloud Marketplace associati a un'offerta privata e mostra la data e la durata dell'abbonamento. Questo miglioramento consente di verificare che l'offerta privata sia stata accettata correttamente e di validarne i termini.
-
-
-
-==== Guasto nell'utilizzo della carica
-
-Ora puoi scoprire cosa ti verrà addebitato quando sei iscritto a licenze basate sulla capacità. I seguenti tipi di report sull'utilizzo sono disponibili per il download dal portafoglio digitale BlueXP. I report sull'utilizzo forniscono i dettagli relativi alla capacità delle sottoscrizioni e indicano come vengono addebitate le risorse nelle sottoscrizioni Cloud Volumes ONTAP. I report scaricabili possono essere facilmente condivisi con altri.
-
-* Utilizzo del pacchetto Cloud Volumes ONTAP
-* Utilizzo di alto livello
-* Utilizzo delle VM di storage
-* Utilizzo dei volumi
 
 
 Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html#download-usage-reports["Scarica i report sull'utilizzo"].

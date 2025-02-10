@@ -32,7 +32,6 @@
   <block id="06ec635aca479394e3f10f59b57ce807" category="inline-link-macro">set completo di note di rilascio</block>
   <block id="f3aae44c0ba1e9d5c7a46f4e224ea31e" category="section-title">Funzionalità amministrative</block>
   <block id="87448a3fa35fafb362a06b4d17cc1328" category="paragraph">In questa sezione vengono descritte le nuove funzionalità relative alle funzioni di amministrazione di BlueXP: Account, connettori, credenziali del provider cloud e altro ancora.</block>
-  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 maggio 2023</block>
   <block id="03e6ae21f561049c3e8010740c63aab3" category="inline-link">Scopri i miglioramenti di Cloud Volumes ONTAP</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 aprile 2023</block>
   <block id="88c49608e723add593f5becc8bd9a968" category="section-title">02 aprile 2023</block>
@@ -40,11 +39,6 @@
   <block id="912b3a604a5106bda5b0c99ddaaf1364" category="section-title">Possibilità di aggiungere nuovi bucket da BlueXP</block>
   <block id="c07c4e2e029d6d6eb829c29902cb63ff" category="inline-link">Scopri come aggiungere nuovi bucket Amazon S3</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">Scopri di più</block>
-  <block id="2cd5985150a2728c0c6295c5162b2b1d" category="section-title">Guasto nell'utilizzo della carica</block>
-  <block id="ed54fb55b53f11e61f612ff99520f4bc" category="list-text">Utilizzo del pacchetto Cloud Volumes ONTAP</block>
-  <block id="160ba974abba347f5e939a1a0acd5982" category="list-text">Utilizzo di alto livello</block>
-  <block id="bf951096cc9eea5fae867ec94f06dfa3" category="list-text">Utilizzo delle VM di storage</block>
-  <block id="3c5979c173a0a4fe3ff27e0e6185a693" category="list-text">Utilizzo dei volumi</block>
   <block id="a633f0835832cc75f5a83248a8aa2ba8" category="section-title">9 settembre 2020</block>
   <block id="8751230100c974b7c3ae5adae22c0f7c" category="section-title">Supporto per Cloud Volumes Service per Google Cloud</block>
   <block id="3831fedd132ba9d729ab12b97bb43833" category="paragraph">Ora puoi gestire Cloud Volumes Service per Google Cloud direttamente da BlueXP:</block>
@@ -63,9 +57,6 @@
   <block id="0947726e3c301f45f25d6d4b3295fcec" category="inline-link">Scopri di più sul servizio di calcolo</block>
   <block id="6ae18045fc1ab0bf7898b13f3ef31c9a" category="inline-image-macro">Una schermata che mostra la pagina analisi dei costi in Cloud Manager</block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="section-title">Consulente digitale</block>
-  <block id="060a6559f6065c5058aca6b22d897bce" category="section-title">Offerte private di Google Cloud</block>
-  <block id="bfe876190faa5e7a4cd6d5029395b658" category="paragraph">Il portafoglio digitale BlueXP identifica ora gli abbonamenti a Google Cloud Marketplace associati a un'offerta privata e mostra la data e la durata dell'abbonamento. Questo miglioramento consente di verificare che l'offerta privata sia stata accettata correttamente e di validarne i termini.</block>
-  <block id="d0f5a029263e80e902caf444fa5e9080" category="paragraph">Ora puoi scoprire cosa ti verrà addebitato quando sei iscritto a licenze basate sulla capacità. I seguenti tipi di report sull'utilizzo sono disponibili per il download dal portafoglio digitale BlueXP. I report sull'utilizzo forniscono i dettagli relativi alla capacità delle sottoscrizioni e indicano come vengono addebitate le risorse nelle sottoscrizioni Cloud Volumes ONTAP. I report scaricabili possono essere facilmente condivisi con altri.</block>
   <block id="f7ba76d5c9beab0576f118a6254843e9" category="section-title">18 settembre 2022</block>
   <block id="532b36a42fa02f3df85b0e70d519a9ac" category="section-title">Supporto per e-Series</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">Problemi risolti</block>
@@ -793,4 +784,13 @@
   <block id="5291909ce92037a20a37f7a0c86dd921" category="paragraph">Ora puoi vedere le autorizzazioni utilizzate dalla fabbrica del carico di lavoro BlueXP  per eseguire varie operazioni a partire dal rilevamento degli ambienti storage fino all'implementazione di risorse AWS come file system in storage o knowledge base per i carichi di lavoro Genai. Puoi visualizzare le policy e i permessi IAM per i workload Storage, Database, VMware e Genai.</block>
   <block id="f157db6a1ae10e7a29a28440d21f5cb8" category="paragraph"><block ref="f157db6a1ae10e7a29a28440d21f5cb8" category="inline-link-macro-rx"></block></block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 gennaio 2025</block>
+  <block id="3aff149422876e5f443408fd802b4fb2" category="paragraph">Il portafoglio digitale di BlueXP  è stato riprogettato per garantire facilità d'uso e ora offre funzionalità aggiuntive di gestione delle licenze e delle sottoscrizioni.</block>
+  <block id="abbf3397e656c62394e67cdc1337be3c" category="section-title">Nuova dashboard Panoramica</block>
+  <block id="890f7a0157ba95ff799f6f457d82439a" category="paragraph">La home page del portafoglio digitale dispone di una dashboard aggiornata delle licenze NetApp e delle iscrizioni al marketplace, con la possibilità di analizzare in dettaglio servizi, tipi di licenza e azioni richieste.</block>
+  <block id="f0d1256b3b97280543cbb16be1fea4b3" category="section-title">Configurazione delle sottoscrizioni alle credenziali</block>
+  <block id="a2aa4487721a3b63f1893d33bdb67c28" category="paragraph">Il Digital Wallet di BlueXP  consente ora di configurare le iscrizioni per le credenziali del provider. In genere, questa operazione viene eseguita quando si sottoscrive per la prima volta un abbonamento a Marketplace o un contratto annuale. In precedenza, la modifica delle credenziali dell'abbonamento poteva essere effettuata solo nella pagina credenziali.</block>
+  <block id="175fca0ca5f306258c490378dc2367db" category="section-title">Associazione delle sottoscrizioni alle organizzazioni</block>
+  <block id="a5f7678a307b711643d239d80564147c" category="paragraph">Ora puoi aggiornare l'organizzazione a cui è associato un abbonamento direttamente dal portafoglio digitale.</block>
+  <block id="e8545e234450bbc06ae95bfd7828cfcd" category="section-title">Gestione delle licenze di Cloud Volume ONTAP</block>
+  <block id="78ab02ef4a4fa36c21e9d7181ab77517" category="paragraph">Ora è possibile gestire le licenze Cloud Volumes ONTAP tramite la home page o la scheda *licenze servizio dati*. Utilizzare la scheda *Marketplace sottoscrizioni* per visualizzare le informazioni relative all'abbonamento.</block>
 </blocks>
