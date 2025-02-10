@@ -796,4 +796,10 @@
   <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="section-title">Cloud Volumes ONTAP 9.16.1 GA</block>
   <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Ora puoi utilizzare BlueXP  per implementare e gestire la release della disponibilità generale di Cloud Volumes ONTAP 9.16.1 in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'aggiornamento in AWS.</block>
   <block id="e622e2ddfce6c06eca3078953e9e6186" category="section-title">Supporto della regione del Nord della Nuova Zelanda in Azure</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 marzo 2025</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">Versione 1,41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Questa versione di classificazione BlueXP  include miglioramenti generali e correzioni dei bug. Include inoltre:</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">Stato scansione</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">La classificazione BlueXP  ora tiene traccia dell'avanzamento in tempo reale delle scansioni di mappatura e classificazione _iniziali_ su un volume. Le barre progressive separate tengono traccia delle scansioni di mappatura e classificazione, presentando una percentuale di file totali sottoposti a scansione. È inoltre possibile passare il mouse su una barra di avanzamento per visualizzare il numero di file sottoposti a scansione e il numero totale di file. Il monitoraggio dello stato delle scansioni consente di ottenere informazioni più approfondite sull'avanzamento della scansione, consentendo di pianificare meglio le scansioni e di comprendere l'allocazione delle risorse.</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">Per visualizzare lo stato delle scansioni, accedere a **Configurazione** nella classificazione BlueXP , quindi selezionare **Configurazione ambiente di lavoro**. L'avanzamento viene visualizzato in linea per ogni volume.</block>
 </blocks>

@@ -487,6 +487,21 @@ Per informazioni dettagliate sull'attivazione manuale, fare riferimento alla htt
 
 
 
+=== 10 marzo 2025
+
+
+
+==== Versione 1,41
+
+Questa versione di classificazione BlueXP  include miglioramenti generali e correzioni dei bug. Include inoltre:
+
+.Stato scansione
+La classificazione BlueXP  ora tiene traccia dell'avanzamento in tempo reale delle scansioni di mappatura e classificazione _iniziali_ su un volume. Le barre progressive separate tengono traccia delle scansioni di mappatura e classificazione, presentando una percentuale di file totali sottoposti a scansione. È inoltre possibile passare il mouse su una barra di avanzamento per visualizzare il numero di file sottoposti a scansione e il numero totale di file. Il monitoraggio dello stato delle scansioni consente di ottenere informazioni più approfondite sull'avanzamento della scansione, consentendo di pianificare meglio le scansioni e di comprendere l'allocazione delle risorse.
+
+Per visualizzare lo stato delle scansioni, accedere a **Configurazione** nella classificazione BlueXP , quindi selezionare **Configurazione ambiente di lavoro**. L'avanzamento viene visualizzato in linea per ogni volume.
+
+
+
 === 19 febbraio 2025
 
 
