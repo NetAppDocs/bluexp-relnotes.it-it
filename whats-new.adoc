@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features, cloud, cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes, new features,cloud manager, bluexp, cloud volumes ontap, licenses, digital wallet, subscriptions, cloud backup, cloud tiering, data sense, ransomware, connector, amazon fsx for ontap, azure netapp files, cloud sync, e-series, global file cache, google cloud, disaster recovery, backup and recovery, classification, copy and sync, edge cache, edge caching, volume caching, ontap clusters, alerts, identity and access management, iam' 
 summary: Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte della piattaforma BlueXP. 
 ---
 = Recenti cambiamenti in BlueXP
@@ -21,6 +21,24 @@ Scopri le modifiche più recenti apportate ai servizi cloud che fanno parte dell
 == Funzionalità amministrative
 
 In questa sezione vengono descritte le nuove funzionalità relative alle funzioni di amministrazione di BlueXP: Account, connettori, credenziali del provider cloud e altro ancora.
+
+
+
+=== 10 marzo 2025
+
+
+
+==== 23b3b711859803a815b81aca1cc4811c
+
+Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
+
+A questo punto, la versione 3.9.50 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+==== NetApp Keystone beta disponibile in BlueXP
+
+NetApp Keystone sarà presto disponibile da BlueXP  ed è ora in versione beta. È possibile accedere alla pagina di registrazione per NetApp Keystone beta dalla barra di navigazione a sinistra di BlueXP .
 
 
 
@@ -591,6 +609,34 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 
 
+=== 0de5f5ade75808b90faefd69873b4b3c
+
+
+
+==== a2fefc65df2136938b995f8abbe643c2
+
+0cc914ed23f0f7d6bc902ae731843213
+
+* 2e168141b8f719cbd37e6beec663b599
+* 7a6df46ff8e25ac610f60f312512afa4
+
+
+91aba3afcaafb3ecbed8f358c30b8a7a
+
+
+
+=== 10 marzo 2025
+
+
+
+==== 322a339b221056f32120ffd18077d44d
+
+aa1c2167957b1092da7e43e77867748c
+
+5fc68a139fdd05790792b12eb853e84d
+
+
+
 === 6 marzo 2025
 
 
@@ -600,32 +646,6 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 Ora puoi utilizzare BlueXP  per implementare e gestire la release della disponibilità generale di Cloud Volumes ONTAP 9.16.1 in Azure e Google Cloud. Tuttavia, questa versione non è disponibile per l'implementazione e l'aggiornamento in AWS.
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Scopri le nuove funzionalità incluse in questa release di Cloud Volumes ONTAP"^].
-
-
-
-=== 03 marzo 2025
-
-
-
-==== Supporto della regione del Nord della Nuova Zelanda in Azure
-
-La regione del Nord della Nuova Zelanda è ora supportata in Azure per configurazioni a nodo singolo e ad alta disponibilità (ha) di Cloud Volumes ONTAP 9.12.1 GA e versioni successive. Si noti che il tipo di istanza Lsv3 non è supportato in questa regione.
-
-Per un elenco di tutte le regioni supportate, fare riferimento alla https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^] .
-
-
-
-=== 18 febbraio 2025
-
-
-
-==== Presentazione dell'implementazione diretta del marketplace di Azure
-
-Ora puoi sfruttare l'implementazione diretta del marketplace di Azure per implementare in modo semplice e rapido Cloud Volumes ONTAP direttamente dal marketplace di Azure. Utilizzando questo metodo ottimizzato, puoi esplorare le caratteristiche e le funzionalità principali di Cloud Volumes ONTAP nel tuo ambiente senza dover configurare BlueXP  Connector o soddisfare altri criteri di onboarding richiesti per la distribuzione di Cloud Volumes ONTAP tramite BlueXP .
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-azure-mktplace-direct.html["Scopri le opzioni di implementazione di Cloud Volumes ONTAP in Azure"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-mktplc.html["Implementa Cloud Volumes ONTAP dal marketplace di Azure"^]
-
 
 
 
@@ -750,6 +770,22 @@ L'offerta di servizi NetApp SupportEdge Basic ora include tutte le funzionalità
 
 
 == Portafoglio digitale
+
+
+
+=== 10 marzo 2025
+
+
+
+==== Possibilità di rimuovere gli abbonamenti
+
+Ora puoi rimuovere gli abbonamenti dal portafoglio digitale se hai annullato l'iscrizione.
+
+
+
+==== Visualizza la capacità consumata per gli abbonamenti Marketplace
+
+Quando visualizzi gli abbonamenti PAYGO, puoi ora visualizzare la capacità consumata dell'abbonamento.
 
 
 
@@ -1108,6 +1144,40 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 10 marzo 2025
+
+
+
+==== ad84f24c65dd6930a049e0903256dc97
+
+6cadf1d9d5289622136d042488809e73
+
+9b1eb2dbe181e9f7b73db8a0785c0419
+
+
+
+==== d36ca1f9466b055dd6adb80de5cce7d4
+
+61541c0b99aec5f11fccef5bcb3fe5a1
+
+* cb3c0a83218c46d38ab0842ce49a7e6e
+* 6a4c9cc76f7f432efa274c3ff0dae3dd
+* 3b7810e8427f006590b006af43d016ef
+* 28573ff4f820730a3eeae9cdd51b54d4
+
+
+98e6e30b63e5242616c686684a17c03b
+
+
+
+==== d957d0c80017f235b131c557ae0876b1
+
+8c8c1a747835015c86248b11a2097c02
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
+
+
+
 === 16 dicembre 2024
 
 
@@ -1174,18 +1244,6 @@ Con questa release, le nuove implementazioni della protezione ransomware BlueXP�
 Prima di ripristinare un workload dell'applicazione a livello di file, è possibile visualizzare un elenco di file che potrebbero essere stati coinvolti da un attacco e identificare quelli che si desidera ripristinare. In precedenza, se i connettori BlueXP  di un'organizzazione (in precedenza un account) utilizzavano Podman, questa funzionalità era disattivata. Ora è abilitato per Podman. Puoi permettere alla protezione anti-ransomware di BlueXP di scegliere i file da ripristinare, caricare un file CSV che elenca tutti i file interessati da un avviso o identificare manualmente i file da ripristinare.
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html["Scopri di più sul ripristino in seguito a un attacco ransomware"].
-
-
-
-=== 30 settembre 2024
-
-
-
-==== Raggruppamento personalizzato dei carichi di lavoro di condivisione file
-
-Con questa release, puoi raggruppare le condivisioni di file in gruppi per semplificare la protezione dell'ambiente dati. Il servizio può proteggere tutti i volumi in un gruppo allo stesso tempo. In precedenza, era necessario proteggere ciascun volume separatamente.
-
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Scopri di più sul raggruppamento dei carichi di lavoro di condivisioni di file nelle strategie di protezione dal ransomware"].
 
 
 
