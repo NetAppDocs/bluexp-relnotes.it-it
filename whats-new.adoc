@@ -1148,31 +1148,31 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
-==== ad84f24c65dd6930a049e0903256dc97
+==== Simula un attacco e rispondi
 
-6cadf1d9d5289622136d042488809e73
+Con questa release, simula un attacco ransomware per testare la risposta a un avviso ransomware. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi.
 
-9b1eb2dbe181e9f7b73db8a0785c0419
-
-
-
-==== d36ca1f9466b055dd6adb80de5cce7d4
-
-61541c0b99aec5f11fccef5bcb3fe5a1
-
-* cb3c0a83218c46d38ab0842ce49a7e6e
-* 6a4c9cc76f7f432efa274c3ff0dae3dd
-* 3b7810e8427f006590b006af43d016ef
-* 28573ff4f820730a3eeae9cdd51b54d4
-
-
-98e6e30b63e5242616c686684a17c03b
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Condurre un'indagine sulla preparazione all'attacco ransomware"].
 
 
 
-==== d957d0c80017f235b131c557ae0876b1
+==== Miglioramenti al processo di rilevamento
 
-8c8c1a747835015c86248b11a2097c02
+Questa versione include miglioramenti ai processi di rilevamento selettivo e riscoperta:
+
+* Con questa release, potrai rilevare i workload appena creati che sono stati aggiunti agli ambienti di lavoro precedentemente selezionati.
+* In questa versione è anche possibile selezionare _nuovi_ ambienti di lavoro. Questa funzionalità consente di proteggere i nuovi workload aggiunti al tuo ambiente.
+* Se si desidera scegliere tutti i carichi di lavoro rilevati, è possibile farlo utilizzando l'opzione *Seleziona tutto*.
+* È possibile eseguire questi processi di rilevamento durante il processo iniziale o all'interno dell'opzione Impostazioni.
+
+
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare i fetaures con l'opzione Impostazioni"].
+
+
+
+==== Avvisi generati quando viene rilevata una crittografia elevata
+
+Con questa versione, è possibile visualizzare avvisi quando viene rilevata una crittografia elevata sui carichi di lavoro, anche senza elevate modifiche all'estensione dei file. Questa funzionalità, che utilizza l'ai ONTAP Autonomous ransomware Protection (ARP), ti aiuta a identificare i workload che sono a rischio di attacchi ransomware. Utilizzare questa funzione e scaricare l'intero elenco dei file interessati con o senza modifiche alle estensioni.
 
 Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
 
