@@ -28,7 +28,7 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
-==== 23b3b711859803a815b81aca1cc4811c
+==== Connettore 3.9.50
 
 Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.
 
@@ -609,19 +609,19 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 
 
-=== 0de5f5ade75808b90faefd69873b4b3c
+=== 12 marzo 2025
 
 
 
-==== a2fefc65df2136938b995f8abbe643c2
+==== Nuove regioni supportate per le implementazioni di zone di disponibilità multiple in Azure
 
-0cc914ed23f0f7d6bc902ae731843213
+Le seguenti regioni ora supportano le implementazioni ha di zone di disponibilità multiple in Azure per Cloud Volumes ONTAP 9.12.1 GA e versioni successive:
 
-* 2e168141b8f719cbd37e6beec663b599
-* 7a6df46ff8e25ac610f60f312512afa4
+* Stati Uniti centrali
+* US Gov Virginia (Regione del Governo degli Stati Uniti - Virginia)
 
 
-91aba3afcaafb3ecbed8f358c30b8a7a
+Per un elenco di tutte le regioni, fare riferimento alla https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^] .
 
 
 
