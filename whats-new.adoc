@@ -1274,20 +1274,11 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 ==== Report sugli ambienti di lavoro non supportati nella protezione dal ransomware BlueXP
 
-Durante il flusso di lavoro di rilevamento, la protezione ransomware BlueXP  riporta ulteriori dettagli durante il passaggio con il mouse sui carichi di lavoro supportati o non supportati. Questo ti aiuterà a capire perché alcuni dei tuoi carichi di lavoro o ambienti di lavoro non fanno parte della dashboard o non sono gestiti dal servizio di protezione dal ransomware. I seguenti ambienti di lavoro non sono attualmente supportati dal servizio di protezione dal ransomware BlueXP .
+Durante il flusso di lavoro di rilevamento, la protezione ransomware BlueXP  riporta ulteriori dettagli durante il passaggio con il mouse sui carichi di lavoro supportati o non supportati. Questo ti aiuterà a capire perché alcuni dei tuoi workload non vengono scoperti dal servizio di protezione ransomware di BlueXP .
 
-* Azure NetApp Files
-* Cloud Volumes Service
-* E-series
-* Piattaforma Google Cloud (GCP)
-* ONTAP 9.11.1 e versioni precedenti
-* Cluster ONTAP Direct on-premise che non sono gestiti da un connettore BlueXP
-* StorageGRID
+Ci sono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio, la versione di ONTAP nell'ambiente di lavoro potrebbe essere inferiore alla versione richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi.
 
-
-È possibile visualizzare gli ambienti di lavoro non supportati durante il rilevamento iniziale e successivamente dall'opzione *rilevamento carico di lavoro* nella pagina Impostazioni. Ci sono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio, la versione di ONTAP nell'ambiente di lavoro potrebbe essere inferiore alla versione richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi.
-
-È possibile scaricare i risultati del processo di rilevamento dopo il rilevamento.
+È possibile visualizzare gli ambienti di lavoro non supportati durante il rilevamento iniziale, in cui è anche possibile scaricare i risultati. È inoltre possibile visualizzare i risultati del rilevamento dall'opzione *rilevamento carico di lavoro* nella pagina Impostazioni.
 
 Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Rileva i carichi di lavoro nella protezione dal ransomware di BlueXP"].
 
