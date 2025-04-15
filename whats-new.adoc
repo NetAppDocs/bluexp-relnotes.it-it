@@ -264,6 +264,59 @@ Non è più possibile creare un volume da un modello. Questa azione è stata ass
 
 
 
+=== 16 aprile 2025
+
+Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
+
+
+
+==== Dashboard volume avanzato (anteprima)
+
+La Volume Dashboard viene ora caricata in meno di 10 secondi, fornendo un'interfaccia molto più veloce ed efficiente. Questa versione in anteprima è disponibile per alcuni clienti, offrendo loro un'anteprima di questi miglioramenti.
+
+
+
+==== Miglioramenti dell'interfaccia utente
+
+Questa versione migliora l'esperienza dell'utente semplificando l'interfaccia:
+
+* La rimozione della colonna aggregate dalle tabelle Volumes, insieme alle colonne Snapshot Policy, Backup Policy e Replication Policy dalla tabella Volume nella dashboard V2, consente di ottimizzare il layout.
+* L'esclusione degli ambienti di lavoro non attivati dall'elenco a discesa rende l'interfaccia meno ingombrante, la navigazione più efficiente e il caricamento più rapido.
+* Mentre l'ordinamento nella colonna Tag è disattivato, è comunque possibile visualizzare i tag, garantendo che le informazioni importanti rimangano facilmente accessibili.
+* La rimozione delle etichette sulle icone di protezione contribuisce a un aspetto più pulito e riduce i tempi di caricamento.
+* Durante il processo di attivazione dell'ambiente di lavoro, una finestra di dialogo visualizza un'icona di caricamento per fornire un feedback fino al completamento del processo di rilevamento, migliorando la trasparenza e la sicurezza nelle operazioni del sistema.
+
+
+
+
+==== Supporto per archivio oggetti Wasabi di terze parti (anteprima)
+
+Il backup e recovery di BlueXP  ora estende il suo supporto ad archivi di oggetti di terze parti, con una particolare attenzione al tema di Wasabi. Questa nuova funzione di anteprima consente di sfruttare qualsiasi archivio di oggetti compatibile con S3 per le proprie esigenze di backup e recovery.
+
+
+
+===== Per iniziare con Wasabi
+
+Per iniziare a utilizzare questa funzione, è necessario attivare un flag all'interno dell'interfaccia utente di BlueXP . Quindi, puoi immettere i dettagli di connessione per l'archivio di oggetti di terze parti e integrarlo nei tuoi flussi di lavoro di backup e recovery.
+
+
+
+===== Limitazioni della modalità di anteprima
+
+Mentre questa funzione è in anteprima, considerare le seguenti limitazioni:
+
+* Il servizio Bring Your Own Bucket (BYOB) non è supportato.
+* L'attivazione di DataLock in un criterio non è supportata.
+* L'attivazione della modalità archiviazione in un criterio non è supportata.
+* Sono supportati solo gli ambienti ONTAP on-premise.
+* MetroCluster non è supportato.
+* Le opzioni per abilitare la crittografia a livello di bucket non sono supportate.
+
+
+Durante questa anteprima, ti consigliamo di esplorare questa nuova funzionalità e di fornire un feedback sull'integrazione con gli archivi di oggetti di terze parti prima dell'implementazione della funzionalità completa.
+
+
+
 === 17 marzo 2025
 
 Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
@@ -344,34 +397,6 @@ Tenere presente queste considerazioni relative alla ricerca globale:
 
 * Il nuovo indice non viene eseguito sulle istantanee etichettate come ogni ora.
 * La nuova funzione di indicizzazione funziona solo sugli snapshot su FlexVol e non sugli snapshot su FlexGroup.
-
-
-
-
-=== 22 novembre 2024
-
-Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
-
-
-
-==== Modalità di protezione SnapLock Compliance e SnapLock Enterprise
-
-Il backup e recovery di BlueXP  ora può eseguire il backup dei volumi on-premise FlexVol e FlexGroup configurati con le modalità di protezione SnapLock Compliance o SnapLock Enterprise. Per supportare questo tipo di supporto, i cluster devono eseguire ONTAP 9,14 o versione successiva. Il backup dei volumi FlexVol utilizzando la modalità SnapLock Enterprise è supportato a partire dalla versione ONTAP 9.11.1. Le release precedenti di ONTAP non supportano il backup di volumi di protezione SnapLock.
-
-Consultare l'elenco completo dei volumi supportati nella https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html["Informazioni su backup e ripristino BlueXP"] .
-
-
-
-==== Indicizzazione per il processo di ricerca e ripristino nella pagina dei volumi
-
-Prima di utilizzare Search & Restore, è necessario attivare l'indicizzazione su ogni ambiente di lavoro di origine da cui si desidera ripristinare i dati dei volumi. In questo modo, il catalogo indicizzato può tenere traccia dei file di backup per ogni volume. La pagina volumi ora mostra lo stato di indicizzazione:
-
-* Indicizzato: I volumi sono stati indicizzati.
-* In corso
-* Non indicizzato
-* Indicizzazione in pausa
-* Errore
-* Non attivato
 
 
 
