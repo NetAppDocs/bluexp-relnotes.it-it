@@ -464,8 +464,8 @@ Per ulteriori informazioni, vedere xref:task-custom-classification.adoc[Aggiunge
 .Scheda ricerche salvate
 La scheda **Policies** è stata rinominata xref:task-using-policies.html[**Ricerche salvate**]. La funzionalità è la stessa.
 
-.Inviare gli eventi di scansione al registro di controllo
-Gli eventi di scansione BlueXP  possono ora essere inviati a xref:task-audit-data-sense-actions.html[log di audit]. La classificazione BlueXP  supporta anche l'invio di eventi di classificazione (quando viene avviata e terminata una scansione) a link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Tempistiche di BlueXP"^]. L'invio degli eventi di scansione di classificazione alla timeline BlueXP  è supportato solo per gli ambienti di lavoro.
+.Inviare gli eventi di scansione alla timeline BlueXP 
+La classificazione BlueXP  ora supporta l'invio di eventi di classificazione (quando viene avviata e terminata una scansione) a link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Tempistiche di BlueXP"^].
 
 .Aggiornamenti di protezione
 * Il pacchetto keras è stato aggiornato, attenuando le vulnerabilità (BDSA-2025-0107 e BDSA-2025-1984).
