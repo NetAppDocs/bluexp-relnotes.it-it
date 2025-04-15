@@ -40,8 +40,7 @@ A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la
 
 * Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.
 * Agli utenti senza l'amministratore Org, la cartella o l'amministratore del progetto deve essere assegnato un ruolo Keystone per avere accesso a Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.
-
-
++
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Ulteriori informazioni sui ruoli di accesso."^]
 
 * Se si dispone del ruolo di amministratore Org, cartella o amministratore progetto, è ora possibile associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .
@@ -716,6 +715,48 @@ Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https:/
 
 
 
+=== 16 aprile 2025
+
+Versione 4,3
+
+
+
+==== Rilevamento pianificato per le VM
+
+Il disaster recovery di BlueXP  esegue il rilevamento ogni 24 ore. Con questa release, è ora possibile personalizzare la pianificazione delle rilevazioni in modo da soddisfare le proprie esigenze e ridurre l'impatto sulle prestazioni quando necessario. Ad esempio, se si dispone di un numero elevato di macchine virtuali, è possibile impostare la pianificazione del rilevamento in modo che venga eseguita ogni 48 ore. Se si dispone di un numero limitato di macchine virtuali, è possibile impostare la pianificazione del rilevamento in modo che venga eseguita ogni 12 ore.
+
+Se non si desidera pianificare la ricerca in wan, è possibile disattivare l'opzione di ricerca pianificata e aggiornare la ricerca manualmente in qualsiasi momento.
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/sites-add.html["Aggiungere i siti del server vCenter"].
+
+
+
+==== Supporto archivio dati gruppo di risorse
+
+In precedenza, era possibile creare gruppi di risorse solo per macchine virtuali. Con questa release, puoi creare un gruppo di risorse per datastore. Quando si crea un piano di replica e si crea un gruppo di risorse per tale piano, vengono elencate tutte le macchine virtuali in un datastore. Ciò è utile se si dispone di un numero elevato di macchine virtuali e si desidera raggrupparle per datastore.
+
+È possibile creare un gruppo di risorse con un archivio dati nei seguenti modi:
+
+* Quando si aggiunge un gruppo di risorse tramite datastore, è possibile visualizzare un elenco di datastore. È possibile selezionare uno o più datastore per creare un gruppo di risorse.
+* Quando si crea un piano di replica e si crea un gruppo di risorse all'interno del piano, è possibile visualizzare le macchine virtuali negli archivi dati.
+
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/drplan-create.html["Creare un piano di replica"].
+
+
+
+==== Notifiche di prova gratuita o scadenza della licenza
+
+Questa versione fornisce notifiche che la versione di prova gratuita scadrà tra 60 giorni per assicurarsi di avere il tempo di ottenere una licenza. Questa versione fornisce inoltre notifiche il giorno della scadenza della licenza.
+
+
+
+==== Notifica degli aggiornamenti del servizio
+
+Con questa versione, nella parte superiore viene visualizzato un banner per indicare che i servizi sono in fase di aggiornamento e che il servizio è in modalità di manutenzione. Il banner viene visualizzato quando il servizio è in fase di aggiornamento e scompare al termine dell'aggiornamento. Mentre è possibile continuare a lavorare nell'interfaccia utente mentre è in corso l'aggiornamento, non è possibile inoltrare nuovi lavori. I processi pianificati vengono eseguiti al termine dell'aggiornamento e il servizio torna alla modalità di produzione.
+
+
+
 === 19 febbraio 2025
 
 Versione 4,2
@@ -825,23 +866,6 @@ Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/
 È ora possibile riconciliare gli snapshot non sincronizzati tra origine e destinazione. Questo può verificarsi se le snapshot vengono eliminate su una destinazione al di fuori del disaster recovery di BlueXP . Il servizio elimina automaticamente lo snapshot sulla sorgente ogni 24 ore. Tuttavia, è possibile eseguire questa operazione su richiesta. Questa funzione consente di garantire la coerenza delle istantanee in tutti i siti.
 
 Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-disaster-recovery/use/manage.html["Gestire i piani di replica"].
-
-
-
-=== 20 settembre 2024
-
-
-
-==== Supporto per datastore VMFS VMware on-premise e on-premise
-
-Questa release include il supporto per le VM montate su datastore VMFS (Virtual Machine file System) di VMware vSphere per iSCSI e FC protetti nello storage on-premise. In precedenza, il servizio forniva un'anteprima _tecnologica_ che supportava datastore VMFS per iSCSI e FC.
-
-Di seguito sono riportate alcune considerazioni aggiuntive sui protocolli iSCSI e FC:
-
-* Il supporto FC è per i protocolli front-end dei client, non per la replica.
-* Il disaster recovery di BlueXP  supporta solo una singola LUN per volume ONTAP. Il volume non deve avere più LUN.
-* Per qualsiasi piano di replica, il volume ONTAP di destinazione deve utilizzare gli stessi protocolli del volume ONTAP di origine che ospita le macchine virtuali protette. Ad esempio, se l'origine utilizza un protocollo FC, la destinazione deve utilizzare anche FC.
-
 
 
 
