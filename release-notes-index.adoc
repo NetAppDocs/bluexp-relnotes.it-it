@@ -41,6 +41,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html["Installazione e
 
 
 
+== Lo storage come servizio
+
+* https://docs.netapp.com/us-en/keystone-staas/whats-new.html["Keystone"^]
+
+
+
+
 == Servizi dati
 
 * https://docs.netapp.com/us-en/bluexp-alerts/whats-new.html["Avvisi"^]

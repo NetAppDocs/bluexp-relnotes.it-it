@@ -376,7 +376,6 @@
   <block id="43cb17f8c706e2a2a7e4c81a5cb2d17b" category="paragraph">Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker di dati per risolvere alcuni bug. La nuova versione del broker di dati è la 1,0.56.</block>
   <block id="0d9e2244b8fb5d13651efe34b9723803" category="paragraph">È ora possibile scoprire i sistemi NetApp ASA R2 quando si utilizza BlueXP  in modalità privata. Questo supporto è disponibile a partire dalla versione 3.9.46 di BlueXP  in modalità privata.</block>
   <block id="39ca8580b0e6a065fa25faac2a2acc86" category="inline-link-macro">Scopri come visualizzare i suggerimenti per l'aggiornamento del firmware</block>
-  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Questa versione di BlueXP Connector include piccoli miglioramenti alla sicurezza e correzioni di bug.</block>
   <block id="4b9b02f7da7210970cff1fcbe2d8369e" category="paragraph">Con questa release, puoi utilizzare Data Infrastructure Insights Storage workload Security per rilevare il comportamento anomalo degli utenti nei workload di storage. Questa funzionalità ti aiuta a identificare potenziali minacce alla sicurezza e a bloccare utenti potenzialmente malintenzionati per proteggere i tuoi dati.</block>
   <block id="839e0e7efb1b67f6416081c6e82a4aa9" category="inline-link">Rispondi a un avviso ransomware rilevato</block>
   <block id="51713ddd834a60df7d06db728cf08e05" category="paragraph">Per ulteriori informazioni, fare riferimento alla<block ref="7a6c0b2db283aa3c348e6e1a2f1f32b0" category="inline-link-rx"></block>.</block>
@@ -388,8 +387,6 @@
   <block id="bd03ede87c82adb65c788a5ae08c50b6" category="inline-link">Rileva i carichi di lavoro</block>
   <block id="9ac7153dab130e828e160c247e5ccb61" category="paragraph">Fare riferimento alla<block ref="24a34ebfc2a0852de6406d8f5a18bd02" category="inline-link-rx"></block>.</block>
   <block id="c523b074da0b63e607578686184d5981" category="section-title">10 febbraio 2025</block>
-  <block id="0672b60d374d87a810fa73810e4a0a82" category="inline-link-macro">Scopri come monitorare e monitorare le operazioni di FSX per ONTAP in BlueXP</block>
-  <block id="d3626ed21f71a99d578970f5e4960cdc" category="paragraph"><block ref="d3626ed21f71a99d578970f5e4960cdc" category="inline-link-macro-rx"></block></block>
   <block id="4ab00ae468588a563b956d814954695d" category="inline-link-macro">Utilizzare CloudShell</block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">In precedenza, l'esportazione del rapporto Data Investigation era limitata a 10.000 righe. Con questa versione, il limite è stato rimosso in modo da poter esportare tutti i dati. Questa modifica consente di esportare più dati dai report di analisi dei dati, offrendo maggiore flessibilità nell'analisi dei dati.</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">È possibile scegliere l'ambiente di lavoro, i volumi, la cartella di destinazione e il formato JSON o CSV. Il nome file esportato include un indicatore data e ora che consente di identificare quando i dati sono stati esportati.</block>
@@ -559,41 +556,11 @@
   <block id="bbc4e3ff648912e4a892f88fcb03c65b" category="list-text">Operazioni di backup (gruppo di coerenza) inclusa l'automazione SnapMirror</block>
   <block id="7e13cc5491f076161e0aefc0728bf351" category="paragraph">Il supporto per ASA R2 nel disaster recovery di BlueXP  utilizza ONTAP 9.16.1.</block>
   <block id="60a0836359d058db16981cf45c24594f" category="paragraph">Mentre i datastore possono essere montati su un volume ONTAP o su un'unità storage ASA R2, un gruppo di risorse nel disaster recovery di BlueXP  non può includere un datastore di ONTAP e un datastore di ASA R2. È possibile selezionare un datastore da ONTAP o da ASA R2 in un gruppo di risorse.</block>
-  <block id="09d7c2dac047caa965175fead07159aa" category="section-title">21 febbraio 2025</block>
-  <block id="9126fc20b93ed61d342990460cdaaa43" category="section-title">Indicizzazione ad alte prestazioni</block>
-  <block id="c31a2ae5c0b165eb1cee78223b508907" category="paragraph">Il backup e ripristino di BlueXP  introduce una funzionalità di indicizzazione aggiornata che rende più efficiente l'indicizzazione dei dati nell'ambiente di lavoro di origine. La nuova funzione di indicizzazione include aggiornamenti all'interfaccia utente, prestazioni migliorate del metodo di ricerca e ripristino per il ripristino dei dati, aggiornamenti alle funzionalità di ricerca globale e una migliore scalabilità.</block>
-  <block id="135dcb5e7fddaabc736ce2d72074e3bf" category="paragraph">Ecco una descrizione dei miglioramenti:</block>
-  <block id="2fd910d863c39557d994a40fedd27b38" category="list-text">*Consolidamento cartelle*: La versione aggiornata raggruppa le cartelle utilizzando nomi che includono identificatori specifici, rendendo più agevole il processo di indicizzazione.</block>
-  <block id="415e39ccfe49c5161a2a27cbc19cbaac" category="list-text">*Compattazione dei file in parquet*: La versione aggiornata riduce il numero di file utilizzati per l'indicizzazione di ciascun volume, semplificando il processo e eliminando la necessità di un database aggiuntivo.</block>
-  <block id="c53ca191fcf89c8c42d05fd203ce3d03" category="list-text">*Scale-out con più sessioni*: La nuova versione aggiunge più sessioni per gestire le attività di indicizzazione, velocizzando il processo.</block>
-  <block id="9ad2108ab54a2f84cdce51c70aedf218" category="list-text">*Supporto per più contenitori indice*: La nuova versione utilizza più contenitori per gestire e distribuire meglio le attività di indicizzazione.</block>
-  <block id="4a3dba07ec28235aef40beaad924f29a" category="list-text">*Split index workflow*: La nuova versione divide il processo di indicizzazione in due parti, migliorando l'efficienza.</block>
-  <block id="4524da26c6e536d9203dad25cbe67e46" category="list-text">*Concorrenza migliorata*: La nuova versione consente di eliminare o spostare le directory contemporaneamente, velocizzando il processo di indicizzazione.</block>
-  <block id="4cd005b9bd7832f2f50d7bfa9ef8c5bd" category="paragraph-title">Chi trae vantaggio da questa funzione?</block>
-  <block id="c0b0a9d9f7b65ce3e277b13bce1241d3" category="paragraph">La nuova funzione di indicizzazione è disponibile per tutti i nuovi clienti.</block>
   <block id="eb3dc66c3f5547559da4bd69622b70f1" category="paragraph-title">Come si attiva l'indicizzazione?</block>
-  <block id="1928ef25d05266e1052541c930f2737c" category="paragraph">Prima di poter utilizzare il metodo Search &amp; Restore per il ripristino dei dati, è necessario attivare l'indicizzazione in ogni ambiente di lavoro di origine da cui si prevede di ripristinare volumi o file. Ciò consente al Catalogo indicizzato di tenere traccia di ogni volume e di ogni file di backup, rendendo le ricerche veloci ed efficienti.</block>
-  <block id="d28994d1a9691ce26fcae71b9a05d1bc" category="paragraph">Attivare l'indicizzazione nell'ambiente di lavoro di origine selezionando l'opzione "Abilita indicizzazione" quando si esegue una ricerca e ripristino.</block>
   <block id="6b14c6e0d643870ea727335d7739df30" category="inline-link">Come ripristinare i dati ONTAP utilizzando Cerca &amp;amp; Ripristina</block>
-  <block id="9031cfd1bcd3de043cd6391f098dc91b" category="paragraph">Per ulteriori informazioni, consultare la documentazione<block ref="7ae860a58fb7c028461eb3a0f3043711" category="inline-link-rx"></block>.</block>
-  <block id="2d31667baed414ccd330141663dac284" category="paragraph-title">Scala supportata</block>
-  <block id="b2ec30cb49afbacbac6cc89a95133887" category="paragraph">La nuova funzione di indicizzazione supporta quanto segue:</block>
-  <block id="3201cddda2c272104ed2ef30674f361a" category="list-text">Efficienza della ricerca globale in meno di 3 minuti</block>
-  <block id="5386e74ecf10139fea9af2308674b2f3" category="list-text">Fino a 5 miliardi di file</block>
-  <block id="ed6f4100c4fab2301cff975ad76b4882" category="list-text">Fino a 5000 volumi per cluster</block>
-  <block id="1154c1f5439a3f20019e89d49f3ba075" category="list-text">Fino a 100K snapshot per volume</block>
-  <block id="bca4b5a9086c6c17f64be092486e45ad" category="list-text">Il tempo massimo per l'indicizzazione della linea di base è inferiore a 7 giorni. Il tempo effettivo varia a seconda dell'ambiente.</block>
-  <block id="783d72b35e6b2ea46fd074f6f0960e45" category="section-title">Miglioramenti alle performance della ricerca globale</block>
-  <block id="66fba34c17d26bb2c0e9b396915f9a4f" category="paragraph">Questa versione include anche miglioramenti alle prestazioni della ricerca globale. Verranno ora visualizzati indicatori di avanzamento e risultati di ricerca più dettagliati, inclusi il conteggio dei file e il tempo richiesto per la ricerca. I contenitori dedicati per la ricerca e l'indicizzazione garantiscono che le ricerche globali vengano completate in meno di cinque minuti.</block>
-  <block id="ba7df4741bd77385c236fcf981dd357a" category="paragraph">Tenere presente queste considerazioni relative alla ricerca globale:</block>
-  <block id="03602fc4621dad9ee00f9e5d533ff5ea" category="list-text">Il nuovo indice non viene eseguito sulle istantanee etichettate come ogni ora.</block>
-  <block id="2bacd7c8c96302172c5d0324d784cf03" category="list-text">La nuova funzione di indicizzazione funziona solo sugli snapshot su FlexVol e non sugli snapshot su FlexGroup.</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">Migliore precisione del modello di categorizzazione</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">categorie predefinite</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">La precisione del modello di machine learning per <block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block> è migliorata del 11%.</block>
-  <block id="2d5a4b914acb6c2f03d312067c73ce32" category="section-title">02 marzo 2025</block>
-  <block id="fd8693cf8f6802fd1c7d50d5742a4c71" category="section-title">Eventi CloudShell in Tracker</block>
-  <block id="de57e19ed3d5b873e357689269de25a1" category="paragraph">Ogni volta che usi CloudShell per eseguire operazioni FSX per ONTAP dai carichi di lavoro BlueXP , gli eventi appariranno in Tracker.</block>
   <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 marzo 2025</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="section-title">Versione 1,41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">Questa versione di classificazione BlueXP  include miglioramenti generali e correzioni dei bug. Include inoltre:</block>
@@ -616,29 +583,14 @@
   <block id="d957d0c80017f235b131c557ae0876b1" category="section-title">Avvisi generati quando viene rilevata una crittografia elevata</block>
   <block id="8c8c1a747835015c86248b11a2097c02" category="paragraph">Con questa versione, è possibile visualizzare avvisi quando viene rilevata una crittografia elevata sui carichi di lavoro, anche senza elevate modifiche all'estensione dei file. Questa funzionalità, che utilizza l'ai ONTAP Autonomous ransomware Protection (ARP), ti aiuta a identificare i workload che sono a rischio di attacchi ransomware. Utilizzare questa funzione e scaricare l'intero elenco dei file interessati con o senza modifiche alle estensioni.</block>
   <block id="91aba3afcaafb3ecbed8f358c30b8a7a" category="paragraph">Per un elenco di tutte le regioni, fare riferimento alla<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block> .</block>
-  <block id="499d067ffbbd553e23809aa38aa67bfa" category="section-title">17 marzo 2025</block>
-  <block id="30ba4ee29fda0b7285b4297943459cf9" category="section-title">Esplorazione delle istantanee SMB</block>
-  <block id="024bc4989e66777454fa98cbaf9a7d3e" category="paragraph">Questo aggiornamento di backup e ripristino di BlueXP  ha risolto un problema che ha impedito ai clienti di sfogliare gli snapshot locali in un ambiente SMB.</block>
-  <block id="151a83fcfdad3b420d256dbc19095068" category="section-title">Update dell'ambiente AWS GovCloud</block>
-  <block id="c4ff0af994997811a9867969c1b26bf3" category="paragraph">Questo aggiornamento di backup e ripristino di BlueXP  ha risolto un problema che impediva la connessione dell'interfaccia utente a un ambiente AWS GovCloud a causa di errori di certificato TLS. Il problema è stato risolto utilizzando il nome host del connettore BlueXP  anziché l'indirizzo IP.</block>
-  <block id="a758068ed72f0a6858316a7ff791b4ba" category="section-title">Limiti di conservazione della politica di backup</block>
-  <block id="7937af8bb9aecdab11a666bfc7946c61" category="paragraph">In precedenza, l'interfaccia utente di backup e recovery di BlueXP  limitava i backup a 999 copie, mentre l'interfaccia a riga di comando consentiva di eseguire ulteriori operazioni. Ora, è possibile collegare fino a 4.000 volumi a una policy di backup e includere 1.018 volumi non collegati a una policy di backup. Questo aggiornamento include convalide aggiuntive che impediscono di superare questi limiti.</block>
-  <block id="d5479e738a91b3a64956ed9f9e81bc5a" category="section-title">Risincronizzazione del cloud SnapMirror</block>
-  <block id="06476618a5631fabf79c4d5ebe8b60b0" category="paragraph">Questo aggiornamento garantisce che la risincronizzazione del cloud SnapMirror non possa essere avviata dal backup e ripristino di BlueXP  per le versioni ONTAP non supportate dopo l'eliminazione di una relazione SnapMirror.</block>
-  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 marzo 2025</block>
-  <block id="4da9a5d0cff1ab5f795fbdd68c2eedc2" category="section-title">Rilascio in modalità privata (3,9.50)</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Sito di supporto NetApp</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">È ora disponibile una nuova versione in modalità privata da scaricare da<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
-  <block id="3ed9698e266f4060e99b8c0f2f38b027" category="paragraph">La versione 3.9.50 include aggiornamenti ai seguenti componenti e servizi BlueXP .</block>
   <block id="394b364c6ed61ed167a4f14316ef5ffc" category="cell">Componente o servizio</block>
   <block id="2f9dd95401f68032a97298d35b87f433" category="cell">Versione inclusa in questa release</block>
   <block id="5431c829b8b64da3908e102d64527909" category="cell">Cambia dalla precedente versione in modalità privata</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connettore</block>
-  <block id="5820ebbb1da4e36bc0eb0db564450b99" category="cell">3,9.50, 3.9.49</block>
   <block id="03f247630aa241e4b15df35baf8f5fd1" category="inline-link">Novità della pagina BlueXP  Connector</block>
   <block id="57d300ca1fdd6058fd2a0882b05ba831" category="inline-link">Novità della pagina di backup e ripristino di BlueXP</block>
-  <block id="0e231d3391a335865e696150143618bc" category="cell">Visitare il<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nella versione di marzo 2024.</block>
-  <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 marzo 2025 (versione 1,41)</block>
   <block id="79d6fb7fcd1197d45638c77f96548314" category="inline-link">Novità della pagina di classificazione BlueXP</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Andare a<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nelle versioni da 1,38 a 1.371.41.</block>
   <block id="6aa6935f7c0067aba2624a4ad2862e39" category="paragraph">Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggiornamento, fare riferimento a quanto segue:</block>
@@ -660,14 +612,9 @@
   <block id="4ef50e373522b91f7df59d5cba69a8b7" category="section-title">iam:aggiornamento autorizzazioni SimulatePermissionPolicy</block>
   <block id="906699741ebd9905a07af900abcfd438" category="paragraph">Ora puoi gestire<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block> il permesso dalla console workload Factory quando Aggiungi ulteriori credenziali di account AWS o Aggiungi una nuova funzionalità del workload come il workload Genai.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 aprile 2025</block>
-  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="section-title">Connettore 3.9.51</block>
-  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">A questo punto, la versione 3.9.51 è disponibile per la modalità standard e la modalità limitata.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP</block>
-  <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Agli utenti senza l'amministratore Org, la cartella o l'amministratore del progetto deve essere assegnato un ruolo Keystone per avere accesso a Keystone. Puoi assegnare a un utente uno dei due ruoli: Amministratore Keystone o visualizzatore Keystone.</block>
   <block id="c86bd67be80794fcaa3f1d91aa8b2899" category="inline-link-macro">Ulteriori informazioni sui ruoli di accesso.</block>
   <block id="5a4d408bd57f7cf7efbd6cf878c737a7" category="paragraph"><block ref="5a4d408bd57f7cf7efbd6cf878c737a7" category="inline-link-macro-rx"></block></block>
-  <block id="d4d44165c3ece93b64c24e52e61879a3" category="list-text">Se si dispone del ruolo di amministratore Org, cartella o amministratore progetto, è ora possibile associare un abbonamento Keystone a un progetto IAM. L'associazione di un abbonamento Keystone a un progetto IAM consente di controllare l'accesso a Keystone all'interno di BlueXP .</block>
-  <block id="f16867c24816cbe638e99bd00c5d371b" category="cell">Andare a<block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse per le versioni 3.9.50 e 3,9.49.</block>
   <block id="b84cda7d6006e8abb6e6264e292b13c0" category="paragraph">Ora puoi gestire l'<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>autorizzazione dalla console BlueXP  quando Aggiungi ulteriori credenziali di account AWS o Aggiungi una nuova funzionalità del workload come il workload Genai.</block>
   <block id="8ee0913e940253bb841c1a05228d81e5" category="paragraph"><block ref="8ee0913e940253bb841c1a05228d81e5" category="inline-link-macro-rx"></block></block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="section-title">Versione 1,42</block>
@@ -679,10 +626,6 @@
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">Assegnare priorità alle scansioni di sola mappatura</block>
   <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">Quando si eseguono scansioni solo mapping, è possibile assegnare la priorità alle scansioni più importanti. Questa funzione è utile quando si hanno molti ambienti di lavoro e si desidera garantire che le scansioni ad alta priorità vengano completate per prime.</block>
   <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">Per ulteriori informazioni, vedere <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>.</block>
-  <block id="d0ae6326de6f7742cd369aae9832406f" category="section-title">Creazione automatizzata di macchine virtuali di storage tramite le API in Google Cloud</block>
-  <block id="1bf898a189d08a92d24b9432b7db4ed0" category="paragraph">Ora puoi utilizzare le API BlueXP  per automatizzare la creazione della macchina virtuale per lo storage in Google Cloud. Hai utilizzato questa funzionalità nelle configurazioni ad alta disponibilità (ha) di Cloud Volumes ONTAP, che è possibile utilizzare anche in implementazioni a nodo singolo. Utilizzando le API BlueXP , puoi creare, rinominare ed eliminare con facilità macchine virtuali storage di altri servizi dati nel tuo ambiente Google Cloud, senza dover configurare manualmente le interfacce di rete, le LIF e le LIF di gestione richieste. Questa automazione semplifica il processo di gestione delle macchine virtuali storage.</block>
-  <block id="914fe95f5aa6c2bb4ed60cded696ac13" category="inline-link">Gestisci le macchine virtuali dello storage di data-service per Cloud Volumes ONTAP in Google Cloud</block>
-  <block id="cb90b26778c86b6622460939076514de" category="paragraph"><block ref="cb90b26778c86b6622460939076514de" category="inline-link-rx"></block></block>
   <block id="0bc14678dfe9cde6019256774c92b34e" category="paragraph">Ora è possibile gestire le licenze Cloud Volumes ONTAP tramite la home page o la scheda *licenze dirette*. Utilizzare la scheda *Marketplace sottoscrizioni* per visualizzare le informazioni relative all'abbonamento.</block>
   <block id="4fe331eaa4881ca37fd2ff947e6b8bec" category="section-title">Report di preparazione</block>
   <block id="e78c37e0abce1f032a2a34eda9e02a54" category="paragraph">Con questa release, puoi esaminare i report dettagliati sulla preparazione agli attacchi ransomware. Un'esercitazione di preparazione consente di simulare un attacco ransomware su un carico di lavoro di esempio appena creato. Quindi, esaminare l'attacco simulato e recuperare il carico di lavoro del campione. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi.</block>
@@ -699,7 +642,6 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">02 aprile 2025</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">Rischi mitigati</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">Nella sezione riepilogativa degli aggiornamenti software BlueXP , è ora possibile visualizzare il numero totale di rischi che possono essere mitigati dall'aggiornamento del sistema operativo. Ciò consente agli utenti di valutare i miglioramenti della sicurezza e della stabilità nella base di installazione.</block>
-  <block id="198726f3c4a7290d3254fd163158a5d0" category="list-text">Agli utenti senza l'amministratore di Org, la cartella o l'amministratore del progetto devono essere assegnati un ruolo di protezione dal ransomware per avere accesso alla protezione dal ransomware. Puoi assegnare a un utente uno di due ruoli: Amministratore della protezione ransomware o visualizzatore di protezione ransomware.</block>
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">16 aprile 2025</block>
   <block id="f2265cb494c0b6dc346cf3703718b766" category="section-title">Rilevamento pianificato per le VM</block>
   <block id="a1cc1dbaf027adca720112f5a8c48e4d" category="paragraph">Il disaster recovery di BlueXP  esegue il rilevamento ogni 24 ore. Con questa release, è ora possibile personalizzare la pianificazione delle rilevazioni in modo da soddisfare le proprie esigenze e ridurre l'impatto sulle prestazioni quando necessario. Ad esempio, se si dispone di un numero elevato di macchine virtuali, è possibile impostare la pianificazione del rilevamento in modo che venga eseguita ogni 48 ore. Se si dispone di un numero limitato di macchine virtuali, è possibile impostare la pianificazione del rilevamento in modo che venga eseguita ogni 12 ore.</block>
@@ -780,7 +722,6 @@
   <block id="dad34f5734adb85d9981374c4c32d1d5" category="section-title">Notifica con un'architettura ottimale per i problemi del file system</block>
   <block id="16ca2e92ee84ccef4088c5d2a61cd8d2" category="paragraph">Nella console BlueXP , i file system FSX per ONTAP con problemi ben strutturati ora visualizzano una notifica in Canvas che indica quando i file system hanno problemi da risolvere.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">Terminologia aggiornata per le autorizzazioni</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">L'interfaccia utente di fabbrica del carico di lavoro e la documentazione ora utilizzano "sola lettura" per fare riferimento alle autorizzazioni di lettura e "lettura-scrittura" per fare riferimento all'automazione delle autorizzazioni.</block>
   <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">12 maggio 2025</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="section-title">Versione 1,43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">Assegnare la priorità alle scansioni di classificazione</block>
@@ -879,9 +820,6 @@
   <block id="670b6a838a9eab9baafd717669b2bcc5" category="paragraph">Durante il flusso di lavoro di rilevamento, la protezione ransomware BlueXP  riporta ulteriori dettagli durante il passaggio con il mouse sui carichi di lavoro supportati o non supportati. Questo ti aiuterà a capire perché alcuni dei tuoi workload non vengono scoperti dal servizio di protezione ransomware di BlueXP .</block>
   <block id="960c5f3106f70ebe4000fa5d5121f60f" category="paragraph">Ci sono molti motivi per cui il servizio non supporta un ambiente di lavoro, ad esempio, la versione di ONTAP nell'ambiente di lavoro potrebbe essere inferiore alla versione richiesta. Quando si passa con il mouse su un ambiente di lavoro non supportato, viene visualizzata una descrizione comandi.</block>
   <block id="e7aba228bdeba9407e415c5afb1137a2" category="paragraph">È possibile visualizzare gli ambienti di lavoro non supportati durante il rilevamento iniziale, in cui è anche possibile scaricare i risultati. È inoltre possibile visualizzare i risultati del rilevamento dall'opzione *rilevamento carico di lavoro* nella pagina Impostazioni.</block>
-  <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Gli endpoint sicuri per i download dei connettori sono ora supportati per backup e recovery e protezione dal ransomware</block>
-  <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Ulteriori informazioni sugli endpoint sicuri per il download dei connettori.</block>
-  <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Se stai utilizzando backup e recovery o protezione ransomware, ora puoi utilizzare endpoint sicuri per il download dei connettori. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
   <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">La classificazione BlueXP  supporta la possibilità di assegnare priorità alle scansioni Map &amp; Classify oltre alle scansioni Mapping-only, consentendo di selezionare le scansioni da completare per prime. La prioritizzazione delle scansioni Map &amp; Classify è supportata durante e prima dell'inizio delle scansioni. Se si sceglie di assegnare la priorità a una scansione mentre è in corso, vengono assegnate priorità sia alla scansione di mappatura che alla scansione di classificazione.</block>
   <block id="162e654adac435300128c485423d9e97" category="paragraph">Le scansioni di classificazione BlueXP  identificano le categorie di dati PII canadesi. Queste categorie includono informazioni bancarie, numeri di passaporto, numeri di assicurazione sociale, numeri di patente di guida e numeri di carta sanitaria per tutte le province e territori canadesi.</block>
   <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">Per ulteriori informazioni, vedere <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>.</block>
@@ -900,4 +838,152 @@
   <block id="6877ece75d4d613c107eed29f14b3975" category="paragraph">Il report dei contratti di supporto è stato migliorato per includere il nuovo campo flag ASP/LSG. Questo campo consente di filtrare e identificare i sistemi coperti da un partner di supporto autorizzato, noto anche come Lifecycle Services Certified.</block>
   <block id="072d1a387472fb47fdfa33e48ff08ffd" category="section-title">Dashboard sulla sostenibilità</block>
   <block id="80604874cd369ef578265c67a223d997" category="paragraph">È ora possibile avviare il dashboard Sustainability utilizzando il collegamento incluso nella presentazione Sustainability.</block>
+  <block id="fb9ff32b98b673f9a79144a526a3c3ba" category="section-title">Lo storage come servizio</block>
+  <block id="1ce2096c300f78bbb8389ca2603e6dd9" category="inline-link">Keystone</block>
+  <block id="b49987f3f316f01d3769520e570e03c1" category="list-text"><block ref="b49987f3f316f01d3769520e570e03c1" category="inline-link-rx"></block></block>
+  <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 giugno 2025</block>
+  <block id="e9bf07011be1831466ac0bf1bbfe1140" category="section-title">Connettore 3.9.53</block>
+  <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.</block>
+  <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">La versione 3.9.53 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="39615b94cc2fe576502275ed459d404b" category="section-title">Avvisi sull'utilizzo dello spazio su disco</block>
+  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">Scopri di più.</block>
+  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">Il Centro notifiche ora include avvisi sull'utilizzo dello spazio su disco sul Connettore. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
+  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">Miglioramenti dell'audit</block>
+  <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">La cronologia ora include gli eventi di accesso e disconnessione degli utenti. È possibile visualizzare l'attività di accesso, utile per il controllo e il monitoraggio della sicurezza. Gli utenti API con il ruolo di amministratore dell'organizzazione possono visualizzare l'indirizzo email dell'utente che ha effettuato l'accesso includendo <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parametro come nel seguente: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
+  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">Gestione degli abbonamenti Keystone disponibile in BlueXP</block>
+  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">Puoi gestire il tuo abbonamento NetApp Keystone da BlueXP.</block>
+  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">Scopri di più sulla gestione degli abbonamenti Keystone in BlueXP.</block>
+  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
+  <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticazione a più fattori (MFA)</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">Gli utenti non federati possono ora abilitare l'autenticazione a più fattori (MFA) per i propri account BlueXP, migliorandone la sicurezza. Gli amministratori di BlueXP possono gestire le impostazioni MFA per i propri utenti, reimpostandole o disabilitandole per ciascun utente, se necessario. Questa funzionalità è supportata solo in modalità standard.</block>
+  <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Scopri come configurare autonomamente l'autenticazione a più fattori.</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Scopri come gestire l'autenticazione a più fattori per gli utenti.</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Carichi di lavoro</block>
+  <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Ora puoi visualizzare ed eliminare le credenziali Amazon FSx for NetApp ONTAP dalla pagina Credenziali in BlueXP.</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 maggio 2025</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="section-title">Rilascio in modalità privata (3,9.52)</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">La versione 3.9.52 include aggiornamenti ai seguenti componenti e servizi BlueXP.</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Vai al <block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nelle versioni 3.9.52 e 3.9.50.</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Vai al <block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> e fare riferimento alle modifiche incluse nella versione di maggio 2025.</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 maggio 2025 (versione 1.43)</block>
+  <block id="1cb98a955a2cc6db0fd659024f067adb" category="paragraph">I nodi di Cloud Volumes ONTAP non si arrestano più quando il connettore non è conforme o è inattivo per più di 14 giorni. Cloud Volumes ONTAP continua a inviare messaggi di gestione eventi quando perde l'accesso al connettore. Questa modifica garantisce che Cloud Volumes ONTAP possa continuare a funzionare anche se il connettore è inattivo per un periodo di tempo prolungato. Non modifica i requisiti di conformità per il connettore.</block>
+  <block id="b2a4dd9da503b6b927d0278084e6ea56" category="section-title">Nuovi ruoli di gestione dello storage</block>
+  <block id="bf593570fbef026982251facf0c215e1" category="paragraph">Sono disponibili i ruoli di amministratore di archiviazione, specialista dell'integrità del sistema e visualizzatore di archiviazione, che possono essere assegnati agli utenti.</block>
+  <block id="9e8f8caceb21ce13b88d4160e465e2a5" category="paragraph">Questi ruoli consentono di stabilire chi all'interno dell'organizzazione può individuare e gestire le risorse di storage, nonché visualizzare le informazioni sullo stato di storage ed eseguire aggiornamenti software.</block>
+  <block id="1640c7bcb4a85ded2f136361a51dd52e" category="paragraph">Questi ruoli sono supportati per controllare l'accesso alle seguenti risorse di archiviazione:</block>
+  <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">Sistemi StorageGRID</block>
+  <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">Sistemi ONTAP on-premise</block>
+  <block id="b80ffca4d1f83e77193d4613c9044556" category="paragraph">Puoi anche utilizzare questi ruoli per controllare l'accesso ai seguenti servizi BlueXP:</block>
+  <block id="19bea5bec76c66ef8bd189aa23a4c860" category="list-text">Sostenibilità</block>
+  <block id="a594a24eac9dea3cdb34c6d3c35b39a6" category="paragraph">Sono stati aggiunti i seguenti ruoli:</block>
+  <block id="98d63ffef525e1f04dd3ec407ff57b30" category="list-text">*Amministratore dell'archiviazione*</block>
+  <block id="f1aeec4f24299e314aab97d634337c25" category="paragraph">Gestire lo stato di integrità, la governance e l'individuazione delle risorse di storage dell'organizzazione. Questo ruolo può anche eseguire aggiornamenti software sulle risorse di storage.</block>
+  <block id="24bae3be890c130e5ac1c22d16f741bd" category="list-text">*Specialista in salute del sistema*</block>
+  <block id="3886b56eea2fe550b4e6b51dc07a1911" category="paragraph">Gestire lo stato e la governance dello storage per le risorse di storage dell'organizzazione. Questo ruolo può anche eseguire aggiornamenti software sulle risorse di storage. Questo ruolo non può modificare o eliminare ambienti di lavoro.</block>
+  <block id="4172ddc56d4e9fa18f3ae18bdb0184b5" category="list-text">*Visualizzatore di archiviazione*</block>
+  <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">Visualizza le informazioni sullo stato di integrità dell'archiviazione e i dati di governance.</block>
+  <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 giugno 2025</block>
+  <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">Aggiornamento delle credenziali</block>
+  <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">Dopo aver impostato credenziali e autorizzazioni per il file system FSx for ONTAP, verrai reindirizzato alla pagina Credenziali BlueXP. Da questa pagina puoi rinominare o rimuovere le tue credenziali FSx for ONTAP.</block>
+  <block id="66985acac7963e5883cef62664b25696" category="inline-link-macro">Impostare le autorizzazioni per FSx per i file system ONTAP</block>
+  <block id="2c546aeb894a7ee538c66b6d3f2cdba7" category="paragraph"><block ref="2c546aeb894a7ee538c66b6d3f2cdba7" category="inline-link-macro-rx"></block></block>
+  <block id="374920fe25826b7adee398c37f9fc3ed" category="section-title">Supporto per la replica dei dati tra due file system FSx per ONTAP</block>
+  <block id="0d0e1a3896ef0e1ad8e89dad08261572" category="paragraph">La replica dei dati è ora disponibile tra due file system FSx per ONTAP dalla console BlueXP.</block>
+  <block id="37fa21b7ca602fd8fe055b26a1de7d8b" category="inline-link-macro">Replicare i dati</block>
+  <block id="12bcd6a565798d844427c95531c1c0ec" category="paragraph"><block ref="12bcd6a565798d844427c95531c1c0ec" category="inline-link-macro-rx"></block></block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">L'interfaccia utente e la documentazione della Workload Factory ora utilizzano "sola lettura" per fare riferimento alle autorizzazioni di lettura e "lettura/scrittura" per fare riferimento alle autorizzazioni di automazione.</block>
+  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">09 giugno 2025</block>
+  <block id="2c5854d2e2f5eea8fdb60c2eab7c9f48" category="section-title">Aggiornamenti del supporto del catalogo indicizzato</block>
+  <block id="53aeb816923ef5b0712bab3d06115f47" category="paragraph">A febbraio 2025, abbiamo introdotto la funzionalità di indicizzazione aggiornata (Catalogo indicizzato v2) da utilizzare durante il metodo di ripristino dei dati "Cerca e ripristina". La versione precedente ha migliorato significativamente le prestazioni di indicizzazione dei dati negli ambienti on-premise. Con questa versione, il catalogo di indicizzazione è ora disponibile negli ambienti Amazon Web Services, Microsoft Azure e Google Cloud Platform (GCP).</block>
+  <block id="109a536d105313ba22a3a245fbe42d66" category="paragraph">Se sei un nuovo cliente, il Catalogo Indicizzato v2 è abilitato per impostazione predefinita per tutti i nuovi ambienti. Se sei un cliente esistente, puoi reindicizzare il tuo ambiente per sfruttare il Catalogo Indicizzato v2.</block>
+  <block id="ed568c90c2ab6e924749399e3a2572f7" category="paragraph">Prima di poter utilizzare il metodo Search &amp; Restore per il ripristino dei dati, è necessario attivare l'indicizzazione in ogni ambiente di lavoro di origine da cui si prevede di ripristinare volumi o file. Selezionare l'opzione *Abilita indicizzazione* quando si esegue una ricerca e un ripristino.</block>
+  <block id="53b903d5c7d704138f78087fb044d909" category="paragraph">Il catalogo indicizzato può quindi tenere traccia di ogni volume e file di backup, rendendo le ricerche rapide ed efficienti.</block>
+  <block id="b135d75112998c5959ea2e656baaca04" category="paragraph">Per ulteriori informazioni, vedere<block ref="7ae860a58fb7c028461eb3a0f3043711" category="inline-link-rx"></block>.</block>
+  <block id="a5e1a06a60e331b5d516136e96719929" category="section-title">Endpoint di collegamento privato di Azure ed endpoint di servizio</block>
+  <block id="a6f1ad5d9fc5adf781d978f4d43bae4c" category="paragraph">In genere, il backup e il ripristino di BlueXP stabiliscono un endpoint privato con il provider cloud per gestire diverse attività di protezione. Questa versione introduce un'impostazione opzionale che consente di abilitare o disabilitare la creazione automatica di un endpoint privato da parte di BlueXP Backup and Recovery. Questa opzione potrebbe essere utile se si desidera un maggiore controllo sul processo di creazione di endpoint privati.</block>
+  <block id="0a849c115a4741e75692ddd548e07b4d" category="paragraph">È possibile abilitare o disabilitare questa opzione quando si abilita la protezione o si avvia il processo di ripristino.</block>
+  <block id="8ee64b87fd8e5fd67f5f38194c7faf59" category="paragraph">Se si disabilita questa impostazione, è necessario creare manualmente l'endpoint privato affinché il backup e il ripristino di BlueXP funzionino correttamente. Senza una connettività adeguata, potrebbe non essere possibile eseguire correttamente le attività di backup e ripristino.</block>
+  <block id="fad4c67d1d97874133e7a367fe5038fd" category="section-title">Supporto per SnapMirror su Cloud Resync su ONTAP S3</block>
+  <block id="8e0a943cdbcd7f9c7f29128489119715" category="paragraph">La versione precedente ha introdotto il supporto per SnapMirror to Cloud Resync (SM-C Resync). La funzionalità semplifica la protezione dei dati durante la migrazione dei volumi negli ambienti NetApp. Questa versione aggiunge il supporto per SM-C Resync su ONTAP S3 e su altri provider compatibili con S3, come Wasabi e MinIO.</block>
+  <block id="fa551b5810fe894fcd21bf7c8ffc98d1" category="section-title">Porta il tuo bucket per StorageGRID</block>
+  <block id="f2ff9aeba193e347e07d88061902be70" category="paragraph">Quando si creano file di backup nell'archiviazione oggetti per un ambiente di lavoro, per impostazione predefinita, BlueXP Backup and Recovery crea il contenitore (bucket o account di archiviazione) per i file di backup nell'account di archiviazione oggetti configurato. In precedenza, era possibile ignorare questa impostazione e specificare un contenitore personalizzato per Amazon S3, Azure Blob Storage e Google Cloud Storage. Con questa versione, è ora possibile utilizzare il proprio contenitore di archiviazione oggetti StorageGRID.</block>
+  <block id="e6e5a011626c6db86099687e0a358c1f" category="inline-link">Crea il tuo contenitore di archiviazione di oggetti</block>
+  <block id="68c8f46b97e6aeb1e429ccce285cfda1" category="paragraph">Vedere<block ref="7a95086a5f98875b2249d837314b5c45" category="inline-link-rx"></block>.</block>
+  <block id="1c4322a2b157ac1326426ebdbd680c74" category="section-title">Versione 1,44</block>
+  <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">Tempi di aggiornamento migliorati per la dashboard di Governance</block>
+  <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">I tempi di aggiornamento per i singoli componenti della dashboard di Governance sono stati migliorati. La tabella seguente mostra la frequenza degli aggiornamenti per ciascun componente.</block>
+  <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">Componente</block>
+  <block id="b5c592ebd16824471b1dac54611da0f9" category="cell">Tempi di aggiornamento</block>
+  <block id="aa414adba4c4fe0e85f670431eeaa7a2" category="cell">Età dei dati</block>
+  <block id="e1f57d0c474bedaae9c88fad138dcfd0" category="cell">24 ore</block>
+  <block id="af1b98adf7f686b84cd0b443e022b7a0" category="cell">Categorie</block>
+  <block id="b70528883a2d1dce278c3b16e0f8c608" category="cell">Panoramica dei dati</block>
+  <block id="4adcc26418f545df76ab44c53fc55702" category="cell">5 minuti</block>
+  <block id="6db4df856c2ad3b66b59b98767190ee4" category="cell">File duplicati</block>
+  <block id="6619a70f8ab8877e4131643fb8ded723" category="cell">2 ore</block>
+  <block id="f12b42eece54a56ffab836a42eb37488" category="cell">Tipi di file</block>
+  <block id="8c8fee331e9f3e5231bff4fd3c702b79" category="cell">Dati non aziendali</block>
+  <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">Aprire permessi</block>
+  <block id="e804ac99d8e193e9d3e3437979ce7bdf" category="cell">Ricerche salvate</block>
+  <block id="8b15c77295fd06496b4e5497d3038948" category="cell">Dati sensibili e permessi estesi</block>
+  <block id="3b082340d0ec4e5cb8705d8e8dbd7b20" category="cell">Dimensione dei dati</block>
+  <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">Dati obsoleti</block>
+  <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">Principali repository di dati per livello di sensibilità</block>
+  <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-xref-macro">Visualizzare i dettagli di governance sui dati archiviati nell'organizzazione</block>
+  <block id="af67ad5f0d1d3f928958a66c7475e1df" category="paragraph">È possibile visualizzare l'ora dell'ultimo aggiornamento e aggiornare manualmente i componenti File duplicati, Dati non aziendali, Ricerche salvate, Dati obsoleti e Repository dati principali per livello di sensibilità. Per ulteriori informazioni sulla dashboard di Governance, consultare <block ref="e2440d776a494477c2f83bc685289508" category="inline-xref-macro-rx"></block> .</block>
+  <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">Miglioramenti delle prestazioni e della sicurezza</block>
+  <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">Sono stati apportati miglioramenti per ottimizzare le prestazioni, il consumo di memoria e la sicurezza della classificazione BlueXP.</block>
+  <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis è stato aggiornato per migliorare l'affidabilità della classificazione BlueXP. La classificazione BlueXP ora utilizza Elasticsearch per migliorare l'accuratezza del reporting del conteggio dei file durante le scansioni.</block>
+  <block id="389d4c98e2d0499c2e4e750430434afb" category="section-title">Implementazioni in modalità privata abilitate per Cloud Volumes ONTAP 9.15.1</block>
+  <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">Ora puoi implementare Cloud Volumes ONTAP 9.15.1 in modalità privata in AWS, Azure e Google Cloud. La modalità privata è abilitata per implementazioni a nodo singolo e high Availability (ha) di Cloud Volumes ONTAP 9.15.1.</block>
+  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">Per ulteriori informazioni sulle implementazioni in modalità privata, fare riferimento a <block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>.</block>
+  <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">30 giugno 2025</block>
+  <block id="f5939a7e3fd75d2d5422c1d6029f44c8" category="paragraph">Versione 4.2.4P2</block>
+  <block id="dc729c135725ed28b09cd35258e2a28d" category="section-title">Miglioramenti della scoperta</block>
+  <block id="778d15d21e8eaffc6a6c8069d8fa5872" category="paragraph">Questo aggiornamento migliora il processo di individuazione, riducendone i tempi necessari.</block>
+  <block id="1d498761d9b5afe7d166fb15809b8000" category="section-title">23 giugno 2025</block>
+  <block id="c114a433f08237cc585990ed9e9e88d5" category="paragraph">Versione 4.2.4P1</block>
+  <block id="a1e044c84ca270d3adc998b256510801" category="section-title">Miglioramenti della mappatura delle subnet</block>
+  <block id="494053c615ca0aa0debeb6eac90b3e5a" category="paragraph">Questo aggiornamento migliora la finestra di dialogo "Aggiungi e modifica mappatura subnet" con una nuova funzionalità di ricerca. Ora è possibile trovare rapidamente subnet specifiche inserendo termini di ricerca, semplificando la gestione delle mappature subnet.</block>
+  <block id="a5b3547213084a11aef815f04f636f42" category="paragraph">Versione 4.2.4</block>
+  <block id="97d3a415f1d32e0fd7045cf243744acd" category="section-title">Supporto per la soluzione password dell'amministratore locale di Windows (LAPS)</block>
+  <block id="016381830d7dd927c4b8504121b26175" category="paragraph">Windows Local Administrator Password Solution (Windows LAPS) è una funzionalità di Windows che gestisce ed esegue automaticamente il backup della password di un account amministratore locale su Active Directory.</block>
+  <block id="33e3d20ad0d71e75d746da0b85431750" category="paragraph">Ora puoi selezionare le opzioni di mappatura della subnet e selezionare l'opzione LAPS fornendo i dettagli del controller di dominio. Con questa opzione, non è necessario fornire una password per ciascuna delle macchine virtuali.</block>
+  <block id="1da5a40083bd16c3443e7eda42875506" category="section-title">Ruolo di accesso BlueXP necessario</block>
+  <block id="fd3b9b6f969e334605ecb2deacbd84cc" category="inline-link">Scopri di più sui ruoli di accesso BlueXP.</block>
+  <block id="0366ff255ad441b45d52df443a7b3b55" category="paragraph">Per visualizzare, scoprire o gestire E-Series in BlueXP, ora è necessario uno dei seguenti ruoli di accesso: amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore di archiviazione o specialista dell'integrità del sistema. <block ref="0b85dd2db07f757bcca365b0bb453a52" category="inline-link-rx"></block></block>
+  <block id="273397c35cb726b0eb4cc33e4cf912da" category="section-title">19 giugno 2025</block>
+  <block id="670c77e2582c40bc8d1e05c864358472" category="section-title">Dashboard Keystone in BlueXP</block>
+  <block id="e744c3c411bd8cdf2a7a6125d745261e" category="paragraph">Ora puoi accedere alla dashboard di Keystone direttamente da BlueXP. Questa integrazione ti offre un unico punto di monitoraggio, gestione e tracciamento di tutti i tuoi abbonamenti Keystone e degli altri servizi NetApp.</block>
+  <block id="802724fb3733677d2773f639b1c2c227" category="paragraph">Con la dashboard Keystone in BlueXP puoi:</block>
+  <block id="7fdbb259eae173e23f83dbc4823d28da" category="list-text">Visualizza tutti i dettagli del tuo abbonamento, l'utilizzo della capacità e le risorse in un unico posto.</block>
+  <block id="4cc15c3d51785ada1c6ba9fa1e1e13b0" category="list-text">Gestisci facilmente gli abbonamenti e richiedi modifiche in base all'evoluzione delle tue esigenze.</block>
+  <block id="c946fc133c6959483805e8ee848d8d3c" category="list-text">Rimani aggiornato sulle ultime informazioni relative al tuo ambiente di archiviazione.</block>
+  <block id="f2af179f8c68993abbce1b8a7a711b38" category="inline-link-macro">Panoramica della dashboard Keystone</block>
+  <block id="e4662d7ea2c66dc53eb2e68d2bceffac" category="paragraph">Per iniziare, vai su *Archiviazione &gt; Keystone* nel menu di navigazione a sinistra di BlueXP. Per ulteriori informazioni, fare riferimento a <block ref="d1eddf69542d0beadf02459455377203" category="inline-link-macro-rx"></block>.</block>
+  <block id="7e80dfbc882bf899ca8e80bc9729e4b5" category="paragraph">Per visualizzare, individuare o gestire i cluster ONTAP locali, ora è necessario uno dei seguenti ruoli di accesso: amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore di archiviazione o specialista dell'integrità del sistema. <block ref="5f4605f8f9a6dca73fc40e564cf6fcbc" category="inline-link-macro-rx"></block></block>
+  <block id="07008bfe30be6fadcf287348a234142c" category="section-title">Aggiornamenti della landing page</block>
+  <block id="1f054df4aa4b46ec1a714386afb99b06" category="paragraph">Questa versione include aggiornamenti alla landing page per la protezione dal ransomware BlueXP che semplificano l'avvio della prova gratuita e la scoperta.</block>
+  <block id="473497e2f273f2b53065b2de9535b764" category="section-title">Aggiornamenti sulle esercitazioni di preparazione</block>
+  <block id="eaced322bf25e3f9f2b44b904f4851cb" category="paragraph">In precedenza, era possibile eseguire un'esercitazione di preparazione al ransomware simulando un attacco su un nuovo carico di lavoro campione. Con questa funzionalità, è possibile analizzare l'attacco simulato e ripristinare il carico di lavoro. Utilizza questa funzionalità per testare le notifiche di avviso, la risposta e il ripristino. Eseguire e pianificare queste esercitazioni con la frequenza necessaria.</block>
+  <block id="5e0279378617bd12ec67145646285fab" category="paragraph">Con questa versione, puoi utilizzare un nuovo pulsante sulla Dashboard di protezione ransomware di BlueXP per eseguire un'esercitazione di preparazione al ransomware su un carico di lavoro di prova, semplificando la simulazione di attacchi ransomware, l'analisi del loro impatto e il ripristino efficiente dei carichi di lavoro, il tutto all'interno di un ambiente controllato.</block>
+  <block id="a539ada725302fb5ecd1f180a2aed531" category="paragraph">Oltre ai carichi di lavoro NFS, ora è possibile eseguire esercitazioni di preparazione sui carichi di lavoro CIFS (SMB).</block>
+  <block id="8a09aacd3cf1c88c3c2a4d746cad44f5" category="section-title">Abilita gli aggiornamenti della classificazione BlueXP</block>
+  <block id="ba91dfda650db88e3bc3dd36c32fa577" category="paragraph">Prima di utilizzare la classificazione BlueXP  all'interno del servizio di protezione dal ransomware BlueXP , devi abilitare la classificazione BlueXP  per eseguire la scansione dei tuoi dati. La classificazione dei dati aiuta a trovare informazioni di identificazione personale (PII), il che può aumentare i rischi per la sicurezza.</block>
+  <block id="960c237c5456a08952ee4a0c6bc67ab9" category="paragraph">È possibile distribuire la classificazione BlueXP su un carico di lavoro di condivisione file dall'interno della protezione ransomware BlueXP. Nella colonna *Esposizione privacy*, selezionare l'opzione *Identifica esposizione*. Se è stato abilitato il servizio di classificazione, questa azione identifica l'esposizione. In caso contrario, con questa versione, una finestra di dialogo presenta l'opzione per distribuire la classificazione BlueXP. Selezionare *Distribuisci* per accedere alla pagina di destinazione del servizio di classificazione BlueXP, dove è possibile distribuire tale servizio. W</block>
+  <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="inline-link">Implementare la classificazione BlueXP nel cloud</block>
+  <block id="6b0e91bb98e8a9394dda94307f3217d0" category="inline-link">Eseguire la scansione delle informazioni di identificazione personale con la classificazione BlueXP</block>
+  <block id="1ebb3fd0e37e111d097f72f481a8495f" category="paragraph">Per i dettagli, fare riferimento a <block ref="3daa2f037f0ac9e3dc92dfaca32cdfd8" category="inline-link-rx"></block> e per utilizzare il servizio all'interno della protezione ransomware BlueXP, fare riferimento a <block ref="92298fee5b4e50be64de76505f153d1a" category="inline-link-rx"></block> .</block>
+  <block id="4dd9f1961ea018706909f1155d36c91a" category="paragraph">Ora è necessario uno dei seguenti ruoli di accesso per visualizzare, scoprire o gestire la protezione ransomware BlueXP: amministratore dell'organizzazione, amministratore di cartelle o progetti, amministratore della protezione ransomware o visualizzatore della protezione ransomware.</block>
+  <block id="34397c830c77af93d96e3ed470658d45" category="inline-link">Scopri i ruoli di accesso BlueXP per tutti i servizi</block>
+  <block id="0d46f65a7717513cadcb109363fb6c6d" category="paragraph"><block ref="06a5d1f4c488b014d10a11f3fe7273ba" category="inline-link-rx"></block>.</block>
+  <block id="53dafb5a873d00157d780f773c016fed" category="paragraph">Ora è necessario uno dei seguenti ruoli di accesso per installare gli aggiornamenti software: *Amministratore organizzazione*, *Amministratore cartella o progetto*, *Amministratore archiviazione*, *Visualizzatore archiviazione* o *Specialista integrità archiviazione*. Gli utenti con il ruolo di Visualizzatore archiviazione dispongono di diverse autorizzazioni relative agli aggiornamenti software, ma non possono installarli. <block ref="5f4605f8f9a6dca73fc40e564cf6fcbc" category="inline-link-macro-rx"></block></block>
+  <block id="cb30bdb55bb8a7a0530a31a5e6cdd0bb" category="paragraph">La seguente autorizzazione è ora disponibile in modalità _sola lettura_ per i database: <block ref="f63e0d20057299c9c16bd0c2c9e92a5c" prefix=" " category="inline-code"></block> .</block>
+  <block id="e429c7230e4b94caf26e6020e5ea6f7a" category="paragraph"><block ref="e429c7230e4b94caf26e6020e5ea6f7a" category="inline-link-rx"></block></block>
+  <block id="64c17706e0528a5c44c7beee628cc101" category="section-title">Supporto del servizio di notifica di fabbrica del carico di lavoro BlueXP</block>
+  <block id="c0ae6f0ec7cb1322a1c6b72f77e783f2" category="paragraph">Il servizio di notifica di BlueXP Workload Factory consente a Workload Factory di inviare notifiche al servizio di avvisi BlueXP o a un argomento Amazon SNS. Le notifiche inviate agli avvisi BlueXP vengono visualizzate nel pannello degli avvisi BlueXP. Quando la Workload Factory pubblica notifiche su un argomento Amazon SNS, i sottoscrittori dell'argomento (ad esempio persone o altre applicazioni) ricevono le notifiche sugli endpoint configurati per l'argomento (ad esempio, tramite e-mail o SMS).</block>
+  <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link">Configurare le notifiche di fabbrica del carico di lavoro BlueXP</block>
+  <block id="533a43c23a4d81612b2392465e022a51" category="paragraph"><block ref="533a43c23a4d81612b2392465e022a51" category="inline-link-rx"></block></block>
 </blocks>
