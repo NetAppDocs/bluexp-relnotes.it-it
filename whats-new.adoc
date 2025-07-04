@@ -24,6 +24,31 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 21 luglio 2025
+
+
+
+==== Supporto per Google Cloud NetApp Volumes
+
+Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Scopri di più su Google Cloud NetApp Volumes."]
+
+
+
+==== Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP
+
+
+
+===== Nuovo ruolo di accesso per Google Cloud NetApp Volumes
+
+BlueXP ora supporta l'utilizzo di un ruolo di accesso per il seguente sistema di archiviazione:
+
+* Google Cloud NetApp Volumes
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Scopri di più sull'utilizzo dei ruoli di accesso."]
+
+
+
 === 14 luglio 2025
 
 
@@ -404,13 +429,13 @@ Prima di poter utilizzare il metodo Search & Restore per il ripristino dei dati,
 
 Il catalogo indicizzato può quindi tenere traccia di ogni volume e file di backup, rendendo le ricerche rapide ed efficienti.
 
-Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-backups-ontap.html#restore-ontap-data-using-search-restore["Come ripristinare i dati ONTAP utilizzando Cerca  Ripristina"].
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-restore.html["Abilita l'indicizzazione per Cerca e Ripristina"].
 
 
 
 ==== Endpoint di collegamento privato di Azure ed endpoint di servizio
 
-In genere, il backup e il ripristino di BlueXP stabiliscono un endpoint privato con il provider cloud per gestire diverse attività di protezione. Questa versione introduce un'impostazione opzionale che consente di abilitare o disabilitare la creazione automatica di un endpoint privato da parte di BlueXP Backup and Recovery. Questa opzione potrebbe essere utile se si desidera un maggiore controllo sul processo di creazione di endpoint privati.
+In genere, il BlueXP backup and recovery stabiliscono un endpoint privato con il provider cloud per gestire le attività di protezione. Questa versione introduce un'impostazione opzionale che consente di abilitare o disabilitare la creazione automatica di un endpoint privato da parte di BlueXP Backup and Recovery. Questa opzione potrebbe essere utile se si desidera un maggiore controllo sul processo di creazione di endpoint privati.
 
 È possibile abilitare o disabilitare questa opzione quando si abilita la protezione o si avvia il processo di ripristino.
 
@@ -428,7 +453,7 @@ La versione precedente ha introdotto il supporto per SnapMirror to Cloud Resync 
 
 Quando si creano file di backup nell'archiviazione oggetti per un ambiente di lavoro, per impostazione predefinita, BlueXP Backup and Recovery crea il contenitore (bucket o account di archiviazione) per i file di backup nell'account di archiviazione oggetti configurato. In precedenza, era possibile ignorare questa impostazione e specificare un contenitore personalizzato per Amazon S3, Azure Blob Storage e Google Cloud Storage. Con questa versione, è ora possibile utilizzare il proprio contenitore di archiviazione oggetti StorageGRID.
 
-Vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#do-you-want-to-create-your-own-object-storage-container["Crea il tuo contenitore di archiviazione di oggetti"].
+Vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["Crea il tuo contenitore di archiviazione di oggetti"].
 
 
 
@@ -446,7 +471,7 @@ Questa funzionalità elimina la necessità di un'operazione di re-baseline, che 
 
 Mantenendo la continuità del backup in tutti gli ambienti, SnapMirror to Cloud Resync migliora l'efficienza delle operazioni e riduce la complessità della gestione dei dati nel cloud ibrido e multicloud.
 
-Per informazioni dettagliate su come eseguire l'operazione di risincronizzazione, vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/task-migrate-volumes-snapmirror-cloud-resync.html["Migra i volumi usando SnapMirror per la risincronizzazione del cloud"].
+Per informazioni dettagliate su come eseguire l'operazione di risincronizzazione, vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["Migra i volumi usando SnapMirror per la risincronizzazione del cloud"].
 
 
 
@@ -474,84 +499,6 @@ Mentre questa funzione è in anteprima, esistono alcune limitazioni:
 *Guida introduttiva*
 
 Per iniziare a utilizzare questa funzione di anteprima, è necessario attivare un contrassegno sul connettore BlueXP . È quindi possibile immettere i dettagli di connessione dell'archivio oggetti di terze parti MinIO nel flusso di lavoro di protezione scegliendo l'archivio oggetti compatibile con terze parti nella sezione di backup.
-
-Per istruzioni su come attivare le funzioni di anteprima, vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/task-preview-enable.html["Attivare le funzioni di anteprima nel backup e ripristino di BlueXP"].
-
-
-
-=== 16 aprile 2025
-
-Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
-
-
-
-==== Miglioramenti dell'interfaccia utente
-
-Questa versione migliora l'esperienza dell'utente semplificando l'interfaccia:
-
-* La rimozione della colonna aggregate dalle tabelle Volumes, insieme alle colonne Snapshot Policy, Backup Policy e Replication Policy dalla tabella Volume nella dashboard V2, consente di ottimizzare il layout.
-* L'esclusione degli ambienti di lavoro non attivati dall'elenco a discesa rende l'interfaccia meno ingombrante, la navigazione più efficiente e il caricamento più rapido.
-* Mentre l'ordinamento nella colonna Tag è disattivato, è comunque possibile visualizzare i tag, garantendo che le informazioni importanti rimangano facilmente accessibili.
-* La rimozione delle etichette sulle icone di protezione contribuisce a un aspetto più pulito e riduce i tempi di caricamento.
-* Durante il processo di attivazione dell'ambiente di lavoro, una finestra di dialogo visualizza un'icona di caricamento per fornire un feedback fino al completamento del processo di rilevamento, migliorando la trasparenza e la sicurezza nelle operazioni del sistema.
-
-
-
-
-==== Dashboard volume avanzato (anteprima)
-
-La Volume Dashboard viene ora caricata in meno di 10 secondi, fornendo un'interfaccia molto più veloce ed efficiente. Questa versione in anteprima è disponibile per alcuni clienti, offrendo loro un'anteprima di questi miglioramenti.
-
-
-
-==== Supporto per archivio oggetti Wasabi di terze parti (anteprima)
-
-Il backup e recovery di BlueXP  ora estende il suo supporto ad archivi di oggetti di terze parti, con una particolare attenzione al tema di Wasabi. Questa nuova funzione di anteprima consente di sfruttare qualsiasi archivio di oggetti compatibile con S3 per le proprie esigenze di backup e recovery.
-
-
-
-===== Per iniziare con Wasabi
-
-Per iniziare a utilizzare lo storage di terze parti come archivio di oggetti, è necessario abilitare un flag all'interno di BlueXP  Connector. Quindi, puoi immettere i dettagli di connessione per l'archivio di oggetti di terze parti e integrarlo nei tuoi flussi di lavoro di backup e recovery.
-
-.Fasi
-. SSH nel connettore.
-. Andare nel contenitore di server cbs di backup e ripristino BlueXP :
-+
-[listing]
-----
-docker exec -it cloudmanager_cbs sh
-----
-. Aprire il `default.json` file all'interno della `config` cartella tramite VIM o qualsiasi altro editor:
-+
-[listing]
-----
-vi default.json
-----
-. Modify `allow-s3-compatible`: false to : `allow-s3-compatible` true.
-. Salvare le modifiche.
-. Uscire dal contenitore.
-. Riavviare il contenitore del server cbs di backup e ripristino BlueXP .
-
-
-.Risultato
-Una volta RIACCESO IL contenitore, aprire l'interfaccia utente di backup e ripristino di BlueXP . Quando avvii un backup o modifichi una strategia di backup, vengono visualizzati il nuovo provider "S3 compatibile" e gli altri provider di backup di AWS, Microsoft Azure, Google Cloud, StorageGRID e ONTAP S3.
-
-
-
-===== Limitazioni della modalità di anteprima
-
-Mentre questa funzione è in anteprima, considerare le seguenti limitazioni:
-
-* Il servizio Bring Your Own Bucket (BYOB) non è supportato.
-* L'attivazione di DataLock in un criterio non è supportata.
-* L'attivazione della modalità archiviazione in un criterio non è supportata.
-* Sono supportati solo gli ambienti ONTAP on-premise.
-* MetroCluster non è supportato.
-* Le opzioni per abilitare la crittografia a livello di bucket non sono supportate.
-
-
-Durante questa anteprima, ti consigliamo di esplorare questa nuova funzionalità e di fornire un feedback sull'integrazione con gli archivi di oggetti di terze parti prima dell'implementazione della funzionalità completa.
 
 
 
@@ -916,6 +863,24 @@ Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker
 
 
 
+=== 09 luglio 2025
+
+
+
+==== Upgrade Advisor
+
+* È stata inclusa un'opzione di download multiformato per i piani Upgrade Advisor, per semplificare la pianificazione degli aggiornamenti ONTAP e risolvere potenziali problemi o avvisi. Ora è possibile scaricare i piani Upgrade Advisor nei formati Excel, PDF e JSON.
+* Nel formato Excel del piano Upgrade Advisor sono stati apportati i seguenti miglioramenti:
++
+** È possibile visualizzare i controlli preliminari eseguiti sul cluster, contrassegnando i risultati con indicatori come "Superato", "Non superato" o "Saltato". Questo garantisce che il cluster sia in condizioni ottimali per completare l'aggiornamento ONTAP .
+** È possibile visualizzare gli ultimi aggiornamenti firmware consigliati e applicabili al cluster, insieme alla versione fornita con la versione di destinazione ONTAP .
+** È stata aggiunta una nuova scheda che offre controlli di interoperabilità per i cluster SAN. Fornisce una visualizzazione delle versioni del sistema operativo host supportate per la versione ONTAP di destinazione selezionata.
+
+
+
+
+
+
 === 08 maggio 2025
 
 
@@ -947,16 +912,6 @@ Il report dei contratti di supporto è stato migliorato per includere il nuovo c
 * Utilizzando il Disk Qualification Package (DQP), è ora possibile aggiornare automaticamente i controller del disco e il firmware del dispositivo di archiviazione in base a criteri predefiniti di integrità e prestazioni. Ciò riduce i potenziali guasti e migliora l'affidabilità generale del sistema.
 * Il database dei fusi orari (DB) è stato introdotto per mantenere automaticamente l'allineamento del sistema con le definizioni dei fusi orari più recenti. Ciò garantisce che le operazioni dipendenti dal tempo continuino senza problemi anche quando le regole del fuso orario cambiano.
 
-
-
-
-=== 12 dicembre 2024
-
-
-
-==== Upgrade Advisor
-
-Ora puoi vedere il firmware dello storage, il firmware SP/BMC e il pacchetto Autonomous ransomware (ARP) consigliato per un update. link:https://docs.netapp.com/us-en/active-iq/view-firmware-update-recommendations.html["Scopri come visualizzare i suggerimenti per l'aggiornamento del firmware"].
 
 
 
