@@ -352,6 +352,49 @@ Non è più possibile creare un volume da un modello. Questa azione è stata ass
 
 
 
+=== 14 luglio 2025
+
+Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
+
+
+
+==== Dashboard del volume ONTAP migliorato
+
+Ad aprile 2025 abbiamo lanciato un'anteprima di una Dashboard del volume ONTAP migliorata, molto più veloce ed efficiente.
+
+Questa dashboard è stata progettata per supportare i clienti aziendali con un elevato numero di carichi di lavoro. Anche per i clienti con 20.000 volumi, la nuova dashboard si carica in meno di 10 secondi.
+
+Dopo un'anteprima di successo e un feedback positivo da parte dei clienti, ora la stiamo rendendo l'esperienza predefinita per tutti i nostri clienti. Preparatevi per una dashboard incredibilmente veloce.
+
+Per ulteriori informazioni, vedere link:br-use-dashboard.html["Visualizza lo stato di protezione nella Dashboard"].
+
+
+
+==== Supporto del carico di lavoro di Microsoft SQL Server come anteprima tecnologica pubblica
+
+Questa versione di BlueXP backup and recovery offre un'interfaccia utente aggiornata che consente di gestire i carichi di lavoro di Microsoft SQL Server utilizzando una strategia di protezione 3-2-1, già nota nel servizio di BlueXP backup and recovery . Con questa nuova versione, è possibile eseguire il backup di questi carichi di lavoro sullo storage primario, replicarli sullo storage secondario ed eseguirne il backup sullo storage di oggetti cloud.
+
+Puoi iscriverti all'anteprima completando questo  https://forms.office.com/pages/responsepage.aspx?id=oBEJS5uSFUeUS8A3RRZbOojtBW63mDRDv3ZK50MaTlJUNjdENllaVTRTVFJGSDQ2MFJIREcxN0EwQi4u&route=shorturl["Anteprima del modulo di registrazione"^] .
+
+
+NOTE: LA PRESENTE DOCUMENTAZIONE SULLA PROTEZIONE DEI CARICHI DI LAVORO DI MICROSOFT SQL SERVER VIENE FORNITA COME ANTEPRIMA TECNOLOGICA. Con questa offerta di anteprima, NetApp si riserva il diritto di modificare i dettagli dell'offerta, i contenuti e la tempistica prima della disponibilità generale.
+
+Questa versione di BlueXP backup and recovery include i seguenti aggiornamenti:
+
+* *Funzionalità di backup 3-2-1*: questa versione integra le funzionalità SnapCenter , consentendo di gestire e proteggere le risorse SnapCenter con una strategia di protezione dei dati 3-2-1 dall'interfaccia utente BlueXP backup and recovery .
+* *Importa da SnapCenter*: puoi importare i dati di backup e i criteri SnapCenter nel BlueXP backup and recovery.
+* *Un'interfaccia utente riprogettata* offre un'esperienza più intuitiva per la gestione delle attività di backup e ripristino.
+* *Destinazioni di backup*: puoi aggiungere bucket negli ambienti Amazon Web Services (AWS), Microsoft Azure Blob Storage, StorageGRID e ONTAP S3 da utilizzare come destinazioni di backup per i carichi di lavoro di Microsoft SQL Server.
+* *Supporto per i carichi di lavoro*: questa versione consente di eseguire il backup, il ripristino, la verifica e la clonazione di database e gruppi di disponibilità di Microsoft SQL Server. (Il supporto per altri carichi di lavoro verrà aggiunto nelle versioni future.)
+* *Opzioni di ripristino flessibili*: questa versione consente di ripristinare i database sia nelle posizioni originali che in quelle alternative in caso di danneggiamento o perdita accidentale dei dati.
+* *Copie di produzione istantanee*: genera copie di produzione salvaspazio per sviluppo, test o analisi in pochi minuti anziché in ore o giorni.
+* Questa versione include la possibilità di creare report dettagliati.
+
+
+Per informazioni dettagliate sulla protezione dei carichi di lavoro di Microsoft SQL Server, vedere link:br-use-mssql-protect-overview.html["Panoramica sulla protezione dei carichi di lavoro di Microsoft SQL Server"] .
+
+
+
 === 09 giugno 2025
 
 Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
@@ -535,12 +578,12 @@ Questa versione BlueXP classification include modifiche al codice che ottimizzan
 .Flusso di lavoro migliorato per aggiungere condivisioni di file per la scansione
 Il flusso di lavoro per aggiungere condivisioni file a un gruppo di condivisione file è stato semplificato. Il processo ora differenzia anche il supporto del protocollo CIFS in base al tipo di autenticazione (Kerberos o NTLM).
 
-Per ulteriori informazioni, vedere xref:task-scanning-file-shares.html[Eseguire la scansione delle condivisioni dei file].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["Eseguire la scansione delle condivisioni dei file"].
 
 .Informazioni avanzate sul proprietario del file
-Ora puoi visualizzare maggiori informazioni sui proprietari dei file acquisiti nella scheda Indagine. Quando visualizzi i metadati di un file nella scheda Indagine, individua il proprietario del file, quindi seleziona **Visualizza dettagli** per visualizzare il nome utente, l'indirizzo email e il nome dell'account SAM. Puoi anche visualizzare altri elementi di proprietà di questo utente. Questa funzionalità è disponibile solo per gli ambienti di lavoro con Active Directory.
+Ora puoi visualizzare maggiori informazioni sui proprietari dei file acquisiti nella scheda Indagine. Quando visualizzi i metadati di un file nella scheda Indagine, individua il proprietario del file, quindi seleziona **Visualizza dettagli** per vedere il nome utente, l'e-mail e il nome dell'account SAM. Puoi anche visualizzare altri elementi di proprietà di questo utente. Questa funzionalità è disponibile solo per gli ambienti di lavoro con Active Directory.
 
-Per ulteriori informazioni, vedere xref:task-investigate-data.html[Esaminare i dati memorizzati nella propria organizzazione].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["Esaminare i dati memorizzati nella propria organizzazione"].
 
 
 
@@ -595,7 +638,7 @@ I tempi di aggiornamento per i singoli componenti della dashboard di Governance 
 
 | Principali repository di dati per livello di sensibilità | 2 ore 
 |===
-È possibile visualizzare l'ora dell'ultimo aggiornamento e aggiornare manualmente i componenti File duplicati, Dati non aziendali, Ricerche salvate, Dati obsoleti e Repository dati principali per livello di sensibilità. Per ulteriori informazioni sulla dashboard di Governance, consultare xref:task-controlling-governance-data.html[Visualizzare i dettagli di governance sui dati archiviati nell'organizzazione] .
+È possibile visualizzare l'ora dell'ultimo aggiornamento e aggiornare manualmente i componenti File duplicati, Dati non aziendali, Ricerche salvate, Dati obsoleti e Repository dati principali per livello di sensibilità. Per ulteriori informazioni sulla dashboard di Governance, consultare link:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["Visualizzare i dettagli di governance sui dati archiviati nell'organizzazione"] .
 
 .Miglioramenti delle prestazioni e della sicurezza
 Sono stati apportati miglioramenti per ottimizzare le prestazioni, il consumo di memoria e la sicurezza della classificazione BlueXP.
@@ -616,20 +659,20 @@ Questa versione di classificazione BlueXP  include:
 .Assegnare la priorità alle scansioni di classificazione
 La classificazione BlueXP  supporta la possibilità di assegnare priorità alle scansioni Map & Classify oltre alle scansioni Mapping-only, consentendo di selezionare le scansioni da completare per prime. La prioritizzazione delle scansioni Map & Classify è supportata durante e prima dell'inizio delle scansioni. Se si sceglie di assegnare la priorità a una scansione mentre è in corso, vengono assegnate priorità sia alla scansione di mappatura che alla scansione di classificazione.
 
-Per ulteriori informazioni, vedere link:task-managing-repo-scanning.html#prioritize-scans["Assegnare priorità alle scansioni"].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Assegnare priorità alle scansioni"].
 
 .Supporto per categorie di dati canadesi per l'identificazione personale (PII)
 Le scansioni di classificazione BlueXP  identificano le categorie di dati PII canadesi. Queste categorie includono informazioni bancarie, numeri di passaporto, numeri di assicurazione sociale, numeri di patente di guida e numeri di carta sanitaria per tutte le province e territori canadesi.
 
-Per ulteriori informazioni, vedere xref:reference-private-data-categories.adoc#types-of-personal-data[Categorie di dati personali].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["Categorie di dati personali"].
 
 .Classificazione personalizzata (anteprima)
 La classificazione BlueXP  supporta classificazioni personalizzate per le scansioni Map & Classify. Grazie alle classificazioni personalizzate, è possibile personalizzare le scansioni BlueXP  per acquisire dati specifici dell'organizzazione utilizzando espressioni regolari. Questa funzione è attualmente in anteprima.
 
-Per ulteriori informazioni, vedere xref:task-custom-classification.adoc[Aggiungere classificazioni personalizzate].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["Aggiungere classificazioni personalizzate"].
 
 .Scheda ricerche salvate
-La scheda **Policies** è stata rinominata xref:task-using-policies.html[**Ricerche salvate**]. La funzionalità è la stessa.
+La scheda **Policies** è stata rinominata link:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**Ricerche salvate**"]. La funzionalità rimane invariata.
 
 .Inviare gli eventi di scansione alla timeline BlueXP 
 La classificazione BlueXP  supporta l'invio di eventi di classificazione (quando viene avviata e terminata una scansione) a link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["Tempistiche di BlueXP"^].
@@ -661,7 +704,7 @@ La classificazione BlueXP  supporta le operazioni bulk per gli ambienti di lavo
 .Scaricare il rapporto di indagine localmente
 La classificazione BlueXP  supporta la possibilità di scaricare localmente i report di analisi dei dati da visualizzare nel browser. Se si sceglie l'opzione locale, l'analisi dei dati è disponibile solo nel formato CSV e visualizza solo le prime 10.000 righe di dati.
 
-Per ulteriori informazioni, vedere link:task-investigate-data.html#create-the-data-investigation-report["Esaminare i dati memorizzati nella propria organizzazione con la classificazione BlueXP"].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["Esaminare i dati memorizzati nella propria organizzazione con la classificazione BlueXP"].
 
 
 
@@ -700,9 +743,9 @@ Per impostazione predefinita, le scansioni vengono accodate in base all'ordine i
 
 La priorità viene concessa una tantum. Le riscansioni automatiche dei dati di mappatura vengono eseguite nell'ordine predefinito.
 
-La prioritizzazione è limitata a link:concept-cloud-compliance.html["scansioni di sola mappatura"]; non è disponibile per le scansioni mappa e classificazione.
+La prioritizzazione è limitata a link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["scansioni di sola mappatura"^]; non è disponibile per le scansioni mappa e classificazione.
 
-Per ulteriori informazioni, vedere link:task-managing-repo-scanning.html#prioritize-scans["Assegnare priorità alle scansioni"].
+Per ulteriori informazioni, vedere link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["Assegnare priorità alle scansioni"^].
 
 .Riprovare tutte le scansioni
 La classificazione BlueXP  supporta la possibilità di ripetere in batch tutte le scansioni non riuscite.
@@ -764,6 +807,31 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 
 
+=== 14 luglio 2025
+
+
+
+==== Supporto per proxy trasparente
+
+BlueXP ora supporta server proxy trasparenti oltre alle connessioni proxy esplicite esistenti. Durante la creazione o la modifica del connettore BlueXP , è possibile configurare un server proxy trasparente per gestire in modo sicuro il traffico di rete da e verso Cloud Volumes ONTAP.
+
+Per ulteriori informazioni sull'utilizzo dei server proxy in Cloud Volumes ONTAP, fare riferimento a:
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#network-configurations-to-support-connector-proxy-servers["Configurazioni di rete per supportare il proxy del connettore in AWS"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/azure/reference-networking-azure.html#network-configurations-to-support-connector["Configurazioni di rete per supportare il proxy del connettore in Azure"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#network-configurations-to-support-connector-proxy["Configurazioni di rete per supportare il proxy del connettore in Google Cloud"^]
+
+
+
+
+==== Nuovo tipo di VM supportato per Cloud Volumes ONTAP in Azure
+
+A partire da Cloud Volumes ONTAP 9.13.1, L8s_v3 è supportato come tipo di VM nelle zone di disponibilità singole e multiple di Azure, sia per le distribuzioni di coppie ad alta disponibilità (HA) nuove che esistenti.
+
+Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurazioni supportate in Azure"^].
+
+
+
 === 29 maggio 2025
 
 
@@ -793,22 +861,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-m
 Ora puoi abilitare il tiering per un tenant Azure in uno scenario in cui l'ambiente di lavoro Cloud Volumes ONTAP è creato da un tenant e BlueXP  Connector è creato da un altro. Utilizzando questa funzionalità, puoi usare lo stesso connettore per dividere in Tier i dati per più tenant di Azure.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Requisiti di tiering dei dati per un tenant Azure"^]
-
-
-
-=== 16 aprile 2025
-
-
-
-==== Nuove regioni supportate in Azure
-
-Ora puoi implementare Cloud Volumes ONTAP 9.12.1 GA e versioni successive in zone di disponibilità singole e multiple in Azure nelle seguenti regioni. Supporto per implementazioni a nodo singolo e high Availability (ha).
-
-* Spagna Centrale
-* Messico Centrale
-
-
-Per un elenco di tutte le regioni, fare riferimento alla https://bluexp.netapp.com/cloud-volumes-global-regions["Mappa delle regioni globali sotto Azure"^] .
 
 
 
@@ -1288,6 +1340,38 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 
+=== 15 luglio 2025
+
+
+
+==== Supporto del carico di lavoro SAN
+
+Questa versione include il supporto per i carichi di lavoro SAN nella BlueXP ransomware protection. Ora è possibile proteggere i carichi di lavoro SAN oltre ai carichi di lavoro NFS e CIFS.
+
+Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["Prerequisiti della protezione dal ransomware di BlueXP"].
+
+
+
+==== Protezione migliorata del carico di lavoro
+
+Questa versione include un flusso di lavoro migliorato per la protezione dei carichi di lavoro con o senza protezione dei dati. Se si utilizzano altri strumenti di protezione dei dati NetApp , come SnapCenter o BlueXP backup and recovery , per snapshot o backup, la BlueXP ransomware protection li rileva e consente di mantenere le policy che li gestiscono. Con questa versione, è possibile sostituire tali policy con le policy BlueXP ransomware protection oppure continuare a utilizzare le policy esistenti.
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["Proteggere i carichi di lavoro"].
+
+
+
+==== Notifiche via email
+
+Se la BlueXP ransomware protection rileva un possibile attacco, viene visualizzata una notifica nelle Notifiche BlueXP e viene inviata un'e-mail all'indirizzo email configurato. Il servizio avvia immediatamente anche uno snapshot.
+
+A questo punto dovresti visualizzare l'e-mail, che elenca la gravità e le risorse interessate, e dare un'occhiata al potenziale rischio nella scheda *Avvisi* BlueXP ransomware protection .
+
+Se hai configurato una gestione della sicurezza e degli eventi (SIEM) nella BlueXP ransomware protection, il servizio invia i dettagli dell'avviso al tuo sistema SIEM.
+
+Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Gestisci gli avvisi di ransomware rilevati"].
+
+
+
 === 9 giugno 2025
 
 
@@ -1400,68 +1484,6 @@ Per ulteriori informazioni sulle autorizzazioni, fare riferimento alla sezione h
 Questa versione include diversi miglioramenti al processo di pagamento.
 
 Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["Impostare le opzioni di licenza e pagamento"].
-
-
-
-=== 10 marzo 2025
-
-
-
-==== Simula un attacco e rispondi
-
-Con questa release, simula un attacco ransomware per testare la risposta a un avviso ransomware. Questa funzionalità ti aiuta a essere preparato in caso di un attacco ransomware effettivo, testando i processi di notifica, risposta e recovery degli avvisi.
-
-Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["Condurre un'indagine sulla preparazione all'attacco ransomware"].
-
-
-
-==== Miglioramenti al processo di rilevamento
-
-Questa versione include miglioramenti ai processi di rilevamento selettivo e riscoperta:
-
-* Con questa release, potrai rilevare i workload appena creati che sono stati aggiunti agli ambienti di lavoro precedentemente selezionati.
-* In questa versione è anche possibile selezionare _nuovi_ ambienti di lavoro. Questa funzionalità consente di proteggere i nuovi workload aggiunti al tuo ambiente.
-* È possibile eseguire questi processi di rilevamento durante il processo iniziale o all'interno dell'opzione Impostazioni.
-
-
-Per ulteriori informazioni, fare riferimento a https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza"] e https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le funzioni con l'opzione Impostazioni"].
-
-
-
-==== Avvisi generati quando viene rilevata una crittografia elevata
-
-Con questa versione, è possibile visualizzare avvisi quando viene rilevata una crittografia elevata sui carichi di lavoro, anche senza elevate modifiche all'estensione dei file. Questa funzionalità, che utilizza l'ai ONTAP Autonomous ransomware Protection (ARP), ti aiuta a identificare i workload che sono a rischio di attacchi ransomware. Utilizzare questa funzione e scaricare l'intero elenco dei file interessati con o senza modifiche alle estensioni.
-
-Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
-
-
-
-=== 16 dicembre 2024
-
-
-
-==== Rileva il comportamento anomalo degli utenti utilizzando Data Infrastructure Insights Storage workload Security
-
-Con questa release, puoi utilizzare Data Infrastructure Insights Storage workload Security per rilevare il comportamento anomalo degli utenti nei workload di storage. Questa funzionalità ti aiuta a identificare potenziali minacce alla sicurezza e a bloccare utenti potenzialmente malintenzionati per proteggere i tuoi dati.
-
-Per ulteriori informazioni, fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["Rispondi a un avviso ransomware rilevato"].
-
-Prima di utilizzare Data Infrastructure Insights Storage workload Security per rilevare il comportamento anomalo degli utenti, devi configurare l'opzione utilizzando l'opzione protezione dal ransomware BlueXP  *Impostazioni*.
-
-Fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["Configurare le impostazioni di protezione dal ransomware BlueXP"].
-
-
-
-==== Seleziona i workload da rilevare e proteggere
-
-Con questa versione, è possibile effettuare le seguenti operazioni:
-
-* All'interno di ogni connettore, seleziona gli ambienti di lavoro in cui desideri rilevare i carichi di lavoro. Questa funzionalità può essere utile se si desidera proteggere carichi di lavoro specifici del proprio ambiente e non di altri.
-* Durante il rilevamento dei carichi di lavoro, è possibile abilitare il rilevamento automatico dei carichi di lavoro per ogni connettore. Questa funzionalità consente di selezionare i carichi di lavoro da proteggere.
-* Scopri i workload appena creati per gli ambienti di lavoro selezionati in precedenza.
-
-
-Fare riferimento alla https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["Rileva i carichi di lavoro"].
 
 
 
