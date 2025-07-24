@@ -560,10 +560,6 @@
   <block id="47388f68695ab5799ff2adfb33bca00d" category="section-title">02 aprile 2025</block>
   <block id="f50a226c5a51111405309ae78236d95d" category="section-title">Rischi mitigati</block>
   <block id="66fa090892a2bd81c896ab6fbf156b19" category="paragraph">Nella sezione riepilogativa degli aggiornamenti software BlueXP , è ora possibile visualizzare il numero totale di rischi che possono essere mitigati dall'aggiornamento del sistema operativo. Ciò consente agli utenti di valutare i miglioramenti della sicurezza e della stabilità nella base di installazione.</block>
-  <block id="7ebc42140a656312f7a985f14e55f3a6" category="list-text">Il servizio Bring Your Own Bucket (BYOB) non è supportato.</block>
-  <block id="b86033acef55ce16df9b8accc019fc9d" category="list-text">Sono supportati solo gli ambienti ONTAP on-premise.</block>
-  <block id="5ba05bcaf18ef618c0ef794d4ae3e855" category="list-text">MetroCluster non è supportato.</block>
-  <block id="2a9854e98da75bbc07132378bef6de4d" category="list-text">Le opzioni per abilitare la crittografia a livello di bucket non sono supportate.</block>
   <block id="8855742ef7ac60d26f35536e1d09aef9" category="section-title">29 aprile 2025</block>
   <block id="f65bfe10577ea64b648eddd04f107545" category="section-title">Supporto per Amazon FSX per NetApp ONTAP</block>
   <block id="24964ea0918b681c02283685b1da1438" category="paragraph">Questa versione supporta Amazon FSX per NetApp ONTAP. Questa funzionalità ti aiuta a proteggere i workload FSX per ONTAP con la protezione dal ransomware BlueXP .</block>
@@ -613,21 +609,6 @@
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Quando si utilizza la fabbrica CloudShell del carico di lavoro di BlueXP , è possibile iniziare a digitare un comando e premere il tasto Tab per visualizzare le opzioni disponibili. Se esistono più possibilità, l'interfaccia CLI visualizza un elenco di suggerimenti. Questa funzionalità migliora la produttività riducendo al minimo gli errori e accelerando l'esecuzione dei comandi.</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">Inviare gli eventi di scansione alla timeline BlueXP </block>
   <block id="71df7d09aaee8e6796df0c3d10989fbd" category="section-title">13 maggio 2025</block>
-  <block id="89f166f25960d4442ee3cf41fb712de0" category="section-title">Risincronizzazione da SnapMirror al cloud per le migrazioni dei volumi</block>
-  <block id="f3afa2391337e5c71f0a9b02dedc2753" category="paragraph">La funzionalità risincronizzazione da SnapMirror al cloud ottimizza la data Protection e la continuità durante le migrazioni dei volumi negli ambienti NetApp. Quando un volume viene migrato usando la replica logica SnapMirror (LRSE), da un'implementazione NetApp on-premise a un'altra o a una soluzione basata sul cloud come Cloud Volumes ONTAP o Cloud Volumes Service, SnapMirror to Cloud Resync garantisce che i backup cloud esistenti rimangano intatti e operativi.</block>
-  <block id="9de9a72e99be1fee8dc0790411738dd4" category="paragraph">Questa funzionalità elimina la necessità di un'operazione di re-baseline, che richiede molto tempo e risorse, consentendo alle operazioni di backup di continuare anche dopo la migrazione. Questa funzionalità è molto utile negli scenari di migrazione dei carichi di lavoro, a supporto di FlexVol e gruppi di lavoro, ed è disponibile a partire dalla versione 9.16.1 di ONTAP.</block>
-  <block id="9c69774894ac0ae0f2bbae9b12964cfe" category="paragraph">Mantenendo la continuità del backup in tutti gli ambienti, SnapMirror to Cloud Resync migliora l'efficienza delle operazioni e riduce la complessità della gestione dei dati nel cloud ibrido e multicloud.</block>
-  <block id="5746bb5eeaa153936151cb52823109e6" category="inline-link">Migra i volumi usando SnapMirror per la risincronizzazione del cloud</block>
-  <block id="d7aa9347c7a241e0b5959147e0834507" category="section-title">Supporto per archivio oggetti MinIO di terze parti (anteprima)</block>
-  <block id="74f850f0e7d77a9dfb658a6664c11580" category="paragraph">Il backup e ripristino di BlueXP  ora estende il suo supporto ad archivi di oggetti di terze parti, con una particolare attenzione al MinIO. Questa nuova funzione di anteprima consente di sfruttare qualsiasi archivio di oggetti compatibile con S3 per le proprie esigenze di backup e recovery.</block>
-  <block id="fba2533d6fb852f662ab27cb8831c6c2" category="paragraph">Con questa versione di anteprima, speriamo di garantire una solida integrazione con gli archivi di oggetti di terze parti prima che venga implementata la funzionalità completa. Siete incoraggiati ad esplorare questa nuova funzionalità e a fornire feedback per contribuire a migliorare il servizio.</block>
-  <block id="3d1e2e322f867e2abdc8070d562a4fe2" category="admonition">Questa funzione non deve essere utilizzata in produzione.</block>
-  <block id="992cf3dc32e72bdb90286b4c5941d343" category="paragraph">*Limiti del modo Anteprima*</block>
-  <block id="252d166070160d49f855fee5ec9639fc" category="paragraph">Mentre questa funzione è in anteprima, esistono alcune limitazioni:</block>
-  <block id="2a42543b31a44385d9801b2e6d715417" category="list-text">L'attivazione di DataLock nel criterio non è supportata.</block>
-  <block id="bd38f0d8ed5d82f6a34eef6f60e82afc" category="list-text">L'attivazione della modalità archiviazione nel criterio non è supportata.</block>
-  <block id="7f4d22b3de45045172408ddd711a85a1" category="paragraph">*Guida introduttiva*</block>
-  <block id="5955ccac697a810563b00d68d2e643a8" category="paragraph">Per iniziare a utilizzare questa funzione di anteprima, è necessario attivare un contrassegno sul connettore BlueXP . È quindi possibile immettere i dettagli di connessione dell'archivio oggetti di terze parti MinIO nel flusso di lavoro di protezione scegliendo l'archivio oggetti compatibile con terze parti nella sezione di backup.</block>
   <block id="3c2a45fff6f8bee383d20bf70ff8535a" category="section-title">Report sugli ambienti di lavoro non supportati nella protezione dal ransomware BlueXP</block>
   <block id="40ed4b70f990ecbd2b29cdd99fe63ea3" category="inline-link">Rileva i carichi di lavoro nella protezione dal ransomware di BlueXP</block>
   <block id="61583743ac80f4ba16bec0d30aa9b643" category="paragraph">Per ulteriori informazioni, fare riferimento alla<block ref="fccc7436e00c13bc9cd8b09f936b4c8c" category="inline-link-rx"></block>.</block>
@@ -921,7 +902,6 @@
   <block id="39b551835fb0f105ce0b01ab6a4b0330" category="paragraph">In genere, il BlueXP backup and recovery stabiliscono un endpoint privato con il provider cloud per gestire le attività di protezione. Questa versione introduce un'impostazione opzionale che consente di abilitare o disabilitare la creazione automatica di un endpoint privato da parte di BlueXP Backup and Recovery. Questa opzione potrebbe essere utile se si desidera un maggiore controllo sul processo di creazione di endpoint privati.</block>
   <block id="2211c8a4939111428200ceec5f271f42" category="paragraph">È possibile abilitare o disabilitare questa opzione quando si abilita la protezione o si avvia il processo di ripristino.</block>
   <block id="030908b5781e3d39669f22cf9e8c02c4" category="paragraph">Vedere<block ref="f1ca93d1640a6fbcba487063d3fdcf11" category="inline-link-rx"></block>.</block>
-  <block id="3363af40fef96c985a6160ac6cebf40f" category="paragraph">Per informazioni dettagliate su come eseguire l'operazione di risincronizzazione, vedere<block ref="26011448910fe4558756af892237733b" category="inline-link-rx"></block>.</block>
   <block id="be5dc5f5e2d7e93e1002f9bc9daa9179" category="section-title">09 luglio 2025</block>
   <block id="e0feed907f4bf22cc0b1ffa18048f926" category="list-text">È stata inclusa un'opzione di download multiformato per i piani Upgrade Advisor, per semplificare la pianificazione degli aggiornamenti ONTAP e risolvere potenziali problemi o avvisi. Ora è possibile scaricare i piani Upgrade Advisor nei formati Excel, PDF e JSON.</block>
   <block id="e78e85c2863b9ed09c47dacdcfda2a1d" category="list-text">Nel formato Excel del piano Upgrade Advisor sono stati apportati i seguenti miglioramenti:</block>
@@ -936,4 +916,16 @@
   <block id="7b775530465bfc8e5ecd3d0244e8847c" category="paragraph">Il supporto e i servizi NetApp continueranno fino alla scadenza del contratto BYOL, ma le licenze scadute non verranno rinnovate né estese. Alla scadenza delle licenze BYOL, è necessario sostituirle con licenze basate sulla capacità acquistate tramite gli abbonamenti al marketplace cloud. Un modello di licenza basato sulla capacità, tramite i marketplace hyperscaler, semplifica l'esperienza di gestione delle licenze e offre maggiori vantaggi aziendali. Contatta il team Account NetApp o i rappresentanti del Customer Success per discutere le opzioni di conversione.</block>
   <block id="b902c393ae9091d227b03ac188f61f92" category="inline-link">CPC-00661: Modifiche alla politica BYOL Cloud Volumes ONTAP</block>
   <block id="37e719f908b04fc23a8be8447926a507" category="paragraph">Per ulteriori informazioni, fare riferimento a questo comunicato clienti: <block ref="4276341cf7737eb343f72d4388b5947d" category="inline-link-rx"></block> .</block>
+  <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="section-title">28 luglio 2025</block>
+  <block id="5d8fc779baf0d068c296ee5013b2224f" category="section-title">Supporto del carico di lavoro Kubernetes in anteprima</block>
+  <block id="36442e954ef2484603f79c5f3abc842b" category="paragraph">Questa versione di BlueXP backup and recovery introduce il supporto per l'individuazione e la gestione dei carichi di lavoro Kubernetes:</block>
+  <block id="200a1ca96330b8c7561607ba3e8efa76" category="list-text">Scopri i cluster Red Hat OpenShift e Kubernetes open source, supportati da NetApp ONTAP, senza condividere i file kubeconfig.</block>
+  <block id="bc97cde5f3a6fe336563401fb4b522a7" category="list-text">Scopri, gestisci e proteggi le applicazioni su più cluster Kubernetes utilizzando un piano di controllo unificato.</block>
+  <block id="8671fb87efe354c05f9373edb6889d96" category="list-text">Trasferisci le operazioni di spostamento dei dati per il backup e il ripristino delle applicazioni Kubernetes a NetApp ONTAP.</block>
+  <block id="be6ced50bfb2300cc42f3b12987b1359" category="list-text">Orchestrare i backup delle applicazioni locali e basati su storage di oggetti.</block>
+  <block id="780f81400ecdaedf5afa343aa9bd9abf" category="list-text">Esegui il backup e il ripristino di intere applicazioni e singole risorse su qualsiasi cluster Kubernetes.</block>
+  <block id="a914111953cd6ee9c63146474d7745de" category="list-text">Lavora con container e macchine virtuali in esecuzione su Kubernetes.</block>
+  <block id="87418d35e5df78aab70f2540a73bdaf6" category="list-text">Crea backup coerenti con l'applicazione utilizzando modelli e hook di esecuzione.</block>
+  <block id="c3c3199204503d3bbd5d4dce7eabf238" category="inline-link">Panoramica sulla protezione dei carichi di lavoro di Kubernetes</block>
+  <block id="f4270282e09abd3774ba339dc49af208" category="paragraph">Per i dettagli sulla protezione dei carichi di lavoro di Kubernetes, fare riferimento a <block ref="44b634c6507d9116150094fb69849fd2" category="inline-link-rx"></block> .</block>
 </blocks>

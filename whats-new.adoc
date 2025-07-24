@@ -369,6 +369,29 @@ Non è più possibile creare un volume da un modello. Questa azione è stata ass
 
 
 
+=== 28 luglio 2025
+
+Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
+
+
+
+==== Supporto del carico di lavoro Kubernetes in anteprima
+
+Questa versione di BlueXP backup and recovery introduce il supporto per l'individuazione e la gestione dei carichi di lavoro Kubernetes:
+
+* Scopri i cluster Red Hat OpenShift e Kubernetes open source, supportati da NetApp ONTAP, senza condividere i file kubeconfig.
+* Scopri, gestisci e proteggi le applicazioni su più cluster Kubernetes utilizzando un piano di controllo unificato.
+* Trasferisci le operazioni di spostamento dei dati per il backup e il ripristino delle applicazioni Kubernetes a NetApp ONTAP.
+* Orchestrare i backup delle applicazioni locali e basati su storage di oggetti.
+* Esegui il backup e il ripristino di intere applicazioni e singole risorse su qualsiasi cluster Kubernetes.
+* Lavora con container e macchine virtuali in esecuzione su Kubernetes.
+* Crea backup coerenti con l'applicazione utilizzando modelli e hook di esecuzione.
+
+
+Per i dettagli sulla protezione dei carichi di lavoro di Kubernetes, fare riferimento a  https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-kubernetes-protect-overview.html["Panoramica sulla protezione dei carichi di lavoro di Kubernetes"] .
+
+
+
 === 14 luglio 2025
 
 Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
@@ -454,51 +477,6 @@ La versione precedente ha introdotto il supporto per SnapMirror to Cloud Resync 
 Quando si creano file di backup nell'archiviazione oggetti per un ambiente di lavoro, per impostazione predefinita, BlueXP Backup and Recovery crea il contenitore (bucket o account di archiviazione) per i file di backup nell'account di archiviazione oggetti configurato. In precedenza, era possibile ignorare questa impostazione e specificare un contenitore personalizzato per Amazon S3, Azure Blob Storage e Google Cloud Storage. Con questa versione, è ora possibile utilizzare il proprio contenitore di archiviazione oggetti StorageGRID.
 
 Vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html["Crea il tuo contenitore di archiviazione di oggetti"].
-
-
-
-=== 13 maggio 2025
-
-Questa versione di backup e ripristino di BlueXP  include i seguenti aggiornamenti.
-
-
-
-==== Risincronizzazione da SnapMirror al cloud per le migrazioni dei volumi
-
-La funzionalità risincronizzazione da SnapMirror al cloud ottimizza la data Protection e la continuità durante le migrazioni dei volumi negli ambienti NetApp. Quando un volume viene migrato usando la replica logica SnapMirror (LRSE), da un'implementazione NetApp on-premise a un'altra o a una soluzione basata sul cloud come Cloud Volumes ONTAP o Cloud Volumes Service, SnapMirror to Cloud Resync garantisce che i backup cloud esistenti rimangano intatti e operativi.
-
-Questa funzionalità elimina la necessità di un'operazione di re-baseline, che richiede molto tempo e risorse, consentendo alle operazioni di backup di continuare anche dopo la migrazione. Questa funzionalità è molto utile negli scenari di migrazione dei carichi di lavoro, a supporto di FlexVol e gruppi di lavoro, ed è disponibile a partire dalla versione 9.16.1 di ONTAP.
-
-Mantenendo la continuità del backup in tutti gli ambienti, SnapMirror to Cloud Resync migliora l'efficienza delle operazioni e riduce la complessità della gestione dei dati nel cloud ibrido e multicloud.
-
-Per informazioni dettagliate su come eseguire l'operazione di risincronizzazione, vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-migrate-resync.html["Migra i volumi usando SnapMirror per la risincronizzazione del cloud"].
-
-
-
-==== Supporto per archivio oggetti MinIO di terze parti (anteprima)
-
-Il backup e ripristino di BlueXP  ora estende il suo supporto ad archivi di oggetti di terze parti, con una particolare attenzione al MinIO. Questa nuova funzione di anteprima consente di sfruttare qualsiasi archivio di oggetti compatibile con S3 per le proprie esigenze di backup e recovery.
-
-Con questa versione di anteprima, speriamo di garantire una solida integrazione con gli archivi di oggetti di terze parti prima che venga implementata la funzionalità completa. Siete incoraggiati ad esplorare questa nuova funzionalità e a fornire feedback per contribuire a migliorare il servizio.
-
-
-IMPORTANT: Questa funzione non deve essere utilizzata in produzione.
-
-*Limiti del modo Anteprima*
-
-Mentre questa funzione è in anteprima, esistono alcune limitazioni:
-
-* Il servizio Bring Your Own Bucket (BYOB) non è supportato.
-* L'attivazione di DataLock nel criterio non è supportata.
-* L'attivazione della modalità archiviazione nel criterio non è supportata.
-* Sono supportati solo gli ambienti ONTAP on-premise.
-* MetroCluster non è supportato.
-* Le opzioni per abilitare la crittografia a livello di bucket non sono supportate.
-
-
-*Guida introduttiva*
-
-Per iniziare a utilizzare questa funzione di anteprima, è necessario attivare un contrassegno sul connettore BlueXP . È quindi possibile immettere i dettagli di connessione dell'archivio oggetti di terze parti MinIO nel flusso di lavoro di protezione scegliendo l'archivio oggetti compatibile con terze parti nella sezione di backup.
 
 
 
