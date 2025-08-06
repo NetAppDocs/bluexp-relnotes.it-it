@@ -24,13 +24,45 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 31 luglio 2025
+
+
+
+==== Rilascio della modalità privata (3.9.54)
+
+È ora disponibile una nuova versione in modalità privata da scaricare da https://mysupport.netapp.com/site/downloads["Sito di supporto NetApp"^]
+
+La versione 3.9.54 include aggiornamenti ai seguenti componenti e servizi BlueXP .
+
+[cols="3*"]
+|===
+| Componente o servizio | Versione inclusa in questa release | Cambia dalla precedente versione in modalità privata 
+
+
+| Connettore | 3.9.54, 3.9.53 | Vai al https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["novità nella pagina BlueXP"^] e fare riferimento alle modifiche incluse per le versioni 3.9.54 e 3.9.53. 
+
+
+| Backup e recovery | 28 luglio 2025 | Vai al https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novità della pagina di backup e ripristino di BlueXP"^] e fare riferimento alle modifiche incluse nella versione di luglio 2025. 
+
+
+| Classificazione | 14 luglio 2025 (versione 1.45) | Vai al https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novità della pagina di classificazione BlueXP"^] . 
+|===
+Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggiornamento, fare riferimento a quanto segue:
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informazioni sulla modalità privata"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Scopri come iniziare a utilizzare BlueXP in modalità privata"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Informazioni su come aggiornare il connettore quando si utilizza la modalità privata"]
+
+
+
+
 === 21 luglio 2025
 
 
 
 ==== Supporto per Google Cloud NetApp Volumes
 
-Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["Scopri di più su Google Cloud NetApp Volumes."]
+Ora puoi visualizzare Google Cloud NetApp Volumes in BlueXP.link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html["Scopri di più su Google Cloud NetApp Volumes."]
 
 
 
@@ -167,38 +199,6 @@ Ora puoi visualizzare ed eliminare le credenziali Amazon FSx for NetApp ONTAP da
 
 
 
-=== 29 maggio 2025
-
-
-
-==== Rilascio in modalità privata (3,9.52)
-
-È ora disponibile una nuova versione in modalità privata da scaricare da https://mysupport.netapp.com/site/downloads["Sito di supporto NetApp"^]
-
-La versione 3.9.52 include aggiornamenti ai seguenti componenti e servizi BlueXP.
-
-[cols="3*"]
-|===
-| Componente o servizio | Versione inclusa in questa release | Cambia dalla precedente versione in modalità privata 
-
-
-| Connettore | 3.9.52, 3.9.51 | Vai al  https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Novità della pagina BlueXP  Connector"] e fare riferimento alle modifiche incluse nelle versioni 3.9.52 e 3.9.50. 
-
-
-| Backup e recovery | 12 maggio 2025 | Vai al  https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Novità della pagina di backup e ripristino di BlueXP"^] e fare riferimento alle modifiche incluse nella versione di maggio 2025. 
-
-
-| Classificazione | 12 maggio 2025 (versione 1.43) | Andare a https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Novità della pagina di classificazione BlueXP"^] e fare riferimento alle modifiche incluse nelle versioni da 1,38 a 1.371.41. 
-|===
-Per ulteriori informazioni sulla modalità privata, inclusa la modalità di aggiornamento, fare riferimento a quanto segue:
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["Informazioni sulla modalità privata"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Scopri come iniziare a utilizzare BlueXP in modalità privata"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Informazioni su come aggiornare il connettore quando si utilizza la modalità privata"]
-
-
-
-
 == Avvisi
 
 
@@ -231,13 +231,30 @@ https://docs.netapp.com/us-en/bluexp-alerts/concept-alerts.html["Ulteriori infor
 
 
 
+=== 03 agosto 2025
+
+
+
+==== Miglioramenti alla scheda Relazioni di replicazione
+
+Abbiamo aggiunto diverse nuove colonne alla tabella delle relazioni di replicazione per fornirti maggiori informazioni sulle relazioni di replicazione nella scheda *Relazioni di replicazione*. La tabella ora include le seguenti colonne:
+
+* Politica SnapMirror
+* File system sorgente
+* File system di destinazione
+* Stato della relazione
+* Ultimo orario di trasferimento
+
+
+
+
 === 14 luglio 2025
 
 
 
 ==== Supporto per la replica dei dati tra due file system FSx per ONTAP
 
-La replica dei dati è ora disponibile tra due file system FSx per ONTAP dalla console BlueXP.
+La replica dei dati è ora disponibile tra due file system FSx per ONTAP dalla canvas nella console BlueXP .
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-environment.html#replicate-data["Replicare i dati"]
 
@@ -252,46 +269,6 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-working-envi
 Dopo aver impostato credenziali e autorizzazioni per il file system FSx for ONTAP, verrai reindirizzato alla pagina Credenziali BlueXP. Da questa pagina puoi rinominare o rimuovere le tue credenziali FSx for ONTAP.
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Impostare le autorizzazioni per FSx per i file system ONTAP"]
-
-
-
-=== 04 maggio 2025
-
-
-
-==== Supporto risposta Tracker
-
-Tracker ora fornisce le risposte API in modo da poter vedere l'output dell'API REST relativo all'attività.
-
-
-
-==== Supporto di autenticazione link per AWS Secrets Manager
-
-Ora puoi utilizzare i segreti di AWS Secrets Manager per autenticare i link in modo da non dover utilizzare le credenziali archiviate nei workload di BlueXP .
-
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Connettersi a un file system FSX per ONTAP con un collegamento Lambda"]
-
-
-
-==== Implementare le Best practice per un file system FSX per ONTAP
-
-I carichi di lavoro BlueXP  fornisce una dashboard in cui puoi esaminare lo stato con l'architettura ideale delle configurazioni del file system. Puoi sfruttare questa analisi per implementare le Best practice per i file system FSX per ONTAP. L'analisi della configurazione del file system include le seguenti configurazioni: Soglia di capacità SSD, snapshot locali pianificate, backup FSX for ONTAP pianificati, tiering dei dati e replica dei dati remota.
-
-* link:https://docs.netapp.com/us-en/workload-fsx-ontap/configuration-analysis.html["Scopri l'analisi con un'architettura ideale per le configurazioni del file system"]
-* link:https://review.docs.netapp.com/us-en/workload-fsx-ontap_well-architected/improve-configurations.html["Implementare le Best practice per i file system"]
-
-
-
-
-==== Notifica con un'architettura ottimale per i problemi del file system
-
-Nella console BlueXP , i file system FSX per ONTAP con problemi ben strutturati ora visualizzano una notifica in Canvas che indica quando i file system hanno problemi da risolvere.
-
-
-
-==== Terminologia aggiornata per le autorizzazioni
-
-L'interfaccia utente e la documentazione della Workload Factory ora utilizzano "sola lettura" per fare riferimento alle autorizzazioni di lettura e "lettura/scrittura" per fare riferimento alle autorizzazioni di automazione.
 
 
 
@@ -775,26 +752,6 @@ Per ulteriori informazioni sulle implementazioni in modalità privata, fare rife
 
 
 
-== Cloud Volumes Service per Google Cloud
-
-
-
-=== 9 settembre 2020
-
-
-
-==== Supporto per Cloud Volumes Service per Google Cloud
-
-Ora puoi gestire Cloud Volumes Service per Google Cloud direttamente da BlueXP:
-
-* Configurare e creare un ambiente di lavoro
-* Creare e gestire volumi NFSv3 e NFSv4.1 per client Linux e UNIX
-* Creare e gestire volumi SMB 3.x per client Windows
-* Creare, eliminare e ripristinare le snapshot dei volumi
-
-
-
-
 == Copia e sincronizzazione
 
 
@@ -1142,6 +1099,12 @@ Il servizio di caching edge di BlueXP  è stato rimosso il 7 agosto 2024.
 
 
 
+== Google Cloud NetApp Volumes
+
+Direttiva non risolta in <stdin> - include:: https://raw.githubusercontent.com/NetAppDocs/bluexp-google-cloud-netapp-volumes/main/whats-new.adoc [tag=whats-new,leveloffset=+1]
+
+
+
 == Storage Google Cloud
 
 
@@ -1160,22 +1123,13 @@ Hai avuto la possibilità di visualizzare i bucket di storage di Google Cloud su
 
 
 
-=== 19 giugno 2025
+=== 05 agosto 2025
 
 
 
-==== Dashboard Keystone in BlueXP
+==== Visualizza i dati di consumo a livello di istanza
 
-Ora puoi accedere alla dashboard di Keystone direttamente da BlueXP. Questa integrazione ti offre un unico punto di monitoraggio, gestione e tracciamento di tutti i tuoi abbonamenti Keystone e degli altri servizi NetApp.
-
-Con la dashboard Keystone in BlueXP puoi:
-
-* Visualizza tutti i dettagli del tuo abbonamento, l'utilizzo della capacità e le risorse in un unico posto.
-* Gestisci facilmente gli abbonamenti e richiedi modifiche in base all'evoluzione delle tue esigenze.
-* Rimani aggiornato sulle ultime informazioni relative al tuo ambiente di archiviazione.
-
-
-Per iniziare, vai su *Archiviazione > Keystone* nel menu di navigazione a sinistra di BlueXP. Per ulteriori informazioni, fare riferimento a link:https://docs.netapp.com/us-en/keystone-staas/integrations/dashboard-overview.html["Panoramica della dashboard Keystone"].
+È possibile visualizzare i dati storici e di consumo correnti per ogni istanza del livello di servizio delle prestazioni tramite la dashboard Keystone in BlueXP. Questa funzionalità è disponibile per livelli di servizio di prestazioni con più istanze, a condizione che si disponga di un abbonamento Keystone versione 3 (v3). Per saperne di più, fare riferimento alink:https://docs.netapp.com/us-en/keystone-staas/integrations/current-usage-tab.html["Visualizza il consumo dei tuoi abbonamenti Keystone"] .
 
 
 
