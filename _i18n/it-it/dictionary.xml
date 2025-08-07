@@ -918,4 +918,16 @@
   <block id="4632607b0b76f87d36568a2df2c3a267" category="paragraph">Una nuova sezione API obsoleta è disponibile nel catalogo API Digital Advisor . Elenca le API programmate per essere deprecate, insieme alle tempistiche di deprecazione e alle API alternative.</block>
   <block id="9eadf268f4ef55df53b7403a020082b1" category="section-title">Obsolescenza dei moduli API V2 e End of Support per la previsione della capacità</block>
   <block id="bd2055e6fb5a6ca7ecc6d9d52f394548" category="paragraph">I moduli API di previsione della capacità V2 e di fine supporto sono programmati per essere dismessi. Per accedere alle API deprecate o per conoscere le tempistiche di deprecazione e le API alternative, vai su *Servizi API -&gt; Sfoglia -&gt; API deprecate*.</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">04 agosto 2025</block>
+  <block id="4a32789f771ba902fef02cd0f2a544e6" category="paragraph">Versione 4.2.5P2</block>
+  <block id="d4b79f85bf29ad80a3ae386050c77c87" category="section-title">Aggiornamenti BlueXP disaster recovery</block>
+  <block id="36088b35355e766d544b98140baa439a" category="list-text">Migliorato il supporto VMFS per gestire lo stesso LUN presentato da più macchine virtuali di archiviazione.</block>
+  <block id="5958ae417b9ca044a24e8a3629b195bb" category="list-text">Migliorata la pulizia dello teardown del test per gestire il datastore già smontato e/o eliminato.</block>
+  <block id="1a2957b0c8fb36225440df520076e072" category="list-text">Mappatura della subnet migliorata in modo che ora convalidi che il gateway immesso sia contenuto nella rete fornita.</block>
+  <block id="7f5267deccdc08e8591ec8b4dccfcc03" category="list-text">È stato risolto un problema che poteva causare il fallimento del piano di replica se il nome della VM conteneva ".com".</block>
+  <block id="8af129ac3a817923db5feb647660eb7c" category="list-text">È stata rimossa una restrizione che impediva al volume di destinazione di essere uguale al volume di origine durante la creazione del volume come parte della creazione del piano di replica.</block>
+  <block id="4de413f6189881cc6b259fb6e68df02c" category="list-text">Aggiunto il supporto per un abbonamento con pagamento in base al consumo (PAYGO) a NetApp Intelligent Services in Azure Marketplace e aggiunto un collegamento ad Azure Marketplace nella finestra di dialogo della prova gratuita.</block>
+  <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">Licenza BlueXP disaster recovery</block>
+  <block id="a7193edb26a4b1bca4b7b82254e6dd4b" category="inline-link">Impostare la licenza per il BlueXP disaster recovery</block>
+  <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">Per i dettagli, vedere<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block> E<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block> .</block>
 </blocks>

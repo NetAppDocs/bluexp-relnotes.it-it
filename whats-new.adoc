@@ -946,6 +946,29 @@ Per ulteriori informazioni sui report sull'utilizzo, fare riferimento a. https:/
 
 
 
+=== 04 agosto 2025
+
+Versione 4.2.5P2
+
+
+
+==== Aggiornamenti BlueXP disaster recovery
+
+Questa versione include i seguenti aggiornamenti:
+
+* Migliorato il supporto VMFS per gestire lo stesso LUN presentato da più macchine virtuali di archiviazione.
+* Migliorata la pulizia dello teardown del test per gestire il datastore già smontato e/o eliminato.
+* Mappatura della subnet migliorata in modo che ora convalidi che il gateway immesso sia contenuto nella rete fornita.
+* È stato risolto un problema che poteva causare il fallimento del piano di replica se il nome della VM conteneva ".com".
+* È stata rimossa una restrizione che impediva al volume di destinazione di essere uguale al volume di origine durante la creazione del volume come parte della creazione del piano di replica.
+* Aggiunto il supporto per un abbonamento con pagamento in base al consumo (PAYGO) a NetApp Intelligent Services in Azure Marketplace e aggiunto un collegamento ad Azure Marketplace nella finestra di dialogo della prova gratuita.
++
+Per i dettagli, vedere https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html#licensing["Licenza BlueXP disaster recovery"] E https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-licensing.html["Impostare la licenza per il BlueXP disaster recovery"] .
+
+
+
+
+
 === 14 luglio 2025
 
 Versione 4.2.5
