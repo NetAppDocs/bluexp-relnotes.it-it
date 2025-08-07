@@ -24,6 +24,38 @@ In questa sezione vengono descritte le nuove funzionalità relative alle funzion
 
 
 
+=== 11 agosto 2025
+
+
+
+==== Connettore 3.9.55
+
+Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.
+
+La versione 3.9.55 è disponibile per la modalità standard e la modalità limitata.
+
+
+
+==== Supporto per la lingua giapponese
+
+L'interfaccia utente BlueXP è ora disponibile in lingua giapponese. Se la lingua del tuo browser è il giapponese, BlueXP verrà visualizzato in giapponese. Per accedere alla documentazione in giapponese, utilizzare il menu della lingua sul sito web della documentazione.
+
+
+
+==== Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP
+
+La gestione delle identità e degli accessi in BlueXP ora offre la seguente funzionalità.
+
+
+
+==== Nuovo ruolo di accesso per il supporto operativo
+
+BlueXP ora supporta il ruolo di analista di supporto operativo. Questo ruolo concede all'utente le autorizzazioni per monitorare gli avvisi di archiviazione, visualizzare la cronologia degli audit BlueXP e inserire e tenere traccia dei casi di supporto NetApp .
+
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sull'utilizzo dei ruoli di accesso."]
+
+
+
 === 31 luglio 2025
 
 
@@ -145,57 +177,7 @@ BlueXP ora supporta l'utilizzo dei ruoli IAM per le seguenti funzionalità e ser
 * Federazione
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["Scopri di più sull'utilizzo dei ruoli di accesso."]
-
-
-
-=== 9 giugno 2025
-
-
-
-==== Connettore 3.9.53
-
-Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.
-
-La versione 3.9.53 è disponibile per la modalità standard e la modalità limitata.
-
-
-
-==== Avvisi sull'utilizzo dello spazio su disco
-
-Il Centro notifiche ora include avvisi sull'utilizzo dello spazio su disco sul Connettore. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["Scopri di più."^]
-
-
-
-==== Miglioramenti dell'audit
-
-La cronologia ora include gli eventi di accesso e disconnessione degli utenti. È possibile visualizzare l'attività di accesso, utile per il controllo e il monitoraggio della sicurezza. Gli utenti API con il ruolo di amministratore dell'organizzazione possono visualizzare l'indirizzo email dell'utente che ha effettuato l'accesso includendo  `includeUserData=true`` parametro come nel seguente:  `/audit/<account_id>?includeUserData=true` .
-
-
-
-==== Gestione degli abbonamenti Keystone disponibile in BlueXP
-
-Puoi gestire il tuo abbonamento NetApp Keystone da BlueXP.
-
-link:https://docs.netapp.com/us-en/keystone-staas/index.html["Scopri di più sulla gestione degli abbonamenti Keystone in BlueXP."^]
-
-
-
-==== Gestione delle identità e degli accessi (IAM, Identity and Access Management) di BlueXP
-
-
-
-===== Autenticazione a più fattori (MFA)
-
-Gli utenti non federati possono abilitare l'MFA per i propri account BlueXP per migliorare la sicurezza. Gli amministratori possono gestire le impostazioni dell'MFA, inclusa la reimpostazione o la disattivazione dell'MFA per gli utenti, se necessario. Questa funzionalità è supportata solo in modalità standard.
-
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Scopri come configurare autonomamente l'autenticazione a più fattori."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Scopri come gestire l'autenticazione a più fattori per gli utenti."^]
-
-
-
-==== Carichi di lavoro
-
-Ora puoi visualizzare ed eliminare le credenziali Amazon FSx for NetApp ONTAP dalla pagina Credenziali in BlueXP.
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["Scopri di più sull'utilizzo dei ruoli di accesso."]
 
 
 
@@ -461,6 +443,26 @@ Vedere https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-j
 
 
 
+=== 11 agosto 2025
+
+
+
+==== Versione 1.46
+
+Questa versione BlueXP classification include correzioni di bug e i seguenti aggiornamenti:
+
+.Informazioni dettagliate sugli eventi di scansione nella cronologia BlueXP
+La cronologia BlueXP ora supporta approfondimenti avanzati sugli eventi di scansione per la BlueXP classification. La cronologia ora mostra quando inizia la scansione di un ambiente di lavoro, lo stato degli ambienti di lavoro e gli eventuali problemi. Gli stati delle condivisioni e degli ambienti di lavoro sono disponibili solo per le scansioni di mappatura.
+
+Per ulteriori informazioni sulla cronologia BlueXP , vederelink:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["Monitorare le operazioni BlueXP"^] .
+
+.Supporto per RHEL 9.6
+Questa versione aggiunge il supporto per Red Hat Enterprise Linux v9.6 per l'installazione manuale in sede della BlueXP classification, comprese le distribuzioni di siti oscuri.
+
+I seguenti sistemi operativi richiedono l'utilizzo del motore del contenitore Podman e richiedono la classificazione BlueXP  versione 1,30 o superiore: Red Hat Enterprise Linux versione 8,8, 8,10, 9,0, 9,1, 9,2, 9,3, 9,4 e 9,5.
+
+
+
 === 14 luglio 2025
 
 
@@ -701,6 +703,22 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 
 
+=== 11 agosto 2025
+
+
+
+==== Fine della disponibilità delle licenze ottimizzate
+
+A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nei marketplace di Azure e Google Cloud per gli abbonamenti con pagamento in base al consumo (PAYGO). Se hai un contratto annuale con una licenza Optimized, puoi continuare a utilizzare la licenza fino alla scadenza del contratto. Alla scadenza della licenza Optimized, puoi optare per le licenze Cloud Volumes ONTAP Essentials o Professional.
+
+Tuttavia, la possibilità di aggiungere o rinnovare le licenze ottimizzate sarà disponibile tramite le API.
+
+Per informazioni sui pacchetti di licenza, fare riferimento a https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["Licenze per Cloud Volumes ONTAP"^] .
+
+Per informazioni sul passaggio a un metodo di ricarica diverso, fare riferimento a https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestire le licenze basate sulla capacità"^] .
+
+
+
 === 14 luglio 2025
 
 
@@ -737,18 +755,6 @@ A partire dal 25 giugno 2025, NetApp ha limitato il modello di licenza Bring You
 Il supporto e i servizi NetApp continueranno fino alla scadenza del contratto BYOL, ma le licenze scadute non verranno rinnovate né estese. Alla scadenza delle licenze BYOL, è necessario sostituirle con licenze basate sulla capacità acquistate tramite gli abbonamenti al marketplace cloud. Un modello di licenza basato sulla capacità, tramite i marketplace hyperscaler, semplifica l'esperienza di gestione delle licenze e offre maggiori vantaggi aziendali. Contatta il team Account NetApp o i rappresentanti del Customer Success per discutere le opzioni di conversione.
 
 Per ulteriori informazioni, fare riferimento a questo comunicato clienti:  https://mysupport.netapp.com/info/communications/CPC-00661.html["CPC-00661: Modifiche alla politica BYOL Cloud Volumes ONTAP"^] .
-
-
-
-=== 29 maggio 2025
-
-
-
-==== Implementazioni in modalità privata abilitate per Cloud Volumes ONTAP 9.15.1
-
-Ora puoi implementare Cloud Volumes ONTAP 9.15.1 in modalità privata in AWS, Azure e Google Cloud. La modalità privata è abilitata per implementazioni a nodo singolo e high Availability (ha) di Cloud Volumes ONTAP 9.15.1.
-
-Per ulteriori informazioni sulle implementazioni in modalità privata, fare riferimento a https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#restricted-mode["Scopri le modalità di implementazione di BlueXP"^].
 
 
 

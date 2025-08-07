@@ -608,25 +608,6 @@
   <block id="1ce2096c300f78bbb8389ca2603e6dd9" category="inline-link">Keystone</block>
   <block id="b49987f3f316f01d3769520e570e03c1" category="list-text"><block ref="b49987f3f316f01d3769520e570e03c1" category="inline-link-rx"></block></block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 giugno 2025</block>
-  <block id="e9bf07011be1831466ac0bf1bbfe1140" category="section-title">Connettore 3.9.53</block>
-  <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.</block>
-  <block id="33eba214b6723fe54975309f2fc419fe" category="paragraph">La versione 3.9.53 è disponibile per la modalità standard e la modalità limitata.</block>
-  <block id="39615b94cc2fe576502275ed459d404b" category="section-title">Avvisi sull'utilizzo dello spazio su disco</block>
-  <block id="f990e553cdc4c29c2efffba33e08a8c7" category="inline-link-macro">Scopri di più.</block>
-  <block id="da15b66e2df6f7619f48e376251ca70a" category="paragraph">Il Centro notifiche ora include avvisi sull'utilizzo dello spazio su disco sul Connettore. <block ref="c622bedc83ce36b38252ce6167a6dc1f" category="inline-link-macro-rx"></block></block>
-  <block id="35e36a667d1baf91dbb76a03357b3183" category="section-title">Miglioramenti dell'audit</block>
-  <block id="71c9d16d02984e33cfc9f5c051c0fdb6" category="paragraph">La cronologia ora include gli eventi di accesso e disconnessione degli utenti. È possibile visualizzare l'attività di accesso, utile per il controllo e il monitoraggio della sicurezza. Gli utenti API con il ruolo di amministratore dell'organizzazione possono visualizzare l'indirizzo email dell'utente che ha effettuato l'accesso includendo <block ref="603b75134f0f5d7ea187a9ec930623d0" prefix=" " category="inline-code"></block> parametro come nel seguente: <block ref="a87d1f23773a5263432b2160d5b0c667" prefix=" " category="inline-code"></block> .</block>
-  <block id="a0b97dd4496f33209c0a49172d25b07e" category="section-title">Gestione degli abbonamenti Keystone disponibile in BlueXP</block>
-  <block id="92fd6983a547cfe3acf24d017a43dd47" category="paragraph">Puoi gestire il tuo abbonamento NetApp Keystone da BlueXP.</block>
-  <block id="29e615c9125f030edfca48f5dd489a27" category="inline-link-macro">Scopri di più sulla gestione degli abbonamenti Keystone in BlueXP.</block>
-  <block id="b449211baca42f6cd385865db145f827" category="paragraph"><block ref="b449211baca42f6cd385865db145f827" category="inline-link-macro-rx"></block></block>
-  <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Autenticazione a più fattori (MFA)</block>
-  <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Scopri come configurare autonomamente l'autenticazione a più fattori.</block>
-  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Scopri come gestire l'autenticazione a più fattori per gli utenti.</block>
-  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
-  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Carichi di lavoro</block>
-  <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Ora puoi visualizzare ed eliminare le credenziali Amazon FSx for NetApp ONTAP dalla pagina Credenziali in BlueXP.</block>
-  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 maggio 2025</block>
   <block id="7454fc4c14df2a987637928e569efe3a" category="section-title">29 giugno 2025</block>
   <block id="737f8adcd33c506f811980c79df8aa51" category="section-title">Aggiornamento delle credenziali</block>
   <block id="e7bb6404e9b51c8163ba1ed57cf3a336" category="paragraph">Dopo aver impostato credenziali e autorizzazioni per il file system FSx for ONTAP, verrai reindirizzato alla pagina Credenziali BlueXP. Da questa pagina puoi rinominare o rimuovere le tue credenziali FSx for ONTAP.</block>
@@ -673,9 +654,6 @@
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">Miglioramenti delle prestazioni e della sicurezza</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">Sono stati apportati miglioramenti per ottimizzare le prestazioni, il consumo di memoria e la sicurezza della classificazione BlueXP.</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis è stato aggiornato per migliorare l'affidabilità della classificazione BlueXP. La classificazione BlueXP ora utilizza Elasticsearch per migliorare l'accuratezza del reporting del conteggio dei file durante le scansioni.</block>
-  <block id="389d4c98e2d0499c2e4e750430434afb" category="section-title">Implementazioni in modalità privata abilitate per Cloud Volumes ONTAP 9.15.1</block>
-  <block id="bce4906e9d915e525cd382b520b71325" category="paragraph">Ora puoi implementare Cloud Volumes ONTAP 9.15.1 in modalità privata in AWS, Azure e Google Cloud. La modalità privata è abilitata per implementazioni a nodo singolo e high Availability (ha) di Cloud Volumes ONTAP 9.15.1.</block>
-  <block id="dc748283e7593515df9e8f2759a85349" category="paragraph">Per ulteriori informazioni sulle implementazioni in modalità privata, fare riferimento a <block ref="312f421b6dd5cf62286ecf6a82a8132e" category="inline-link-rx"></block>.</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">30 giugno 2025</block>
   <block id="f5939a7e3fd75d2d5422c1d6029f44c8" category="paragraph">Versione 4.2.4P2</block>
   <block id="dc729c135725ed28b09cd35258e2a28d" category="section-title">Miglioramenti della scoperta</block>
@@ -744,7 +722,6 @@
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">Backup e ripristino BlueXP</block>
   <block id="43db2a9bc6b7310c67fd6873bb6ca7a4" category="list-text">Federazione</block>
   <block id="f52cf765b6d2324047bf70dbb3a134b2" category="inline-link-macro">Scopri di più sull'utilizzo dei ruoli di accesso.</block>
-  <block id="f32aa7882dcd9a369e67d2808830a51e" category="paragraph">Gli utenti non federati possono abilitare l'MFA per i propri account BlueXP per migliorare la sicurezza. Gli amministratori possono gestire le impostazioni dell'MFA, inclusa la reimpostazione o la disattivazione dell'MFA per gli utenti, se necessario. Questa funzionalità è supportata solo in modalità standard.</block>
   <block id="2bef154766331bbaacbab995f24ef0c2" category="section-title">Ruoli di accesso BlueXP necessari</block>
   <block id="44a4a7c03393e00f4aeee3bd72474eea" category="paragraph">Ora è necessario uno dei seguenti ruoli di accesso per visualizzare, scoprire o gestire StorageGRID in BlueXP: *Amministratore organizzazione*, *Amministratore cartella o progetto*, *Amministratore archiviazione* o *Specialista integrità archiviazione*. <block ref="b792d0fe33393ff1eec4387f959ddd2c" category="inline-link-macro-rx"></block></block>
   <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="section-title">Versione 1,45</block>
@@ -785,7 +762,6 @@
   <block id="5e976f8888129db7a70ab686bfcc86b9" category="list-text">Supporto per proxy trasparenti per i connettori dedicati al supporto dei servizi Cloud Volumes ONTAP . <block ref="addeb9305f92d41fc2dd640d1ef810f0" category="inline-link-macro-rx"></block></block>
   <block id="a930f8ca18589b33c946f81801d0bbf6" category="paragraph">Ti verrà richiesto di importare eventuali connessioni federate esistenti nella nuova interfaccia per accedere alle nuove funzionalità di gestione. Questo ti permetterà di sfruttare i più recenti miglioramenti senza dover ricreare le tue connessioni federate. <block ref="374020c220651e051317a80c1b5ae1db" category="inline-link-macro-rx"></block></block>
   <block id="b658b3504fd725bf7abab622b28f1851" category="paragraph"><block ref="b658b3504fd725bf7abab622b28f1851" category="inline-link-macro-rx"></block></block>
-  <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="c65f3468fbd84ca6a3ed5c4f86c93ec8" category="section-title">Dashboard del volume ONTAP migliorato</block>
   <block id="4fd717f9bf23502f14b97a4e0dd209e6" category="paragraph">Ad aprile 2025 abbiamo lanciato un'anteprima di una Dashboard del volume ONTAP migliorata, molto più veloce ed efficiente.</block>
   <block id="24c045ea49f5ec7c22662da2305601e6" category="paragraph">Questa dashboard è stata progettata per supportare i clienti aziendali con un elevato numero di carichi di lavoro. Anche per i clienti con 20.000 volumi, la nuova dashboard si carica in meno di 10 secondi.</block>
@@ -930,4 +906,28 @@
   <block id="276ba658474d8685c0925cd2bcb486a8" category="inline-link">Licenza BlueXP disaster recovery</block>
   <block id="a7193edb26a4b1bca4b7b82254e6dd4b" category="inline-link">Impostare la licenza per il BlueXP disaster recovery</block>
   <block id="17c3f7bad28af5667bbaacbe3fe4f6d1" category="paragraph">Per i dettagli, vedere<block ref="ea68973aac8ca707300074d97a0eb98d" category="inline-link-rx"></block> E<block ref="1e6c39dcb2e36546ede605d53a914ae9" category="inline-link-rx"></block> .</block>
+  <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11 agosto 2025</block>
+  <block id="b21ef378da4454971a6488eacb2b5c87" category="section-title">Connettore 3.9.55</block>
+  <block id="7c5236578de836eb6dde25bc3e995d02" category="paragraph">Questa versione di BlueXP Connector include miglioramenti della sicurezza e correzioni di bug.</block>
+  <block id="95d98fc23d5487afb84beeeea8decb64" category="paragraph">La versione 3.9.55 è disponibile per la modalità standard e la modalità limitata.</block>
+  <block id="6c88af8a9c03b6578eb8087b3113c649" category="section-title">Supporto per la lingua giapponese</block>
+  <block id="a73649d115bb7a94bbfab3b7d4f15ddf" category="paragraph">L'interfaccia utente BlueXP è ora disponibile in lingua giapponese. Se la lingua del tuo browser è il giapponese, BlueXP verrà visualizzato in giapponese. Per accedere alla documentazione in giapponese, utilizzare il menu della lingua sul sito web della documentazione.</block>
+  <block id="65bb19480004be81c6ef8d7f7ef40e2f" category="paragraph">La gestione delle identità e degli accessi in BlueXP ora offre la seguente funzionalità.</block>
+  <block id="db971a19c27a52f19f1811c52c55dc2d" category="section-title">Nuovo ruolo di accesso per il supporto operativo</block>
+  <block id="9a69bf13bbd4a86f23945e6b153f3913" category="paragraph">BlueXP ora supporta il ruolo di analista di supporto operativo. Questo ruolo concede all'utente le autorizzazioni per monitorare gli avvisi di archiviazione, visualizzare la cronologia degli audit BlueXP e inserire e tenere traccia dei casi di supporto NetApp .</block>
+  <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="section-title">Versione 1.46</block>
+  <block id="d221ee9585220af20b8b4e1420b1a705" category="paragraph">Questa versione BlueXP classification include correzioni di bug e i seguenti aggiornamenti:</block>
+  <block id="688ea6ebefec0ae0aaddb70ff5413e00" category="paragraph-title">Informazioni dettagliate sugli eventi di scansione nella cronologia BlueXP</block>
+  <block id="e3f2c8a75408251f04a1059c3edcc328" category="paragraph">La cronologia BlueXP ora supporta approfondimenti avanzati sugli eventi di scansione per la BlueXP classification. La cronologia ora mostra quando inizia la scansione di un ambiente di lavoro, lo stato degli ambienti di lavoro e gli eventuali problemi. Gli stati delle condivisioni e degli ambienti di lavoro sono disponibili solo per le scansioni di mappatura.</block>
+  <block id="57bee919903f0c92a41c5582519db779" category="inline-link-macro">Monitorare le operazioni BlueXP</block>
+  <block id="6ae0edc3b3f0ae8b008d6d6252956898" category="paragraph">Per ulteriori informazioni sulla cronologia BlueXP , vedere<block ref="985f72ec91ace369e4feac0016fa4020" category="inline-link-macro-rx"></block> .</block>
+  <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">Supporto per RHEL 9.6</block>
+  <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">Questa versione aggiunge il supporto per Red Hat Enterprise Linux v9.6 per l'installazione manuale in sede della BlueXP classification, comprese le distribuzioni di siti oscuri.</block>
+  <block id="9def883103b7b964dcbb0993e3f8a065" category="section-title">Fine della disponibilità delle licenze ottimizzate</block>
+  <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nei marketplace di Azure e Google Cloud per gli abbonamenti con pagamento in base al consumo (PAYGO). Se hai un contratto annuale con una licenza Optimized, puoi continuare a utilizzare la licenza fino alla scadenza del contratto. Alla scadenza della licenza Optimized, puoi optare per le licenze Cloud Volumes ONTAP Essentials o Professional.</block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">Tuttavia, la possibilità di aggiungere o rinnovare le licenze ottimizzate sarà disponibile tramite le API.</block>
+  <block id="be02aeef4770b69cefbe40935aba2797" category="inline-link">Licenze per Cloud Volumes ONTAP</block>
+  <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">Per informazioni sui pacchetti di licenza, fare riferimento a<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> .</block>
+  <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">Gestire le licenze basate sulla capacità</block>
+  <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">Per informazioni sul passaggio a un metodo di ricarica diverso, fare riferimento a<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> .</block>
 </blocks>
