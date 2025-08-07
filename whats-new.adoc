@@ -775,7 +775,7 @@ Questa versione di classificazione BlueXP  include miglioramenti generali e cor
 
 ==== Fine della disponibilità delle licenze ottimizzate
 
-A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nei marketplace di Azure e Google Cloud per gli abbonamenti con pagamento in base al consumo (PAYGO). Se hai un contratto annuale con una licenza Optimized, puoi continuare a utilizzare la licenza fino alla scadenza del contratto. Alla scadenza della licenza Optimized, puoi optare per le licenze Cloud Volumes ONTAP Essentials o Professional.
+A partire dall'11 agosto 2025, la licenza Cloud Volumes ONTAP Optimized sarà deprecata e non sarà più disponibile per l'acquisto o il rinnovo nei marketplace di Azure e Google Cloud per gli abbonamenti con pagamento in base al consumo (PAYGO). Se hai un contratto annuale con una licenza Optimized, puoi continuare a utilizzare la licenza fino alla scadenza del contratto. Quando la licenza Optimized scade, puoi optare per le licenze Cloud Volumes ONTAP Essentials o Professional in BlueXP.
 
 Tuttavia, la possibilità di aggiungere o rinnovare le licenze ottimizzate sarà disponibile tramite le API.
 
@@ -1334,6 +1334,12 @@ link:https://docs.netapp.com/us-en/bluexp-operational-resiliency/get-started/int
 
 
 == Protezione ransomware
+
+
+
+=== 12 luglio 2025
+
+Questa versione include miglioramenti e miglioramenti generali.
 
 
 
