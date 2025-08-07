@@ -962,5 +962,11 @@
   <block id="2ad14b464bc33278b17682af53ee8430" category="admonition">Utilizzare questa opzione con cautela e solo in caso di estrema necessità di pulizia. Il BlueXP backup and recovery non avranno più accesso a questi backup, anche se non vengono eliminati dall'archivio oggetti. Sarà necessario rivolgersi al proprio provider cloud ed eliminare manualmente i backup.</block>
   <block id="04c7a623f8e877c84e93d77694cc5035" category="inline-link">Proteggere i carichi di lavoro ONTAP</block>
   <block id="ca202cae1bb121b6ad0687a5afe91a23" category="paragraph">Fare riferimento a<block ref="21eafc85c1e02f8afb995baf9105bba6" category="inline-link-rx"></block> .</block>
-  <block id="d050676cc5292d576618457e004c3537" category="paragraph">Direttiva irrisolta in<block ref="faac70d8d5f83c69456fd13fe050e68d" category="inline-link-rx"></block> - include::../_whatsnew/2025-07-14.adoc[]</block>
+  <block id="617f2d0adf2001440f244bf5c45be277" category="inline-link-macro">Scopri come visualizzare gli switch autorizzati al supporto</block>
+  <block id="ef3139c75debdd9ee259a4ea386083d3" category="paragraph">Ora è possibile visualizzare le informazioni sugli switch SAN Fibre Channel Brocade che hanno diritto al supporto. Sono inclusi dettagli sul modello dello switch, sul numero di serie e sullo stato del supporto. <block ref="de42528af60c9393a2c8b32539c694f1" category="inline-link-macro-rx"></block> .</block>
+  <block id="71d0ee5d411b8f72f571401cdab213ac" category="section-title">Supporto per Google Cloud NetApp Volumes in BlueXP</block>
+  <block id="775e62d1bed90f08196ce9665fe3b625" category="paragraph">Ora puoi gestire Google Cloud NetApp Volumes direttamente da BlueXP:</block>
+  <block id="bfcabace496e3d26dcf080c810ecd405" category="list-text">Aggiungere un ambiente di lavoro.</block>
+  <block id="ee07da92eddb189dc56635b6831f1856" category="list-text">Visualizza i tuoi volumi.</block>
+  <block id="f842a501bbdfa7f71ac344c36591a1b8" category="list-text">Rimuovi il tuo ambiente di lavoro.</block>
 </blocks>
