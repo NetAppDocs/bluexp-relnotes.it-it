@@ -792,6 +792,34 @@ Abbiamo aggiornato il servizio di copia e sincronizzazione di BlueXP e il broker
 
 
 
+=== 06 agosto 2025
+
+
+
+==== Supporta gli switch autorizzati
+
+Ora è possibile visualizzare le informazioni sugli switch SAN Fibre Channel Brocade che hanno diritto al supporto. Sono inclusi dettagli sul modello dello switch, sul numero di serie e sullo stato del supporto. link:https://docs.netapp.com/us-en/active-iq/task_view_inventory_details.html["Scopri come visualizzare gli switch autorizzati al supporto"] .
+
+
+
+==== Soglia per i dati RSS AutoSupport
+
+Il limite di invio recentemente interrotto (RSS), nel widget AutoSupport , è stato esteso da 48 ore (2 giorni) a 216 ore (9 giorni) prima che un sistema venga contrassegnato come RSS. Ciò avviene per supportare piattaforme come StorageGRID che inviano solo dati AutoSupport settimanali.
+
+
+
+==== Sezione API obsoleta nel catalogo API Digital Advisor
+
+Una nuova sezione API obsoleta è disponibile nel catalogo API Digital Advisor . Elenca le API programmate per essere deprecate, insieme alle tempistiche di deprecazione e alle API alternative.
+
+
+
+==== Obsolescenza dei moduli API V2 e End of Support per la previsione della capacità
+
+I moduli API di previsione della capacità V2 e di fine supporto sono programmati per essere dismessi. Per accedere alle API deprecate o per conoscere le tempistiche di deprecazione e le API alternative, vai su *Servizi API -> Sfoglia -> API deprecate*.
+
+
+
 === 09 luglio 2025
 
 
@@ -829,18 +857,6 @@ Il report dei contratti di supporto è stato migliorato per includere il nuovo c
 ==== Dashboard sulla sostenibilità
 
 È ora possibile avviare il dashboard Sustainability utilizzando il collegamento incluso nella presentazione Sustainability.
-
-
-
-=== 05 marzo 2025
-
-
-
-==== Upgrade Advisor
-
-* Utilizzando il Disk Qualification Package (DQP), è ora possibile aggiornare automaticamente i controller del disco e il firmware del dispositivo di archiviazione in base a criteri predefiniti di integrità e prestazioni. Ciò riduce i potenziali guasti e migliora l'affidabilità generale del sistema.
-* Il database dei fusi orari (DB) è stato introdotto per mantenere automaticamente l'allineamento del sistema con le definizioni dei fusi orari più recenti. Ciò garantisce che le operazioni dipendenti dal tempo continuino senza problemi anche quando le regole del fuso orario cambiano.
-
 
 
 
